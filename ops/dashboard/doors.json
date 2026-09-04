@@ -1,0 +1,167 @@
+{
+  "title": "Soup Ops",
+  "why": "Watch all Soup ventures in one place. Open this instead of scrolling chat.",
+  "generated": "2026-09-04",
+  "note": "v0 — static board. Edit this JSON to change a row. Near-real updates later.",
+  "doors": [
+    {
+      "id": "fine-art",
+      "name": "Neahkahnie Atelier",
+      "also": "Fine Art",
+      "lane": "Gallery",
+      "state": "live",
+      "status": "Dark exhibition hang live. Commissions / inquire. Not a print shop.",
+      "updated": "2026-09-04",
+      "last": "Closer pass — hero, style tabs, slideshow.",
+      "href": "../../businesses/fine-art/",
+      "hrefLabel": "Open hang"
+    },
+    {
+      "id": "demeter-watershed",
+      "name": "Demeter Design",
+      "also": "Watershed Field Assessment",
+      "lane": "Field",
+      "state": "live",
+      "status": "Quote-only field campaigns live. Real GO reports. demeterdesign.net name is real (host may be parked).",
+      "updated": "2026-09-04",
+      "last": "Tillamook warehouse PDF label, plain language.",
+      "href": "../../businesses/watershed/",
+      "hrefLabel": "Open firm",
+      "more": [
+        { "href": "https://demeterdesign.net/", "label": "demeterdesign.net", "external": true },
+        { "href": "../../brands/demeter-design/", "label": "Brand pack" }
+      ]
+    },
+    {
+      "id": "coast-desk",
+      "name": "Coast Desk",
+      "also": "Cara Mico bylines",
+      "lane": "Journalism",
+      "state": "live",
+      "status": "Bylines wall live — 55 pieces, 2012–2025, five outlets.",
+      "updated": "2026-09-04",
+      "last": "Pull-quotes restored on bylines.",
+      "href": "../../brands/coast-desk/",
+      "hrefLabel": "Open bylines"
+    },
+    {
+      "id": "graphic-oregon",
+      "name": "Graphic Oregon",
+      "also": "Website design door",
+      "lane": "Web studio",
+      "state": "live",
+      "status": "Website-design door live — handoff + teach. Named screenshot proof.",
+      "updated": "2026-09-04",
+      "last": "Door copy tightened.",
+      "href": "../../brands/graphic-oregon/",
+      "hrefLabel": "Open door",
+      "more": [
+        { "href": "https://graphicoregon.com/", "label": "graphicoregon.com", "external": true }
+      ]
+    },
+    {
+      "id": "sassmeharder",
+      "name": "Sassmeharder",
+      "also": "Art prints",
+      "lane": "Merch",
+      "state": "linked",
+      "status": "Live shop. Night Owl Softstyle is a buyable drop. Soup does not run a competing print door.",
+      "updated": "2026-09-04",
+      "last": "Night Owl Softstyle PDP live.",
+      "href": "https://sassmeharder.com/",
+      "hrefLabel": "Open shop",
+      "external": true,
+      "more": [
+        { "href": "https://sassmeharder.com/product/31458591", "label": "Night Owl Softstyle", "external": true },
+        { "href": "../../extracts/art-wall/", "label": "Soup prints door" }
+      ]
+    },
+    {
+      "id": "staris",
+      "name": "StarIS",
+      "also": "Sky demo",
+      "lane": "Space",
+      "state": "linked",
+      "status": "Live demo linked from Asterism Lab and sky-brief. Not a rebuild this week.",
+      "updated": "2026-09-04",
+      "last": "Proof link on Asterism / sky-brief.",
+      "href": "https://staris-b01f2.firebaseapp.com/",
+      "hrefLabel": "Open demo",
+      "external": true,
+      "more": [
+        { "href": "../../brands/asterism-lab/", "label": "Asterism Lab" },
+        { "href": "../../extracts/sky-brief/", "label": "Sky brief" }
+      ]
+    },
+    {
+      "id": "cold-contour",
+      "name": "Cold Contour",
+      "also": "Art objects",
+      "lane": "Art",
+      "state": "live",
+      "status": "Shore Contour print/PDF sellable on the door. Not apparel.",
+      "updated": "2026-09-04",
+      "last": "Shore Contour print/PDF on the door.",
+      "href": "../../brands/cold-contour/",
+      "hrefLabel": "Open door"
+    },
+    {
+      "id": "asterism-lab",
+      "name": "Asterism Lab",
+      "also": "Educator sky packs",
+      "lane": "Space",
+      "state": "live",
+      "status": "Educator sky pack sample live ($49). Not a NASA contract. Not a StarIS rebuild.",
+      "updated": "2026-09-04",
+      "last": "Sample Orion card + brief on the door.",
+      "href": "../../brands/asterism-lab/",
+      "hrefLabel": "Open door"
+    },
+    {
+      "id": "far-field-media",
+      "name": "Far Field Media",
+      "also": "Videography",
+      "lane": "Video",
+      "state": "live",
+      "status": "Sample clip live. Field film package $450 / 60–90s.",
+      "updated": "2026-09-04",
+      "last": "Clip + rate on the stranger door.",
+      "href": "../../brands/far-field-media/",
+      "hrefLabel": "Open door"
+    },
+    {
+      "id": "signal-shelf",
+      "name": "Signal Shelf",
+      "also": "Monday briefs",
+      "lane": "Invent",
+      "state": "live",
+      "status": "Monday brief sample live ($29 demo). Hone invent — not claimed Cara cash.",
+      "updated": "2026-09-04",
+      "last": "Sample Monday brief on the door.",
+      "href": "../../brands/signal-shelf/",
+      "hrefLabel": "Open door"
+    },
+    {
+      "id": "lane-sites",
+      "name": "Lane Sites",
+      "also": "Web lane bread",
+      "lane": "Web",
+      "state": "live",
+      "status": "Keep-list live. Web lane bread — no invented client gigs.",
+      "updated": "2026-09-04",
+      "last": "Keep-list 001 on the door.",
+      "href": "../../brands/lane-sites/",
+      "hrefLabel": "Open keep-list"
+    }
+  ],
+  "omitted": [
+    {
+      "name": "NCCWP · Nehalem map",
+      "reason": "A Nehalem HUC-8 draft lives on a branch. Not linked on this tree."
+    },
+    {
+      "name": "HouseMe / RentMe",
+      "reason": "No public door in this repo."
+    }
+  ]
+}
