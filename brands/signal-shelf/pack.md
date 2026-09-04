@@ -1,23 +1,21 @@
 # Signal Shelf
 
-Lane: Hone invent
+Lane: Hone invent · Graphic Oregon child (demo)
 
 ## One-liner
-One paper/map/dataset → one-page Monday brief for operators (hone invent to sharpen the soup).
+One paper/map/dataset → one-page Monday brief for operators.
 
-## Brief
-Invented hone child — not a claim Cara already sells this. Exists so the engine can practice idea→name→offer→path.
+## Offer (hone)
+**Signal Shelf Brief** — $29 demo price  
+Not a claim of existing Cara revenue. Exists to hone idea→name→offer→path.
 
-## Done-when
-Stranger can open the pack and see a demo path; not sold as live Cara cash yet.
-
-## BOM
-- Brand page on company-soup Pages
-- Digest template (title, finding, so-what, source)
+## Path
+- Brand door: https://caradmico.github.io/company-soup/brands/signal-shelf/
+- Sample: `sample-monday.md` on this folder
 - Parent: Graphic Oregon
 
-## Steps
-1. Keep as demo hone
-2. Ship sample brief on Pages when ready
-3. Do not claim existing revenue
-4. Use to test soup engine only until real
+## Done-when
+Stranger opens a sample Monday brief on Pages and sees the template path.
+
+## Do-not
+Claim live Cara cash · rename GO · Printify-as-hero · invent client websites as cash
