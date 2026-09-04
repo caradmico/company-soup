@@ -1,0 +1,503 @@
+{
+  "meta": {
+    "source": "Cara Mico CV 2025 journalism section + Journalism Links doc",
+    "verifiedCount": 49,
+    "outlets": 5,
+    "years": "2012–2025",
+    "pioneerRole": "Assistant editor, Tillamook County Pioneer, 2022–Present",
+    "pioneerNote": "The Pioneer author archive (~58 pages) is a volume pointer and mixes other writers. This wall lists only verified CV Pioneer samples — not the full desk.",
+    "rule": "Hed + outlet + year + beat + outbound URL only. Never republish full article bodies."
+  },
+  "quotes": [
+    {
+      "beat": "science",
+      "clipId": "pioneer-space-view",
+      "text": "Space. We’re all in it. But what exactly is going on up there (around there? Down there?) Quite a bit actually!",
+      "hed": "A New View: Space",
+      "url": "https://www.tillamookcountypioneer.net/a-new-view-space/"
+    },
+    {
+      "beat": "civic",
+      "clipId": "mercury-armistice",
+      "text": "After decades of acrimony between residents and businesses, he had brokered a “truce” in the neighborhood’s vaunted “parking wars.”",
+      "hed": "A Temporary Armistice",
+      "url": "https://www.portlandmercury.com/news/2012/12/05/7826150/a-temporary-armistice"
+    },
+    {
+      "beat": "arts",
+      "clipId": "signal-hum",
+      "text": "I just wanted to create a story about a girl who does her own thing and doesn’t want to be bothered.",
+      "hed": "Hum and Swish",
+      "url": "https://www.seasidesignal.com/2019/09/21/hum-and-swish/"
+    },
+    {
+      "beat": "outdoors",
+      "clipId": "pioneer-otters",
+      "text": "This historic event marks the first confirmed presence of sea otters in the area for over a century, signaling a potential resurgence of a species once extirpated from the Oregon coast.",
+      "hed": "The Return of Sea Otters to Haystack Rock",
+      "url": "https://www.tillamookcountypioneer.net/the-return-of-sea-otters-to-haystack-rock/"
+    },
+    {
+      "beat": "community",
+      "clipId": "signal-market",
+      "text": "About half of the market visitors are locals coming for fresh-picked vegetables and farm goods, while the other half are tourists who tend to visit the craft stands more frequently, said market manager Angi Wildt.",
+      "hed": "Fresh picked farmers market in Seaside",
+      "url": "https://www.seasidesignal.com/2019/07/25/fresh-picked-farmers-market-in-seaside/"
+    }
+  ],
+  "clips": [
+    {
+      "id": "mercury-ammo",
+      "hed": "And Your Ammo, Too!",
+      "outlet": "Portland Mercury",
+      "year": 2013,
+      "date": "2013-02-20",
+      "beat": "civic",
+      "url": "https://www.portlandmercury.com/news/2013/02/20/8531590/and-your-ammo-too",
+      "lead": true
+    },
+    {
+      "id": "mercury-armistice",
+      "hed": "A Temporary Armistice",
+      "dek": "Mayor’s plan to solve Northwest Portland’s parking wars still has some critics",
+      "outlet": "Portland Mercury",
+      "year": 2012,
+      "date": "2012-12-05",
+      "beat": "civic",
+      "url": "https://www.portlandmercury.com/news/2012/12/05/7826150/a-temporary-armistice",
+      "lead": true
+    },
+    {
+      "id": "signal-hum",
+      "hed": "Hum and Swish",
+      "outlet": "Seaside Signal",
+      "year": 2019,
+      "date": "2019-09-21",
+      "beat": "arts",
+      "url": "https://www.seasidesignal.com/2019/09/21/hum-and-swish/",
+      "lead": true
+    },
+    {
+      "id": "signal-diamond",
+      "hed": "Cleaning up on the diamond",
+      "outlet": "Seaside Signal",
+      "year": 2019,
+      "date": "2019-09-18",
+      "beat": "community",
+      "url": "https://www.seasidesignal.com/2019/09/18/cleaning-up-on-the-diamond/"
+    },
+    {
+      "id": "signal-preparedness",
+      "hed": "Preparedness forum invites community involvement",
+      "outlet": "Seaside Signal",
+      "year": 2019,
+      "date": "2019-09-10",
+      "beat": "civic",
+      "url": "https://www.seasidesignal.com/2019/09/10/preparedness-forum-invites-community-involvement/"
+    },
+    {
+      "id": "signal-pickleball",
+      "hed": "Pickleball headed to Gearhart",
+      "outlet": "Seaside Signal",
+      "year": 2019,
+      "date": "2019-08-27",
+      "beat": "community",
+      "url": "https://www.seasidesignal.com/2019/08/27/pickleball-headed-to-gearhart/"
+    },
+    {
+      "id": "signal-jeepers",
+      "hed": "Jeepers Creepers birding event at Circle Creek",
+      "outlet": "Seaside Signal",
+      "year": 2019,
+      "date": "2019-08-13",
+      "beat": "outdoors",
+      "url": "https://www.seasidesignal.com/2019/08/13/jeepers-creepers-birding-event-at-circle-creek/"
+    },
+    {
+      "id": "signal-wallace",
+      "hed": "Social justice motivates artist May Wallace",
+      "outlet": "Seaside Signal",
+      "year": 2019,
+      "date": "2019-08-02",
+      "beat": "arts",
+      "url": "https://www.seasidesignal.com/2019/08/02/social-justice-motivates-artist-may-wallace/"
+    },
+    {
+      "id": "signal-nclc",
+      "hed": "NCLC volunteers go deep into the weeds",
+      "outlet": "Seaside Signal",
+      "year": 2019,
+      "date": "2019-08-01",
+      "beat": "outdoors",
+      "url": "https://www.seasidesignal.com/2019/08/01/nclc-volunteers-go-deep-into-the-weeds/"
+    },
+    {
+      "id": "signal-market",
+      "hed": "Fresh picked farmers market in Seaside",
+      "outlet": "Seaside Signal",
+      "year": 2019,
+      "date": "2019-07-25",
+      "beat": "community",
+      "url": "https://www.seasidesignal.com/2019/07/25/fresh-picked-farmers-market-in-seaside/",
+      "lead": true
+    },
+    {
+      "id": "signal-tides",
+      "hed": "Ode to the Tides",
+      "outlet": "Seaside Signal",
+      "year": 2019,
+      "date": "2019-06-19",
+      "beat": "arts",
+      "url": "https://www.seasidesignal.com/2019/06/19/ode-to-the-tides/"
+    },
+    {
+      "id": "signal-scents",
+      "hed": "Making scents at Beach Books",
+      "outlet": "Seaside Signal",
+      "year": 2019,
+      "date": "2019-07-09",
+      "beat": "arts",
+      "url": "https://www.seasidesignal.com/2019/07/09/making-scents-at-beach-books/"
+    },
+    {
+      "id": "signal-hypertufa",
+      "hed": "Hypertufa workshop promotes local species",
+      "outlet": "Seaside Signal",
+      "year": 2019,
+      "date": "2019-07-01",
+      "beat": "outdoors",
+      "url": "https://www.seasidesignal.com/2019/07/01/hypertufa-workshop-promotes-local-species/"
+    },
+    {
+      "id": "signal-pollinators",
+      "hed": "Preserving pollinators on the north coast",
+      "outlet": "Seaside Signal",
+      "year": 2019,
+      "date": "2019-05-29",
+      "beat": "science",
+      "url": "https://www.seasidesignal.com/2019/05/29/preserving-pollinators-on-the-north-coast/"
+    },
+    {
+      "id": "signal-food",
+      "hed": "The food all around us",
+      "outlet": "Seaside Signal",
+      "year": 2019,
+      "date": "2019-05-29",
+      "beat": "outdoors",
+      "url": "https://www.seasidesignal.com/2019/05/29/the-food-all-around-us/"
+    },
+    {
+      "id": "signal-firehouse",
+      "hed": "Firehouse committee zeroes in on high point site",
+      "outlet": "Seaside Signal",
+      "year": 2019,
+      "date": "2019-05-22",
+      "beat": "civic",
+      "url": "https://www.seasidesignal.com/2019/05/22/firehouse-committee-zeroes-in-on-high-point-site/"
+    },
+    {
+      "id": "signal-plastic",
+      "hed": "Sparking change, one piece of plastic at a time",
+      "outlet": "Seaside Signal",
+      "year": 2019,
+      "date": "2019-05-21",
+      "beat": "community",
+      "url": "https://www.seasidesignal.com/2019/05/21/sparking-change-one-piece-of-plastic-at-a-time/"
+    },
+    {
+      "id": "gazette-watchword",
+      "hed": "Preparation is the Watchword",
+      "outlet": "Cannon Beach Gazette",
+      "year": 2019,
+      "date": "2019-05-03",
+      "beat": "civic",
+      "url": "https://www.cannonbeachgazette.com/news/local-news/preparation-is-watchword/article_470ded96-6441-11e9-be4d-0fd857e90c28.html"
+    },
+    {
+      "id": "gazette-beast",
+      "hed": "Beauty and the Beast at Coaster Theater Spring Camp",
+      "outlet": "Cannon Beach Gazette",
+      "year": 2019,
+      "date": "2019-05-02",
+      "beat": "arts",
+      "url": "https://www.cannonbeachgazette.com/entertainment/beauty-and-the-beast-at-coaster-theatre-spring-camp/article_1912d514-528a-11e9-bb4e-177472b31e94.html"
+    },
+    {
+      "id": "gazette-trees",
+      "hed": "Site plan for larger tree work required",
+      "outlet": "Cannon Beach Gazette",
+      "year": 2019,
+      "date": "2019-04-17",
+      "beat": "civic",
+      "url": "https://www.cannonbeachgazette.com/news/local-news/city-council-roundup-site-plan-for-larger-tree-work-required/article_085a6ff4-5f99-11e9-9179-4764da579f91.html"
+    },
+    {
+      "id": "gazette-appeal",
+      "hed": "City Council appeal sent back to Planning Commission",
+      "outlet": "Cannon Beach Gazette",
+      "year": 2019,
+      "date": "2019-04-15",
+      "beat": "civic",
+      "url": "https://www.cannonbeachgazette.com/news/local-news/city-council-appeal-sent-back-to-planning-commission/article_b913b8f6-5f98-11e9-b7d8-275b23d6892c.html"
+    },
+    {
+      "id": "gazette-rentals",
+      "hed": "Big changes ahead for rental permits",
+      "outlet": "Cannon Beach Gazette",
+      "year": 2019,
+      "date": "2019-04-02",
+      "beat": "civic",
+      "url": "https://www.cannonbeachgazette.com/news/local-news/big-changes-could-be-ahead-for-rental-permits/article_b5516794-5279-11e9-9d6a-9f3d5d00f719.html"
+    },
+    {
+      "id": "gazette-soul",
+      "hed": "Food for the Soul",
+      "outlet": "Cannon Beach Gazette",
+      "year": 2019,
+      "date": "2019-04-02",
+      "beat": "arts",
+      "url": "https://www.cannonbeachgazette.com/news/local-news/food-for-the-soul/article_69383ba0-54a2-11e9-b338-43b9fde4b7a0.html"
+    },
+    {
+      "id": "gazette-bnb",
+      "hed": "Bed and breakfast or short term rental?",
+      "outlet": "Cannon Beach Gazette",
+      "year": 2019,
+      "date": "2019-04-01",
+      "beat": "civic",
+      "url": "https://www.cannonbeachgazette.com/news/local-news/bed-and-breakfast-or-short-term-rental/article_d24d7ad4-5271-11e9-8fd6-33180ae1a89f.html"
+    },
+    {
+      "id": "gazette-marijuana",
+      "hed": "Design Review Board approves two new marijuana shop plans",
+      "outlet": "Cannon Beach Gazette",
+      "year": 2019,
+      "date": "2019-03-26",
+      "beat": "civic",
+      "url": "https://www.cannonbeachgazette.com/news/local-news/design-review-board-approves-two-new-marijuana-shop-plans/article_4540d63c-4f82-11e9-b51f-5f58d4abebe9.html"
+    },
+    {
+      "id": "gazette-tents",
+      "hed": "No tents in the park",
+      "outlet": "Cannon Beach Gazette",
+      "year": 2019,
+      "date": "2019-03-21",
+      "beat": "civic",
+      "url": "https://www.cannonbeachgazette.com/news/local-news/no-tents-in-the-parks/article_e3a2352e-486f-11e9-821f-5b4df1833d81.html"
+    },
+    {
+      "id": "gazette-tourism",
+      "hed": "City seeks clarity on tourism funds",
+      "outlet": "Cannon Beach Gazette",
+      "year": 2019,
+      "date": "2019-03-21",
+      "beat": "civic",
+      "url": "https://www.cannonbeachgazette.com/news/local-news/city-seeks-clarity-on-tourism-funds/article_bd008fac-486e-11e9-96d8-8be7bdc7b78d.html"
+    },
+    {
+      "id": "gazette-warren",
+      "hed": "Warren Way reconfiguration ahead",
+      "outlet": "Cannon Beach Gazette",
+      "year": 2019,
+      "date": "2019-03-19",
+      "beat": "civic",
+      "url": "https://www.cannonbeachgazette.com/news/local-news/warren-way-reconfiguration-ahead/article_bd683b9c-486f-11e9-b588-db864ff4a874.html"
+    },
+    {
+      "id": "gazette-puffin",
+      "hed": "Program seeks to protect puffin population",
+      "outlet": "Cannon Beach Gazette",
+      "year": 2019,
+      "date": "2019-03-16",
+      "beat": "outdoors",
+      "url": "https://www.cannonbeachgazette.com/news/local-news/program-seeks-to-protect-puffin-population/article_39794b1e-486f-11e9-8df5-9fd8164430ec.html"
+    },
+    {
+      "id": "gazette-levy",
+      "hed": "Operations levy rejected for new fire truck",
+      "outlet": "Cannon Beach Gazette",
+      "year": 2019,
+      "date": "2019-03-15",
+      "beat": "civic",
+      "url": "https://www.cannonbeachgazette.com/news/local-news/operations-levy-rejected-for-new-fire-truck/article_28e0ca0a-469b-11e9-9d6e-eb9194653f98.html"
+    },
+    {
+      "id": "gazette-rv",
+      "hed": "What’s in store for the new RV park?",
+      "outlet": "Cannon Beach Gazette",
+      "year": 2019,
+      "date": "2019-03-12",
+      "beat": "civic",
+      "url": "https://www.cannonbeachgazette.com/news/local-news/what-s-in-store-at-the-rv-park/article_10c1cc54-4424-11e9-adf6-931e62fb16db.html"
+    },
+    {
+      "id": "gazette-cityhall-sites",
+      "hed": "Funding sought to analyze potential city hall sites",
+      "outlet": "Cannon Beach Gazette",
+      "year": 2019,
+      "date": "2019-03-11",
+      "beat": "civic",
+      "url": "https://www.cannonbeachgazette.com/news/local-news/funding-sought-to-analyze-potential-city-hall-sites/article_981f6722-4444-11e9-9313-db6f6c18bdbe.html"
+    },
+    {
+      "id": "gazette-local",
+      "hed": "Love it like a local",
+      "outlet": "Cannon Beach Gazette",
+      "year": 2019,
+      "date": "2019-03-11",
+      "beat": "community",
+      "url": "https://www.cannonbeachgazette.com/news/local-news/love-it-like-a-local/article_05918dbe-4425-11e9-93ef-7f3954f702a1.html"
+    },
+    {
+      "id": "gazette-forest",
+      "hed": "Keeping a forest healthy",
+      "outlet": "Cannon Beach Gazette",
+      "year": 2019,
+      "date": "2019-03-04",
+      "beat": "outdoors",
+      "url": "https://www.cannonbeachgazette.com/news/local-news/keeping-a-forest-healthy/article_70592f52-3e31-11e9-a0f2-6b25324930ed.html"
+    },
+    {
+      "id": "gazette-savor",
+      "hed": "Savor Cannon Beach",
+      "outlet": "Cannon Beach Gazette",
+      "year": 2019,
+      "date": "2019-02-28",
+      "beat": "arts",
+      "url": "https://www.cannonbeachgazette.com/entertainment/savor-cannon-beach/article_1ca2a8aa-33a7-11e9-a802-ef46ff77f2a4.html"
+    },
+    {
+      "id": "gazette-compplan",
+      "hed": "Is comp plan revision ahead?",
+      "outlet": "Cannon Beach Gazette",
+      "year": 2019,
+      "date": "2019-02-26",
+      "beat": "civic",
+      "url": "https://www.cannonbeachgazette.com/news/local-news/is-comp-plan-revision-ahead/article_d22213da-3a11-11e9-9320-430e5ede90c2.html"
+    },
+    {
+      "id": "gazette-cityhall-concerns",
+      "hed": "City hall location only one of many concerns",
+      "outlet": "Cannon Beach Gazette",
+      "year": 2019,
+      "date": "2019-02-20",
+      "beat": "civic",
+      "url": "https://www.cannonbeachgazette.com/news/local-news/city-hall-location-only-one-of-many-council-concerns/article_6effdaa4-34ac-11e9-bab5-072ab5e9c25c.html"
+    },
+    {
+      "id": "gazette-cityhall-dizzy",
+      "hed": "City hall location dizzying for council",
+      "outlet": "Cannon Beach Gazette",
+      "year": 2019,
+      "date": "2019-02-08",
+      "beat": "civic",
+      "url": "https://www.cannonbeachgazette.com/news/local-news/city-hall-options-dizzying-for-council/article_5e500b36-2bcc-11e9-a4d4-0b6fe5dfb8ba.html"
+    },
+    {
+      "id": "gazette-crime",
+      "hed": "Burglaries spike, but overall crime report is ‘average’",
+      "outlet": "Cannon Beach Gazette",
+      "year": 2019,
+      "date": "2019-02-07",
+      "beat": "civic",
+      "url": "https://www.cannonbeachgazette.com/news/local-news/burglaries-spike-but-overall-crime-report-is-average/article_23bd935c-2b0f-11e9-81fa-cb3ccbd6a65e.html"
+    },
+    {
+      "id": "gazette-maine",
+      "hed": "Neal Maine’s art of the migratory bird",
+      "outlet": "Cannon Beach Gazette",
+      "year": 2019,
+      "date": "2019-02-07",
+      "beat": "arts",
+      "url": "https://www.cannonbeachgazette.com/entertainment/neal-maine-s-art-of-the-migratory-bird/article_443ec004-ec1e-571d-a62a-a224ec9d0c2c.html"
+    },
+    {
+      "id": "hipfish-porter",
+      "hed": "Riverbend Players stage a first musical: Cole Porter’s You Never Know",
+      "outlet": "HipFish Monthly",
+      "year": 2017,
+      "date": "2017-05-01",
+      "beat": "arts",
+      "url": "https://www.hipfishmonthly.com/wp-content/uploads/2017/05/517.pdf"
+    },
+    {
+      "id": "hipfish-ncrd",
+      "hed": "North Coast Recreation District’s brilliant new theater facility",
+      "outlet": "HipFish Monthly",
+      "year": 2017,
+      "date": "2017-01-01",
+      "beat": "arts",
+      "url": "https://www.hipfishmonthly.com/wp-content/uploads/2017/01/117.pdf"
+    },
+    {
+      "id": "hipfish-hurd",
+      "hed": "Of Dust and the River: Tim Hurd",
+      "outlet": "HipFish Monthly",
+      "year": 2016,
+      "date": "2016-10-01",
+      "beat": "arts",
+      "url": "https://www.hipfishmonthly.com/wp-content/uploads/2016/10/1016.pdf"
+    },
+    {
+      "id": "hipfish-albums",
+      "hed": "When Albums Were Art",
+      "dek": "Manzanita band man Fred Lackaff talks about The New Tweedy Bros",
+      "outlet": "HipFish Monthly",
+      "year": 2016,
+      "date": "2016-07-01",
+      "beat": "arts",
+      "url": "https://www.hipfishmonthly.com/wp-content/uploads/2016/07/716.pdf",
+      "lead": true
+    },
+    {
+      "id": "pioneer-space-view",
+      "hed": "A New View: Space",
+      "outlet": "Tillamook County Pioneer",
+      "year": 2022,
+      "date": "2022-08-01",
+      "beat": "science",
+      "url": "https://www.tillamookcountypioneer.net/a-new-view-space/",
+      "lead": true
+    },
+    {
+      "id": "pioneer-space-closer",
+      "hed": "Space Just Got a Little Closer",
+      "outlet": "Tillamook County Pioneer",
+      "year": 2025,
+      "date": "2025-01-19",
+      "beat": "science",
+      "url": "https://www.tillamookcountypioneer.net/space-just-got-a-little-closer/",
+      "lead": true
+    },
+    {
+      "id": "pioneer-otters",
+      "hed": "The Return of Sea Otters to Haystack Rock",
+      "outlet": "Tillamook County Pioneer",
+      "year": 2024,
+      "date": "2024-07-19",
+      "beat": "outdoors",
+      "url": "https://www.tillamookcountypioneer.net/the-return-of-sea-otters-to-haystack-rock/",
+      "lead": true
+    },
+    {
+      "id": "pioneer-ai",
+      "hed": "Understanding AI Language Models: An Introductory Guide",
+      "outlet": "Tillamook County Pioneer",
+      "year": 2023,
+      "date": "2023-11-13",
+      "beat": "science",
+      "url": "https://www.tillamookcountypioneer.net/understanding-ai-language-models-an-introductory-guide/",
+      "lead": true
+    },
+    {
+      "id": "pioneer-climate",
+      "hed": "Climate Change on the Oregon Coast",
+      "outlet": "Tillamook County Pioneer",
+      "year": 2022,
+      "date": "2022-07-30",
+      "beat": "science",
+      "url": "https://www.tillamookcountypioneer.net/climate-change-on-the-oregon-coast-3-part-series/",
+      "lead": true
+    }
+  ]
+}
