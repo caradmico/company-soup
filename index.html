@@ -89,6 +89,7 @@
       <div class="actions">
         <button type="button" id="cook">Cook the brief</button>
         <button type="button" class="secondary" id="copy">Copy locked pack</button>
+        <button type="button" class="secondary" id="download">Download .md</button>
       </div>
       <div id="out" aria-live="polite"></div>
     </section>
@@ -142,7 +143,7 @@
         do_not:["Rename Graphic Oregon","Use Netarts Systems as the env stranger face","CONTINUE Three.js / merge 24/27/29/30","Invent a new bot","Printify-as-hero / client websites as cash factory"]
       };
     }
-    function formatPack(p){ return `COMPANY SOUP — LOCKED PACK (parent: Graphic Oregon)\n\nIdea:\n${p.idea}\n\nLocked brief:\n${p.brief}\n\nDone-when:\n${p.done_when}\n\nCatalog: ${p.catalog.name} (${p.catalog.id})\n\nBOM / path:\n${p.bom.map((x,i)=>`${i+1}. ${x}`).join("\\n")}\n\nFirst ship steps:\n${p.steps.map((x,i)=>`${i+1}. ${x}`).join("\\n")}\n\nDo-not:\n${p.do_not.map(x=>`- ${x}`).join("\\n")}`.trim(); }
+    function formatPack(p){ return `COMPANY SOUP — LOCKED PACK (parent: Graphic Oregon)\n\nIdea:\n${p.idea}\n\nLocked brief:\n${p.brief}\n\nDone-when:\n${p.done_when}\n\nCatalog: ${p.catalog.name} (${p.catalog.id})\n\nBOM / path:\n${p.bom.map((x,i)=>`${i+1}. ${x}`).join("\n")}\n\nFirst ship steps:\n${p.steps.map((x,i)=>`${i+1}. ${x}`).join("\n")}\n\nDo-not:\n${p.do_not.map(x=>`- ${x}`).join("\n")}`.trim(); }
     function esc(s){ return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\\"":"&quot;","'":"&#39;"}[c])); }
     function render(pack){
       const el=document.getElementById("out"); el.className="visible";
@@ -154,6 +155,7 @@
       b.onclick=()=>{ [...picks.children].forEach(x=>x.classList.remove("active")); b.classList.add("active"); ideaEl.value=s; render(cook(s)); }; picks.appendChild(b); });
     document.getElementById("cook").onclick=()=>{ const v=ideaEl.value.trim(); if(!v){ideaEl.focus();return;} render(cook(v)); };
     document.getElementById("copy").onclick=async()=>{ const v=ideaEl.value.trim(); if(!v){ideaEl.focus();return;} const pack=(window.__pack&&window.__pack.idea===slugTitle(v))?window.__pack:cook(v); render(pack); await navigator.clipboard.writeText(formatPack(pack)); const btn=document.getElementById("copy"); btn.textContent="Copied"; setTimeout(()=>btn.textContent="Copy locked pack",1100); };
+    document.getElementById("download").onclick=()=>{ const v=ideaEl.value.trim(); if(!v){ideaEl.focus();return;} const pack=(window.__pack&&window.__pack.idea===slugTitle(v))?window.__pack:cook(v); render(pack); const blob=new Blob([formatPack(pack)+"\n"],{type:"text/markdown"}); const a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download="company-soup-pack.md"; a.click(); URL.revokeObjectURL(a.href); };
   </script>
 </body>
 </html>
