@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Demeter Design · Sampling &amp; analysis plans</title>
-<meta name="description" content="Get a sampling and analysis plan your council can fund — screened from satellite and existing data first. Quote-only Oregon watershed planning.">
+<title>Demeter Design · Action plans for watershed decisions</title>
+<meta name="description" content="Complicated watershed data turned into clear action plans — passage, rearing, canopy, priorities. GIS-focused synthesis. Quote-only Oregon.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
@@ -35,30 +35,27 @@ a{color:var(--tide)}
 .hero{position:relative;min-height:92vh;min-height:92dvh;display:grid;align-items:end;color:#f3f7f1;overflow:hidden}
 .hero .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.04);animation:ken 22s ease-out forwards}
 .hero .mist{position:absolute;inset:0;background:linear-gradient(180deg,rgba(22,48,40,.2),rgba(10,18,16,.86) 72%);pointer-events:none}
-.hero .inner{position:relative;z-index:1;width:min(42rem,calc(100% - 2rem));margin:0 auto;padding:5rem 0 3.2rem}
-.hero h1{margin:.35rem 0 .55rem;font-size:clamp(2rem,5vw,3.2rem);line-height:1.05}
-.hero .why{margin:0 0 1.1rem;max-width:34rem;font-size:clamp(1.05rem,2.1vw,1.2rem);opacity:.96}
+.hero .inner{position:relative;z-index:1;width:min(44rem,calc(100% - 2rem));margin:0 auto;padding:5rem 0 3.2rem}
+.hero h1{margin:.35rem 0 .55rem;font-size:clamp(2rem,5vw,3.15rem);line-height:1.05}
+.hero .why{margin:0 0 1.1rem;max-width:36rem;font-size:clamp(1.05rem,2.1vw,1.18rem);opacity:.96}
 .actions{display:flex;flex-wrap:wrap;gap:.55rem}
 @keyframes ken{to{transform:scale(1)}}
-@media (prefers-reduced-motion:reduce){.hero .bg{animation:none;transform:none}.plate img,.beat img{transition:none!important}}
+@media (prefers-reduced-motion:reduce){.hero .bg{animation:none;transform:none}}
 
-.beat{display:grid;gap:0;min-height:78vh}
-@media(min-width:860px){.beat{grid-template-columns:1.05fr .95fr;align-items:stretch}}
-.media{position:relative;min-height:42vh;background:var(--fir);overflow:hidden}
-.media img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
-.media .cap{position:absolute;left:0;right:0;bottom:0;padding:.7rem 1rem;font-size:.78rem;color:#e8efe6;background:linear-gradient(transparent,rgba(0,0,0,.55))}
-.copy{display:flex;align-items:center;padding:2.2rem 1.25rem;background:var(--mist)}
-.copy .box{max-width:28rem;margin:0 auto}
-.copy h2{margin:.3rem 0 .55rem;font-size:clamp(1.5rem,3vw,2.05rem);line-height:1.12;color:var(--fir)}
-.copy p{margin:0 0 .9rem;color:var(--mute);font-size:1.02rem}
+.cap-grid{display:grid;gap:0}
+@media(min-width:900px){.cap-grid{grid-template-columns:1fr 1fr}}
+.cap-card{padding:2.1rem 1.25rem;background:var(--mist);border-bottom:1px solid var(--line)}
+@media(min-width:900px){.cap-card:nth-child(odd){border-right:1px solid var(--line)}}
+.cap-card h2{margin:.3rem 0 .5rem;font-size:clamp(1.25rem,2.4vw,1.55rem);color:var(--fir)}
+.cap-card p{margin:0;color:var(--mute)}
 
-.plans{background:var(--mist);padding:2.8rem 1.25rem 3.5rem}
+.plans{background:var(--foam);padding:2.8rem 1.25rem 2.5rem}
 .plans .inner{width:min(72rem,100%);margin:0 auto}
 .plans h2{color:var(--fir);font-size:clamp(1.55rem,3vw,2.15rem);margin:.25rem 0 .45rem}
-.plans .lede{color:var(--mute);max-width:38rem;margin:0 0 1.5rem}
+.plans .lede{color:var(--mute);max-width:40rem;margin:0 0 1.5rem}
 .plate{background:#fff;border:1px solid var(--line);margin:0 0 1.6rem;overflow:hidden}
 .plate .fig{margin:0;background:#e4e8e1}
-.plate .fig img{display:block;width:100%;height:auto;max-height:min(76vh,48rem);object-fit:contain;background:#e4e8e1}
+.plate .fig img{display:block;width:100%;height:auto;max-height:min(76vh,48rem);object-fit:contain}
 .plate .body{padding:1.15rem 1.25rem 1.35rem}
 .plate h3{margin:0 0 .4rem;font-size:clamp(1.15rem,2.3vw,1.45rem);color:var(--fir);font-family:"Fraunces",Georgia,serif}
 .plate .sell{font-weight:600;color:var(--fir);margin:0 0 .55rem}
@@ -66,6 +63,16 @@ a{color:var(--tide)}
 .plate .quiet{font-size:.88rem;color:var(--mute)}
 .plate .quiet a{color:var(--fir)}
 .plate .credit{font-size:.78rem;color:var(--mute);margin:.45rem 0 0}
+
+.warehouse{background:var(--mist);padding:2.6rem 1.25rem 3rem;border-top:1px solid var(--line)}
+.warehouse .inner{width:min(56rem,100%);margin:0 auto}
+.warehouse h2{color:var(--fir);font-size:clamp(1.4rem,2.8vw,1.9rem);margin:.25rem 0 .5rem}
+.warehouse p{color:var(--mute);max-width:40rem}
+.packets{display:grid;gap:.7rem;margin:1.1rem 0 0}
+@media(min-width:700px){.packets{grid-template-columns:1fr 1fr 1fr}}
+.packet{background:#fff;border:1px solid var(--line);padding:1rem;border-radius:2px}
+.packet strong{display:block;color:var(--fir);margin:0 0 .35rem}
+.packet a{font-weight:600;font-size:.92rem}
 
 #quote{background:var(--foam);padding:3rem 1.25rem 4.5rem}
 #quote .inner{width:min(56rem,100%);margin:0 auto;display:grid;gap:1.5rem}
@@ -92,20 +99,21 @@ body.sticky-on{padding-bottom:4.75rem}
   <div class="nav-inner">
     <a class="word" href="#top">Demeter Design</a>
     <nav class="links" aria-label="Page">
-      <a href="#why">Why</a>
+      <a href="#capability">Capability</a>
       <a href="#plans">Plans</a>
+      <a href="#warehouse">Data</a>
       <a class="btn btn-fir" href="#quote">Request a quote</a>
     </nav>
   </div>
 </header>
 
 <section class="hero" id="top">
-  <img class="bg" src="img/estuary.jpg" width="1280" height="851" alt="Oregon estuary from above — satellite and aerial view of the basin">
+  <img class="bg" src="img/estuary.jpg" width="1280" height="851" alt="Oregon estuary from above — aerial basin view for GIS screening">
   <div class="mist" aria-hidden="true"></div>
   <div class="inner">
     <p class="kicker" style="color:#d5e0c8">Demeter Design · Oregon</p>
-    <h1 class="serif">Sampling &amp; analysis plans</h1>
-    <p class="why"><strong>You’re here to get a sampling &amp; analysis plan</strong> your council can fund — scoped from satellite and existing data first, then field only where the plan says.</p>
+    <h1 class="serif">Action plans for watershed decisions</h1>
+    <p class="why"><strong>You’re here for an action plan</strong> everyone can get behind — complicated watershed data turned into clear next steps (passage, rearing, canopy, priorities).</p>
     <div class="actions">
       <a class="btn btn-mist" href="#plans">See the plans</a>
       <a class="btn btn-ghost" href="#quote">Request a quote</a>
@@ -113,49 +121,49 @@ body.sticky-on{padding-bottom:4.75rem}
   </div>
 </section>
 
-<article class="beat" id="why">
-  <div class="media">
-    <img src="img/channel.jpg" width="1920" height="1080" alt="Coastal watershed channel from the bank — context for planning, not the product">
-    <p class="cap">Basin context · plan first</p>
+<section class="cap-grid" id="capability" aria-label="Capability">
+  <div class="cap-card">
+    <p class="kicker">Assessment</p>
+    <h2 class="serif">Why aren’t the fish here?</h2>
+    <p>Plans answer the questions councils ask: passage, ocean context, overwintering and summer rearing, canopy and shade — how many should we expect, and what’s blocking them.</p>
   </div>
-  <div class="copy"><div class="box">
-    <p class="kicker">Why you’re here</p>
-    <h2 class="serif">A plan before the spend</h2>
-    <p>Demeter Design writes sampling and analysis plans from maps, existing surveys, and aerial screening. Fieldwork follows the agreed scope — not the other way around.</p>
-    <a class="btn btn-fir" href="#quote">Request a quote</a>
-  </div></div>
-</article>
+  <div class="cap-card">
+    <p class="kicker">Capacity now</p>
+    <h2 class="serif">GIS-first synthesis</h2>
+    <p>Remote screening, prioritization, and plan writing from existing surveys and aerial layers. Field crews can be sent when the plan requires it — the product is the plan, not boots as the sell.</p>
+  </div>
+</section>
 
 <section class="plans" id="plans">
   <div class="inner">
     <p class="kicker">Real plan graphics</p>
-    <h2 class="serif">What a funded plan looks like</h2>
-    <p class="lede">Three products from published Demeter Design work — passage, priority, and habitat potential. Full studies stay secondary.</p>
+    <h2 class="serif">What an action plan looks like</h2>
+    <p class="lede">Published Demeter Design maps — passage, priority, and habitat potential — with honest study dates. Fresher Drive refreshes land when files arrive; until then these are the real packets.</p>
 
     <article class="plate" id="plan-passage">
       <figure class="fig">
-        <img src="img/real-netarts-passage.jpg" width="1600" height="1200" alt="Netarts Bay passage barriers map used for a crossing fix plan">
+        <img src="img/real-netarts-passage.jpg" width="1600" height="1200" alt="Netarts Bay passage barriers map naming culvert and diversion fix priorities">
       </figure>
       <div class="body">
-        <p class="kicker">Passage plan</p>
-        <h3>Where fish stop — before you spend</h3>
-        <p class="sell">A passage plan that names the plugs — not a walk without a map.</p>
-        <p class="interp">Score crossings and map where fish stop. Few absolute barriers overall; undersized and failing culverts still choke distribution. Priority fixes cluster where they unlock miles — including Whiskey diversion and the first O’Hara culvert on Netarts.</p>
-        <p class="quiet"><a href="https://graphicoregon.com/netarts-bay-watershed-habitat-assessment/" target="_blank" rel="noopener">Full study</a> · Demeter Design · Netarts Bay</p>
+        <p class="kicker">Passage action plan</p>
+        <h3>Name the plugs that unlock miles</h3>
+        <p class="sell">A passage plan councils can fund — not a walk without a map.</p>
+        <p class="interp">Score crossings and map where fish stop. Undersized and failing culverts choke distribution even when absolute barriers are few. This work named Whiskey diversion and the first O’Hara culvert among Netarts priorities — culvert-proof planning that guided timber-land replacements where partners acted.</p>
+        <p class="quiet"><a href="https://graphicoregon.com/netarts-bay-watershed-habitat-assessment/" target="_blank" rel="noopener">Full study</a> · Demeter Design · Netarts Bay · published assessment map</p>
         <p class="credit">Map: passage barriers · Graphic Oregon / Demeter Design</p>
       </div>
     </article>
 
     <article class="plate" id="plan-priority">
       <figure class="fig">
-        <img src="img/real-tillamook-priority.jpg" width="1600" height="1200" alt="Tillamook Bay CERP map ranking Top 10 Chum intrinsic potential priorities">
+        <img src="img/real-tillamook-priority.jpg" width="1600" height="1200" alt="Tillamook Bay CERP Top-10 Chum intrinsic potential priority map">
       </figure>
       <div class="body">
-        <p class="kicker">Priority plan</p>
+        <p class="kicker">Priority action plan</p>
         <h3>One ranked picture to fund</h3>
         <p class="sell">A prioritization plan your council can put in the work plan.</p>
-        <p class="interp">After Coho was rated non-viable, partners needed one ranked picture. CERP scores ninety-four seventh-field HUCs from existing habitat, biotic, GIS, and written data. This map shows Top-10 Average Chum IP priorities against the rest.</p>
-        <p class="quiet"><a href="https://graphicoregon.com/tillamook-bay-watershed-habitat-restoration-plan/" target="_blank" rel="noopener">Full study</a> · Demeter Design · Tillamook Bay</p>
+        <p class="interp">After Coho was rated non-viable, partners needed one ranked picture. CERP coalesces habitat, biotic, GIS, and written data across ninety-four seventh-field HUCs. This map shows Top-10 Average Chum IP priorities against the rest.</p>
+        <p class="quiet"><a href="https://graphicoregon.com/tillamook-bay-watershed-habitat-restoration-plan/" target="_blank" rel="noopener">Full study</a> · Demeter Design · Tillamook Bay · published CERP map</p>
         <p class="credit">Map: CERP Chum IP priority · Graphic Oregon / Demeter Design</p>
       </div>
     </article>
@@ -166,10 +174,10 @@ body.sticky-on{padding-bottom:4.75rem}
       </figure>
       <div class="body">
         <p class="kicker">Habitat potential plan</p>
-        <h3>Screen the basin from above</h3>
-        <p class="sell">Screen the basin from above; write the sampling &amp; analysis plan from that.</p>
-        <p class="interp">Intrinsic potential shows which reaches carry winter habitat value before you write the SAP. Pair it with aerial and existing data so field days land where the plan says — not wherever the truck stops.</p>
-        <p class="quiet"><a href="https://graphicoregon.com/netarts-bay-watershed-habitat-assessment/" target="_blank" rel="noopener">Full study</a> · Demeter Design · Netarts Bay</p>
+        <h3>Screen rearing reaches before the spend</h3>
+        <p class="sell">See which reaches carry winter potential — then write the next steps from that.</p>
+        <p class="interp">Intrinsic potential screens which reaches matter for overwintering and rearing before field days are scheduled. Sampling and analysis can sit inside the action plan when needed; the centerpiece is the clear next step.</p>
+        <p class="quiet"><a href="https://graphicoregon.com/netarts-bay-watershed-habitat-assessment/" target="_blank" rel="noopener">Full study</a> · Demeter Design · Netarts Bay · published IP map</p>
         <p class="credit">Map: intrinsic potential · Graphic Oregon / Demeter Design</p>
       </div>
     </article>
@@ -178,12 +186,34 @@ body.sticky-on{padding-bottom:4.75rem}
   </div>
 </section>
 
+<section class="warehouse" id="warehouse">
+  <div class="inner">
+    <p class="kicker">GIS warehouse spirit</p>
+    <h2 class="serif">Oregon watershed data — download the project packets</h2>
+    <p>Real Graphic Oregon / Demeter Design PDFs for Netarts, Nestucca, and Tillamook. Warehouse map refresh is ongoing; these packets are what exists today.</p>
+    <div class="packets">
+      <div class="packet">
+        <strong>Netarts Bay</strong>
+        <a href="https://graphicoregon.com/wp-content/uploads/2023/12/Netarts_Bay_Limiting_Factors_Analysis.pdf" target="_blank" rel="noopener">Download PDF</a>
+      </div>
+      <div class="packet">
+        <strong>Upper Nestucca</strong>
+        <a href="https://graphicoregon.com/wp-content/uploads/2023/12/Sediment_Shade_and_Complexity_in_the_Upp.pdf" target="_blank" rel="noopener">Download PDF</a>
+      </div>
+      <div class="packet">
+        <strong>Tillamook Bay CERP</strong>
+        <a href="https://graphicoregon.com/wp-content/uploads/2023/12/Computational_Ecological_Restoration_Pri.pdf" target="_blank" rel="noopener">Download PDF</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="quote">
   <div class="inner">
     <div>
       <p class="kicker">Request a quote</p>
       <h2 class="serif">Basin, question, deadline</h2>
-      <p class="prose">Ask for a sampling and analysis plan. We reply with scope and timeline. Fieldwork follows the agreed scope. Mail to Graphic Oregon, parent of Demeter Design.</p>
+      <p class="prose">Ask for an action plan. We reply with scope and timeline. Fieldwork follows the agreed scope when needed. Mail to Graphic Oregon, parent of Demeter Design.</p>
     </div>
     <form id="quoteForm">
       <div><label for="name">Name</label><input id="name" required autocomplete="name"></div>
@@ -191,10 +221,10 @@ body.sticky-on{padding-bottom:4.75rem}
       <div><label for="basin">Basin or reach</label><input id="basin" required placeholder="e.g. Upper Nestucca, Kilchis, Necanicum"></div>
       <div><label for="need">The question</label>
         <select id="need">
-          <option>Sampling &amp; analysis plan</option>
-          <option>Passage / barrier plan</option>
-          <option>Restoration priority plan</option>
-          <option>Habitat potential screening</option>
+          <option>Action plan</option>
+          <option>Passage plan</option>
+          <option>Priority plan</option>
+          <option>Habitat screening plan</option>
           <option>Other planning scope</option>
         </select>
       </div>
@@ -207,7 +237,7 @@ body.sticky-on{padding-bottom:4.75rem}
 
 <footer>
   <div class="wrap">
-    <span>Demeter Design · sampling &amp; analysis plans</span>
+    <span>Demeter Design · action plans for watershed decisions</span>
     <span>Parent <a href="https://graphicoregon.com/">Graphic Oregon</a> · <a href="../../">Company Soup</a></span>
   </div>
 </footer>
@@ -237,10 +267,10 @@ body.sticky-on{padding-bottom:4.75rem}
     var basin=document.getElementById('basin').value.trim();
     var need=document.getElementById('need').value;
     var notes=document.getElementById('notes').value.trim();
-    var body=['Demeter Design — sampling & analysis plan quote request','',
+    var body=['Demeter Design — action plan quote request','',
       'Name: '+name,'Organization: '+org,'Basin/reach: '+basin,'Need: '+need,
       notes?'Notes: '+notes:'','Please reply with scope and timeline.'].filter(Boolean).join('\n');
-    location.href='mailto:hello@graphicoregon.com?subject='+encodeURIComponent('Demeter Design plan quote — '+basin)+'&body='+encodeURIComponent(body);
+    location.href='mailto:hello@graphicoregon.com?subject='+encodeURIComponent('Demeter Design action plan — '+basin)+'&body='+encodeURIComponent(body);
   });
 })();
 </script>
