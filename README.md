@@ -10,10 +10,8 @@ Live: https://caradmico.github.io/company-soup/
 - [Signal Shelf](brands/signal-shelf/) — hone invent ([sample-monday.md](brands/signal-shelf/sample-monday.md); Quiet Cut is a redirect only)
 - [Asterism Lab](brands/asterism-lab/) — space ([Orion sample PDF](brands/asterism-lab/sample-orion-card.pdf))
 - [Far Field Media](brands/far-field-media/) — videography (sample clip + $450 / 60–90s)
-
-## Queued stubs (Marketer names, not fake-complete)
-- [Coast Desk](brands/coast-desk/) — journalism / Pioneer
-- [Lane Sites](brands/lane-sites/) — website lane (bread only; no invented client-site cash)
+- [Coast Desk](brands/coast-desk/) — journalism ([Placement Note 001](brands/coast-desk/placement-note-001.html); Pioneer stays Pioneer)
+- [Lane Sites](brands/lane-sites/) — web lane bread ([keep-list](brands/lane-sites/keep-list.html); no client-site cash)
 
 Netarts Systems / Estuary Ink / Quiet Cut stay demoted redirects.
 

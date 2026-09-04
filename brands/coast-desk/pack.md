@@ -1,22 +1,24 @@
 # Coast Desk
 
-Lane: Journalism / Pioneer · queued stub
+Lane: Journalism · Graphic Oregon child
 
 ## One-liner
-Coastal correspondence desk that can place work — Pioneer, Hipfish, Gazette, Signal — without owning those papers.
+Coastal correspondence desk that files into existing papers — Pioneer stays Pioneer.
 
 ## Brief
-Lock **Coast Desk** as the Graphic Oregon journalism stub. Marketer name. Pioneer stays Pioneer. Not a newsroom we invent.
+Lock Coast Desk as the Graphic Oregon journalism child. One subject, one placement-ready note, one existing paper. Not a newsroom we invent. Not Pioneer-as-employer. Not a CMS.
 
 ## Done-when
-Stranger can open this stub and see the lane is queued, with Pioneer as placement not property.
+Stranger opens Note 001, understands the offer, and can reach the Pioneer author path as placement — not property.
 
 ## BOM
-- This stub page
-- Pioneer author page (existing)
+- Brand page on company-soup Pages
+- placement-note-001 (sample artifact)
+- Pioneer author page (craft proof, not ownership)
 - Parent: Graphic Oregon
 
 ## Steps
-1. Keep as queued stub
-2. Do not launch a CMS or a fake paper
-3. Next real piece can wear this desk name when extracted
+1. Keep Note 001 as the stranger artifact
+2. File only to papers that already exist
+3. Do not launch a CMS or a fake paper
+4. Do not brand this as Pioneer
