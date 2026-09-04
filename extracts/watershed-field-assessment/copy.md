@@ -1,7 +1,7 @@
 # Watershed Field Assessment — firm copy (quote-only)
 
 **Voice:** trustworthy, calm, competent. Professional craft. Not merch. Not process jargon. Not a soup-card.  
-**Commercial:** quote-only. No cart. Ads off.  
+**Commercial:** quote-only. Ads off.  
 **Standing name:** Demeter Design (env KEEP under Graphic Oregon). Personal Cara off the face.
 
 ---
@@ -42,8 +42,8 @@ Watershed councils, county planners, and agency partners who need assessment and
 
 ## How engagement works
 1. You describe the reach, the question, and the deadline.  
-2. We reply with scope, timeline, and a fixed quote.  
-3. Fieldwork and delivery follow the agreed scope — no cart, no surprise SKUs.
+2. We reply with scope and timeline.  
+3. Fieldwork and delivery follow the agreed scope.
 
 ---
 
