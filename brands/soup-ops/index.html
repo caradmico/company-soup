@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Soup Ops · Venture doors</title>
+<meta name="description" content="Active Company Soup venture doors — status and last update. Bookmark this page.">
+<style>
+:root{--ink:#0f1c24;--paper:#f6f1e8;--teal:#1f6f78;--gold:#c4a35a;--line:#d5cbba;--cream:#fffaf2}
+*{box-sizing:border-box}
+body{margin:0;font:17px/1.55 system-ui,sans-serif;color:var(--ink);background:var(--paper)}
+header,main,footer{max-width:52rem;margin:0 auto;padding:1.25rem 1.1rem}
+header{border-bottom:3px solid var(--teal)}
+.tag{color:var(--teal);font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;font-weight:700}
+h1{margin:.2rem 0 .4rem;font-size:1.7rem}
+h2{font-size:1.1rem;border-left:4px solid var(--gold);padding-left:.5rem;margin:1.4rem 0 .6rem}
+a{color:var(--teal)}
+.note{font-size:.9rem;color:#5a6570}
+.lane{font-size:.78rem;color:var(--gold);font-weight:700;text-transform:uppercase}
+.stamp{font-size:.82rem;color:#5a6570;margin:.4rem 0 0}
+.table-wrap{overflow-x:auto;background:var(--cream);border:1px solid var(--line);border-radius:10px}
+table{width:100%;border-collapse:collapse;font-size:.95rem}
+th,td{text-align:left;padding:.65rem .75rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.75rem;letter-spacing:.05em;text-transform:uppercase;color:var(--teal);background:#fff}
+tr:last-child td{border-bottom:0}
+tr:hover td{background:#fff}
+.name{font-weight:700}
+.meta{display:block;font-size:.82rem;color:#5a6570;font-weight:400;margin-top:.15rem}
+.badge{display:inline-block;border-radius:999px;padding:.12rem .5rem;font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;border:1px solid var(--line)}
+.badge.active{background:var(--teal);color:#fff;border-color:var(--teal)}
+.badge.parent{background:var(--gold);color:#1a1508;border-color:var(--gold)}
+.badge.founder{background:var(--cream);color:var(--teal);border-color:var(--teal)}
+.badge.redirect,.badge.seed,.badge.paused{background:#fff;color:#5a6570}
+.kind{font-size:.78rem;color:#5a6570}
+.links a{white-space:nowrap}
+details.redirects{margin:1rem 0;background:var(--cream);border:1px solid var(--line);border-radius:10px;padding:.7rem 1rem}
+details.redirects summary{cursor:pointer;font-weight:600;color:var(--teal)}
+details.redirects .table-wrap{margin-top:.7rem;border:0;padding:0}
+.err{background:#fff;border:1px solid var(--line);border-radius:10px;padding:1rem;color:#5a6570}
+</style></head><body>
+<header>
+<p class="tag">Soup Ops · Graphic Oregon</p>
+<h1>Soup Ops · Venture doors</h1>
+<p>Active soup doors with status and last update. Bookmark this page — no chat scroll.</p>
+<p class="note"><a href="../../">← Company Soup cooker</a></p>
+</header>
+<main>
+<p class="stamp" id="stamp">Loading doors…</p>
+<section>
+<h2>Watch list</h2>
+<div id="watch"></div>
+</section>
+<section>
+<div id="redirects"></div>
+</section>
+</main>
+<footer class="note">Parent stays Graphic Oregon. Redirects are not active faces. No Three.js CONTINUE.</footer>
+<script>
+const FALLBACK = {
+  "generatedAt": "2026-09-04T12:53:04Z",
+  "doors": [
+    {"id":"graphic-oregon","name":"Graphic Oregon","lane":"company-maker","kind":"parent","status":"active","lastUpdate":"2026-09-04","lastUpdateNote":"cooker live on Pages","href":"../../","external":"https://graphicoregon.com/"},
+    {"id":"demeter-design","name":"Demeter Design","lane":"env","kind":"active","status":"active","lastUpdate":"2026-09-04","lastUpdateNote":"brand page live","href":"../demeter-design/","external":"https://demeterdesign.net/"},
+    {"id":"cold-contour","name":"Cold Contour","lane":"art","kind":"active","status":"active","lastUpdate":"2026-09-04","lastUpdateNote":"Shore Contour print/PDF live","href":"../cold-contour/"},
+    {"id":"signal-shelf","name":"Signal Shelf","lane":"hone invent","kind":"active","status":"active","lastUpdate":"2026-09-04","lastUpdateNote":"$29 Monday brief demo","href":"../signal-shelf/"},
+    {"id":"asterism-lab","name":"Asterism Lab","lane":"space","kind":"active","status":"active","lastUpdate":"2026-09-04","lastUpdateNote":"$49 educator sky pack","href":"../asterism-lab/"},
+    {"id":"far-field-media","name":"Far Field Media","lane":"videography","kind":"active","status":"active","lastUpdate":"2026-09-04","lastUpdateNote":"sample clip + $450 rate","href":"../far-field-media/"},
+    {"id":"coast-desk","name":"Coast Desk","lane":"journalism","kind":"active","status":"active","lastUpdate":"2026-09-04","lastUpdateNote":"Placement Note 001 + bylines","href":"../coast-desk/"},
+    {"id":"lane-sites","name":"Lane Sites","lane":"web bread","kind":"active","status":"active","lastUpdate":"2026-09-04","lastUpdateNote":"keep-list live","href":"../lane-sites/"},
+    {"id":"watershed","name":"Watershed Field Assessment","lane":"field","kind":"founder","status":"active","lastUpdate":"2026-09-04","lastUpdateNote":"featured Demeter quote-only","href":"../../businesses/watershed/"},
+    {"id":"fine-art","name":"Fine Art gallery","lane":"gallery","kind":"founder","status":"active","lastUpdate":"2026-09-04","lastUpdateNote":"Neahkahnie Atelier · dark exhibition","href":"../../businesses/fine-art/"},
+    {"id":"netarts-systems","name":"Netarts Systems","lane":"env","kind":"redirect","status":"redirect","lastUpdate":"2026-09-04","lastUpdateNote":"redirect → Demeter Design","href":"../netarts-systems/"},
+    {"id":"estuary-ink","name":"Estuary Ink","lane":"art","kind":"redirect","status":"redirect","lastUpdate":"2026-09-04","lastUpdateNote":"redirect → Cold Contour","href":"../estuary-ink/"},
+    {"id":"quiet-cut","name":"Quiet Cut","lane":"hone invent","kind":"redirect","status":"redirect","lastUpdate":"2026-09-04","lastUpdateNote":"redirect → Signal Shelf","href":"../quiet-cut/"}
+  ]
+};
+
+function esc(s){
+  return String(s == null ? "" : s)
+    .replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+}
+
+function badgeClass(door){
+  if(door.kind === "parent" && door.status === "active") return "parent";
+  if(door.kind === "founder" && door.status === "active") return "founder";
+  return door.status || "active";
+}
+
+function links(door){
+  const bits = [];
+  if(door.href) bits.push('<a href="'+esc(door.href)+'">Open door →</a>');
+  if(door.external){
+    let host = door.external.replace(/^https?:\/\//,"").replace(/\/$/,"");
+    bits.push('<a href="'+esc(door.external)+'" rel="noopener">'+esc(host)+'</a>');
+  }
+  return bits.join(" · ");
+}
+
+function rows(doors){
+  return doors.map(function(d){
+    return "<tr>"
+      + "<td><span class=\"name\">"+esc(d.name)+"</span><span class=\"meta\">"+esc(d.lastUpdateNote||"")+"</span></td>"
+      + "<td class=\"lane\">"+esc(d.lane)+"</td>"
+      + "<td><span class=\"badge "+esc(badgeClass(d))+"\">"+esc(d.status)+"</span> <span class=\"kind\">"+esc(d.kind)+"</span></td>"
+      + "<td>"+esc(d.lastUpdate)+"</td>"
+      + "<td class=\"links\">"+links(d)+"</td>"
+      + "</tr>";
+  }).join("");
+}
+
+function table(doors){
+  return "<div class=\"table-wrap\"><table>"
+    + "<thead><tr><th>Door</th><th>Lane</th><th>Status</th><th>Last update</th><th>Open</th></tr></thead>"
+    + "<tbody>"+rows(doors)+"</tbody></table></div>";
+}
+
+function render(data, source){
+  const doors = (data && data.doors) || [];
+  const watch = doors.filter(function(d){ return d.kind !== "redirect"; });
+  const redirs = doors.filter(function(d){ return d.kind === "redirect"; });
+  const when = data.generatedAt ? data.generatedAt.replace("T"," ").replace("Z"," UTC") : "";
+  document.getElementById("stamp").textContent =
+    "Updated "+(when || "—")+" · "+watch.length+" watch · "+redirs.length+" redirect"
+    + (source === "fallback" ? " · local fallback" : "");
+  document.getElementById("watch").innerHTML = watch.length
+    ? table(watch)
+    : "<p class=\"err\">No active doors in the inventory.</p>";
+  document.getElementById("redirects").innerHTML = redirs.length
+    ? "<details class=\"redirects\"><summary>Redirects (demoted — not active faces)</summary>"
+      + table(redirs) + "</details>"
+    : "";
+}
+
+async function load(){
+  try{
+    const r = await fetch("doors.json", { cache: "no-store" });
+    if(!r.ok) throw new Error("doors.json "+r.status);
+    const data = await r.json();
+    if(!data || !Array.isArray(data.doors)) throw new Error("bad doors.json");
+    render(data, "fetch");
+  }catch(err){
+    render(FALLBACK, "fallback");
+  }
+}
+load();
+</script>
+</body></html>

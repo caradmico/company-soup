@@ -17,4 +17,6 @@ Featured founder firm: [Watershed Field Assessment](businesses/watershed/) — D
 
 Netarts Systems / Estuary Ink / Quiet Cut stay demoted redirects.
 
+Ops: [Soup Ops](brands/soup-ops/) — active doors, status, last update.
+
 Engine: idea → locked brief → done-when → BOM/path → ship steps. No Three.js CONTINUE.

@@ -1,0 +1,137 @@
+{
+  "generatedAt": "2026-09-04T12:53:04Z",
+  "doors": [
+    {
+      "id": "graphic-oregon",
+      "name": "Graphic Oregon",
+      "lane": "company-maker",
+      "kind": "parent",
+      "status": "active",
+      "lastUpdate": "2026-09-04",
+      "lastUpdateNote": "cooker live on Pages",
+      "href": "../../",
+      "external": "https://graphicoregon.com/"
+    },
+    {
+      "id": "demeter-design",
+      "name": "Demeter Design",
+      "lane": "env",
+      "kind": "active",
+      "status": "active",
+      "lastUpdate": "2026-09-04",
+      "lastUpdateNote": "brand page live",
+      "href": "../demeter-design/",
+      "external": "https://demeterdesign.net/"
+    },
+    {
+      "id": "cold-contour",
+      "name": "Cold Contour",
+      "lane": "art",
+      "kind": "active",
+      "status": "active",
+      "lastUpdate": "2026-09-04",
+      "lastUpdateNote": "Shore Contour print/PDF live",
+      "href": "../cold-contour/"
+    },
+    {
+      "id": "signal-shelf",
+      "name": "Signal Shelf",
+      "lane": "hone invent",
+      "kind": "active",
+      "status": "active",
+      "lastUpdate": "2026-09-04",
+      "lastUpdateNote": "$29 Monday brief demo",
+      "href": "../signal-shelf/"
+    },
+    {
+      "id": "asterism-lab",
+      "name": "Asterism Lab",
+      "lane": "space",
+      "kind": "active",
+      "status": "active",
+      "lastUpdate": "2026-09-04",
+      "lastUpdateNote": "$49 educator sky pack",
+      "href": "../asterism-lab/"
+    },
+    {
+      "id": "far-field-media",
+      "name": "Far Field Media",
+      "lane": "videography",
+      "kind": "active",
+      "status": "active",
+      "lastUpdate": "2026-09-04",
+      "lastUpdateNote": "sample clip + $450 rate",
+      "href": "../far-field-media/"
+    },
+    {
+      "id": "coast-desk",
+      "name": "Coast Desk",
+      "lane": "journalism",
+      "kind": "active",
+      "status": "active",
+      "lastUpdate": "2026-09-04",
+      "lastUpdateNote": "Placement Note 001 + bylines",
+      "href": "../coast-desk/"
+    },
+    {
+      "id": "lane-sites",
+      "name": "Lane Sites",
+      "lane": "web bread",
+      "kind": "active",
+      "status": "active",
+      "lastUpdate": "2026-09-04",
+      "lastUpdateNote": "keep-list live",
+      "href": "../lane-sites/"
+    },
+    {
+      "id": "watershed",
+      "name": "Watershed Field Assessment",
+      "lane": "field",
+      "kind": "founder",
+      "status": "active",
+      "lastUpdate": "2026-09-04",
+      "lastUpdateNote": "featured Demeter quote-only",
+      "href": "../../businesses/watershed/"
+    },
+    {
+      "id": "fine-art",
+      "name": "Fine Art gallery",
+      "lane": "gallery",
+      "kind": "founder",
+      "status": "active",
+      "lastUpdate": "2026-09-04",
+      "lastUpdateNote": "Neahkahnie Atelier · dark exhibition",
+      "href": "../../businesses/fine-art/"
+    },
+    {
+      "id": "netarts-systems",
+      "name": "Netarts Systems",
+      "lane": "env",
+      "kind": "redirect",
+      "status": "redirect",
+      "lastUpdate": "2026-09-04",
+      "lastUpdateNote": "redirect → Demeter Design",
+      "href": "../netarts-systems/"
+    },
+    {
+      "id": "estuary-ink",
+      "name": "Estuary Ink",
+      "lane": "art",
+      "kind": "redirect",
+      "status": "redirect",
+      "lastUpdate": "2026-09-04",
+      "lastUpdateNote": "redirect → Cold Contour",
+      "href": "../estuary-ink/"
+    },
+    {
+      "id": "quiet-cut",
+      "name": "Quiet Cut",
+      "lane": "hone invent",
+      "kind": "redirect",
+      "status": "redirect",
+      "lastUpdate": "2026-09-04",
+      "lastUpdateNote": "redirect → Signal Shelf",
+      "href": "../quiet-cut/"
+    }
+  ]
+}
