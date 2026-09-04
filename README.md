@@ -4,6 +4,8 @@
 
 Live: https://caradmico.github.io/company-soup/
 
+Featured founder firm: [Watershed Field Assessment](businesses/watershed/) — Demeter Design, quote-only coastal field assessment.
+
 ## Children (stranger door)
 - [Demeter Design](brands/demeter-design/) — env (real contracts; [demeterdesign.net](https://demeterdesign.net/))
 - [Cold Contour](brands/cold-contour/) — art (prefer this Marketer name; Estuary Ink is a redirect only)
