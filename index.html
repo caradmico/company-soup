@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Company Soup · Graphic Oregon</title>
-  <meta name="description" content="Graphic Oregon makes companies. Paste one idea → locked brief, done-when, BOM/path, first ship steps.">
+  <title>Company Soup · Printify for making things</title>
+  <meta name="description" content="Paste an idea + assets → locked brief, BOM, assembly path, Printify-class prototype order. Thermometer-cup demo.">
   <style>
-    :root { --ink:#0f1c24; --paper:#f6f1e8; --teal:#1f6f78; --gold:#c4a35a; --line:#d5cbba; --cream:#fffaf2; }
+    :root { --ink:#0f1c24; --paper:#f6f1e8; --teal:#1f6f78; --gold:#c4a35a; --line:#d5cbba; --cream:#fffaf2; --hot:#c45c26; }
     * { box-sizing: border-box; }
     body { margin:0; font:17px/1.55 system-ui,-apple-system,sans-serif; color:var(--ink); background:var(--paper); }
-    header,main,footer { max-width:46rem; margin:0 auto; padding:1.35rem 1.15rem; }
+    header,main,footer { max-width:48rem; margin:0 auto; padding:1.35rem 1.15rem; }
     header { border-bottom:3px solid var(--teal); }
     .tag { color:var(--teal); font-size:.78rem; letter-spacing:.06em; text-transform:uppercase; font-weight:700; }
-    h1 { margin:.2rem 0 .4rem; font-size:1.75rem; }
+    h1 { margin:.2rem 0 .4rem; font-size:1.7rem; }
     a { color:var(--teal); }
     .cards { display:grid; gap:.75rem; margin:1rem 0; }
     @media(min-width:640px){ .cards { grid-template-columns:1fr 1fr; } }
@@ -25,9 +25,10 @@
     .picks button { border:1px solid var(--line); background:var(--cream); padding:.4rem .65rem; border-radius:999px; cursor:pointer; font:inherit; font-size:.88rem; }
     .picks button:hover,.picks button.active { border-color:var(--teal); background:#e7f2f3; }
     label { display:block; font-size:.85rem; font-weight:600; margin:0 0 .3rem; }
-    textarea { width:100%; min-height:5.2rem; padding:.65rem .75rem; border:1px solid var(--line); border-radius:8px; font:inherit; background:#fff; }
+    textarea, input { width:100%; padding:.65rem .75rem; border:1px solid var(--line); border-radius:8px; font:inherit; background:#fff; }
+    textarea { min-height:4.2rem; }
     .actions { display:flex; flex-wrap:wrap; gap:.55rem; margin-top:.7rem; }
-    .actions button { background:var(--teal); color:#fff; border:0; padding:.6rem 1rem; border-radius:8px; font:600 .95rem system-ui,sans-serif; cursor:pointer; }
+    .actions button, .actions a.btn { background:var(--teal); color:#fff; border:0; padding:.6rem 1rem; border-radius:8px; font:600 .95rem system-ui,sans-serif; cursor:pointer; text-decoration:none; display:inline-block; }
     .actions button.secondary { background:transparent; color:var(--teal); border:1px solid var(--teal); }
     #out { display:none; margin-top:1.1rem; background:#fff; border:1px solid var(--line); border-radius:10px; padding:1rem; }
     #out.visible { display:block; }
@@ -36,161 +37,236 @@
     #out pre { white-space:pre-wrap; background:var(--cream); border:1px solid var(--line); padding:.7rem; border-radius:8px; font-size:.85rem; }
     footer { font-size:.85rem; color:#5a6570; border-top:1px solid var(--line); }
     .note { font-size:.9rem; color:#5a6570; }
+    .demo { display:grid; gap:1rem; align-items:center; margin:1rem 0; }
+    @media(min-width:700px){ .demo { grid-template-columns: 180px 1fr; } }
+    .cup-wrap { position:relative; width:160px; height:200px; margin:0 auto; }
+    .cup { position:absolute; left:30px; bottom:10px; width:100px; height:130px; border:4px solid var(--ink); border-top:0; border-radius:0 0 14px 14px; background:linear-gradient(#f0e6d4 0%, #c4a35a 55%, #8b6914 100%); }
+    .cup::after { content:""; position:absolute; right:-22px; top:18px; width:18px; height:50px; border:4px solid var(--ink); border-left:0; border-radius:0 10px 10px 0; }
+    .thermo { position:absolute; left:8px; top:20px; width:22px; height:150px; }
+    .thermo .stem { position:absolute; left:7px; top:0; width:8px; height:120px; background:#ddd; border:2px solid var(--ink); border-radius:6px; overflow:hidden; }
+    .thermo .merc { position:absolute; left:0; bottom:0; width:100%; height:62%; background:var(--hot); transition:height .4s; }
+    .thermo .bulb { position:absolute; left:1px; bottom:0; width:20px; height:20px; background:var(--hot); border:2px solid var(--ink); border-radius:50%; }
+    .proto-step { background:#e7f2f3; border:1px dashed var(--teal); border-radius:10px; padding:.85rem; margin:.7rem 0; }
   </style>
 </head>
 <body>
   <header>
-    <p class="tag">Company Soup v0.1 · reconcile</p>
-    <h1>A parent company that makes companies</h1>
-    <p><strong>Graphic Oregon</strong> stays Graphic Oregon — the parent company-maker. Children use real Marketer names where they exist. Engine cooks one idea into a ship path. Not a Three.js CONTINUE. Not a new bot.</p>
+    <p class="tag">Company Soup · Printify for making things</p>
+    <h1>Idea + assets → prototype order</h1>
+    <p><strong>Graphic Oregon</strong> is the parent company-maker. This cooker is the engine: paste an idea, get a locked brief, a BOM through real catalogs/suppliers, an assembly path, and a concrete Printify-class next step to order or quote a prototype. Not a new bot. Not Three.js CONTINUE.</p>
   </header>
   <main>
     <section>
-      <h2>Parent</h2>
-      <div class="card">
-        <h3>Graphic Oregon</h3>
-        <p>Company that makes companies. <a href="https://graphicoregon.com/" target="_blank" rel="noopener">graphicoregon.com</a>. Not renamed into a commercial extract.</p>
+      <h2>Thermometer-cup demo</h2>
+      <p class="note">Guinea-pig class idea that proves the engine. Not a food brand — a make-anything path.</p>
+      <div class="demo">
+        <div class="cup-wrap" aria-hidden="true">
+          <div class="thermo"><div class="stem"><div class="merc" id="merc"></div></div><div class="bulb"></div></div>
+          <div class="cup"></div>
+        </div>
+        <div>
+          <p><strong>Idea:</strong> coffee cup with an outside thermometer so you can see drink temp without sipping.</p>
+          <p>Cook it below (sample is preloaded). You get brief → BOM → assembly → prototype order path.</p>
+          <div class="actions">
+            <button type="button" id="runDemo">Cook thermometer-cup</button>
+          </div>
+        </div>
       </div>
     </section>
 
     <section>
-      <h2>Child turnkey packs</h2>
-      <div class="cards">
-        <div class="card">
-          <div class="lane">Environmental research</div>
-          <h3><a href="brands/demeter-design/">Demeter Design</a></h3>
-          <p>Agency-ready habitat / sediment / limiting-factor assessments + map packages. Real contracts (BLM / ODEQ-class). Path: <a href="http://demeterdesign.net/" target="_blank" rel="noopener">demeterdesign.net</a>.</p>
-        </div>
-        <div class="card">
-          <div class="lane">Art · conditional</div>
-          <h3><a href="brands/cold-contour/">Cold Contour</a></h3>
-          <p>Coastal + technical prints as art objects. Name ready; sellable path provisional.</p>
-        </div>
-        <div class="card">
-          <div class="lane">Hone invent</div>
-          <h3><a href="brands/signal-shelf/">Signal Shelf</a></h3>
-          <p>Technical reading → one-page operator brief. Fillable demo + <a href="brands/signal-shelf/sample-monday.md">sample-monday.md</a> — not claimed as current cash.</p>
-        </div>
-        <div class="card">
-          <div class="lane">Space research</div>
-          <h3><a href="brands/asterism-lab/">Asterism Lab</a></h3>
-          <p>Educator sky packs. Open the <a href="brands/asterism-lab/sample-orion-card.pdf">Orion sample PDF</a>. Not a NASA contractor.</p>
-        </div>
-        <div class="card">
-          <div class="lane">Videography</div>
-          <h3><a href="brands/far-field-media/">Far Field Media</a></h3>
-          <p>Coastal field films. Watch the <a href="brands/far-field-media/">sample clip</a> — $450 / 60–90s + order path.</p>
-        </div>
-        <div class="card">
-          <div class="lane">Journalism</div>
-          <h3><a href="brands/coast-desk/">Coast Desk</a></h3>
-          <p>Correspondence for existing papers. Open <a href="brands/coast-desk/placement-note-001.html">Note 001</a>. Pioneer stays Pioneer.</p>
-        </div>
-        <div class="card">
-          <div class="lane">Web · bread</div>
-          <h3><a href="brands/lane-sites/">Lane Sites</a></h3>
-          <p>Brand the web lane. Open the <a href="brands/lane-sites/keep-list.html">keep-list</a>. No invented client-site cash.</p>
-        </div>
-      </div>
-      <p class="note">Netarts Systems is demoted — not the env stranger face. Use Demeter Design.</p>
-    </section>
-
-    <section>
-      <h2>Engine · idea → path</h2>
-      <p class="tag">Samples</p>
+      <h2>Engine · idea → brief → BOM → prototype</h2>
+      <p class="tag">Samples (real GO money lanes + make path)</p>
       <div class="picks" id="picks"></div>
-      <label for="idea">Or paste one idea</label>
+      <label for="idea">Idea</label>
       <textarea id="idea" placeholder="One sentence. What should exist?"></textarea>
+      <label for="assets" style="margin-top:.7rem">Assets you already have (optional)</label>
+      <input id="assets" placeholder="e.g. SVG art, CAD, photos, existing PDF report, blank SKU…">
       <div class="actions">
-        <button type="button" id="cook">Cook the brief</button>
+        <button type="button" id="cook">Cook prototype path</button>
         <button type="button" class="secondary" id="copy">Copy locked pack</button>
         <button type="button" class="secondary" id="download">Download .md</button>
       </div>
       <div id="out" aria-live="polite"></div>
     </section>
+
+    <section>
+      <h2>Guinea pigs · real GO money products</h2>
+      <p class="note">Framed as separate founders (idea + assets → standalone door). Not concept theater.</p>
+      <div class="cards">
+        <div class="card">
+          <div class="lane">Field research · quote</div>
+          <h3><a href="extracts/watershed-cluster/">Watershed / Demeter</a></h3>
+          <p>Real habitat/sediment contracts. <strong>Quote only</strong> — field work ~$30k class. No cheap sticker SKU.</p>
+        </div>
+        <div class="card">
+          <div class="lane">Prints / merch</div>
+          <h3><a href="https://sassmeharder.com/" target="_blank" rel="noopener">Sassmeharder</a></h3>
+          <p>Live print/apparel money surface. Art extract points here — not a rival extract print brand.</p>
+        </div>
+        <div class="card">
+          <div class="lane">Art child</div>
+          <h3><a href="brands/cold-contour/">Cold Contour</a></h3>
+          <p>Fine-art PDF/print order under GO. Apparel stays Sassme.</p>
+        </div>
+        <div class="card">
+          <div class="lane">Video</div>
+          <h3><a href="brands/far-field-media/">Far Field Media</a></h3>
+          <p>Coastal field films — sample clip + rate on the door.</p>
+        </div>
+        <div class="card">
+          <div class="lane">Space / edu</div>
+          <h3><a href="brands/asterism-lab/">Asterism Lab</a></h3>
+          <p>Educator packs. <strong>Do not</strong> sell Steve IAU remap maps.</p>
+        </div>
+        <div class="card">
+          <div class="lane">Sky proof only</div>
+          <h3><a href="extracts/sky-brief/">Sky brief</a></h3>
+          <p>IAU proposal is a proof link — <strong>not for sale</strong>.</p>
+        </div>
+        <div class="card">
+          <div class="lane">Web / journalism</div>
+          <h3><a href="brands/lane-sites/">Lane Sites</a> · <a href="brands/coast-desk/">Coast Desk</a></h3>
+          <p>Bread lane + placement notes — KEEP doors.</p>
+        </div>
+        <div class="card">
+          <div class="lane">Tech digest</div>
+          <h3><a href="extracts/nano-bench/">Nano bench</a></h3>
+          <p>Open-source nanoactuator measurement PDF on GO.</p>
+        </div>
+        <div class="card">
+          <div class="lane">Hone</div>
+          <h3><a href="brands/signal-shelf/">Signal Shelf</a></h3>
+          <p>Operator one-pager demo — hone invent.</p>
+        </div>
+        <div class="card">
+          <div class="lane">Art extract</div>
+          <h3><a href="extracts/art-wall/">Art wall</a></h3>
+          <p>Prints → Sassmeharder. Commissions → GO mailto.</p>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
-    <p>Source: <a href="https://github.com/caradmico/company-soup">caradmico/company-soup</a> · Parent: Graphic Oregon · Names: Marketer PR 36</p>
+    <p>Source: <a href="https://github.com/caradmico/company-soup">caradmico/company-soup</a> · Parent: Graphic Oregon · Engine: Printify-for-making-things</p>
   </footer>
   <script>
+    const THERMO = "Coffee cup with an outside thermometer so you can read drink temperature without sipping";
     const CATALOGS = {
-      pages: { id:"public-static-pages", name:"Public static Pages",
-        when:["page","kit","tool","template","site","form","brand","studio","pack"],
-        bom:["Public repo or Pages folder","Smallest stranger page","README with live URL"],
-        steps:["Write one-job page","Push public","Confirm HTTP 200","Claim with public URL"] },
-      research: { id:"demeter-env", name:"Demeter Design / env reports",
-        when:["research","habitat","watershed","sediment","blm","odeq","env","demeter","netarts","coastal"],
-        bom:["Demeter Design brand pack","Proof PDF/map on GO /research/ when public","demeterdesign.net as domain path","Parent link to Graphic Oregon"],
-        steps:["Open Demeter Design pack","Point to one real assessment proof","Do not invent client website cash","Ship stranger-facing offer copy only"] },
-      art: { id:"cold-contour", name:"Cold Contour art",
-        when:["art","print","contour","gouache","graphic drop","night contour"],
-        bom:["Cold Contour brand pack","One art sample path","Optional print surface later — not apparel-as-product"],
-        steps:["Publish brand page","Attach one sample","Hold apparel SKU as the company"] },
-      space: { id:"asterism-lab", name:"Asterism Lab space",
-        when:["space","asterism","staris","iau","sky","orbit","constellation"],
-        bom:["Asterism Lab brand pack","Orion sample PDF","Cite StarIS / IAU — do not rebuild"],
-        steps:["Open the Orion sample","Cite existing proofs only","Do not invent NASA employment"] },
-      video: { id:"far-field", name:"Far Field Media",
-        when:["video","clip","film","field tape","videography","reel"],
-        bom:["Far Field Media door","sample-coastal-cut.mp4","$450 / 60–90s order path"],
-        steps:["Watch the sample clip","Quote the posted rate","Do not invent client commercials"] },
-      hone: { id:"signal-shelf", name:"Signal Shelf hone",
-        when:["brief","digest","paper","operator","signal","shelf","weekly"],
-        bom:["Signal Shelf demo pack","sample-monday.md","Fillable one-pager"],
-        steps:["Open the sample brief","Do not claim as Cara cash yet","Iterate name→offer→path"] },
-      desk: { id:"coast-desk", name:"Coast Desk journalism",
-        when:["journalist","journalism","pioneer","correspondence","placement","gazette","hipfish"],
-        bom:["Coast Desk brand pack","Placement Note 001","Pioneer author path as placement not property"],
-        steps:["Open Note 001","File only to existing papers","Do not invent a masthead"] },
-      lane: { id:"lane-sites", name:"Lane Sites bread",
-        when:["lane sites","keep-list","keep list","child door","bread lane"],
-        bom:["Lane Sites keep-list","Live GO / Soup URLs","Door kit only for named GO children"],
-        steps:["Open the keep-list","Refuse client-site cash","Cook a soup card first"] },
-      mill: { id:"mill-judgment", name:"Mill / judgment lock",
-        when:["agent","bot","workflow","factory","seat","ops"],
-        bom:["Locked brief","Judgment prior","Existing seats only"],
-        steps:["Fill prior","No new bot","Stranger-usable artifact"] }
+      make: {
+        id:"printify-make",
+        name:"Printify-class make path",
+        when:["cup","mug","thermometer","prototype","hardware","gadget","product","physical","merch","printify","make"],
+        bom:[
+          "Blank vessel — Printify mug / tumbler catalog (or local ceramic blank)",
+          "External thermometer — DigiKey / Mouser dial or digital stick-on probe (search: adhesive thermometer strip OR panel meter)",
+          "Mount — McMaster-Carr adhesive foam tape / silicone sleeve / hose clamp as fits",
+          "Art / dial face — SVG or PNG (your assets field)",
+          "Optional sleeve print — Printify or local print shop"
+        ],
+        assemble:[
+          "Confirm cup OD and thermometer footprint",
+          "Print or buy blank cup",
+          "Attach thermometer on outside wall (not in liquid path)",
+          "Calibrate with hot/cold water; mark safe band",
+          "Photograph prototype for listing"
+        ],
+        prototype:{
+          label:"Concrete next step · Printify-class prototype",
+          detail:"Open Printify (or equivalent POD) mug catalog → create unpublished draft with your cup art → order 1 sample to your address. In parallel, cart one external thermometer from DigiKey/Mouser and foam tape from McMaster. Assemble on receipt. Quote path if custom ceramic: email hello@graphicoregon.com with this pack.",
+          links:[
+            {lab:"Printify products", url:"https://printify.com/app/products"},
+            {lab:"DigiKey thermometer search", url:"https://www.digikey.com/en/products/filter/temperature-sensors"},
+            {lab:"McMaster adhesive tape", url:"https://www.mcmaster.com/products/adhesive-tapes/"}
+          ]
+        }
+      },
+      research: {
+        id:"demeter-field",
+        name:"Demeter / watershed field (quote)",
+        when:["watershed","habitat","sediment","blm","field","demeter","assessment"],
+        bom:["Scope note","Existing GO research proofs","Crew/GIS days — quote, not sticker"],
+        assemble:["Request quote only — field work ~$30k class","No fake $2k digital SKU"],
+        prototype:{label:"Next step", detail:"Open watershed extract → Request quote mailto. Do not publish a sticker price.", links:[{lab:"Watershed extract", url:"extracts/watershed-cluster/"}]}
+      },
+      art: {
+        id:"sassme-prints",
+        name:"Sassmeharder prints",
+        when:["art","print","tee","apparel","sassme","merch"],
+        bom:["Art file","Sassmeharder / Printify blank"],
+        assemble:["Route prints to Sassmeharder — not a new extract print brand"],
+        prototype:{label:"Next step", detail:"Upload art to Sassme/Printify draft; order one sample.", links:[{lab:"Sassmeharder", url:"https://sassmeharder.com/"}]}
+      },
+      pages: {
+        id:"public-static-pages",
+        name:"Public static Pages",
+        when:["page","kit","site","brand","door"],
+        bom:["Public repo/Pages","One-job HTML"],
+        assemble:["Ship stranger door","HTTP 200","Claim URL"],
+        prototype:{label:"Next step", detail:"Push a one-pager under company-soup and confirm 200.", links:[{lab:"Company Soup", url:"https://caradmico.github.io/company-soup/"}]}
+      }
     };
     const SAMPLES = [
-      "A Demeter Design habitat assessment offer page strangers can buy from",
-      "A Cold Contour print drop with one live sample",
-      "An Asterism Lab sky-mapping note from the IAU proposal",
-      "A Far Field Media 90-second field cut with a price",
-      "A Coast Desk placement note for an existing paper",
-      "A Lane Sites keep-list for Graphic Oregon children",
-      "A Signal Shelf one-pager from a technical paper",
-      "A judgment prior before any agent runs"
+      THERMO,
+      "Watershed habitat assessment for a council — quote field work",
+      "Art print drop sold on Sassmeharder",
+      "Far Field Media 90-second coastal cut",
+      "Asterism educator pack (not an IAU remap map for sale)"
     ];
     function pickCatalog(idea){
       const t=idea.toLowerCase();
       const scores=Object.values(CATALOGS).map(c=>({c,n:c.when.reduce((a,w)=>a+(t.includes(w)?1:0),0)}));
       scores.sort((a,b)=>b.n-a.n);
-      return scores[0].n>0?scores[0].c:CATALOGS.pages;
+      return scores[0].n>0?scores[0].c:CATALOGS.make;
     }
-    function slugTitle(idea){ const c=idea.replace(/\s+/g," ").trim(); const s=c.length>90?c.slice(0,87)+"…":c; return s.charAt(0).toUpperCase()+s.slice(1); }
-    function cook(idea){
+    function slugTitle(idea){ const c=idea.replace(/\s+/g," ").trim(); const s=c.length>100?c.slice(0,97)+"…":c; return s.charAt(0).toUpperCase()+s.slice(1); }
+    function cook(idea, assets){
       const title=slugTitle(idea); const cat=pickCatalog(idea);
+      const assetsLine = (assets||"").trim() || "(none listed — add files before ordering the sample)";
       return {
         idea:title,
-        brief:`Lock v0.1 of “${title}” under Graphic Oregon as parent. Prefer real child names (Demeter Design, Cold Contour, Signal Shelf hone). Catalog: ${cat.name}. No new bot. Do not CONTINUE Three.js.`,
-        done_when:`Stranger opens the public URL, completes one job in under 10 minutes, leaves with usable output — no login for the sample.`,
-        catalog:cat, bom:cat.bom, steps:cat.steps,
-        do_not:["Rename Graphic Oregon","Use Netarts Systems as the env stranger face","CONTINUE Three.js / merge 24/27/29/30","Invent a new bot","Printify-as-hero / client websites as cash factory"]
+        assets:assetsLine,
+        brief:`Lock v0.1 of “${title}” as a standalone make-door under Graphic Oregon (Printify-for-making-things). Assets on hand: ${assetsLine}. Catalog: ${cat.name}. No new bot. Do not CONTINUE Three.js. Do not sell Steve IAU remap maps. Watershed stays quote-only.`,
+        done_when:`Stranger (or Cara) can follow BOM + assembly and complete the prototype order/quote step without inventing a new factory seat.`,
+        catalog:cat,
+        bom:cat.bom,
+        assemble:cat.assemble,
+        prototype:cat.prototype,
+        do_not:["Sticker-price field watershed/habitat","Sell Steve IAU/Age-of-Aquarius remap","Fake cheap consulting SKUs","CONTINUE Three.js","Invent a new bot","Marketer branding pass on this cooker"]
       };
     }
-    function formatPack(p){ return `COMPANY SOUP — LOCKED PACK (parent: Graphic Oregon)\n\nIdea:\n${p.idea}\n\nLocked brief:\n${p.brief}\n\nDone-when:\n${p.done_when}\n\nCatalog: ${p.catalog.name} (${p.catalog.id})\n\nBOM / path:\n${p.bom.map((x,i)=>`${i+1}. ${x}`).join("\n")}\n\nFirst ship steps:\n${p.steps.map((x,i)=>`${i+1}. ${x}`).join("\n")}\n\nDo-not:\n${p.do_not.map(x=>`- ${x}`).join("\n")}`.trim(); }
-    function esc(s){ return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\\"":"&quot;","'":"&#39;"}[c])); }
+    function formatPack(p){
+      const links=(p.prototype.links||[]).map(x=>`- ${x.lab}: ${x.url}`).join("\n");
+      return `COMPANY SOUP — PROTOTYPE PACK (Printify-for-making-things)\n\nIdea:\n${p.idea}\n\nAssets:\n${p.assets}\n\nLocked brief:\n${p.brief}\n\nDone-when:\n${p.done_when}\n\nCatalog: ${p.catalog.name} (${p.catalog.id})\n\nBOM / suppliers:\n${p.bom.map((x,i)=>`${i+1}. ${x}`).join("\n")}\n\nAssembly path:\n${p.assemble.map((x,i)=>`${i+1}. ${x}`).join("\n")}\n\n${p.prototype.label}:\n${p.prototype.detail}\n\nLinks:\n${links}\n\nDo-not:\n${p.do_not.map(x=>`- ${x}`).join("\n")}`.trim();
+    }
+    function esc(s){ return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c])); }
+    function setThermo(on){ document.getElementById("merc").style.height = on ? "78%" : "42%"; }
     function render(pack){
+      setThermo(true);
       const el=document.getElementById("out"); el.className="visible";
-      el.innerHTML=`<h3>Locked brief</h3><p>${esc(pack.brief)}</p><h3>Done-when</h3><p>${esc(pack.done_when)}</p><h3>BOM / path · ${esc(pack.catalog.name)}</h3><ul>${pack.bom.map(x=>`<li>${esc(x)}</li>`).join("")}</ul><h3>First ship steps</h3><ol>${pack.steps.map(x=>`<li>${esc(x)}</li>`).join("")}</ol><h3>Do-not</h3><ul>${pack.do_not.map(x=>`<li>${esc(x)}</li>`).join("")}</ul><h3>Copy pack</h3><pre>${esc(formatPack(pack))}</pre>`;
+      const links=(pack.prototype.links||[]).map(x=>`<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.lab)}</a></li>`).join("");
+      el.innerHTML =
+        `<h3>Locked brief</h3><p>${esc(pack.brief)}</p>`+
+        `<h3>Assets</h3><p>${esc(pack.assets)}</p>`+
+        `<h3>BOM / suppliers · ${esc(pack.catalog.name)}</h3><ul>${pack.bom.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`+
+        `<h3>Assembly path</h3><ol>${pack.assemble.map(x=>`<li>${esc(x)}</li>`).join("")}</ol>`+
+        `<div class="proto-step"><strong>${esc(pack.prototype.label)}</strong><p>${esc(pack.prototype.detail)}</p><ul>${links}</ul></div>`+
+        `<h3>Do-not</h3><ul>${pack.do_not.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`+
+        `<h3>Copy pack</h3><pre>${esc(formatPack(pack))}</pre>`;
       window.__pack=pack;
     }
-    const picks=document.getElementById("picks"); const ideaEl=document.getElementById("idea");
-    SAMPLES.forEach(s=>{ const b=document.createElement("button"); b.type="button"; b.textContent=s.length>48?s.slice(0,46)+"…":s; b.title=s;
-      b.onclick=()=>{ [...picks.children].forEach(x=>x.classList.remove("active")); b.classList.add("active"); ideaEl.value=s; render(cook(s)); }; picks.appendChild(b); });
-    document.getElementById("cook").onclick=()=>{ const v=ideaEl.value.trim(); if(!v){ideaEl.focus();return;} render(cook(v)); };
-    document.getElementById("copy").onclick=async()=>{ const v=ideaEl.value.trim(); if(!v){ideaEl.focus();return;} const pack=(window.__pack&&window.__pack.idea===slugTitle(v))?window.__pack:cook(v); render(pack); await navigator.clipboard.writeText(formatPack(pack)); const btn=document.getElementById("copy"); btn.textContent="Copied"; setTimeout(()=>btn.textContent="Copy locked pack",1100); };
-    document.getElementById("download").onclick=()=>{ const v=ideaEl.value.trim(); if(!v){ideaEl.focus();return;} const pack=(window.__pack&&window.__pack.idea===slugTitle(v))?window.__pack:cook(v); render(pack); const blob=new Blob([formatPack(pack)+"\n"],{type:"text/markdown"}); const a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download="company-soup-pack.md"; a.click(); URL.revokeObjectURL(a.href); };
+    const picks=document.getElementById("picks"); const ideaEl=document.getElementById("idea"); const assetsEl=document.getElementById("assets");
+    SAMPLES.forEach(s=>{ const b=document.createElement("button"); b.type="button"; b.textContent=s.length>52?s.slice(0,50)+"…":s; b.title=s;
+      b.onclick=()=>{ [...picks.children].forEach(x=>x.classList.remove("active")); b.classList.add("active"); ideaEl.value=s;
+        if(s===THERMO) assetsEl.value="Cup silhouette SVG; blank Printify mug SKU; dial thermometer photo";
+        render(cook(s, assetsEl.value)); }; picks.appendChild(b); });
+    function run(){ const v=ideaEl.value.trim(); if(!v){ideaEl.focus();return;} render(cook(v, assetsEl.value)); }
+    document.getElementById("cook").onclick=run;
+    document.getElementById("runDemo").onclick=()=>{ ideaEl.value=THERMO; assetsEl.value="Cup silhouette SVG; blank Printify mug SKU; dial thermometer photo"; render(cook(THERMO, assetsEl.value)); };
+    document.getElementById("copy").onclick=async()=>{ run(); await navigator.clipboard.writeText(formatPack(window.__pack)); const btn=document.getElementById("copy"); btn.textContent="Copied"; setTimeout(()=>btn.textContent="Copy locked pack",1100); };
+    document.getElementById("download").onclick=()=>{ run(); const blob=new Blob([formatPack(window.__pack)+"\n"],{type:"text/markdown"}); const a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download="company-soup-prototype.md"; a.click(); URL.revokeObjectURL(a.href); };
+    // preload demo idea for stranger
+    ideaEl.value=THERMO; assetsEl.value="Cup silhouette SVG; blank Printify mug SKU; dial thermometer photo";
   </script>
 </body>
 </html>
