@@ -1,23 +1,24 @@
 # Asterism Lab
 
-Lane: Space research · queued stub
+Lane: Space research · Graphic Oregon child
 
 ## One-liner
-Space-mapping desk (StarIS / IAU / Space Apps) as a named child — not a NASA contractor.
+Constellation / sky-culture map packs + one-page research briefs for educators and labs — not a NASA contractor.
 
-## Brief
-Lock **Asterism Lab** as the Graphic Oregon space stub. Marketer name. Not extracted as a turnkey cash face this week. Parent stays Graphic Oregon.
+## Offer (clear)
+**Asterism Map Brief — Edition 001**  
+One map plate concept + one-page brief derived from the public IAU astronomical mapping work on Graphic Oregon. Digital PDF. $49.
+
+What you get: the sample brief on this brand page + proof link to the full IAU proposal on GO. Not employment. Not StarIS rebuild.
+
+## Path
+- Brand door: https://caradmico.github.io/company-soup/brands/asterism-lab/
+- Sample: `sample-brief.md` + rendered on index
+- Proof: https://graphicoregon.com/astronomical-mapping-an-iau-proposal/
+- Domain later: asterismlab.com
 
 ## Done-when
-Stranger can open this stub, see the lane, and know it is queued — not a fake-complete company.
+Stranger knows the offer ($49 map brief), opens the sample, and can reach the IAU proof without asking Cara.
 
-## BOM
-- This stub page
-- Existing StarIS visualizer and IAU proposal on GO (cite, do not rebuild)
-- Parent: Graphic Oregon
-
-## Steps
-1. Keep as queued stub
-2. Do not invent NASA/SETI employment
-3. Do not CONTINUE Three.js
-4. Extract a full pack only after one public proof is pointed at this name
+## Do-not
+Invent NASA/SETI jobs · CONTINUE Three.js · rename GO · personal Cara face · Printify-as-hero
