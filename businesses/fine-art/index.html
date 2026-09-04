@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Neahkahnie Atelier · Cara Mico</title>
-<meta name="description" content="Original painting and illustration by Cara Mico. Commission / inquire. This is not a print shop.">
+<meta name="description" content="Original painting and illustration by Cara Mico. Commission original work.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
@@ -175,8 +175,8 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.8rem
     <p class="kicker">Fine art · commissions</p>
     <h1 class="display">Neahkahnie Atelier</h1>
     <p class="who display">Cara Mico</p>
-    <p class="line">This door is for original work — painting, drawing, and illustration you can hang or commission. Prints and apparel are on Sassmeharder. If the piece you want is not on the wall yet, inquire.</p>
-    <a class="btn" href="#inquire">Commission / inquire</a>
+    <p class="line">This door is for original work — painting, drawing, and illustration you can hang or commission. Prints and apparel are on Sassmeharder. If the piece you want is not on the wall yet, start a commission.</p>
+    <a class="btn" href="#inquire">Commission</a>
   </div>
 </section>
 
@@ -197,15 +197,15 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.8rem
       <button class="arrow" id="next" type="button" aria-label="Next work">›</button>
       <div class="dots" id="dots" aria-hidden="false"></div>
     </div>
-    <p class="hint">Arrow keys turn the page. She writes and paints — book and editorial illustration use the same inquire.</p>
+    <p class="hint">Arrow keys turn the page. She writes and paints — book and editorial illustration use the same commission form.</p>
   </div>
 </section>
 
 <section id="inquire">
   <div class="wrap">
     <p class="kicker">Commission</p>
-    <h2 class="display">Inquire</h2>
-    <p class="fine">Opens mail to Graphic Oregon. No cart. No apparel on this wall.</p>
+    <h2 class="display">Start a commission</h2>
+    <p class="fine">Tell her what you want made — a painting, a drawing, or illustration for a book or editorial. Use the form; it opens a note to her studio at Graphic Oregon.</p>
     <form id="cform">
       <div><label for="name">Name</label><input id="name" required autocomplete="name"></div>
       <div><label for="email">Email</label><input id="email" type="email" required autocomplete="email"></div>
@@ -217,7 +217,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.8rem
         </select>
       </div>
       <div><label for="brief">Brief</label><textarea id="brief" required placeholder="Size, medium, timeline, references…"></textarea></div>
-      <button class="btn" type="submit">Send inquire</button>
+      <button class="btn" type="submit">Send inquiry</button>
     </form>
   </div>
 </section>
@@ -326,7 +326,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.8rem
   document.getElementById('cform').addEventListener('submit', function(e){
     e.preventDefault();
     const body = [
-      'Neahkahnie Atelier — commission inquire','',
+      'Neahkahnie Atelier — commission inquiry','',
       'Name: '+document.getElementById('name').value.trim(),
       'Email: '+document.getElementById('email').value.trim(),
       'Project type: '+document.getElementById('type').value,
@@ -334,7 +334,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.8rem
       'https://caradmico.github.io/company-soup/businesses/fine-art/'
     ].join('\n');
     location.href = 'mailto:hello@graphicoregon.com?subject='+
-      encodeURIComponent('Neahkahnie Atelier — commission inquire')+
+      encodeURIComponent('Neahkahnie Atelier — commission inquiry')+
       '&body='+encodeURIComponent(body);
   });
 
