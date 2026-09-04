@@ -4,6 +4,8 @@
 
 Live: https://caradmico.github.io/company-soup/
 
+Public draft map: [NCCWP — Nehalem Watershed Drinking Water Sources](https://caradmico.github.io/company-soup/nccwp-nehalem/)
+
 Featured founder firm: [Watershed Field Assessment](businesses/watershed/) — Demeter Design, quote-only coastal field assessment.
 
 ## Children (stranger door)
