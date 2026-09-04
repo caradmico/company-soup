@@ -35,20 +35,21 @@
     #out h3:first-child { margin-top:0; }
     #out pre { white-space:pre-wrap; background:var(--cream); border:1px solid var(--line); padding:.7rem; border-radius:8px; font-size:.85rem; }
     footer { font-size:.85rem; color:#5a6570; border-top:1px solid var(--line); }
+    .note { font-size:.9rem; color:#5a6570; }
   </style>
 </head>
 <body>
   <header>
-    <p class="tag">Company Soup v0.1 · Graphic Oregon</p>
+    <p class="tag">Company Soup v0.1 · reconcile</p>
     <h1>A parent company that makes companies</h1>
-    <p><strong>Graphic Oregon</strong> stays Graphic Oregon — the parent company-maker. Children are turnkey brand packs from real lanes. This page cooks one idea into a ship path. Not a Three.js CONTINUE. Not a new bot.</p>
+    <p><strong>Graphic Oregon</strong> stays Graphic Oregon — the parent company-maker. Children use real Marketer names where they exist. Engine cooks one idea into a ship path. Not a Three.js CONTINUE. Not a new bot.</p>
   </header>
   <main>
     <section>
       <h2>Parent</h2>
       <div class="card">
         <h3>Graphic Oregon</h3>
-        <p>Company that makes companies. Portfolio and practice home: <a href="https://graphicoregon.com/" target="_blank" rel="noopener">graphicoregon.com</a>. Do not rename it into a commercial extract. Do not treat the 3D exam as this factory.</p>
+        <p>Company that makes companies. <a href="https://graphicoregon.com/" target="_blank" rel="noopener">graphicoregon.com</a>. Not renamed into a commercial extract.</p>
       </div>
     </section>
 
@@ -58,24 +59,25 @@
         <div class="card">
           <div class="lane">Environmental research</div>
           <h3><a href="brands/demeter-design/">Demeter Design</a></h3>
-          <p>Habitat / sediment / limiting-factor assessments + map packages. Door: demeterdesign.net.</p>
+          <p>Agency-ready habitat / sediment / limiting-factor assessments + map packages. Real contracts (BLM / ODEQ-class). Path: <a href="http://demeterdesign.net/" target="_blank" rel="noopener">demeterdesign.net</a>.</p>
         </div>
         <div class="card">
-          <div class="lane">Art</div>
+          <div class="lane">Art · conditional</div>
           <h3><a href="brands/cold-contour/">Cold Contour</a></h3>
-          <p>Coastal + technical prints and graphic drops as art objects — not hire-me.</p>
+          <p>Coastal + technical prints as art objects. Name ready; sellable path provisional.</p>
         </div>
         <div class="card">
           <div class="lane">Hone invent</div>
           <h3><a href="brands/signal-shelf/">Signal Shelf</a></h3>
-          <p>One paper/map/dataset → Monday one-pager for operators (demo hone).</p>
+          <p>Technical reading → one-page operator brief. Demo to hone the soup engine — not claimed as current cash.</p>
         </div>
         <div class="card">
           <div class="lane">Queued</div>
           <h3>Asterism · Coast Desk · Far Field · Lane Sites</h3>
-          <p>Space, journalism, video, web-lane brand only. No new client-site cash offers.</p>
+          <p>Stubs only. Websites brand the lane — no new client-site cash offers.</p>
         </div>
       </div>
+      <p class="note">Netarts Systems is demoted — not the env stranger face. Use Demeter Design.</p>
     </section>
 
     <section>
@@ -92,41 +94,36 @@
     </section>
   </main>
   <footer>
-    <p>Source: <a href="https://github.com/caradmico/company-soup">caradmico/company-soup</a> · Parent: Graphic Oregon</p>
+    <p>Source: <a href="https://github.com/caradmico/company-soup">caradmico/company-soup</a> · Parent: Graphic Oregon · Names: Marketer PR 36</p>
   </footer>
   <script>
     const CATALOGS = {
       pages: { id:"public-static-pages", name:"Public static Pages",
-        when:["page","kit","tool","template","site","form","checklist","prior","pack","guide","brand","studio"],
-        bom:["Public GitHub repo or Pages folder","Smallest stranger page","README with live URL"],
-        steps:["Write one-job page","Push public","Enable Pages / confirm 200","Claim with public URL"] },
-      digital: { id:"digital-download", name:"Digital download kit",
-        when:["pdf","workbook","course","ebook","download","zip","digest"],
-        bom:["Source md/html","Public sample","Gumroad listing after sample KEEP"],
-        steps:["Ship free public sample","Package full kit after KEEP","List when Marketer staffed"] },
-      pod: { id:"pod-merch", name:"POD merch (optional)",
-        when:["tee","shirt","hoodie","merch","wearable"],
-        bom:["Print-ready art","Existing Printify path","Listing copy"],
-        steps:["Confirm it is a wearable","Art pack in mill","Kevin-gated draft only","Never default the whole company to Printify"] },
+        when:["page","kit","tool","template","site","form","brand","studio","pack"],
+        bom:["Public repo or Pages folder","Smallest stranger page","README with live URL"],
+        steps:["Write one-job page","Push public","Confirm HTTP 200","Claim with public URL"] },
+      research: { id:"demeter-env", name:"Demeter Design / env reports",
+        when:["research","habitat","watershed","sediment","blm","odeq","env","demeter","netarts","coastal"],
+        bom:["Demeter Design brand pack","Proof PDF/map on GO /research/ when public","demeterdesign.net as domain path","Parent link to Graphic Oregon"],
+        steps:["Open Demeter Design pack","Point to one real assessment proof","Do not invent client website cash","Ship stranger-facing offer copy only"] },
+      art: { id:"cold-contour", name:"Cold Contour art",
+        when:["art","print","contour","gouache","graphic drop","night contour"],
+        bom:["Cold Contour brand pack","One art sample path","Optional print surface later — not apparel-as-product"],
+        steps:["Publish brand page","Attach one sample","Hold apparel SKU as the company"] },
+      hone: { id:"signal-shelf", name:"Signal Shelf hone",
+        when:["brief","digest","paper","operator","signal","shelf","weekly"],
+        bom:["Signal Shelf demo pack","One-pager template","Pages demo before domain"],
+        steps:["Use as engine hone only","Do not claim as Cara cash yet","Iterate name→offer→path"] },
       mill: { id:"mill-judgment", name:"Mill / judgment lock",
-        when:["agent","bot","workflow","factory","seat","ops","automat"],
+        when:["agent","bot","workflow","factory","seat","ops"],
         bom:["Locked brief","Judgment prior","Existing seats only"],
-        steps:["Fill kill/cut/keep/expand prior","Staff existing seat — no new bot","Prove with stranger-usable artifact"] },
-      research: { id:"research-plain", name:"Research → plain English",
-        when:["research","paper","science","env","coast","netarts","space","quantum"],
-        bom:["Source paper or field notes","Public plain-English page","Link back to parent GO"],
-        steps:["Pick one finding","Write stranger page","Publish under child brand","Point home to Graphic Oregon"] },
-      video: { id:"quiet-video", name:"Quiet video kit",
-        when:["video","film","edit","record","audience","youtube"],
-        bom:["Capture+export checklist","Local keep folder","No profile required"],
-        steps:["Define keep/export only","Build no-audience page","Ship checklist public","Fame features stay off"] }
+        steps:["Fill prior","No new bot","Stranger-usable artifact"] }
     };
     const SAMPLES = [
-      "A public brand page for coastal art prints under Cold Contour",
-      "A Demeter Design assessment pack: habitat map + limiting-factor brief",
-      "A Signal Shelf one-pager: one paper → what to do Monday",
-      "A small ops script that scaffolds a pack folder",
-      "A judgment prior page before any agent runs"
+      "A Demeter Design habitat assessment offer page strangers can buy from",
+      "A Cold Contour print drop with one live sample",
+      "A Signal Shelf one-pager from a technical paper",
+      "A judgment prior before any agent runs"
     ];
     function pickCatalog(idea){
       const t=idea.toLowerCase();
@@ -139,14 +136,14 @@
       const title=slugTitle(idea); const cat=pickCatalog(idea);
       return {
         idea:title,
-        brief:`Lock v0.1 of “${title}” under Graphic Oregon as parent. Child brand if it matches a lane; else shortest catalog path. Simplify until one stranger finishes one job. No new bot. Do not CONTINUE Three.js.`,
-        done_when:`Stranger opens the public URL/repo, completes the one job in under 10 minutes, leaves with usable output — no login for the sample.`,
+        brief:`Lock v0.1 of “${title}” under Graphic Oregon as parent. Prefer real child names (Demeter Design, Cold Contour, Signal Shelf hone). Catalog: ${cat.name}. No new bot. Do not CONTINUE Three.js.`,
+        done_when:`Stranger opens the public URL, completes one job in under 10 minutes, leaves with usable output — no login for the sample.`,
         catalog:cat, bom:cat.bom, steps:cat.steps,
-        do_not:["Rename Graphic Oregon into a commercial extract","CONTINUE Three.js exam / merge 24/27/29/30","Invent a new bot","Sell new client websites as the factory cash","Essay-only with no stranger door"]
+        do_not:["Rename Graphic Oregon","Use Netarts Systems as the env stranger face","CONTINUE Three.js / merge 24/27/29/30","Invent a new bot","Printify-as-hero / client websites as cash factory"]
       };
     }
-    function formatPack(p){ return `COMPANY SOUP v0.1 — LOCKED PACK (parent: Graphic Oregon)\n\nIdea:\n${p.idea}\n\nLocked brief:\n${p.brief}\n\nDone-when:\n${p.done_when}\n\nCatalog: ${p.catalog.name} (${p.catalog.id})\n\nBOM / path:\n${p.bom.map((x,i)=>`${i+1}. ${x}`).join("\n")}\n\nFirst ship steps:\n${p.steps.map((x,i)=>`${i+1}. ${x}`).join("\n")}\n\nDo-not:\n${p.do_not.map(x=>`- ${x}`).join("\n")}`.trim(); }
-    function esc(s){ return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c])); }
+    function formatPack(p){ return `COMPANY SOUP — LOCKED PACK (parent: Graphic Oregon)\n\nIdea:\n${p.idea}\n\nLocked brief:\n${p.brief}\n\nDone-when:\n${p.done_when}\n\nCatalog: ${p.catalog.name} (${p.catalog.id})\n\nBOM / path:\n${p.bom.map((x,i)=>`${i+1}. ${x}`).join("\\n")}\n\nFirst ship steps:\n${p.steps.map((x,i)=>`${i+1}. ${x}`).join("\\n")}\n\nDo-not:\n${p.do_not.map(x=>`- ${x}`).join("\\n")}`.trim(); }
+    function esc(s){ return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\\"":"&quot;","'":"&#39;"}[c])); }
     function render(pack){
       const el=document.getElementById("out"); el.className="visible";
       el.innerHTML=`<h3>Locked brief</h3><p>${esc(pack.brief)}</p><h3>Done-when</h3><p>${esc(pack.done_when)}</p><h3>BOM / path · ${esc(pack.catalog.name)}</h3><ul>${pack.bom.map(x=>`<li>${esc(x)}</li>`).join("")}</ul><h3>First ship steps</h3><ol>${pack.steps.map(x=>`<li>${esc(x)}</li>`).join("")}</ol><h3>Do-not</h3><ul>${pack.do_not.map(x=>`<li>${esc(x)}</li>`).join("")}</ul><h3>Copy pack</h3><pre>${esc(formatPack(pack))}</pre>`;

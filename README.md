@@ -1,20 +1,14 @@
-# Company Soup v0.1
+# Company Soup v0.1 (reconcile)
 
-**Graphic Oregon** is the parent company that makes companies. This repo is the cooker: idea → locked brief → done-when → BOM/path → first ship steps.
+**Graphic Oregon** = parent company-maker (not renamed).
 
 Live: https://caradmico.github.io/company-soup/
 
-## Parent
-- [Graphic Oregon](https://graphicoregon.com/) — company-maker. Not renamed. Not the Three.js exam.
+## Children (stranger door)
+- [Demeter Design](brands/demeter-design/) — env (real contracts; demeterdesign.net)
+- [Cold Contour](brands/cold-contour/) — art (conditional)
+- [Signal Shelf](brands/signal-shelf/) — hone invent
 
-## Child turnkey packs (lanes)
-- [Estuary Ink](brands/estuary-ink/) — art
-- [Netarts Systems](brands/netarts-systems/) — environmental research
-- [Quiet Cut](brands/quiet-cut/) — hone invent (no-audience video)
+Netarts Systems / Estuary Ink / Quiet Cut demoted off the stranger face (redirects only).
 
-## Use
-1. Open the live engine.
-2. Paste or pick one idea → cook.
-3. Or open a child pack and ship that path.
-
-No new bot. Tokens OK. Simplify until a stranger can ship.
+Engine: idea → locked brief → done-when → BOM/path → ship steps.
