@@ -4,19 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Demeter Design · Watershed field assessment</title>
-<meta name="description" content="Walk the reach. See the map. Get a report a council can defend. Quote-only watershed field assessment — Oregon coast.">
+<meta name="description" content="Walk the reach. See the map. Hand over a report a council can defend. Quote-only Oregon watershed field assessment.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --fir:#163028; --mist:#eef2ec; --foam:#f7f8f5; --kelp:#234238;
-  --lichen:#6d8664; --tide:#3a5558; --ink:#12201c; --mute:#4e5d56; --line:#c8d0c6;
+  --fir:#163028; --tide:#3a5558; --lichen:#6d8664; --mist:#eef2ec; --foam:#f7f8f5;
+  --kelp:#234238; --ink:#12201c; --mute:#4e5d56; --line:#c8d0c6;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--foam);color:var(--ink);font:17px/1.45 "Source Sans 3",system-ui,sans-serif;padding-bottom:4.75rem}
-img{display:block;max-width:100%;height:auto}
+body{margin:0;background:var(--foam);color:var(--ink);font:17px/1.45 "Source Sans 3",system-ui,sans-serif;padding-bottom:1rem}
+img{display:block;max-width:100%}
 a{color:var(--tide)}
 .serif{font-family:"Fraunces",Georgia,serif;font-optical-sizing:auto;font-weight:650;letter-spacing:-.02em}
 .kicker{font:700 .68rem/1 system-ui;letter-spacing:.16em;text-transform:uppercase;color:var(--lichen)}
@@ -24,151 +24,217 @@ a{color:var(--tide)}
 .btn-fir{background:var(--fir);color:var(--foam)!important}
 .btn-mist{background:#e3ebe0;color:var(--fir)!important}
 .btn-ghost{background:transparent;color:#eef4ec!important;border:1px solid rgba(238,244,236,.5)}
-
-/* progress */
-.progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--lichen);z-index:40}
-
-/* top nav */
-.nav{position:sticky;top:0;z-index:20;background:rgba(247,248,245,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(200,208,198,.7)}
+.progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--lichen);z-index:50}
+.nav{position:sticky;top:0;z-index:30;background:rgba(247,248,245,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(200,208,198,.7)}
 .nav-inner{width:min(72rem,calc(100% - 1.5rem));margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.7rem 0}
 .word{font-family:"Fraunces",Georgia,serif;font-weight:650;color:var(--fir);text-decoration:none;font-size:1.05rem}
 .nav .links{display:flex;gap:.85rem;align-items:center;flex-wrap:wrap}
 .nav .links a:not(.btn){color:var(--mute);text-decoration:none;font-size:.9rem}
 
-/* chapters — full-bleed scroll story */
-.chapter{position:relative;min-height:100vh;min-height:100dvh;display:grid;align-items:end;color:#f3f7f1;isolation:isolate}
-.chapter .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transform:scale(1.04);transition:transform 1.2s ease-out}
-.chapter.is-in .bg{transform:scale(1)}
-.chapter::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(12,24,20,.08),rgba(10,18,16,.82) 72%)}
-.chapter .inner{width:min(40rem,calc(100% - 2rem));margin:0 auto;padding:5rem 0 3.2rem}
-.chapter h1,.chapter h2{margin:.35rem 0 .55rem;line-height:1.05;font-size:clamp(2rem,5.5vw,3.4rem)}
-.chapter p{margin:0 0 1rem;max-width:32rem;font-size:clamp(1.02rem,2vw,1.15rem);opacity:.95}
-.chapter .actions{display:flex;flex-wrap:wrap;gap:.55rem}
+/* hero */
+.hero{position:relative;min-height:100vh;min-height:100dvh;display:grid;align-items:end;color:#f3f7f1;overflow:hidden}
+.hero .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.08);animation:ken 18s ease-out forwards}
+.hero .mist{position:absolute;inset:0;background:linear-gradient(180deg,rgba(22,48,40,.18),rgba(10,18,16,.82) 70%);pointer-events:none}
+.hero .inner{position:relative;z-index:1;width:min(40rem,calc(100% - 2rem));margin:0 auto;padding:5rem 0 3.5rem}
+.hero h1{margin:.35rem 0 .55rem;font-size:clamp(2.1rem,5.5vw,3.5rem);line-height:1.04}
+.hero p{margin:0 0 1rem;max-width:30rem;font-size:clamp(1.02rem,2vw,1.15rem);opacity:.95}
+.actions{display:flex;flex-wrap:wrap;gap:.55rem}
+@keyframes ken{to{transform:scale(1)}}
+@media (prefers-reduced-motion:reduce){
+  .hero .bg{animation:none;transform:none}
+  .beat .media img,.scrub img{transition:none!important}
+}
 
-/* map chapter — interactive pan feel */
-.chapter.map .bg{object-position:center;cursor:grab}
-.chapter.map.is-drag .bg{cursor:grabbing}
+/* sticky story rail */
+.story{position:relative}
+.beat{display:grid;gap:0;min-height:100vh;min-height:100dvh}
+@media(min-width:860px){
+  .beat{grid-template-columns:1fr 1fr;align-items:stretch}
+  .beat:nth-child(even) .media{order:2}
+  .beat:nth-child(even) .copy{order:1}
+}
+.media{position:relative;min-height:50vh;background:var(--fir);overflow:hidden}
+.media img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;opacity:0;transform:scale(1.04);transition:opacity .55s ease, transform 1.1s ease}
+.beat.is-in .media img{opacity:1;transform:scale(1)}
+.media .cap{position:absolute;left:0;right:0;bottom:0;padding:.7rem 1rem;font-size:.78rem;color:#e8efe6;background:linear-gradient(transparent,rgba(0,0,0,.55))}
+.copy{display:flex;align-items:center;padding:2.4rem 1.25rem;background:var(--mist)}
+.copy .box{max-width:28rem;margin:0 auto}
+.copy h2{margin:.3rem 0 .55rem;font-size:clamp(1.55rem,3vw,2.15rem);line-height:1.12;color:var(--fir)}
+.copy p{margin:0;color:var(--mute);font-size:1.02rem}
 
-/* quote dock */
-#quote{background:var(--mist);color:var(--ink);min-height:auto;padding:3.2rem 0 4rem}
-#quote::after{display:none}
-#quote .inner{width:min(56rem,calc(100% - 2rem));margin:0 auto;display:grid;gap:1.5rem}
-@media(min-width:820px){#quote .inner{grid-template-columns:.9fr 1.1fr;align-items:start}}
-#quote h2{color:var(--fir);font-size:clamp(1.6rem,3vw,2.2rem)}
-#quote .prose{color:var(--mute);opacity:1}
+/* map hotspots */
+.map-stage{position:relative;min-height:70vh;background:#1a2a26}
+.map-stage img{width:100%;height:70vh;object-fit:cover;object-position:center;cursor:grab;user-select:none}
+.map-stage.is-drag img{cursor:grabbing}
+.hotspots{position:absolute;inset:0;pointer-events:none}
+.hot{position:absolute;pointer-events:auto;transform:translate(-50%,-50%);min-width:1.1rem;min-height:1.1rem}
+.hot button{width:1.15rem;height:1.15rem;border-radius:50%;border:2px solid #f3f7f1;background:var(--lichen);cursor:pointer;padding:0}
+.hot .tip{display:none;position:absolute;left:50%;bottom:140%;transform:translateX(-50%);background:rgba(22,48,40,.95);color:#eef4ec;padding:.45rem .6rem;border-radius:4px;font-size:.8rem;white-space:nowrap}
+.hot.open .tip,.hot:focus-within .tip{display:block}
+.map-copy{padding:1.5rem 1.25rem 2rem;background:var(--fir);color:#eef4ec}
+.map-copy .box{width:min(40rem,100%);margin:0 auto}
+.map-copy h2{margin:.3rem 0 .5rem;font-size:clamp(1.5rem,3vw,2.1rem)}
+.map-copy p{margin:0 0 .9rem;opacity:.92}
+
+/* scrub */
+.scrub{position:relative;min-height:75vh;background:var(--fir);color:#eef4ec}
+.scrub .stack{position:absolute;inset:0}
+.scrub .stack img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top}
+.scrub .top{opacity:0;transition:opacity .05s linear}
+.scrub .veil{position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(10,18,16,.85));pointer-events:none}
+.scrub .ui{position:relative;z-index:2;padding:min(45vh,18rem) 1.25rem 2rem;width:min(40rem,calc(100% - 2rem));margin:0 auto}
+.scrub input[type=range]{width:min(22rem,100%);accent-color:var(--lichen)}
+.scrub label{display:block;font:700 .72rem system-ui;letter-spacing:.12em;text-transform:uppercase;color:#d5e0c8;margin:0 0 .45rem}
+
+#quote{background:var(--mist);padding:3rem 1.25rem 4.5rem}
+#quote .inner{width:min(56rem,100%);margin:0 auto;display:grid;gap:1.5rem}
+@media(min-width:820px){#quote .inner{grid-template-columns:.9fr 1.1fr}}
+#quote h2{color:var(--fir);font-size:clamp(1.55rem,3vw,2.15rem);margin:.25rem 0 .5rem}
+#quote .prose{color:var(--mute);margin:0 0 .7rem}
 form{display:grid;gap:.7rem;background:#fff;border:1px solid var(--line);padding:1.1rem}
 label{font:700 .78rem/1 system-ui;color:var(--kelp)}
 input,textarea,select{width:100%;margin-top:.28rem;padding:.65rem .7rem;border:1px solid var(--line);border-radius:2px;font:inherit;background:var(--foam)}
 textarea{min-height:5rem;resize:vertical}
-.fine{font-size:.84rem;color:var(--mute);margin:.15rem 0 0}
+.fine{font-size:.84rem;color:var(--mute)}
+footer{padding:1.4rem 1.25rem 2rem;border-top:1px solid var(--line);font-size:.86rem;color:var(--mute)}
+footer .wrap{width:min(72rem,100%);margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;gap:.7rem}
 
-footer{padding:1.5rem 0 2rem;border-top:1px solid var(--line);font-size:.86rem;color:var(--mute)}
-footer .wrap{width:min(72rem,calc(100% - 1.5rem));margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;gap:.7rem}
-
-.sticky{position:fixed;left:0;right:0;bottom:0;z-index:30;background:rgba(22,48,40,.94);backdrop-filter:blur(8px);padding:.7rem 1rem;display:flex;justify-content:center}
-.dots{position:fixed;right:.7rem;top:50%;transform:translateY(-50%);z-index:25;display:flex;flex-direction:column;gap:.45rem}
-.dots a{width:.55rem;height:.55rem;border-radius:50%;background:rgba(22,48,40,.25);border:1px solid rgba(22,48,40,.35);text-indent:-999px;overflow:hidden}
-.dots a.on{background:var(--fir);border-color:var(--fir)}
-@media(max-width:700px){.dots{display:none}}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:40;background:rgba(22,48,40,.94);backdrop-filter:blur(8px);padding:.7rem 1rem;display:flex;justify-content:center;transform:translateY(110%);transition:transform .35s ease}
+.sticky.show{transform:translateY(0)}
+body.sticky-on{padding-bottom:4.75rem}
+@media (prefers-reduced-motion:reduce){
+  .sticky{transition:none}
+  .beat .media img{transition:opacity .2s ease}
+}
 </style>
 </head>
 <body>
 <div class="progress" id="progress" aria-hidden="true"></div>
 <header class="nav">
   <div class="nav-inner">
-    <a class="word" href="#c1">Demeter Design</a>
-    <nav class="links" aria-label="Story">
-      <a href="#c2">Walk</a>
-      <a href="#c3">Map</a>
-      <a href="#c4">Report</a>
+    <a class="word" href="#top">Demeter Design</a>
+    <nav class="links" aria-label="Page">
+      <a href="#story">Story</a>
+      <a href="#map">Map</a>
+      <a href="#proof">Proof</a>
       <a class="btn btn-fir" href="#quote">Request a quote</a>
     </nav>
   </div>
 </header>
 
-<nav class="dots" aria-label="Chapters">
-  <a href="#c1" class="on" title="Arrive">1</a>
-  <a href="#c2" title="Walk">2</a>
-  <a href="#c3" title="Map">3</a>
-  <a href="#c4" title="Report">4</a>
-  <a href="#quote" title="Quote">5</a>
-</nav>
-
-<section class="chapter" id="c1" data-chap>
+<section class="hero" id="top">
   <img class="bg" src="img/estuary.jpg" width="1280" height="851" alt="Netarts Bay estuary from above">
+  <div class="mist" aria-hidden="true"></div>
   <div class="inner">
     <p class="kicker" style="color:#d5e0c8">Demeter Design · Oregon</p>
     <h1 class="serif">Watershed field assessment</h1>
-    <p>A scroll through the work — creek, map, report — then a quote for your reach.</p>
+    <p>Place first. Then the craft. Then a quote for your reach.</p>
     <div class="actions">
-      <a class="btn btn-mist" href="#quote">Request a quote</a>
-      <a class="btn btn-ghost" href="#c2">Start the walk</a>
-    </div>
-  </div>
-</section>
-
-<section class="chapter" id="c2" data-chap>
-  <img class="bg" src="img/channel.jpg" width="1920" height="1080" alt="Moss-lined Nestucca channel">
-  <div class="inner">
-    <p class="kicker" style="color:#d5e0c8">01 · Walk the reach</p>
-    <h2 class="serif">Measure what’s actually there</h2>
-    <p>Channels, floodplains, restoration sites. Water, sediment, shade, habitat structure — on the ground, not from the office hope.</p>
-    <div class="actions">
-      <a class="btn btn-mist" href="#c3">See the map</a>
-    </div>
-  </div>
-</section>
-
-<section class="chapter map" id="c3" data-chap>
-  <img class="bg" id="mapBg" src="img/netarts-map.jpg" width="1200" height="820" alt="Netarts Bay watershed map from published assessment" draggable="false">
-  <div class="inner">
-    <p class="kicker" style="color:#d5e0c8">02 · Draw the path</p>
-    <h2 class="serif">Maps that pull you in</h2>
-    <p>Drag the map. Follow how flow, form, and barriers connect — precursor to engineering, not a stamp.</p>
-    <div class="actions">
-      <a class="btn btn-mist" href="https://graphicoregon.com/netarts-bay-watershed-habitat-assessment/" target="_blank" rel="noopener">Open Netarts report</a>
-      <a class="btn btn-ghost" href="#c4">Then the report</a>
-    </div>
-  </div>
-</section>
-
-<section class="chapter" id="c4" data-chap>
-  <img class="bg" src="img/nestucca.jpg" width="935" height="1210" alt="Upper Nestucca study cover as report scene" style="object-position:top">
-  <div class="inner">
-    <p class="kicker" style="color:#d5e0c8">03 · Hand it over</p>
-    <h2 class="serif">A report a council can defend</h2>
-    <p>Figures and plain language for the board packet or the grant file. Real published work: Nestucca, Netarts, Tillamook Bay, and more.</p>
-    <div class="actions">
-      <a class="btn btn-mist" href="https://graphicoregon.com/research/" target="_blank" rel="noopener">Research archive</a>
+      <a class="btn btn-mist" href="#story">Walk the story</a>
       <a class="btn btn-ghost" href="#quote">Request a quote</a>
     </div>
   </div>
 </section>
 
-<section id="quote" data-chap>
+<div class="story" id="story">
+  <article class="beat" data-beat>
+    <div class="media">
+      <img src="img/channel.jpg" width="1920" height="1080" alt="Moss-lined Nestucca channel">
+      <p class="cap">Upper Nestucca country</p>
+    </div>
+    <div class="copy"><div class="box">
+      <p class="kicker">01</p>
+      <h2 class="serif">Walk the reach</h2>
+      <p>Surveys along channels, floodplains, and restoration sites. What is there — not what the office map hoped for.</p>
+    </div></div>
+  </article>
+  <article class="beat" data-beat>
+    <div class="media">
+      <img src="img/hero.jpg" width="1020" height="1320" alt="Tillamook Bay report opening as field proof">
+      <p class="cap">Field notes become figures</p>
+    </div>
+    <div class="copy"><div class="box">
+      <p class="kicker">02</p>
+      <h2 class="serif">Water, sediment, shade</h2>
+      <p>Habitat structure and limiting factors collected with a method you can cite — sampling that survives a board packet.</p>
+    </div></div>
+  </article>
+  <article class="beat" data-beat>
+    <div class="media">
+      <img src="img/nestucca.jpg" width="935" height="1210" alt="Upper Nestucca sediment and habitat study cover">
+      <p class="cap">Stream paths on the page</p>
+    </div>
+    <div class="copy"><div class="box">
+      <p class="kicker">03</p>
+      <h2 class="serif">Stream paths before engineering</h2>
+      <p>How flow, form, and barriers connect. Maps that show the path — precursor to design, not a substitute for a stamp.</p>
+    </div></div>
+  </article>
+  <article class="beat" data-beat>
+    <div class="media">
+      <img src="img/figures.jpg" width="1020" height="1320" alt="Report figures page from Demeter Design work">
+      <p class="cap">Before / after you can defend</p>
+    </div>
+    <div class="copy"><div class="box">
+      <p class="kicker">04</p>
+      <h2 class="serif">Prove what changed</h2>
+      <p>Year-to-year and before/after checks so restoration can show what grew back — plain language for the grant file.</p>
+    </div></div>
+  </article>
+</div>
+
+<section id="map">
+  <div class="map-stage" id="mapStage">
+    <img id="mapImg" src="img/netarts-map.jpg" width="1200" height="820" alt="Netarts Bay watershed map from published assessment" draggable="false">
+    <div class="hotspots" aria-label="Map labels">
+      <div class="hot" style="left:58%;top:42%"><button type="button" aria-label="Estuary"></button><span class="tip">Estuary / spit</span></div>
+      <div class="hot" style="left:36%;top:58%"><button type="button" aria-label="Basin"></button><span class="tip">Basin interior</span></div>
+      <div class="hot" style="left:72%;top:28%"><button type="button" aria-label="Ridge"></button><span class="tip">Forested ridge</span></div>
+    </div>
+  </div>
+  <div class="map-copy">
+    <div class="box">
+      <p class="kicker" style="color:#d5e0c8">Netarts</p>
+      <h2 class="serif">Drag the map. Tap a hotspot.</h2>
+      <p>Published Graphic Oregon / Demeter habitat work — not a poster tile.</p>
+      <a class="btn btn-mist" href="https://graphicoregon.com/netarts-bay-watershed-habitat-assessment/" target="_blank" rel="noopener">Open Netarts report</a>
+    </div>
+  </div>
+</section>
+
+<section class="scrub" id="proof" data-scrub>
+  <div class="stack">
+    <img class="base" src="img/netarts-cover.jpg" width="935" height="1210" alt="Netarts Bay limiting factors cover">
+    <img class="top" src="img/figures.jpg" width="1020" height="1320" alt="Interior figures page" id="scrubTop">
+    <div class="veil" aria-hidden="true"></div>
+  </div>
+  <div class="ui">
+    <label for="scrubRange">Scrub cover → figures</label>
+    <input id="scrubRange" type="range" min="0" max="100" value="0" aria-valuemin="0" aria-valuemax="100">
+    <p class="kicker" style="color:#d5e0c8;margin:1rem 0 .35rem">Proof</p>
+    <h2 class="serif" style="margin:0 0 .5rem;font-size:clamp(1.5rem,3vw,2.1rem)">Open the report with your thumb</h2>
+    <p style="margin:0 0 .9rem;max-width:30rem;opacity:.92">Tillamook Bay, Upper Nestucca, Netarts — real packets. Then ask for the one that matches your basin.</p>
+    <div class="actions">
+      <a class="btn btn-mist" href="https://graphicoregon.com/tillamook-bay-watershed-habitat-restoration-plan/" target="_blank" rel="noopener">Tillamook Bay</a>
+      <a class="btn btn-ghost" href="https://graphicoregon.com/upper-nestucca-sediment-and-habitat-study/" target="_blank" rel="noopener">Upper Nestucca</a>
+      <a class="btn btn-ghost" href="https://graphicoregon.com/research/" target="_blank" rel="noopener">Research index</a>
+    </div>
+  </div>
+</section>
+
+<section id="quote">
   <div class="inner">
     <div>
       <p class="kicker">Request a quote</p>
-      <h2 class="serif">Tell us the basin and the question</h2>
-      <p class="prose">We reply with scope and timeline. Fieldwork follows the agreed scope. Mail goes to Graphic Oregon, parent of Demeter Design.</p>
-      <p class="prose fine">Also public: <a href="https://graphicoregon.com/tillamook-bay-watershed-habitat-restoration-plan/" target="_blank" rel="noopener">Tillamook Bay</a> · <a href="https://graphicoregon.com/upper-nestucca-sediment-and-habitat-study/" target="_blank" rel="noopener">Upper Nestucca</a> · <a href="https://graphicoregon.com/netarts-bay-watershed-habitat-assessment/" target="_blank" rel="noopener">Netarts</a></p>
+      <h2 class="serif">Basin, question, deadline</h2>
+      <p class="prose">We reply with scope and timeline. Fieldwork follows the agreed scope. Mail to Graphic Oregon, parent of Demeter Design.</p>
     </div>
     <form id="quoteForm">
-      <div>
-        <label for="name">Name</label>
-        <input id="name" name="name" autocomplete="name" required>
-      </div>
-      <div>
-        <label for="org">Organization</label>
-        <input id="org" name="org" autocomplete="organization" placeholder="Watershed council, county, agency">
-      </div>
-      <div>
-        <label for="basin">Basin or reach</label>
-        <input id="basin" name="basin" required placeholder="e.g. Upper Nestucca, Kilchis, Necanicum">
-      </div>
-      <div>
-        <label for="need">The question</label>
-        <select id="need" name="need">
+      <div><label for="name">Name</label><input id="name" required autocomplete="name"></div>
+      <div><label for="org">Organization</label><input id="org" autocomplete="organization" placeholder="Watershed council, county, agency"></div>
+      <div><label for="basin">Basin or reach</label><input id="basin" required placeholder="e.g. Upper Nestucca, Kilchis, Necanicum"></div>
+      <div><label for="need">The question</label>
+        <select id="need">
           <option>Water / sediment sampling</option>
           <option>Stream paths / channel measurement</option>
           <option>Restoration monitoring</option>
@@ -176,12 +242,9 @@ footer .wrap{width:min(72rem,calc(100% - 1.5rem));margin:0 auto;display:flex;fle
           <option>A mix — described below</option>
         </select>
       </div>
-      <div>
-        <label for="notes">Access, season, deadline</label>
-        <textarea id="notes" name="notes" placeholder="When you need to be in the field, and when the report has to land."></textarea>
-      </div>
+      <div><label for="notes">Access, season, deadline</label><textarea id="notes" placeholder="When you need to be in the field, and when the report has to land."></textarea></div>
       <button class="btn btn-fir" type="submit">Open quote email</button>
-      <p class="fine">Opens hello@graphicoregon.com with this note. Nothing is stored here.</p>
+      <p class="fine">Opens hello@graphicoregon.com. Nothing stored here.</p>
     </form>
   </div>
 </section>
@@ -194,55 +257,70 @@ footer .wrap{width:min(72rem,calc(100% - 1.5rem));margin:0 auto;display:flex;fle
   </div>
 </footer>
 
-<div class="sticky">
-  <a class="btn btn-mist" href="#quote">Request a quote</a>
-</div>
+<div class="sticky" id="sticky"><a class="btn btn-mist" href="#quote">Request a quote</a></div>
 
 <script>
 (function(){
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var progress=document.getElementById('progress');
-  var chaps=[].slice.call(document.querySelectorAll('[data-chap]'));
-  var dots=[].slice.call(document.querySelectorAll('.dots a'));
+  var sticky=document.getElementById('sticky');
+  var hook=document.getElementById('story');
+  var quote=document.getElementById('quote');
+
   function onScroll(){
     var h=document.documentElement;
     var max=h.scrollHeight-h.clientHeight;
     progress.style.width=(max>0?(h.scrollTop/max*100):0)+'%';
-    var mid=window.scrollY+window.innerHeight*0.45;
-    chaps.forEach(function(el,i){
-      var r=el.getBoundingClientRect();
-      var top=r.top+window.scrollY, bot=top+el.offsetHeight;
-      var on=mid>=top && mid<bot;
-      el.classList.toggle('is-in', r.top<window.innerHeight*0.75 && r.bottom>window.innerHeight*0.2);
-      if(dots[i]) dots[i].classList.toggle('on', on);
-    });
+    var past=hook.getBoundingClientRect().top < window.innerHeight*0.35;
+    var inQuote=quote.getBoundingClientRect().top < window.innerHeight*0.85;
+    sticky.classList.toggle('show', past && !inQuote);
+    document.body.classList.toggle('sticky-on', past && !inQuote);
   }
   window.addEventListener('scroll', onScroll, {passive:true});
   onScroll();
 
-  // map drag pan
-  var map=document.getElementById('c3');
-  var bg=document.getElementById('mapBg');
-  if(map && bg){
+  // beat reveal
+  var beats=[].slice.call(document.querySelectorAll('[data-beat]'));
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting) e.target.classList.add('is-in'); });
+    },{threshold:0.35});
+    beats.forEach(function(b){ io.observe(b); if(reduce) b.classList.add('is-in'); });
+  } else beats.forEach(function(b){ b.classList.add('is-in'); });
+
+  // map pan + hotspots
+  var stage=document.getElementById('mapStage');
+  var mapImg=document.getElementById('mapImg');
+  if(stage && mapImg){
     var ox=50, oy=45, drag=false, sx, sy, sox, soy;
-    bg.style.objectPosition=ox+'% '+oy+'%';
-    function start(x,y){ drag=true; map.classList.add('is-drag'); sx=x; sy=y; sox=ox; soy=oy; }
-    function move(x,y){
-      if(!drag) return;
-      ox=Math.max(0, Math.min(100, sox-(x-sx)/6));
-      oy=Math.max(0, Math.min(100, soy-(y-sy)/6));
-      bg.style.objectPosition=ox+'% '+oy+'%';
-    }
-    function end(){ drag=false; map.classList.remove('is-drag'); }
-    map.addEventListener('pointerdown', function(e){ if(e.target.closest('a,button')) return; start(e.clientX,e.clientY); map.setPointerCapture(e.pointerId); });
-    map.addEventListener('pointermove', function(e){ move(e.clientX,e.clientY); });
-    map.addEventListener('pointerup', end);
-    map.addEventListener('pointercancel', end);
+    mapImg.style.objectPosition=ox+'% '+oy+'%';
+    function start(x,y){ drag=true; stage.classList.add('is-drag'); sx=x; sy=y; sox=ox; soy=oy; }
+    function move(x,y){ if(!drag) return; ox=Math.max(0,Math.min(100,sox-(x-sx)/6)); oy=Math.max(0,Math.min(100,soy-(y-sy)/6)); mapImg.style.objectPosition=ox+'% '+oy+'%'; }
+    function end(){ drag=false; stage.classList.remove('is-drag'); }
+    stage.addEventListener('pointerdown', function(e){ if(e.target.closest('.hot,a,button')) return; start(e.clientX,e.clientY); stage.setPointerCapture(e.pointerId); });
+    stage.addEventListener('pointermove', function(e){ move(e.clientX,e.clientY); });
+    stage.addEventListener('pointerup', end);
+    stage.addEventListener('pointercancel', end);
+    [].forEach.call(document.querySelectorAll('.hot'), function(h){
+      h.querySelector('button').addEventListener('click', function(){
+        [].forEach.call(document.querySelectorAll('.hot'), function(x){ x.classList.remove('open'); });
+        h.classList.toggle('open');
+      });
+    });
+  }
+
+  // scrub
+  var range=document.getElementById('scrubRange');
+  var top=document.getElementById('scrubTop');
+  if(range && top){
+    function setScrub(v){ top.style.opacity=(v/100).toFixed(3); }
+    range.addEventListener('input', function(){ setScrub(+range.value); });
+    setScrub(0);
   }
 
   document.getElementById('quoteForm').addEventListener('submit', function(e){
     e.preventDefault();
-    var body=[
-      'Watershed field assessment — quote request','',
+    var body=['Watershed field assessment — quote request','',
       'Name: '+document.getElementById('name').value.trim(),
       'Organization: '+(document.getElementById('org').value.trim()||'(not given)'),
       'Basin / reach: '+document.getElementById('basin').value.trim(),
