@@ -1,7 +1,7 @@
 # Watershed Field Assessment — firm copy (quote-only)
 
 **Voice:** trustworthy, calm, competent. Professional craft. Not merch. Not process jargon. Not a soup-card.  
-**Commercial:** quote-only. No cart. Ads $0.  
+**Commercial:** quote-only. No cart. Ads off.  
 **Standing name:** Demeter Design (env KEEP under Graphic Oregon). Personal Cara off the face.
 
 ---
