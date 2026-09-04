@@ -1,370 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Coast Desk · Hed Wall</title>
-  <meta name="description" content="Graphic Oregon journalism door: verified Cara Mico CV bylines, beat browse, and pull-quotes that open the originals.">
-  <style>
-    :root {
-      --ink: #0f1c24;
-      --paper: #f6f1e8;
-      --teal: #1f6f78;
-      --gold: #c4a35a;
-      --line: #d5cbba;
-      --cream: #fffaf2;
-      --rule: #1a1a1a;
-      --muted: #5a6570;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      color: var(--ink);
-      background:
-        repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(15,28,36,.015) 2px, rgba(15,28,36,.015) 3px),
-        var(--paper);
-      font: 16px/1.5 Georgia, "Iowan Old Style", "Palatino Linotype", serif;
-    }
-    .wrap { max-width: 72rem; margin: 0 auto; padding: 1.1rem 1.15rem 3rem; }
-    .kicker {
-      color: var(--teal);
-      font: 700 .72rem/1.2 system-ui, -apple-system, sans-serif;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-    }
-    header.mast {
-      border-top: 4px solid var(--ink);
-      border-bottom: 2px solid var(--ink);
-      padding: .7rem 0 .85rem;
-      margin-bottom: 1rem;
-    }
-    header.mast h1 {
-      margin: .1rem 0 .15rem;
-      font-size: clamp(2.1rem, 6vw, 3.4rem);
-      letter-spacing: -.03em;
-      line-height: .95;
-      text-align: center;
-    }
-    header.mast .flag {
-      text-align: center;
-      font: 600 .82rem/1.4 system-ui, sans-serif;
-      color: var(--muted);
-    }
-    .counts {
-      display: flex; flex-wrap: wrap; justify-content: center; gap: .35rem .7rem;
-      margin-top: .55rem;
-      font: 600 .78rem/1.3 system-ui, sans-serif;
-      text-transform: uppercase;
-      letter-spacing: .04em;
-    }
-    .counts span { border: 1px solid var(--line); background: var(--cream); padding: .2rem .45rem; }
-    .lede {
-      max-width: 44rem;
-      margin: .85rem auto 0;
-      text-align: center;
-      font-size: 1.02rem;
-    }
-    a { color: var(--teal); }
-    .browse {
-      background: var(--cream);
-      border: 1px solid var(--line);
-      padding: .85rem .95rem 1rem;
-      margin: 1rem 0 1.1rem;
-    }
-    .filters { display: flex; flex-wrap: wrap; gap: .4rem; margin: .4rem 0 .55rem; }
-    .chip {
-      appearance: none;
-      border: 1px solid var(--teal);
-      background: transparent;
-      color: var(--teal);
-      font: 650 .78rem/1 system-ui, sans-serif;
-      letter-spacing: .03em;
-      text-transform: uppercase;
-      padding: .38rem .65rem;
-      border-radius: 999px;
-      cursor: pointer;
-    }
-    .chip[aria-pressed="true"] { background: var(--teal); color: #fff; }
-    .chip.gold[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); }
-    .filter-label {
-      width: 100%;
-      margin: .45rem 0 .15rem;
-      font: 700 .7rem/1 system-ui, sans-serif;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      color: var(--muted);
-    }
-    .quotes { display: grid; gap: .7rem; margin-top: .75rem; }
-    @media (min-width: 800px) { .quotes.many { grid-template-columns: 1fr 1fr; } }
-    blockquote.pull {
-      margin: 0;
-      padding: .7rem .85rem .75rem 1rem;
-      border-left: 4px solid var(--gold);
-      background: #fff;
-      border-top: 1px solid var(--line);
-      border-right: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
-    }
-    blockquote.pull .beat {
-      font: 700 .68rem/1 system-ui, sans-serif;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      color: var(--teal);
-    }
-    blockquote.pull a {
-      color: var(--ink);
-      text-decoration: none;
-      display: block;
-      margin-top: .25rem;
-      font-size: 1.05rem;
-      line-height: 1.35;
-    }
-    blockquote.pull a:hover { color: var(--teal); }
-    blockquote.pull .src {
-      margin-top: .4rem;
-      font: 600 .75rem/1.3 system-ui, sans-serif;
-      color: var(--muted);
-    }
-    .status {
-      font: 600 .8rem/1.3 system-ui, sans-serif;
-      color: var(--muted);
-      margin: .2rem 0 0.8rem;
-    }
-    .wall {
-      column-count: 1;
-      column-gap: 1.35rem;
-      border-top: 3px double var(--ink);
-      padding-top: .4rem;
-    }
-    @media (min-width: 640px) { .wall { column-count: 2; } }
-    @media (min-width: 980px) { .wall { column-count: 3; } }
-    .hed {
-      break-inside: avoid;
-      border-bottom: 1px solid var(--ink);
-      padding: .7rem 0 .75rem;
-    }
-    .hed a.t {
-      color: var(--ink);
-      text-decoration: none;
-      font-weight: 750;
-      font-size: 1.18rem;
-      line-height: 1.18;
-      display: block;
-    }
-    .hed.lead a.t { font-size: 1.48rem; letter-spacing: -.02em; }
-    .hed a.t:hover { color: var(--teal); }
-    .hed .dek { margin: .25rem 0 0; font-size: .95rem; color: #334; }
-    .hed .meta {
-      margin-top: .35rem;
-      font: 650 .72rem/1.3 system-ui, sans-serif;
-      letter-spacing: .04em;
-      text-transform: uppercase;
-      color: var(--muted);
-    }
-    .hed .meta .dot { margin: 0 .28rem; color: var(--gold); }
-    .empty { padding: 1.2rem 0; color: var(--muted); }
-    footer {
-      margin-top: 2rem;
-      padding-top: 1rem;
-      border-top: 2px solid var(--ink);
-      font: .85rem/1.5 system-ui, sans-serif;
-      color: var(--muted);
-    }
-    footer p { margin: .35rem 0; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cara Mico — Bylines</title>
+<meta name="description" content="Cara Mico published bylines across Oregon papers. Open the originals.">
+<style>
+:root{--ink:#0f1c24;--paper:#f6f1e8;--teal:#1f6f78;--line:#d5cbba;--mute:#5a6570}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.5 Georgia,"Iowan Old Style",Palatino,serif}
+.wrap{max-width:48rem;margin:0 auto;padding:1.25rem 1.15rem 3rem}
+.kicker{font:700 .72rem/1.2 system-ui,sans-serif;letter-spacing:.07em;text-transform:uppercase;color:var(--teal);margin:0}
+h1{margin:.25rem 0 .4rem;font-size:clamp(1.85rem,4.5vw,2.45rem);letter-spacing:-.02em;line-height:1.08}
+.why{margin:0 0 .85rem;color:var(--mute);font-size:1.02rem;max-width:34rem}
+.meta{font:600 .85rem/1.4 system-ui,sans-serif;color:var(--mute);margin:0 0 1rem}
+a{color:var(--teal)}
+.filters{display:flex;flex-wrap:wrap;gap:.35rem;margin:0 0 1rem}
+.chip{appearance:none;border:1px solid var(--teal);background:transparent;color:var(--teal);font:650 .78rem/1 system-ui,sans-serif;padding:.35rem .55rem;border-radius:999px;cursor:pointer}
+.chip.on,.chip:hover{background:var(--teal);color:#fff}
+.list{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
+.list li{border-bottom:1px solid var(--line);padding:.75rem 0}
+.list a{text-decoration:none;color:inherit;display:block}
+.list a:hover .title{color:var(--teal);text-decoration:underline}
+.title{font-size:1.06rem;font-weight:700;margin:0 0 .2rem}
+.by{font:600 .8rem/1.3 system-ui,sans-serif;color:var(--mute)}
+.note{font-size:.88rem;color:var(--mute);margin:1.35rem 0 0;max-width:38rem}
+footer{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--mute)}
+</style>
 </head>
 <body>
-<div class="wrap">
-  <p class="kicker">Coast Desk · Graphic Oregon child · journalism</p>
-  <header class="mast">
-    <h1>Hed Wall</h1>
-    <p class="flag">Graphic Oregon journalism door</p>
-    <div class="counts" id="counts">
-      <span>49 verified CV URLs</span>
-      <span>5 outlets</span>
-      <span>2012–2025</span>
-      <span>Pioneer desk 2022–Present · role</span>
-    </div>
-    <p class="lede">This page is proof of real desk journalism volume — Cara Mico bylines, filed at papers that already exist.</p>
-    <p class="lede">The wall is verified CV bylines. Chip by beat, outlet, or year. Each beat has one short pull-quote that opens the original. No full articles here.</p>
-  </header>
-
-  <section class="browse" aria-label="Browse layer">
-    <p class="kicker">Browse</p>
-    <div class="filter-label">Beat</div>
-    <div class="filters" id="beats"></div>
-    <div class="filter-label">Outlet</div>
-    <div class="filters" id="outlets"></div>
-    <div class="filter-label">Year</div>
-    <div class="filters" id="years"></div>
-    <div class="quotes" id="quotes"></div>
-  </section>
-
-  <p class="status" id="status">Loading the wall…</p>
-  <div class="wall" id="wall"></div>
-
+<main class="wrap">
+  <p class="kicker">Coast Desk · Graphic Oregon</p>
+  <h1>Cara Mico — Bylines</h1>
+  <p class="why"><strong>You’re here to read her published work</strong> and open the originals.</p>
+  <p class="meta">55 pieces · 2012–2025 · 5 outlets</p>
+  <div class="filters" id="filters" aria-label="Filter by outlet">
+    <button type="button" class="chip on" data-outlet="all">All</button>
+    <button type="button" class="chip" data-outlet="Cannon Beach Gazette">Cannon Beach Gazette</button>
+    <button type="button" class="chip" data-outlet="HipFish Monthly">HipFish Monthly</button>
+    <button type="button" class="chip" data-outlet="Portland Mercury">Portland Mercury</button>
+    <button type="button" class="chip" data-outlet="Seaside Signal">Seaside Signal</button>
+    <button type="button" class="chip" data-outlet="Tillamook County Pioneer">Pioneer</button>
+  </div>
+  <ul class="list" id="list"></ul>
+  <p class="note">Pioneer pieces listed here carry a Cara Mico byline (or were CV-verified). The Pioneer assistant-editor archive also includes other writers — those are not claimed here.</p>
   <footer>
-    <p>Coast Desk is not a newspaper. Pioneer stays Pioneer. The assistant-editor archive mixes other writers; this wall lists only the five Pioneer pieces on the CV.</p>
-    <p>Parent: <a href="https://graphicoregon.com/">Graphic Oregon</a> ·
-      Cooker: <a href="../../">Company Soup</a> ·
-      <a href="pack.md">pack.md</a> ·
-      <a href="placement-note-001.html">Placement Note 001</a> ·
-      <a href="https://www.tillamookcountypioneer.net/author/assistant-editor/" target="_blank" rel="noopener">Pioneer author path</a> (volume, mixed bylines)</p>
+    Cara Mico · Coast Desk ·
+    <a href="https://graphicoregon.com/">Graphic Oregon</a> ·
+    <a href="../../">Company Soup</a>
   </footer>
-</div>
+</main>
 <script>
-(function () {
-  var BEATS = [
-    { id: "science", label: "Science" },
-    { id: "civic", label: "Civic" },
-    { id: "arts", label: "Arts" },
-    { id: "outdoors", label: "Outdoors" },
-    { id: "community", label: "Community" }
-  ];
-  var state = { beat: "all", outlet: "all", year: "all" };
-  var data = { clips: [], quotes: [], meta: {} };
-
-  function el(tag, attrs, html) {
-    var n = document.createElement(tag);
-    if (attrs) Object.keys(attrs).forEach(function (k) {
-      if (k === "text") n.textContent = attrs[k];
-      else n.setAttribute(k, attrs[k]);
-    });
-    if (html) n.innerHTML = html;
-    return n;
-  }
-
-  function chip(label, pressed, group) {
-    var b = el("button", { class: "chip" + (group === "beat" ? " gold" : ""), type: "button" });
-    b.textContent = label;
-    b.setAttribute("aria-pressed", pressed ? "true" : "false");
-    return b;
-  }
-
-  function unique(key) {
-    var seen = {};
-    data.clips.forEach(function (c) { seen[c[key]] = true; });
-    return Object.keys(seen).sort(function (a, b) {
-      if (key === "year") return Number(b) - Number(a);
-      return String(a).localeCompare(String(b));
+var CLIPS = [{"outlet": "Tillamook County Pioneer", "year": 2025, "title": "Space Just Got a Little Closer", "url": "https://www.tillamookcountypioneer.net/space-just-got-a-little-closer/"}, {"outlet": "Tillamook County Pioneer", "year": 2024, "title": "Homelessness in Tillamook County and on the West Coast", "url": "https://www.tillamookcountypioneer.net/homelessness-in-tillamook-county-and-on-the-west-coast/"}, {"outlet": "Tillamook County Pioneer", "year": 2024, "title": "Manzanita Citizens Express Concern for Incomplete LUBA Response for the Lofts Development", "url": "https://www.tillamookcountypioneer.net/manzanita-citizens-express-concern-for-incomplete-luba-response-for-the-lofts-development/"}, {"outlet": "Tillamook County Pioneer", "year": 2024, "title": "On the Future of Artificial Intelligence and How AI Can Help Humanity", "url": "https://www.tillamookcountypioneer.net/on-the-future-of-artificial-intelligence-and-how-it-can-help-humanity/"}, {"outlet": "Tillamook County Pioneer", "year": 2024, "title": "The Data of Immigration", "url": "https://www.tillamookcountypioneer.net/the-data-of-immigration/"}, {"outlet": "Tillamook County Pioneer", "year": 2024, "title": "The Return of Sea Otters to Haystack Rock", "url": "https://www.tillamookcountypioneer.net/the-return-of-sea-otters-to-haystack-rock/"}, {"outlet": "Tillamook County Pioneer", "year": 2023, "title": "Spy vs. Spy", "url": "https://www.tillamookcountypioneer.net/spy-vs-spy-balloon-war/"}, {"outlet": "Tillamook County Pioneer", "year": 2023, "title": "Understanding AI Language Models: An Introductory Guide", "url": "https://www.tillamookcountypioneer.net/understanding-ai-language-models-an-introductory-guide/"}, {"outlet": "Tillamook County Pioneer", "year": 2022, "title": "A New View: Space", "url": "https://www.tillamookcountypioneer.net/a-new-view-space/"}, {"outlet": "Tillamook County Pioneer", "year": 2022, "title": "Climate Change on the Oregon Coast", "url": "https://www.tillamookcountypioneer.net/climate-change-on-the-oregon-coast-3-part-series/"}, {"outlet": "Tillamook County Pioneer", "year": 2022, "title": "Manzanita City Council Regular Session Highlights 11/9/2022", "url": "https://www.tillamookcountypioneer.net/manzanita-city-council-regular-session-highlights-11-9-2022/"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "Beauty and the Beast at Coaster Theater Spring Camp", "url": "https://www.cannonbeachgazette.com/entertainment/beauty-and-the-beast-at-coaster-theatre-spring-camp/article_1912d514-528a-11e9-bb4e-177472b31e94.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "Bed and breakfast or short term rental?", "url": "https://www.cannonbeachgazette.com/news/local-news/bed-and-breakfast-or-short-term-rental/article_d24d7ad4-5271-11e9-8fd6-33180ae1a89f.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "Big changes ahead for rental permits", "url": "https://www.cannonbeachgazette.com/news/local-news/big-changes-could-be-ahead-for-rental-permits/article_b5516794-5279-11e9-9d6a-9f3d5d00f719.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "Burglaries spike, but overall crime report is ‘average’", "url": "https://www.cannonbeachgazette.com/news/local-news/burglaries-spike-but-overall-crime-report-is-average/article_23bd935c-2b0f-11e9-81fa-cb3ccbd6a65e.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "City Council appeal sent back to Planning Commission", "url": "https://www.cannonbeachgazette.com/news/local-news/city-council-appeal-sent-back-to-planning-commission/article_b913b8f6-5f98-11e9-b7d8-275b23d6892c.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "City hall location dizzying for council", "url": "https://www.cannonbeachgazette.com/news/local-news/city-hall-options-dizzying-for-council/article_5e500b36-2bcc-11e9-a4d4-0b6fe5dfb8ba.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "City hall location only one of many concerns", "url": "https://www.cannonbeachgazette.com/news/local-news/city-hall-location-only-one-of-many-council-concerns/article_6effdaa4-34ac-11e9-bab5-072ab5e9c25c.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "City seeks clarity on tourism funds", "url": "https://www.cannonbeachgazette.com/news/local-news/city-seeks-clarity-on-tourism-funds/article_bd008fac-486e-11e9-96d8-8be7bdc7b78d.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "Design Review Board approves two new marijuana shop plans", "url": "https://www.cannonbeachgazette.com/news/local-news/design-review-board-approves-two-new-marijuana-shop-plans/article_4540d63c-4f82-11e9-b51f-5f58d4abebe9.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "Food for the Soul", "url": "https://www.cannonbeachgazette.com/news/local-news/food-for-the-soul/article_69383ba0-54a2-11e9-b338-43b9fde4b7a0.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "Funding sought to analyze potential city hall sites", "url": "https://www.cannonbeachgazette.com/news/local-news/funding-sought-to-analyze-potential-city-hall-sites/article_981f6722-4444-11e9-9313-db6f6c18bdbe.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "Is comp plan revision ahead?", "url": "https://www.cannonbeachgazette.com/news/local-news/is-comp-plan-revision-ahead/article_d22213da-3a11-11e9-9320-430e5ede90c2.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "Keeping a forest healthy", "url": "https://www.cannonbeachgazette.com/news/local-news/keeping-a-forest-healthy/article_70592f52-3e31-11e9-a0f2-6b25324930ed.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "Love it like a local", "url": "https://www.cannonbeachgazette.com/news/local-news/love-it-like-a-local/article_05918dbe-4425-11e9-93ef-7f3954f702a1.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "Neal Maine’s art of the migratory bird", "url": "https://www.cannonbeachgazette.com/entertainment/neal-maine-s-art-of-the-migratory-bird/article_443ec004-ec1e-571d-a62a-a224ec9d0c2c.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "No tents in the park", "url": "https://www.cannonbeachgazette.com/news/local-news/no-tents-in-the-parks/article_e3a2352e-486f-11e9-821f-5b4df1833d81.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "Operations levy rejected for new fire truck", "url": "https://www.cannonbeachgazette.com/news/local-news/operations-levy-rejected-for-new-fire-truck/article_28e0ca0a-469b-11e9-9d6e-eb9194653f98.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "Preparation is the Watchword", "url": "https://www.cannonbeachgazette.com/news/local-news/preparation-is-watchword/article_470ded96-6441-11e9-be4d-0fd857e90c28.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "Program seeks to protect puffin population", "url": "https://www.cannonbeachgazette.com/news/local-news/program-seeks-to-protect-puffin-population/article_39794b1e-486f-11e9-8df5-9fd8164430ec.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "Savor Cannon Beach", "url": "https://www.cannonbeachgazette.com/entertainment/savor-cannon-beach/article_1ca2a8aa-33a7-11e9-a802-ef46ff77f2a4.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "Site plan for larger tree work required", "url": "https://www.cannonbeachgazette.com/news/local-news/city-council-roundup-site-plan-for-larger-tree-work-required/article_085a6ff4-5f99-11e9-9179-4764da579f91.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "Warren Way reconfiguration ahead", "url": "https://www.cannonbeachgazette.com/news/local-news/warren-way-reconfiguration-ahead/article_bd683b9c-486f-11e9-b588-db864ff4a874.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "What’s in store for the new RV park?", "url": "https://www.cannonbeachgazette.com/news/local-news/what-s-in-store-at-the-rv-park/article_10c1cc54-4424-11e9-adf6-931e62fb16db.html"}, {"outlet": "Seaside Signal", "year": 2019, "title": "Cleaning up on the diamond", "url": "https://www.seasidesignal.com/2019/09/18/cleaning-up-on-the-diamond/"}, {"outlet": "Seaside Signal", "year": 2019, "title": "Firehouse committee zeroes in on high point site", "url": "https://www.seasidesignal.com/2019/05/22/firehouse-committee-zeroes-in-on-high-point-site/"}, {"outlet": "Seaside Signal", "year": 2019, "title": "Fresh picked farmers market in Seaside", "url": "https://www.seasidesignal.com/2019/07/25/fresh-picked-farmers-market-in-seaside/"}, {"outlet": "Seaside Signal", "year": 2019, "title": "Hum and Swish", "url": "https://www.seasidesignal.com/2019/09/21/hum-and-swish/"}, {"outlet": "Seaside Signal", "year": 2019, "title": "Hypertufa workshop promotes local species", "url": "https://www.seasidesignal.com/2019/07/01/hypertufa-workshop-promotes-local-species/"}, {"outlet": "Seaside Signal", "year": 2019, "title": "Jeepers Creepers birding event at Circle Creek", "url": "https://www.seasidesignal.com/2019/08/13/jeepers-creepers-birding-event-at-circle-creek/"}, {"outlet": "Seaside Signal", "year": 2019, "title": "Making scents at Beach Books", "url": "https://www.seasidesignal.com/2019/07/09/making-scents-at-beach-books/"}, {"outlet": "Seaside Signal", "year": 2019, "title": "NCLC volunteers go deep into the weeds", "url": "https://www.seasidesignal.com/2019/08/01/nclc-volunteers-go-deep-into-the-weeds/"}, {"outlet": "Seaside Signal", "year": 2019, "title": "Ode to the Tides", "url": "https://www.seasidesignal.com/2019/06/19/ode-to-the-tides/"}, {"outlet": "Seaside Signal", "year": 2019, "title": "Pickleball headed to Gearhart", "url": "https://www.seasidesignal.com/2019/08/27/pickleball-headed-to-gearhart/"}, {"outlet": "Seaside Signal", "year": 2019, "title": "Preparedness forum invites community involvement", "url": "https://www.seasidesignal.com/2019/09/10/preparedness-forum-invites-community-involvement/"}, {"outlet": "Seaside Signal", "year": 2019, "title": "Preserving pollinators on the north coast", "url": "https://www.seasidesignal.com/2019/05/29/preserving-pollinators-on-the-north-coast/"}, {"outlet": "Seaside Signal", "year": 2019, "title": "Social justice motivates artist May Wallace", "url": "https://www.seasidesignal.com/2019/08/02/social-justice-motivates-artist-may-wallace/"}, {"outlet": "Seaside Signal", "year": 2019, "title": "Sparking change, one piece of plastic at a time", "url": "https://www.seasidesignal.com/2019/05/21/sparking-change-one-piece-of-plastic-at-a-time/"}, {"outlet": "Seaside Signal", "year": 2019, "title": "The food all around us", "url": "https://www.seasidesignal.com/2019/05/29/the-food-all-around-us/"}, {"outlet": "HipFish Monthly", "year": 2017, "title": "North Coast Recreation District’s brilliant new theater facility", "url": "https://www.hipfishmonthly.com/wp-content/uploads/2017/01/117.pdf"}, {"outlet": "HipFish Monthly", "year": 2017, "title": "Riverbend Players stage a first musical: Cole Porter’s You Never Know", "url": "https://www.hipfishmonthly.com/wp-content/uploads/2017/05/517.pdf"}, {"outlet": "HipFish Monthly", "year": 2016, "title": "Of Dust and the River: Tim Hurd", "url": "https://www.hipfishmonthly.com/wp-content/uploads/2016/10/1016.pdf"}, {"outlet": "HipFish Monthly", "year": 2016, "title": "When Albums Were Art", "url": "https://www.hipfishmonthly.com/wp-content/uploads/2016/07/716.pdf"}, {"outlet": "Portland Mercury", "year": 2013, "title": "And Your Ammo, Too!", "url": "https://www.portlandmercury.com/news/2013/02/20/8531590/and-your-ammo-too"}, {"outlet": "Portland Mercury", "year": 2012, "title": "A Temporary Armistice", "url": "https://www.portlandmercury.com/news/2012/12/05/7826150/a-temporary-armistice"}];
+(function(){
+  var list=document.getElementById('list');
+  var filters=document.getElementById('filters');
+  var active='all';
+  function render(){
+    list.innerHTML='';
+    CLIPS.filter(function(c){return active==='all'||c.outlet===active}).forEach(function(c){
+      var li=document.createElement('li');
+      var a=document.createElement('a');
+      a.href=c.url; a.target='_blank'; a.rel='noopener';
+      var t=document.createElement('p'); t.className='title'; t.textContent=c.title;
+      var b=document.createElement('p'); b.className='by';
+      b.textContent='Cara Mico · '+c.outlet+(c.year?(' · '+c.year):'');
+      a.appendChild(t); a.appendChild(b); li.appendChild(a); list.appendChild(li);
     });
   }
-
-  function filtered() {
-    return data.clips.filter(function (c) {
-      if (state.beat !== "all" && c.beat !== state.beat) return false;
-      if (state.outlet !== "all" && c.outlet !== state.outlet) return false;
-      if (state.year !== "all" && String(c.year) !== String(state.year)) return false;
-      return true;
-    }).sort(function (a, b) {
-      return (b.date || "").localeCompare(a.date || "");
-    });
-  }
-
-  function renderChips() {
-    var beats = document.getElementById("beats");
-    beats.innerHTML = "";
-    var all = chip("All beats", state.beat === "all", "beat");
-    all.onclick = function () { state.beat = "all"; draw(); };
-    beats.appendChild(all);
-    BEATS.forEach(function (b) {
-      var n = data.clips.filter(function (c) { return c.beat === b.id; }).length;
-      var btn = chip(b.label + " · " + n, state.beat === b.id, "beat");
-      btn.onclick = function () { state.beat = state.beat === b.id ? "all" : b.id; draw(); };
-      beats.appendChild(btn);
-    });
-
-    var outlets = document.getElementById("outlets");
-    outlets.innerHTML = "";
-    var oAll = chip("All outlets", state.outlet === "all");
-    oAll.onclick = function () { state.outlet = "all"; draw(); };
-    outlets.appendChild(oAll);
-    unique("outlet").forEach(function (o) {
-      var btn = chip(o, state.outlet === o);
-      btn.onclick = function () { state.outlet = state.outlet === o ? "all" : o; draw(); };
-      outlets.appendChild(btn);
-    });
-
-    var years = document.getElementById("years");
-    years.innerHTML = "";
-    var yAll = chip("All years", state.year === "all");
-    yAll.onclick = function () { state.year = "all"; draw(); };
-    years.appendChild(yAll);
-    unique("year").forEach(function (y) {
-      var btn = chip(String(y), String(state.year) === String(y));
-      btn.onclick = function () { state.year = String(state.year) === String(y) ? "all" : y; draw(); };
-      years.appendChild(btn);
-    });
-  }
-
-  function quoteCard(q) {
-    var bq = el("blockquote", { class: "pull" });
-    var beat = BEATS.filter(function (x) { return x.id === q.beat; })[0];
-    bq.appendChild(el("div", { class: "beat", text: (beat ? beat.label : q.beat) + " · pull-quote" }));
-    var a = el("a", { href: q.url, target: "_blank", rel: "noopener" });
-    a.appendChild(document.createTextNode("“" + q.text + "”"));
-    bq.appendChild(a);
-    bq.appendChild(el("div", { class: "src", text: q.hed + " · open original" }));
-    return bq;
-  }
-
-  function renderQuotes() {
-    var box = document.getElementById("quotes");
-    box.innerHTML = "";
-    var qs = data.quotes || [];
-    if (state.beat === "all") {
-      box.className = "quotes many";
-      qs.forEach(function (q) { box.appendChild(quoteCard(q)); });
-    } else {
-      box.className = "quotes";
-      var hit = qs.filter(function (q) { return q.beat === state.beat; })[0];
-      if (hit) box.appendChild(quoteCard(hit));
-    }
-  }
-
-  function renderWall() {
-    var wall = document.getElementById("wall");
-    var rows = filtered();
-    var total = data.clips.length;
-    document.getElementById("status").textContent =
-      "Showing " + rows.length + " of " + total + " verified CV heds · no article bodies on this page";
-    wall.innerHTML = "";
-    if (!rows.length) {
-      wall.appendChild(el("p", { class: "empty", text: "No heds match those chips." }));
-      return;
-    }
-    rows.forEach(function (c) {
-      var art = el("article", { class: "hed" + (c.lead ? " lead" : "") });
-      var a = el("a", { class: "t", href: c.url, target: "_blank", rel: "noopener" });
-      a.textContent = c.hed;
-      art.appendChild(a);
-      if (c.dek) art.appendChild(el("p", { class: "dek", text: c.dek }));
-      var beat = BEATS.filter(function (x) { return x.id === c.beat; })[0];
-      art.appendChild(el("p", { class: "meta", text:
-        c.outlet + " · " + c.year + " · " + (beat ? beat.label : c.beat)
-      }));
-      wall.appendChild(art);
-    });
-  }
-
-  function draw() {
-    renderChips();
-    renderQuotes();
-    renderWall();
-  }
-
-  fetch("clips.json").then(function (r) { return r.json(); }).then(function (j) {
-    data = j;
-    var m = j.meta || {};
-    document.getElementById("counts").innerHTML =
-      "<span>" + (m.verifiedCount || j.clips.length) + " verified CV URLs</span>" +
-      "<span>" + (m.outlets || 5) + " outlets</span>" +
-      "<span>" + (m.years || "") + "</span>" +
-      "<span>Pioneer desk 2022–Present · role</span>";
-    draw();
-  }).catch(function () {
-    document.getElementById("status").textContent = "Could not load clips.json.";
+  filters.addEventListener('click', function(e){
+    var btn=e.target.closest('.chip'); if(!btn) return;
+    active=btn.getAttribute('data-outlet');
+    filters.querySelectorAll('.chip').forEach(function(x){x.classList.toggle('on', x===btn)});
+    render();
   });
+  render();
 })();
 </script>
 </body>
