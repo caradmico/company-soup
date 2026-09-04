@@ -4,132 +4,94 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Demeter Design · Watershed Field Assessment</title>
-<meta name="description" content="Oregon coast watershed field assessment. We measure. We map. You decide. Request a quote.">
+<meta name="description" content="Oregon watershed field assessment. Quote-only. Real reports from Nestucca, Netarts, Tillamook Bay.">
 <style>
-:root{--ink:#0c1a1c;--paper:#f3efe6;--deep:#0a2a30;--gold:#c9a24a;--white:#fffdf8}
-*{box-sizing:border-box;margin:0;padding:0}
-body{font:18px/1.4 system-ui,-apple-system,sans-serif;color:var(--ink);background:var(--paper)}
-img{display:block;width:100%;height:100%;object-fit:cover}
-a{color:inherit}
-.cta{
-  display:inline-block;background:var(--gold);color:#102018;font:700 1.05rem/1 system-ui;
-  padding:1rem 1.6rem;border-radius:999px;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,.25)
-}
-.cta:hover{filter:brightness(1.05)}
-.sticky{
-  position:fixed;left:0;right:0;bottom:0;z-index:20;
-  background:rgba(10,42,48,.92);backdrop-filter:blur(8px);
-  padding:.85rem 1rem;display:flex;justify-content:center;gap:.75rem;align-items:center
-}
-.sticky span{color:#e8f0f0;font:600 .9rem/1.2 system-ui}
-.hero{position:relative;min-height:92vh;color:var(--white);display:grid;align-items:end}
-.hero img{position:absolute;inset:0}
-.hero .veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,42,48,.15),rgba(10,42,48,.82) 70%)}
-.hero .copy{position:relative;z-index:1;padding:2rem 1.25rem 6.5rem;max-width:40rem}
-.eyebrow{font:700 .75rem/1 system-ui;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:.75rem}
-h1{font:700 clamp(2.4rem,7vw,4.2rem)/1.02 Georgia,"Iowan Old Style",serif;margin-bottom:.75rem;letter-spacing:-.02em}
-.hero p{font-size:1.15rem;max-width:28rem;opacity:.95;margin-bottom:1.25rem}
-.story{display:grid}
-@media(min-width:800px){.story{grid-template-columns:1.15fr .85fr}}
-.story .panel{min-height:55vh;position:relative;color:var(--white)}
-.story .panel .veil{position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.72),rgba(0,0,0,.1))}
-.story .text{position:relative;z-index:1;padding:2rem 1.25rem;max-width:28rem}
-.num{font:700 .72rem/1 system-ui;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem}
-.story h2{font:700 1.8rem/1.1 Georgia,serif;margin-bottom:.4rem}
-.story p{opacity:.92;font-size:1.02rem}
-.proof{
-  padding:2.5rem 1.25rem 7rem;max-width:1100px;margin:0 auto
-}
-.proof h2{font:700 1.5rem/1.15 Georgia,serif;margin-bottom:1rem}
-.grid{display:grid;gap:.75rem}
-@media(min-width:700px){.grid{grid-template-columns:1.2fr 1fr 1fr}}
-.grid a{position:relative;min-height:220px;overflow:hidden;border-radius:14px;color:#fff;text-decoration:none}
-.grid a .veil{position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.75),transparent 55%)}
-.grid a span{position:absolute;left:1rem;right:1rem;bottom:1rem;z-index:1;font:700 1rem/1.2 system-ui}
-footer{padding:1rem 1.25rem 6rem;color:#5a6668;font-size:.85rem;text-align:center}
+:root{--ink:#0e1c1f;--paper:#efeae1;--deep:#0c2c32;--sea:#1a5c66;--gold:#c4a35a;--white:#fffcf7;--muted:#5a676c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.45 system-ui,-apple-system,sans-serif}
+a{color:var(--sea)}
+.hero{position:relative;min-height:72vh;display:flex;align-items:flex-end;background:var(--deep) center/cover no-repeat;background-image:linear-gradient(to top,rgba(8,24,28,.88) 0%,rgba(8,24,28,.25) 55%,rgba(8,24,28,.15) 100%),url("img/hero.jpg")}
+.hero-inner{max-width:920px;margin:0 auto;padding:2rem 1.25rem 2.4rem;color:#f6f1e8;width:100%}
+.eyebrow{font:700 .7rem/1 system-ui;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin:0 0 .55rem}
+h1{font-size:clamp(1.9rem,4.5vw,2.8rem);line-height:1.05;margin:0 0 .55rem;letter-spacing:-.03em;max-width:12ch}
+.lede{font-size:1.05rem;max-width:28rem;opacity:.92;margin:0 0 1.1rem}
+.btn{display:inline-block;padding:.85rem 1.4rem;background:var(--gold);color:#142018!important;text-decoration:none;font:800 .95rem/1 system-ui;border-radius:3px}
+.btn:hover{filter:brightness(1.05)}
+.btn-lg{font-size:1.05rem;padding:1rem 1.6rem}
+section{max-width:920px;margin:0 auto;padding:2.2rem 1.25rem 0}
+h2{font-size:1.15rem;margin:0 0 .85rem;letter-spacing:-.01em}
+.story{display:grid;gap:1rem}
+@media(min-width:760px){.story{grid-template-columns:1.05fr .95fr;align-items:center}}
+.story p{margin:0 0 .7rem;font-size:1.02rem;color:#243236}
+.story .step{font:800 .72rem/1 system-ui;letter-spacing:.12em;text-transform:uppercase;color:var(--sea);margin:0 0 .35rem}
+.story img{width:100%;height:auto;border-radius:4px;display:block;box-shadow:0 10px 30px rgba(0,0,0,.12)}
+.rail{display:grid;gap:.75rem;grid-template-columns:1fr 1fr;margin-top:1.5rem}
+@media(min-width:700px){.rail{grid-template-columns:repeat(4,1fr)}}
+.rail a{display:block;text-decoration:none;color:inherit}
+.rail img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top;border-radius:4px;background:#ddd}
+.rail span{display:block;margin-top:.4rem;font:650 .78rem/1.25 system-ui;color:var(--muted)}
+.cta-band{margin:2.4rem 0 0;background:var(--deep);color:#eef4f3;padding:2.4rem 1.25rem;text-align:center}
+.cta-band .price{font:800 1.35rem/1.2 system-ui;color:var(--gold);margin:.2rem 0 .5rem}
+.cta-band p{margin:0 auto .95rem;max-width:28rem;opacity:.9}
+footer{max-width:920px;margin:0 auto;padding:1.5rem 1.25rem 2.5rem;font:.85rem/1.45 system-ui;color:var(--muted)}
 </style>
 </head>
 <body>
 <header class="hero">
-  <img src="https://i0.wp.com/graphicoregon.com/wp-content/uploads/2023/12/Neahkahnie-scaled.jpg?w=2000" alt="Oregon coast ridgeline above the Pacific">
-  <div class="veil"></div>
-  <div class="copy">
-    <p class="eyebrow">Demeter Design · Watershed</p>
-    <h1>We walk the creek. Then you get the map.</h1>
-    <p>Field assessment for Oregon watersheds — sampling, stream paths, restoration monitoring.</p>
-    <a class="cta" href="mailto:hello@graphicoregon.com?subject=Watershed%20field%20assessment%20quote&body=Basin%20/%20reach%3A%0AWhat%20you%20need%20answered%3A%0ADeadline%3A%0A">Request a field quote</a>
+  <div class="hero-inner">
+    <p class="eyebrow">Demeter Design · Oregon</p>
+    <h1>Watershed field assessment</h1>
+    <p class="lede">Walk the reach. Measure what matters. Hand back a report a council can defend.</p>
+    <a class="btn btn-lg" href="mailto:hello@graphicoregon.com?subject=Watershed%20field%20assessment%20%E2%80%94%20quote&body=Subbasin%20/%20reach%3A%0AAccess%3A%0ADeadline%3A%0AFocus%3A%0A%0Ahttps%3A//caradmico.github.io/company-soup/businesses/watershed/%0A">Request a field quote</a>
   </div>
 </header>
 
-<section class="story" aria-label="How it works">
-  <div class="panel">
-    <img src="https://i0.wp.com/graphicoregon.com/wp-content/uploads/2023/12/20181111_133449-scaled.jpg?w=1600" alt="Standing in coastal terrain">
-    <div class="veil"></div>
-    <div class="text">
-      <p class="num">01 · Field</p>
-      <h2>Measure what’s there</h2>
-      <p>Water, sediment, shade, habitat — on the ground.</p>
+<section>
+  <div class="story">
+    <div>
+      <p class="step">The story</p>
+      <h2>Creek → measure → map → decision</h2>
+      <p>Field days on the Oregon coast — water, shade, sediment, habitat structure. Then figures and plain language for the board packet.</p>
+      <p>Not a desk template. Not a cheap digital SKU.</p>
+      <a class="btn" href="mailto:hello@graphicoregon.com?subject=Watershed%20field%20assessment%20%E2%80%94%20quote&body=Subbasin%20/%20reach%3A%0AAccess%3A%0ADeadline%3A%0AFocus%3A%0A%0Ahttps%3A//caradmico.github.io/company-soup/businesses/watershed/%0A">Get a quote</a>
     </div>
-  </div>
-  <div class="panel">
-    <img src="https://i0.wp.com/graphicoregon.com/wp-content/uploads/2023/12/Screenshot-Capture-2023-12-05-12-11-13.png?w=1600" alt="Watershed habitat map">
-    <div class="veil"></div>
-    <div class="text">
-      <p class="num">02 · Map</p>
-      <h2>Show the path</h2>
-      <p>Clear maps and a report a board can defend.</p>
-    </div>
+    <img src="img/netarts-map.jpg" width="682" height="465" alt="Netarts Bay watershed map from Graphic Oregon assessment">
   </div>
 </section>
 
-<section class="story" aria-label="Outcome">
-  <div class="panel">
-    <img src="https://i0.wp.com/graphicoregon.com/wp-content/uploads/2023/12/Ocean-2.jpg?w=1600" alt="Pacific coastline">
-    <div class="veil"></div>
-    <div class="text">
-      <p class="num">03 · Decide</p>
-      <h2>Fund the next reach</h2>
-      <p>Quote-only fieldwork. Scoped like a real campaign — not a desk memo.</p>
-    </div>
-  </div>
-  <div class="panel">
-    <img src="https://i0.wp.com/graphicoregon.com/wp-content/uploads/2023/12/20200504_131719-2-scaled.jpg?w=1600" alt="Coastal field light">
-    <div class="veil"></div>
-    <div class="text">
-      <p class="num">Next</p>
-      <h2>Tell us the basin</h2>
-      <p style="margin-bottom:1rem">We’ll send scope + timeline + a fixed quote.</p>
-      <a class="cta" href="mailto:hello@graphicoregon.com?subject=Watershed%20field%20assessment%20quote&body=Basin%20/%20reach%3A%0AWhat%20you%20need%20answered%3A%0ADeadline%3A%0A">Request a field quote</a>
-    </div>
-  </div>
-</section>
-
-<section class="proof">
-  <h2>Work already on the books</h2>
-  <div class="grid">
-    <a href="https://graphicoregon.com/netarts-bay-watershed-habitat-assessment/" target="_blank" rel="noopener">
-      <img src="https://i0.wp.com/graphicoregon.com/wp-content/uploads/2023/12/Screenshot-Capture-2023-12-05-12-11-13.png?w=1200" alt="">
-      <div class="veil"></div>
-      <span>Netarts Bay habitat assessment</span>
+<section>
+  <p class="step">Proof</p>
+  <h2>Real reports</h2>
+  <div class="rail">
+    <a href="https://graphicoregon.com/tillamook-bay-watershed-habitat-restoration-plan/" target="_blank" rel="noopener">
+      <img src="img/hero.jpg" alt="Tillamook Bay restoration plan cover">
+      <span>Tillamook Bay</span>
     </a>
     <a href="https://graphicoregon.com/upper-nestucca-sediment-and-habitat-study/" target="_blank" rel="noopener">
-      <img src="https://i0.wp.com/graphicoregon.com/wp-content/uploads/2023/12/Neahkahnie-scaled.jpg?w=1000" alt="">
-      <div class="veil"></div>
-      <span>Upper Nestucca sediment &amp; habitat</span>
+      <img src="img/nestucca.jpg" alt="Upper Nestucca sediment and habitat study cover">
+      <span>Upper Nestucca</span>
     </a>
-    <a href="https://graphicoregon.com/necanicum-habitat-mapping/" target="_blank" rel="noopener">
-      <img src="https://i0.wp.com/graphicoregon.com/wp-content/uploads/2023/12/Ocean-2.jpg?w=1000" alt="">
-      <div class="veil"></div>
-      <span>Necanicum habitat mapping</span>
+    <a href="https://graphicoregon.com/netarts-bay-watershed-habitat-assessment/" target="_blank" rel="noopener">
+      <img src="img/netarts-cover.jpg" alt="Netarts Bay limiting factors cover">
+      <span>Netarts Bay</span>
+    </a>
+    <a href="https://graphicoregon.com/research/" target="_blank" rel="noopener">
+      <img src="img/figures.jpg" alt="Report figures page">
+      <span>More research →</span>
     </a>
   </div>
 </section>
 
-<footer>Demeter Design · Graphic Oregon · Quote-only field assessment</footer>
-
-<div class="sticky">
-  <span>Ready to scope a reach?</span>
-  <a class="cta" href="mailto:hello@graphicoregon.com?subject=Watershed%20field%20assessment%20quote&body=Basin%20/%20reach%3A%0AWhat%20you%20need%20answered%3A%0ADeadline%3A%0A">Request a field quote</a>
+<div class="cta-band" id="quote">
+  <p class="step" style="color:var(--gold)">Investment</p>
+  <p class="price">Quote only · ~$30k field class</p>
+  <p>Site days + GIS + reporting. No sticker price.</p>
+  <a class="btn btn-lg" href="mailto:hello@graphicoregon.com?subject=Watershed%20field%20assessment%20%E2%80%94%20quote&body=Subbasin%20/%20reach%3A%0AAccess%3A%0ADeadline%3A%0AFocus%3A%0A%0Ahttps%3A//caradmico.github.io/company-soup/businesses/watershed/%0A">Request a field quote</a>
 </div>
+
+<footer>
+  Demeter Design · Watershed · <a href="http://demeterdesign.net/" target="_blank" rel="noopener">demeterdesign.net</a>
+  · Parent <a href="https://graphicoregon.com/">Graphic Oregon</a>
+</footer>
 </body>
 </html>
