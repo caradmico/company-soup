@@ -11,7 +11,8 @@
 <style>
 :root{
   --fir:#163028; --tide:#3a5558; --lichen:#6d8664; --mist:#eef2ec; --foam:#f7f8f5;
-  --kelp:#234238; --ink:#12201c; --mute:#4e5d56; --line:#c8d0c6;
+  --kelp:#234238; --ink:#12201c; --mute:#4e5d56; --line:rgba(200,208,198,.55);
+  --glass:rgba(247,248,245,.72);
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -21,76 +22,82 @@ img{display:block;max-width:100%}
 a{color:var(--tide)}
 .serif{font-family:"Fraunces",Georgia,serif;font-optical-sizing:auto;font-weight:650;letter-spacing:-.02em}
 .kicker{font:700 .68rem/1 system-ui;letter-spacing:.16em;text-transform:uppercase;color:var(--lichen)}
-.btn{display:inline-block;border:0;text-decoration:none;cursor:pointer;padding:.75rem 1.2rem;border-radius:2px;font:700 .92rem "Source Sans 3",system-ui}
+.btn{display:inline-block;border:0;text-decoration:none;cursor:pointer;padding:.75rem 1.2rem;border-radius:999px;font:700 .92rem "Source Sans 3",system-ui}
 .btn-fir{background:var(--fir);color:var(--foam)!important}
 .btn-mist{background:#e3ebe0;color:var(--fir)!important}
-.btn-ghost{background:transparent;color:#eef4ec!important;border:1px solid rgba(238,244,236,.45)}
-.progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--lichen);z-index:50;transition:width .12s linear}
-.nav{position:sticky;top:0;z-index:30;background:rgba(247,248,245,.94);backdrop-filter:blur(10px);border-bottom:1px solid rgba(200,208,198,.7)}
+.btn-ghost{background:transparent;color:#eef4ec!important;border:1px solid rgba(238,244,236,.4)}
+.progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--lichen);z-index:50}
+.nav{position:sticky;top:0;z-index:30;background:var(--glass);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
 .nav-inner{width:min(72rem,calc(100% - 1.5rem));margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.7rem 0}
 .word{font-family:"Fraunces",Georgia,serif;font-weight:650;color:var(--fir);text-decoration:none;font-size:1.05rem}
 .nav .links{display:flex;gap:.85rem;align-items:center;flex-wrap:wrap}
 .nav .links a:not(.btn){color:var(--mute);text-decoration:none;font-size:.9rem}
 
 .hero{position:relative;min-height:92vh;min-height:92dvh;display:grid;align-items:end;color:#f3f7f1;overflow:hidden}
-.hero .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.04);animation:ken 22s ease-out forwards}
-.hero .mist{position:absolute;inset:0;background:linear-gradient(180deg,rgba(22,48,40,.2),rgba(10,18,16,.86) 72%);pointer-events:none}
+.hero .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.06);animation:ken 24s ease-out forwards}
+.hero .mist{position:absolute;inset:0;background:linear-gradient(180deg,rgba(22,48,40,.15),rgba(10,18,16,.88) 75%);pointer-events:none}
 .hero .inner{position:relative;z-index:1;width:min(44rem,calc(100% - 2rem));margin:0 auto;padding:5rem 0 3.2rem}
-.hero h1{margin:.35rem 0 .55rem;font-size:clamp(2rem,5vw,3.15rem);line-height:1.05}
+.hero h1{margin:.35rem 0 .55rem;font-size:clamp(2rem,5vw,3.2rem);line-height:1.05}
 .hero .why{margin:0 0 1.1rem;max-width:36rem;font-size:clamp(1.05rem,2.1vw,1.18rem);opacity:.96}
 .actions{display:flex;flex-wrap:wrap;gap:.55rem}
 @keyframes ken{to{transform:scale(1)}}
-@media (prefers-reduced-motion:reduce){.hero .bg{animation:none;transform:none}}
 
-.cap-grid{display:grid;gap:0}
-@media(min-width:900px){.cap-grid{grid-template-columns:1fr 1fr}}
-.cap-card{padding:2.1rem 1.25rem;background:var(--mist);border-bottom:1px solid var(--line)}
-@media(min-width:900px){.cap-card:nth-child(odd){border-right:1px solid var(--line)}}
-.cap-card h2{margin:.3rem 0 .5rem;font-size:clamp(1.25rem,2.4vw,1.55rem);color:var(--fir)}
-.cap-card p{margin:0;color:var(--mute)}
+.beats{display:flex;gap:.7rem;overflow-x:auto;scroll-snap-type:x mandatory;padding:1.4rem 1.25rem 1.6rem;background:linear-gradient(180deg,var(--mist),var(--foam))}
+.beats::-webkit-scrollbar{height:6px}
+.chipbeat{scroll-snap-align:start;min-width:min(18rem,78vw);background:rgba(255,255,255,.65);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:18px;padding:1.15rem 1.2rem}
+.chipbeat h2{margin:.25rem 0 .4rem;font-size:1.2rem;color:var(--fir)}
+.chipbeat p{margin:0;color:var(--mute);font-size:.95rem}
 
-.plans{background:var(--foam);padding:2.8rem 1.25rem 2.5rem}
-.plans .inner{width:min(72rem,100%);margin:0 auto}
-.plans h2{color:var(--fir);font-size:clamp(1.55rem,3vw,2.15rem);margin:.25rem 0 .45rem}
-.plans .lede{color:var(--mute);max-width:40rem;margin:0 0 1.5rem}
-.plate{background:#fff;border:1px solid var(--line);margin:0 0 1.6rem;overflow:hidden}
-.plate .fig{margin:0;background:#e4e8e1}
-.plate .fig img{display:block;width:100%;height:auto;max-height:min(76vh,48rem);object-fit:contain}
-.plate .body{padding:1.15rem 1.25rem 1.35rem}
-.plate h3{margin:0 0 .4rem;font-size:clamp(1.15rem,2.3vw,1.45rem);color:var(--fir);font-family:"Fraunces",Georgia,serif}
-.plate .sell{font-weight:600;color:var(--fir);margin:0 0 .55rem}
-.plate .interp{margin:0 0 .75rem;color:var(--ink);max-width:44rem}
-.plate .quiet{font-size:.88rem;color:var(--mute)}
-.plate .quiet a{color:var(--fir)}
-.plate .credit{font-size:.78rem;color:var(--mute);margin:.45rem 0 0}
+.chapter{position:relative;min-height:100vh;min-height:100dvh;display:grid;align-items:end;color:#eef4ec;overflow:hidden;background:#1a2a26}
+.chapter .stage{position:absolute;inset:0}
+.chapter .stage img{width:100%;height:100%;object-fit:cover;object-position:center;user-select:none;cursor:grab;transform:scale(1.08);transition:transform .8s ease}
+.chapter.is-in .stage img{transform:scale(1)}
+.chapter .veil{position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(10,18,16,.88));pointer-events:none}
+.chapter .dock{position:relative;z-index:2;width:min(40rem,calc(100% - 2rem));margin:0 auto;padding:0 0 2.4rem}
+.chapter .dock .panel{background:rgba(22,48,40,.55);backdrop-filter:blur(12px);border:1px solid rgba(213,224,200,.2);border-radius:18px;padding:1.15rem 1.2rem}
+.chapter h2{margin:.2rem 0 .45rem;font-size:clamp(1.45rem,3vw,2rem)}
+.chapter .sell{font-weight:600;margin:0 0 .5rem}
+.chapter .interp{margin:0 0 .7rem;opacity:.92;max-width:36rem}
+.chapter .quiet{font-size:.86rem;opacity:.8}
+.chapter .quiet a{color:#cfe3c8}
+.hotspots{position:absolute;inset:0;z-index:1;pointer-events:none}
+.hot{position:absolute;transform:translate(-50%,-50%);pointer-events:auto}
+.hot button{width:1.2rem;height:1.2rem;border-radius:50%;border:2px solid #f3f7f1;background:var(--lichen);cursor:pointer;padding:0;box-shadow:0 0 0 6px rgba(109,134,100,.25)}
+.hot .tip{display:none;position:absolute;left:50%;bottom:140%;transform:translateX(-50%);background:rgba(22,48,40,.95);color:#eef4ec;padding:.45rem .6rem;border-radius:8px;font-size:.8rem;white-space:nowrap}
+.hot.open .tip,.hot:focus-within .tip{display:block}
 
-.warehouse{background:var(--mist);padding:2.6rem 1.25rem 3rem;border-top:1px solid var(--line)}
+.warehouse{padding:3rem 1.25rem;background:var(--mist)}
 .warehouse .inner{width:min(56rem,100%);margin:0 auto}
 .warehouse h2{color:var(--fir);font-size:clamp(1.4rem,2.8vw,1.9rem);margin:.25rem 0 .5rem}
 .warehouse p{color:var(--mute);max-width:40rem}
-.packets{display:grid;gap:.7rem;margin:1.1rem 0 0}
-@media(min-width:700px){.packets{grid-template-columns:1fr 1fr 1fr}}
-.packet{background:#fff;border:1px solid var(--line);padding:1rem;border-radius:2px}
-.packet strong{display:block;color:var(--fir);margin:0 0 .35rem}
-.packet a{font-weight:600;font-size:.92rem}
+.wfilters{display:flex;flex-wrap:wrap;gap:.4rem;margin:1rem 0}
+.wchip{appearance:none;border:1px solid var(--fir);background:transparent;color:var(--fir);border-radius:999px;padding:.4rem .75rem;font:650 .8rem system-ui;cursor:pointer}
+.wchip.on,.wchip:hover{background:var(--fir);color:#fff}
+.packets{display:grid;gap:.55rem;margin-top:.4rem}
+.packet{display:none;align-items:center;justify-content:space-between;gap:1rem;background:rgba(255,255,255,.7);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:14px;padding:.95rem 1.05rem}
+.packet.show{display:flex;flex-wrap:wrap}
+.packet strong{color:var(--fir)}
+.packet a{font-weight:700;text-decoration:none;background:var(--fir);color:#fff;padding:.5rem .85rem;border-radius:999px;font-size:.86rem}
 
 #quote{background:var(--foam);padding:3rem 1.25rem 4.5rem}
 #quote .inner{width:min(56rem,100%);margin:0 auto;display:grid;gap:1.5rem}
 @media(min-width:820px){#quote .inner{grid-template-columns:.9fr 1.1fr}}
 #quote h2{color:var(--fir);font-size:clamp(1.55rem,3vw,2.15rem);margin:.25rem 0 .5rem}
 #quote .prose{color:var(--mute);margin:0 0 .7rem}
-form{display:grid;gap:.7rem;background:#fff;border:1px solid var(--line);padding:1.1rem}
+form{display:grid;gap:.7rem;background:rgba(255,255,255,.8);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:16px;padding:1.15rem}
 label{font:700 .78rem/1 system-ui;color:var(--kelp)}
-input,textarea,select{width:100%;margin-top:.28rem;padding:.65rem .7rem;border:1px solid var(--line);border-radius:2px;font:inherit;background:var(--foam)}
+input,textarea,select{width:100%;margin-top:.28rem;padding:.65rem .7rem;border:1px solid var(--line);border-radius:10px;font:inherit;background:var(--foam)}
 textarea{min-height:5rem;resize:vertical}
 .fine{font-size:.84rem;color:var(--mute)}
 footer{padding:1.4rem 1.25rem 2rem;border-top:1px solid var(--line);font-size:.86rem;color:var(--mute)}
 footer .wrap{width:min(72rem,100%);margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;gap:.7rem}
-
-.sticky{position:fixed;left:0;right:0;bottom:0;z-index:40;background:rgba(22,48,40,.94);backdrop-filter:blur(8px);padding:.7rem 1rem;display:flex;justify-content:center;transform:translateY(110%);transition:transform .35s ease}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:40;background:rgba(22,48,40,.92);backdrop-filter:blur(10px);padding:.7rem 1rem;display:flex;justify-content:center;transform:translateY(110%);transition:transform .35s ease}
 .sticky.show{transform:translateY(0)}
 body.sticky-on{padding-bottom:4.75rem}
-@media (prefers-reduced-motion:reduce){.sticky{transition:none}}
+@media (prefers-reduced-motion:reduce){
+  .hero .bg,.chapter .stage img{animation:none;transition:none;transform:none!important}
+  .sticky{transition:none}
+}
 </style>
 </head>
 <body>
@@ -99,7 +106,7 @@ body.sticky-on{padding-bottom:4.75rem}
   <div class="nav-inner">
     <a class="word" href="#top">Demeter Design</a>
     <nav class="links" aria-label="Page">
-      <a href="#capability">Capability</a>
+      <a href="#path">Path</a>
       <a href="#plans">Plans</a>
       <a href="#warehouse">Data</a>
       <a class="btn btn-fir" href="#quote">Request a quote</a>
@@ -121,88 +128,102 @@ body.sticky-on{padding-bottom:4.75rem}
   </div>
 </section>
 
-<section class="cap-grid" id="capability" aria-label="Capability">
-  <div class="cap-card">
-    <p class="kicker">Assessment</p>
+<section class="beats" id="path" aria-label="How the work moves">
+  <article class="chipbeat">
+    <p class="kicker">01 · Ask</p>
     <h2 class="serif">Why aren’t the fish here?</h2>
-    <p>Plans answer the questions councils ask: passage, ocean context, overwintering and summer rearing, canopy and shade — how many should we expect, and what’s blocking them.</p>
+    <p>Passage, ocean context, overwintering and summer rearing, canopy — how many should we expect, and what’s blocking them.</p>
+  </article>
+  <article class="chipbeat">
+    <p class="kicker">02 · Synthesize</p>
+    <h2 class="serif">GIS-first screening</h2>
+    <p>Remote layers, existing surveys, prioritization. Capacity now is GIS-led. Field crews can be sent when the plan requires it.</p>
+  </article>
+  <article class="chipbeat">
+    <p class="kicker">03 · Plan</p>
+    <h2 class="serif">Clear next steps</h2>
+    <p>An action plan partners can fund — not a brochure stack of static maps.</p>
+  </article>
+</section>
+
+<div id="plans">
+<section class="chapter" data-chapter id="plan-passage">
+  <div class="stage" data-pan>
+    <img id="passImg" src="img/real-netarts-passage.jpg" width="1600" height="1200" alt="Netarts Bay passage barriers map" draggable="false">
+    <div class="hotspots" aria-label="Passage callouts">
+      <div class="hot" style="left:42%;top:58%"><button type="button" aria-label="Whiskey diversion"></button><span class="tip">Whiskey diversion priority</span></div>
+      <div class="hot" style="left:61%;top:46%"><button type="button" aria-label="O’Hara culvert"></button><span class="tip">First O’Hara culvert</span></div>
+      <div class="hot" style="left:28%;top:38%"><button type="button" aria-label="Network scan"></button><span class="tip">Score every crossing</span></div>
+    </div>
   </div>
-  <div class="cap-card">
-    <p class="kicker">Capacity now</p>
-    <h2 class="serif">GIS-first synthesis</h2>
-    <p>Remote screening, prioritization, and plan writing from existing surveys and aerial layers. Field crews can be sent when the plan requires it — the product is the plan, not boots as the sell.</p>
+  <div class="veil" aria-hidden="true"></div>
+  <div class="dock">
+    <div class="panel">
+      <p class="kicker" style="color:#cfe3c8">Passage action plan</p>
+      <h2 class="serif">Name the plugs that unlock miles</h2>
+      <p class="sell">A passage plan councils can fund — not a walk without a map.</p>
+      <p class="interp">Drag the map. Tap a hotspot. Undersized and failing culverts choke distribution even when absolute barriers are few. Published Netarts assessment map — honest study dates.</p>
+      <p class="quiet"><a href="https://graphicoregon.com/netarts-bay-watershed-habitat-assessment/" target="_blank" rel="noopener">Full study</a> · Demeter Design · Netarts Bay</p>
+    </div>
   </div>
 </section>
 
-<section class="plans" id="plans">
-  <div class="inner">
-    <p class="kicker">Real plan graphics</p>
-    <h2 class="serif">What an action plan looks like</h2>
-    <p class="lede">Published Demeter Design maps — passage, priority, and habitat potential — with honest study dates. Fresher Drive refreshes land when files arrive; until then these are the real packets.</p>
-
-    <article class="plate" id="plan-passage">
-      <figure class="fig">
-        <img src="img/real-netarts-passage.jpg" width="1600" height="1200" alt="Netarts Bay passage barriers map naming culvert and diversion fix priorities">
-      </figure>
-      <div class="body">
-        <p class="kicker">Passage action plan</p>
-        <h3>Name the plugs that unlock miles</h3>
-        <p class="sell">A passage plan councils can fund — not a walk without a map.</p>
-        <p class="interp">Score crossings and map where fish stop. Undersized and failing culverts choke distribution even when absolute barriers are few. This work named Whiskey diversion and the first O’Hara culvert among Netarts priorities — culvert-proof planning that guided timber-land replacements where partners acted.</p>
-        <p class="quiet"><a href="https://graphicoregon.com/netarts-bay-watershed-habitat-assessment/" target="_blank" rel="noopener">Full study</a> · Demeter Design · Netarts Bay · published assessment map</p>
-        <p class="credit">Map: passage barriers · Graphic Oregon / Demeter Design</p>
-      </div>
-    </article>
-
-    <article class="plate" id="plan-priority">
-      <figure class="fig">
-        <img src="img/real-tillamook-priority.jpg" width="1600" height="1200" alt="Tillamook Bay CERP Top-10 Chum intrinsic potential priority map">
-      </figure>
-      <div class="body">
-        <p class="kicker">Priority action plan</p>
-        <h3>One ranked picture to fund</h3>
-        <p class="sell">A prioritization plan your council can put in the work plan.</p>
-        <p class="interp">After Coho was rated non-viable, partners needed one ranked picture. CERP coalesces habitat, biotic, GIS, and written data across ninety-four seventh-field HUCs. This map shows Top-10 Average Chum IP priorities against the rest.</p>
-        <p class="quiet"><a href="https://graphicoregon.com/tillamook-bay-watershed-habitat-restoration-plan/" target="_blank" rel="noopener">Full study</a> · Demeter Design · Tillamook Bay · published CERP map</p>
-        <p class="credit">Map: CERP Chum IP priority · Graphic Oregon / Demeter Design</p>
-      </div>
-    </article>
-
-    <article class="plate" id="plan-habitat">
-      <figure class="fig">
-        <img src="img/real-netarts-ip.jpg" width="1600" height="1200" alt="Netarts Bay intrinsic potential map for habitat screening">
-      </figure>
-      <div class="body">
-        <p class="kicker">Habitat potential plan</p>
-        <h3>Screen rearing reaches before the spend</h3>
-        <p class="sell">See which reaches carry winter potential — then write the next steps from that.</p>
-        <p class="interp">Intrinsic potential screens which reaches matter for overwintering and rearing before field days are scheduled. Sampling and analysis can sit inside the action plan when needed; the centerpiece is the clear next step.</p>
-        <p class="quiet"><a href="https://graphicoregon.com/netarts-bay-watershed-habitat-assessment/" target="_blank" rel="noopener">Full study</a> · Demeter Design · Netarts Bay · published IP map</p>
-        <p class="credit">Map: intrinsic potential · Graphic Oregon / Demeter Design</p>
-      </div>
-    </article>
-
-    <p style="margin:1.2rem 0 0"><a class="btn btn-fir" href="#quote">Request a quote</a></p>
+<section class="chapter" data-chapter id="plan-priority">
+  <div class="stage">
+    <img src="img/real-tillamook-priority.jpg" width="1600" height="1200" alt="Tillamook Bay CERP Top-10 Chum IP priority map">
+  </div>
+  <div class="veil" aria-hidden="true"></div>
+  <div class="dock">
+    <div class="panel">
+      <p class="kicker" style="color:#cfe3c8">Priority action plan</p>
+      <h2 class="serif">One ranked picture to fund</h2>
+      <p class="sell">A prioritization plan your council can put in the work plan.</p>
+      <p class="interp">CERP coalesces habitat, biotic, GIS, and written data across ninety-four seventh-field HUCs. Top-10 Average Chum IP priorities against the rest — published Tillamook map.</p>
+      <p class="quiet"><a href="https://graphicoregon.com/tillamook-bay-watershed-habitat-restoration-plan/" target="_blank" rel="noopener">Full study</a> · Demeter Design · Tillamook Bay</p>
+    </div>
   </div>
 </section>
+
+<section class="chapter" data-chapter id="plan-habitat">
+  <div class="stage">
+    <img src="img/real-netarts-ip.jpg" width="1600" height="1200" alt="Netarts Bay intrinsic potential map">
+  </div>
+  <div class="veil" aria-hidden="true"></div>
+  <div class="dock">
+    <div class="panel">
+      <p class="kicker" style="color:#cfe3c8">Habitat potential plan</p>
+      <h2 class="serif">Screen rearing reaches before the spend</h2>
+      <p class="sell">See which reaches carry winter potential — then write the next steps from that.</p>
+      <p class="interp">Intrinsic potential screens overwintering and rearing value before field days are scheduled. Sampling and analysis can sit inside the action plan when needed.</p>
+      <p class="quiet"><a href="https://graphicoregon.com/netarts-bay-watershed-habitat-assessment/" target="_blank" rel="noopener">Full study</a> · Demeter Design · Netarts Bay</p>
+    </div>
+  </div>
+</section>
+</div>
 
 <section class="warehouse" id="warehouse">
   <div class="inner">
-    <p class="kicker">GIS warehouse spirit</p>
+    <p class="kicker">GIS warehouse</p>
     <h2 class="serif">Oregon watershed data — download the project packets</h2>
-    <p>Real Graphic Oregon / Demeter Design PDFs for Netarts, Nestucca, and Tillamook. Warehouse map refresh is ongoing; these packets are what exists today.</p>
+    <p>Filter real Graphic Oregon / Demeter Design PDFs. No invented layers — these packets are what exists today.</p>
+    <div class="wfilters" id="wfilters">
+      <button type="button" class="wchip on" data-f="all">All</button>
+      <button type="button" class="wchip" data-f="passage">Passage</button>
+      <button type="button" class="wchip" data-f="sediment">Sediment / shade</button>
+      <button type="button" class="wchip" data-f="priority">Priority / CERP</button>
+    </div>
     <div class="packets">
-      <div class="packet">
-        <strong>Netarts Bay</strong>
-        <a href="https://graphicoregon.com/wp-content/uploads/2023/12/Netarts_Bay_Limiting_Factors_Analysis.pdf" target="_blank" rel="noopener">Download PDF</a>
+      <div class="packet show" data-tags="passage all">
+        <div><strong>Netarts Bay</strong><div class="fine">Limiting factors · passage &amp; habitat</div></div>
+        <a href="https://graphicoregon.com/wp-content/uploads/2023/12/Netarts_Bay_Limiting_Factors_Analysis.pdf" target="_blank" rel="noopener">Download</a>
       </div>
-      <div class="packet">
-        <strong>Upper Nestucca</strong>
-        <a href="https://graphicoregon.com/wp-content/uploads/2023/12/Sediment_Shade_and_Complexity_in_the_Upp.pdf" target="_blank" rel="noopener">Download PDF</a>
+      <div class="packet show" data-tags="sediment all">
+        <div><strong>Upper Nestucca</strong><div class="fine">Sediment, shade &amp; complexity</div></div>
+        <a href="https://graphicoregon.com/wp-content/uploads/2023/12/Sediment_Shade_and_Complexity_in_the_Upp.pdf" target="_blank" rel="noopener">Download</a>
       </div>
-      <div class="packet">
-        <strong>Tillamook Bay CERP</strong>
-        <a href="https://graphicoregon.com/wp-content/uploads/2023/12/Computational_Ecological_Restoration_Pri.pdf" target="_blank" rel="noopener">Download PDF</a>
+      <div class="packet show" data-tags="priority all">
+        <div><strong>Tillamook Bay CERP</strong><div class="fine">Computational restoration priorities</div></div>
+        <a href="https://graphicoregon.com/wp-content/uploads/2023/12/Computational_Ecological_Restoration_Pri.pdf" target="_blank" rel="noopener">Download</a>
       </div>
     </div>
   </div>
@@ -241,7 +262,6 @@ body.sticky-on{padding-bottom:4.75rem}
     <span>Parent <a href="https://graphicoregon.com/">Graphic Oregon</a> · <a href="../../">Company Soup</a></span>
   </div>
 </footer>
-
 <div class="sticky" id="sticky"><a class="btn btn-mist" href="#quote">Request a quote</a></div>
 
 <script>
@@ -249,6 +269,8 @@ body.sticky-on{padding-bottom:4.75rem}
   var progress=document.getElementById('progress');
   var sticky=document.getElementById('sticky');
   var quote=document.getElementById('quote');
+  var chapters=[].slice.call(document.querySelectorAll('[data-chapter]'));
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   function onScroll(){
     var h=document.documentElement;
     var max=h.scrollHeight-h.clientHeight;
@@ -257,9 +279,50 @@ body.sticky-on{padding-bottom:4.75rem}
     var inQuote=quote.getBoundingClientRect().top < window.innerHeight*0.85;
     sticky.classList.toggle('show', past && !inQuote);
     document.body.classList.toggle('sticky-on', past && !inQuote);
+    chapters.forEach(function(ch){
+      var r=ch.getBoundingClientRect();
+      if(r.top < window.innerHeight*0.65 && r.bottom > window.innerHeight*0.25) ch.classList.add('is-in');
+    });
   }
   window.addEventListener('scroll', onScroll, {passive:true});
   onScroll();
+
+  document.querySelectorAll('.hot').forEach(function(h){
+    h.querySelector('button').addEventListener('click', function(){
+      document.querySelectorAll('.hot').forEach(function(x){x.classList.remove('open')});
+      h.classList.add('open');
+    });
+  });
+
+  // light pan on passage map
+  var pan=document.querySelector('[data-pan]');
+  var img=document.getElementById('passImg');
+  if(pan && img && !reduce){
+    var ox=50, oy=50, drag=false, sx, sy, bx, by;
+    function apply(){ img.style.objectPosition=ox+'% '+oy+'%'; }
+    apply();
+    pan.addEventListener('pointerdown', function(e){ drag=true; sx=e.clientX; sy=e.clientY; bx=ox; by=oy; pan.setPointerCapture(e.pointerId); });
+    pan.addEventListener('pointermove', function(e){
+      if(!drag) return;
+      ox=Math.max(0, Math.min(100, bx-(e.clientX-sx)/6));
+      oy=Math.max(0, Math.min(100, by-(e.clientY-sy)/6));
+      apply();
+    });
+    pan.addEventListener('pointerup', function(){ drag=false; });
+  }
+
+  var wfilters=document.getElementById('wfilters');
+  var packets=[].slice.call(document.querySelectorAll('.packet'));
+  wfilters.addEventListener('click', function(e){
+    var b=e.target.closest('.wchip'); if(!b) return;
+    var f=b.getAttribute('data-f');
+    wfilters.querySelectorAll('.wchip').forEach(function(x){x.classList.toggle('on', x===b)});
+    packets.forEach(function(p){
+      var tags=(p.getAttribute('data-tags')||'').split(/\s+/);
+      p.classList.toggle('show', f==='all' || tags.indexOf(f)>=0);
+    });
+  });
+
   document.getElementById('quoteForm').addEventListener('submit', function(e){
     e.preventDefault();
     var name=document.getElementById('name').value.trim();
