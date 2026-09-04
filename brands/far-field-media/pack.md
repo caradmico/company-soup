@@ -1,22 +1,20 @@
 # Far Field Media
 
-Lane: Videography · queued stub
+Lane: Videography · Graphic Oregon child
 
 ## One-liner
-Named video studio: one camera, one public clip, a price — not a media-management slide.
+Short coastal field films + cutdowns for venues and nonprofits.
 
-## Brief
-Lock **Far Field Media** as the Graphic Oregon videography stub. Marketer name. Not extracted as cash this week. No fame app.
+## Offer
+Field film package: one short + two cutdowns. No her face required on the brand face.
+
+## Path
+- Brand door: company-soup `brands/far-field-media/`
+- Proof: existing GO `/home/` video titles as craft samples
+- Domain later: farfield.media
 
 ## Done-when
-Stranger can open this stub and see the lane is queued — not a showreel company yet.
+Stranger knows the deliverable and can open one sample clip path (or clear first-ship reel step).
 
-## BOM
-- This stub page
-- Camera already on the desk + Resolve when extracted
-- Parent: Graphic Oregon
-
-## Steps
-1. Keep as queued stub
-2. Do not invent client commercials
-3. First extract needs one 60–90s public clip and a rate
+## Do-not
+Rename GO · Printify-as-hero · personal Cara as the product · client websites as cash
