@@ -3,102 +3,281 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Demeter Design · Watershed Field Assessment</title>
-<meta name="description" content="Oregon watershed field assessment. Quote-only. Real reports from Nestucca, Netarts, Tillamook Bay.">
+<title>Demeter Design · Watershed field assessment</title>
+<meta name="description" content="Quote-only watershed field assessment for coastal Oregon. Stream paths, sampling, restoration monitoring you can defend. Real reports from Nestucca, Netarts, Tillamook.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,480;0,9..144,600;1,9..144,480&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#0e1c1f;--paper:#efeae1;--deep:#0c2c32;--sea:#1a5c66;--gold:#c4a35a;--white:#fffcf7;--muted:#5a676c}
+:root{
+  --ink:#12201c;
+  --fir:#163028;
+  --kelp:#234238;
+  --tide:#3a5558;
+  --lichen:#6d8664;
+  --mist:#eef2ec;
+  --foam:#f7f8f5;
+  --line:#c8d0c6;
+  --mute:#4e5d56;
+}
 *{box-sizing:border-box}
-body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.45 system-ui,-apple-system,sans-serif}
-a{color:var(--sea)}
-.hero{position:relative;min-height:72vh;display:flex;align-items:flex-end;background:var(--deep) center/cover no-repeat;background-image:linear-gradient(to top,rgba(8,24,28,.88) 0%,rgba(8,24,28,.25) 55%,rgba(8,24,28,.15) 100%),url("img/hero.jpg")}
-.hero-inner{max-width:920px;margin:0 auto;padding:2rem 1.25rem 2.4rem;color:#f6f1e8;width:100%}
-.eyebrow{font:700 .7rem/1 system-ui;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin:0 0 .55rem}
-h1{font-size:clamp(1.9rem,4.5vw,2.8rem);line-height:1.05;margin:0 0 .55rem;letter-spacing:-.03em;max-width:12ch}
-.lede{font-size:1.05rem;max-width:28rem;opacity:.92;margin:0 0 1.1rem}
-.btn{display:inline-block;padding:.85rem 1.4rem;background:var(--gold);color:#142018!important;text-decoration:none;font:800 .95rem/1 system-ui;border-radius:3px}
-.btn:hover{filter:brightness(1.05)}
-.btn-lg{font-size:1.05rem;padding:1rem 1.6rem}
-section{max-width:920px;margin:0 auto;padding:2.2rem 1.25rem 0}
-h2{font-size:1.15rem;margin:0 0 .85rem;letter-spacing:-.01em}
-.story{display:grid;gap:1rem}
-@media(min-width:760px){.story{grid-template-columns:1.05fr .95fr;align-items:center}}
-.story p{margin:0 0 .7rem;font-size:1.02rem;color:#243236}
-.story .step{font:800 .72rem/1 system-ui;letter-spacing:.12em;text-transform:uppercase;color:var(--sea);margin:0 0 .35rem}
-.story img{width:100%;height:auto;border-radius:4px;display:block;box-shadow:0 10px 30px rgba(0,0,0,.12)}
-.rail{display:grid;gap:.75rem;grid-template-columns:1fr 1fr;margin-top:1.5rem}
-@media(min-width:700px){.rail{grid-template-columns:repeat(4,1fr)}}
+html{scroll-behavior:smooth}
+body{
+  margin:0;color:var(--ink);background:var(--foam);
+  font:18px/1.5 "Source Sans 3",system-ui,sans-serif;
+  padding-bottom:4.6rem;
+}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--tide)}
+.wrap{width:min(68rem,calc(100% - 2rem));margin-inline:auto}
+.kicker{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--lichen)}
+h1,h2,h3,.serif{font-family:"Fraunces",Georgia,serif;font-optical-sizing:auto;font-weight:600;letter-spacing:-.02em}
+.nav{
+  position:sticky;top:0;z-index:12;
+  background:rgba(247,248,245,.9);backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(200,208,198,.75);
+}
+.nav-inner{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.8rem 0}
+.word{
+  font-family:"Fraunces",Georgia,serif;font-weight:600;text-decoration:none;
+  color:var(--fir);font-size:1.02rem;
+}
+.nav a:not(.word):not(.btn){color:var(--mute);text-decoration:none;font-size:.92rem}
+.links{display:flex;flex-wrap:wrap;gap:.75rem 1rem;align-items:center}
+.btn{
+  display:inline-block;text-decoration:none;border:0;cursor:pointer;
+  padding:.7rem 1.15rem;border-radius:2px;font:650 .95rem "Source Sans 3",system-ui;
+}
+.btn-dark{background:var(--fir);color:var(--foam)!important}
+.btn-light{background:#e7efe3;color:var(--fir)!important}
+.btn-ghost{background:transparent;color:#f3f7f1!important;border:1px solid rgba(243,247,241,.55)}
+.hero{position:relative;min-height:min(88vh,44rem);display:grid;align-items:end;color:#f4f7f2;isolation:isolate}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero::after{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(14,28,24,.12),rgba(10,20,18,.78));
+}
+.hero-copy{padding:5rem 0 2.2rem}
+.hero .kicker{color:#d5e0c8}
+h1{margin:.25rem 0 .55rem;font-size:clamp(2.1rem,6vw,4.1rem);line-height:1.04;max-width:14ch}
+.lede{max-width:34rem;font-size:clamp(1.05rem,2vw,1.22rem);color:#e6eee4}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.65rem;margin-top:1.25rem}
+.caption{margin:1.1rem 0 0;font-size:.78rem;color:#c7d2c4}
+.band{padding:3.6rem 0}
+.mist{background:var(--mist)}
+.split{display:grid;gap:2rem;align-items:center}
+@media(min-width:840px){.split{grid-template-columns:1.05fr .95fr;gap:3rem}}
+.photo{border-radius:6px;overflow:hidden;box-shadow:0 16px 40px rgba(18,32,28,.14)}
+.photo img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.photo figcaption{font-size:.78rem;color:var(--mute);padding:.55rem .05rem 0}
+h2{font-size:clamp(1.55rem,3vw,2.15rem);margin:.25rem 0 .6rem;line-height:1.15}
+.prose{color:var(--mute);max-width:38rem}
+.crafts{display:grid;gap:.9rem;margin-top:1.8rem}
+@media(min-width:720px){.crafts{grid-template-columns:repeat(4,1fr)}}
+.craft{background:#fff;border:1px solid var(--line);padding:1.1rem 1rem 1.2rem}
+.craft h3{margin:.15rem 0 .4rem;font-size:1.15rem}
+.craft p{margin:0;color:var(--mute);font-size:.98rem}
+.proof-head{max-width:40rem;margin-bottom:1.4rem}
+.rail{display:grid;gap:.8rem;grid-template-columns:1fr 1fr}
+@media(min-width:800px){.rail{grid-template-columns:repeat(4,1fr)}}
 .rail a{display:block;text-decoration:none;color:inherit}
-.rail img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top;border-radius:4px;background:#ddd}
-.rail span{display:block;margin-top:.4rem;font:650 .78rem/1.25 system-ui;color:var(--muted)}
-.cta-band{margin:2.4rem 0 0;background:var(--deep);color:#eef4f3;padding:2.4rem 1.25rem;text-align:center}
-.cta-band .ask{font:800 1.35rem/1.2 system-ui;color:var(--gold);margin:.2rem 0 .5rem}
-.cta-band p{margin:0 auto .95rem;max-width:28rem;opacity:.9}
-footer{max-width:920px;margin:0 auto;padding:1.5rem 1.25rem 2.5rem;font:.85rem/1.45 system-ui;color:var(--muted)}
-
-.sticky{position:fixed;left:0;right:0;bottom:0;z-index:20;background:rgba(12,44,50,.94);backdrop-filter:blur(8px);padding:.75rem 1rem;display:flex;justify-content:center;align-items:center;gap:.65rem}
-body{padding-bottom:4.5rem}
-
+.rail img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top;background:#d7ddd6}
+.rail span{display:block;margin-top:.4rem;font-size:.82rem;font-weight:650;color:var(--mute)}
+.more{margin:1.2rem 0 0;padding:0;list-style:none;display:grid;gap:.4rem}
+.more a{color:var(--tide)}
+.quote{display:grid;gap:1.8rem}
+@media(min-width:840px){.quote{grid-template-columns:.9fr 1.1fr}}
+form{display:grid;gap:.75rem;background:#fff;border:1px solid var(--line);padding:1.15rem}
+label{font-size:.8rem;font-weight:700;color:var(--kelp)}
+input,textarea,select{
+  width:100%;margin-top:.25rem;padding:.65rem .7rem;border:1px solid var(--line);
+  border-radius:2px;font:inherit;background:var(--foam)
+}
+textarea{min-height:5.5rem;resize:vertical}
+.fine{font-size:.86rem;color:var(--mute);margin:.2rem 0 0}
+footer{padding:1.8rem 0 2.2rem;border-top:1px solid var(--line);color:var(--mute);font-size:.88rem}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.7rem}
+.sticky{
+  position:fixed;left:0;right:0;bottom:0;z-index:20;
+  background:rgba(22,48,40,.94);backdrop-filter:blur(8px);
+  padding:.7rem 1rem;display:flex;justify-content:center;
+}
+.skip{position:absolute;left:-999px}
+.skip:focus{left:1rem;top:1rem;background:#fff;padding:.4rem .6rem;z-index:40}
 </style>
 </head>
 <body>
-<header class="hero">
-  <div class="hero-inner">
-    <p class="eyebrow">Demeter Design · Oregon</p>
-    <h1>Watershed field assessment</h1>
-    <p class="lede">Walk the reach. Measure what matters. Hand back a report a council can defend.</p>
-    <a class="btn btn-lg" href="mailto:hello@graphicoregon.com?subject=Watershed%20field%20assessment%20%E2%80%94%20quote&body=Subbasin%20/%20reach%3A%0AAccess%3A%0ADeadline%3A%0AFocus%3A%0A%0Ahttps%3A//caradmico.github.io/company-soup/businesses/watershed/%0A">Request a field quote</a>
+<a class="skip" href="#quote">Skip to quote</a>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="word" href="#top">Demeter Design</a>
+    <nav class="links" aria-label="Page">
+      <a href="#work">Work</a>
+      <a href="#proof">Proof</a>
+      <a class="btn btn-dark" href="#quote">Request a quote</a>
+    </nav>
   </div>
 </header>
 
-<section>
-  <div class="story">
-    <div>
-      <p class="step">The story</p>
-      <h2>Creek → measure → map → decision</h2>
-      <p>Field days on the Oregon coast — water, shade, sediment, habitat structure. Then figures and plain language for the board packet.</p>
-      <p>Not a desk template. Not a cheap digital SKU.</p>
-      <a class="btn" href="mailto:hello@graphicoregon.com?subject=Watershed%20field%20assessment%20%E2%80%94%20quote&body=Subbasin%20/%20reach%3A%0AAccess%3A%0ADeadline%3A%0AFocus%3A%0A%0Ahttps%3A//caradmico.github.io/company-soup/businesses/watershed/%0A">Get a quote</a>
+<section class="hero" id="top">
+  <img src="img/estuary.jpg" width="1280" height="851" alt="Aerial view of Netarts Bay — spit, estuary, and forested ridge">
+  <div class="wrap hero-copy">
+    <p class="kicker">Demeter Design · Oregon</p>
+    <h1>Watershed field assessment</h1>
+    <p class="lede">Stream paths. Sampling. Restoration monitoring you can defend. We document how water moves through a place — and what that means for habitat, sediment, and the work that comes next.</p>
+    <div class="hero-actions">
+      <a class="btn btn-light" href="#quote">Request a quote</a>
+      <a class="btn btn-ghost" href="#proof">See the reports</a>
     </div>
-    <img src="img/netarts-map.jpg" width="682" height="465" alt="Netarts Bay watershed map from Graphic Oregon assessment">
+    <p class="caption">Netarts Bay — a basin already walked and written.</p>
   </div>
 </section>
 
-<section>
-  <p class="step">Proof</p>
-  <h2>Real reports</h2>
-  <div class="rail">
-    <a href="https://graphicoregon.com/tillamook-bay-watershed-habitat-restoration-plan/" target="_blank" rel="noopener">
-      <img src="img/hero.jpg" alt="Tillamook Bay restoration plan cover">
-      <span>Tillamook Bay</span>
-    </a>
-    <a href="https://graphicoregon.com/upper-nestucca-sediment-and-habitat-study/" target="_blank" rel="noopener">
-      <img src="img/nestucca.jpg" alt="Upper Nestucca sediment and habitat study cover">
-      <span>Upper Nestucca</span>
-    </a>
-    <a href="https://graphicoregon.com/netarts-bay-watershed-habitat-assessment/" target="_blank" rel="noopener">
-      <img src="img/netarts-cover.jpg" alt="Netarts Bay limiting factors cover">
-      <span>Netarts Bay</span>
-    </a>
-    <a href="https://graphicoregon.com/research/" target="_blank" rel="noopener">
-      <img src="img/figures.jpg" alt="Report figures page">
-      <span>More research →</span>
-    </a>
+<section class="band" id="work">
+  <div class="wrap split">
+    <figure class="photo">
+      <img src="img/channel.jpg" width="1920" height="1080" alt="Moss-lined channel on the Nestucca Wild and Scenic River">
+      <figcaption>Upper Nestucca country — sediment, shade, and channel complexity live here.</figcaption>
+    </figure>
+    <div>
+      <p class="kicker">The work</p>
+      <h2>Field measurements. Careful maps. A report a council can defend.</h2>
+      <p class="prose">On-the-ground surveys along channels, floodplains, and restoration reaches. Notes that match what is actually there. Then figures and plain language for the board packet or the grant file.</p>
+      <p class="prose">Watershed councils, county planners, and agency partners buy a campaign sized to one reach and one season. Scope is custom. There is no catalog price.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="crafts">
+      <article class="craft">
+        <p class="kicker">Fieldwork</p>
+        <h3>Walk the reach</h3>
+        <p>Surveys along channels, floodplains, and restoration sites. What is there — not what the office map hoped for.</p>
+      </article>
+      <article class="craft">
+        <p class="kicker">Sampling</p>
+        <h3>Water, sediment, shade</h3>
+        <p>Habitat structure and limiting factors collected with a method you can cite.</p>
+      </article>
+      <article class="craft">
+        <p class="kicker">Stream paths</p>
+        <h3>Before engineering</h3>
+        <p>How flow, form, and barriers connect. Maps that show the path, not just the points. Precursor to design — not a substitute for a stamp.</p>
+      </article>
+      <article class="craft">
+        <p class="kicker">Monitoring</p>
+        <h3>Prove what changed</h3>
+        <p>Before/after and year-to-year checks so a restoration project can show what grew back.</p>
+      </article>
+    </div>
   </div>
 </section>
 
-<div class="cta-band" id="quote">
-  <p class="step" style="color:var(--gold)">Next</p>
-  <p class="ask">Tell us the basin</p>
-  <p>We reply with scope, timeline, and a quote.</p>
-  <a class="btn btn-lg" href="mailto:hello@graphicoregon.com?subject=Watershed%20field%20assessment%20%E2%80%94%20quote&body=Subbasin%20/%20reach%3A%0AAccess%3A%0ADeadline%3A%0AFocus%3A%0A%0Ahttps%3A//caradmico.github.io/company-soup/businesses/watershed/%0A">Request a field quote</a>
-</div>
+<section class="band mist" id="proof">
+  <div class="wrap">
+    <div class="proof-head">
+      <p class="kicker">Proof</p>
+      <h2>Real reports. Public.</h2>
+      <p class="prose">Selected Demeter Design / Graphic Oregon studies. Open the pages. Download the PDFs. Then ask for the packet that matches your basin.</p>
+    </div>
+    <div class="rail">
+      <a href="https://graphicoregon.com/tillamook-bay-watershed-habitat-restoration-plan/" target="_blank" rel="noopener">
+        <img src="img/hero.jpg" alt="Tillamook Bay Watershed Data Synthesis and CERP tool cover, Demeter Design 2008">
+        <span>Tillamook Bay restoration</span>
+      </a>
+      <a href="https://graphicoregon.com/upper-nestucca-sediment-and-habitat-study/" target="_blank" rel="noopener">
+        <img src="img/nestucca.jpg" alt="Upper Nestucca sediment, shade, and habitat complexity cover for BLM">
+        <span>Upper Nestucca · BLM</span>
+      </a>
+      <a href="https://graphicoregon.com/netarts-bay-watershed-habitat-assessment/" target="_blank" rel="noopener">
+        <img src="img/netarts-cover.jpg" alt="Netarts Bay habitat study and limiting factors cover">
+        <span>Netarts Bay</span>
+      </a>
+      <a href="https://graphicoregon.com/research/" target="_blank" rel="noopener">
+        <img src="img/figures.jpg" alt="Report figures page with partners and Demeter Design contact">
+        <span>Research index →</span>
+      </a>
+    </div>
+    <ul class="more">
+      <li><a href="https://graphicoregon.com/tillamook-river-limiting-factors-assessment/" target="_blank" rel="noopener">Tillamook River Limiting Factors Assessment</a></li>
+      <li><a href="https://graphicoregon.com/necanicum-habitat-mapping/" target="_blank" rel="noopener">Necanicum Habitat Mapping</a></li>
+      <li><a href="https://graphicoregon.com/east-fork-nehalem-watershed-assessment/" target="_blank" rel="noopener">East Fork Nehalem Watershed Assessment</a></li>
+      <li><a href="https://graphicoregon.com/north-fork-siuslaw-sediment-and-habitat-assessment/" target="_blank" rel="noopener">North Fork Siuslaw Sediment and Habitat Assessment</a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="band" id="quote">
+  <div class="wrap quote">
+    <div>
+      <p class="kicker">Request a quote</p>
+      <h2>Describe the reach, the question, and the deadline.</h2>
+      <p class="prose">We reply with scope, timeline, and a fixed quote. Fieldwork follows the agreed scope. No cart. No surprise SKUs.</p>
+      <p class="prose">Mail goes to Graphic Oregon, parent of Demeter Design.</p>
+    </div>
+    <form id="quoteForm">
+      <div>
+        <label for="name">Name</label>
+        <input id="name" name="name" autocomplete="name" required>
+      </div>
+      <div>
+        <label for="org">Organization</label>
+        <input id="org" name="org" autocomplete="organization" placeholder="Watershed council, county, agency">
+      </div>
+      <div>
+        <label for="basin">Basin or reach</label>
+        <input id="basin" name="basin" required placeholder="e.g. Upper Nestucca, Kilchis, Necanicum">
+      </div>
+      <div>
+        <label for="need">The question</label>
+        <select id="need" name="need">
+          <option>Water / sediment sampling</option>
+          <option>Stream paths / channel measurement</option>
+          <option>Restoration monitoring</option>
+          <option>Habitat or limiting-factors assessment</option>
+          <option>A mix — described below</option>
+        </select>
+      </div>
+      <div>
+        <label for="notes">Access, season, deadline</label>
+        <textarea id="notes" name="notes" placeholder="When you need to be in the field, and when the report has to land."></textarea>
+      </div>
+      <button class="btn btn-dark" type="submit">Open quote email</button>
+      <p class="fine">Opens hello@graphicoregon.com with this note. Nothing is stored here.</p>
+    </form>
+  </div>
+</section>
 
 <footer>
-  Demeter Design · Watershed · <a href="http://demeterdesign.net/" target="_blank" rel="noopener">demeterdesign.net</a>
-  · Parent <a href="https://graphicoregon.com/">Graphic Oregon</a>
+  <div class="wrap foot">
+    <p><strong class="serif" style="color:var(--fir)">Demeter Design</strong> · Watershed field assessment<br>
+    <a href="http://demeterdesign.net/" target="_blank" rel="noopener">demeterdesign.net</a> · Parent <a href="https://graphicoregon.com/">Graphic Oregon</a></p>
+    <p><a href="../../">Company Soup</a> · <a href="../../extracts/">Extracts</a> · <a href="../../founders/">Founder doors</a></p>
+  </div>
+  <div class="wrap">
+    <p class="fine">Basin photographs: Wikimedia Commons (Netarts Bay aerial; Nestucca Wild and Scenic River). Report covers: Demeter Design / Graphic Oregon, used as published proof. This page does not sell maps of the sky.</p>
+  </div>
 </footer>
 <div class="sticky">
-  <a class="btn" href="mailto:hello@graphicoregon.com?subject=Watershed%20field%20assessment%20%E2%80%94%20quote&body=Subbasin%20/%20reach%3A%0AAccess%3A%0ADeadline%3A%0AFocus%3A%0A%0Ahttps%3A//caradmico.github.io/company-soup/businesses/watershed/%0A">Request a field quote</a>
+  <a class="btn btn-light" href="#quote">Request a quote</a>
 </div>
+<script>
+document.getElementById('quoteForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var body = [
+    'Watershed field assessment — quote request',
+    '',
+    'Name: ' + document.getElementById('name').value.trim(),
+    'Organization: ' + (document.getElementById('org').value.trim() || '(not given)'),
+    'Basin / reach: ' + document.getElementById('basin').value.trim(),
+    'Question: ' + document.getElementById('need').value,
+    'Access / season / deadline: ' + (document.getElementById('notes').value.trim() || '(none)'),
+    '',
+    'https://caradmico.github.io/company-soup/businesses/watershed/'
+  ].join('\n');
+  window.location.href = 'mailto:hello@graphicoregon.com'
+    + '?subject=' + encodeURIComponent('Watershed field assessment quote')
+    + '&body=' + encodeURIComponent(body);
+});
+</script>
 </body>
 </html>
