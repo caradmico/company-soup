@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Night Contour · Cold Contour</title>
-  <meta name="description" content="Cold Contour — Night Contour digital fine-art PDF. Order a print or download the file. Not apparel.">
+  <title>Shore Contour · Cold Contour</title>
+  <meta name="description" content="Cold Contour — Shore Contour digital fine-art PDF. Order a print or download the file. Not apparel.">
   <style>
     :root { --ink:#0f1c24; --paper:#f6f1e8; --teal:#1f6f78; --gold:#c4a35a; --navy:#0a1628; --line:#d5cbba; --cream:#fffaf2; }
     * { box-sizing: border-box; }
@@ -13,14 +13,9 @@
     .tag { color:var(--teal); font-size:.78rem; letter-spacing:.06em; text-transform:uppercase; font-weight:700; }
     h1 { margin:.25rem 0 .35rem; font-size:1.7rem; }
     a { color:var(--teal); }
-    .hero {
-      background:var(--navy); border-radius:12px; padding:1rem; margin:1rem 0 1.25rem;
-      text-align:center;
-    }
+    .hero { background:var(--navy); border-radius:12px; padding:1rem; margin:1rem 0 1.25rem; text-align:center; }
     .hero img { max-width:100%; height:auto; border-radius:8px; }
-    .offer {
-      background:var(--cream); border:1px solid var(--line); border-radius:12px; padding:1.1rem 1.15rem; margin:1rem 0;
-    }
+    .offer { background:var(--cream); border:1px solid var(--line); border-radius:12px; padding:1.1rem 1.15rem; margin:1rem 0; }
     .price { font-size:1.35rem; font-weight:700; color:var(--teal); margin:.35rem 0; }
     .actions { display:flex; flex-wrap:wrap; gap:.6rem; margin-top:.9rem; }
     .actions a, .actions button {
@@ -30,9 +25,7 @@
     .buy { background:var(--teal); color:#fff !important; }
     .secondary { background:transparent; color:var(--teal) !important; border:1px solid var(--teal) !important; }
     label { display:block; font-size:.85rem; font-weight:600; margin:.7rem 0 .25rem; }
-    input, select, textarea {
-      width:100%; padding:.55rem .65rem; border:1px solid var(--line); border-radius:8px; font:inherit; background:#fff;
-    }
+    input, select, textarea { width:100%; padding:.55rem .65rem; border:1px solid var(--line); border-radius:8px; font:inherit; background:#fff; }
     textarea { min-height:3.5rem; }
     h2 { font-size:1.05rem; border-left:4px solid var(--gold); padding-left:.5rem; margin:1.4rem 0 .5rem; }
     .note { font-size:.9rem; color:#5a6570; }
@@ -42,21 +35,21 @@
 <body>
 <main>
   <p class="tag">Cold Contour · Graphic Oregon child · art</p>
-  <h1>Night Contour</h1>
-  <p>Limited coastal-technical fine art. Layers you can feel — copper contour rings on deep navy. Sold as an art object (digital PDF / print order). <strong>Not apparel. Not Printify-as-hero.</strong></p>
+  <h1>Shore Contour</h1>
+  <p>Coastal bathymetry as a wall object. Copper-to-cold contour layers on deep navy — a living map, not a radar. Sold as fine art (digital PDF / print order). <strong>Not apparel. Not Printify-as-hero.</strong></p>
 
   <div class="hero">
-    <img src="night-contour.png" width="900" height="900" alt="Night Contour — copper contour rings on deep navy with central cross and signal dots">
+    <img src="shore-contour.png" width="900" height="900" alt="Shore Contour — copper-to-cold organic contour rings on deep navy">
   </div>
 
   <div class="offer" id="buy">
     <p class="tag">Buy / order</p>
     <h2 style="border:0;padding:0;margin:.2rem 0">Digital fine-art PDF</h2>
     <p class="price">$28 USD</p>
-    <p>Print-ready PDF of <em>Night Contour</em> (square sheet). Instant download after you place the order note — v0.1 honors download immediately; paid invoice follows by email.</p>
+    <p>Print-ready 12×12 in sheet of <em>Shore Contour</em>. Instant download; paid invoice follows by email (v0.1).</p>
     <div class="actions">
-      <a class="buy" href="night-contour-print.pdf" download="Night-Contour-Cold-Contour.pdf">Download PDF</a>
-      <a class="secondary" href="night-contour.svg" download>SVG source</a>
+      <a class="buy" href="shore-contour-print.pdf" download="Shore-Contour-Cold-Contour.pdf">Download PDF</a>
+      <a class="secondary" href="shore-contour.svg" download>SVG source</a>
     </div>
     <p class="note" style="margin-top:.85rem">Stranger path: open PDF → print at home or send to a fine-art printer. Apparel SKUs are out of scope for this door.</p>
   </div>
@@ -86,7 +79,7 @@
   </div>
 
   <h2>Locked brief</h2>
-  <p>Cold Contour sells <em>Night Contour</em> as fine art (PDF + optional print order) under Graphic Oregon. Demeter stays the env child — do not touch it here.</p>
+  <p>Cold Contour sells <em>Shore Contour</em> as fine art (PDF + optional print order) under Graphic Oregon. Night Contour corpus remains archive. Demeter stays the env child — do not touch it here.</p>
   <h2>Done-when</h2>
   <p>Stranger can open this page, see the art, download the PDF, and/or send a print order — without a login and without an apparel checkout.</p>
 
@@ -104,7 +97,7 @@ document.getElementById('printOrder').addEventListener('submit', function (e) {
   var size = document.getElementById('size').value;
   var notes = document.getElementById('notes').value.trim() || '(none)';
   var lines = [
-    'Cold Contour — Night Contour fine-art print order',
+    'Cold Contour — Shore Contour fine-art print order',
     '',
     'Name: ' + name,
     'Email: ' + email,
@@ -112,12 +105,11 @@ document.getElementById('printOrder').addEventListener('submit', function (e) {
     'Notes: ' + notes,
     '',
     'Product page: https://caradmico.github.io/company-soup/brands/cold-contour/',
-    'Digital PDF: https://caradmico.github.io/company-soup/brands/cold-contour/night-contour-print.pdf'
+    'Digital PDF: https://caradmico.github.io/company-soup/brands/cold-contour/shore-contour-print.pdf'
   ];
   window.location.href = 'mailto:hello@graphicoregon.com'
-    + '?subject=' + encodeURIComponent('Cold Contour print order — Night Contour')
-    + '&body=' + encodeURIComponent(lines.join('
-'));
+    + '?subject=' + encodeURIComponent('Cold Contour print order — Shore Contour')
+    + '&body=' + encodeURIComponent(lines.join('\n'));
 });
 </script>
 </body>
