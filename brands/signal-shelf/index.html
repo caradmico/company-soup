@@ -1,25 +1,87 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Signal Shelf · Monday brief hone</title>
-<style>
-:root{--ink:#0f1c24;--paper:#f6f1e8;--teal:#1f6f78;--gold:#c4a35a;--line:#d5cbba}
-body{margin:0;font:17px/1.55 system-ui,sans-serif;color:var(--ink);background:var(--paper)}
-main{max-width:40rem;margin:0 auto;padding:1.4rem 1.15rem}
-.tag{color:var(--teal);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;font-weight:700}
-h2{font-size:1.05rem;border-left:4px solid var(--gold);padding-left:.5rem}
-a{color:var(--teal)}
-.card{border:1px solid var(--line);border-radius:8px;padding:1rem;margin:1rem 0;background:#fff}
-</style></head><body><main>
-<p class="tag">Hone invent · Graphic Oregon child</p>
-<h1>Signal Shelf</h1>
-<p>One paper/map/dataset → one-page Monday brief for operators. Demo hone — not claimed Cara cash.</p>
-<p>Parent: <a href="https://graphicoregon.com/">Graphic Oregon</a> · Cooker: <a href="../../">Company Soup</a></p>
-<div class="card">
-  <h2>Signal Shelf Brief</h2>
-  <p><strong>$29</strong> demo price</p>
-  <p><a href="sample-monday.md">Open sample Monday brief</a></p>
-</div>
-<h2>Do-not</h2>
-<ul><li>Claim existing revenue</li><li>Rename Graphic Oregon</li><li>Touch Coast Desk or Lane Sites doors</li></ul>
-</main></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Signal Shelf · operator one-pagers</title>
+  <style>
+    :root{--ink:#0f1c24;--paper:#f6f1e8;--teal:#1f6f78;--gold:#c4a35a;--line:#d5cbba;--cream:#fffaf2}
+    body{margin:0;font:17px/1.55 system-ui,sans-serif;color:var(--ink);background:var(--paper)}
+    main{max-width:42rem;margin:0 auto;padding:1.4rem 1.15rem 3rem}
+    .tag{color:var(--teal);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;font-weight:700}
+    h1{margin:.2rem 0 .4rem}
+    h2{font-size:1.05rem;border-left:4px solid var(--gold);padding-left:.5rem}
+    a{color:var(--teal)}
+    .offer,.card{background:var(--cream);border:1px solid var(--line);border-radius:12px;padding:1.1rem;margin:1rem 0}
+    .price{font-size:1.25rem;font-weight:700;color:var(--teal)}
+    label{display:block;font-size:.85rem;font-weight:600;margin:.65rem 0 .25rem}
+    input,textarea{width:100%;padding:.55rem .65rem;border:1px solid var(--line);border-radius:8px;font:inherit;box-sizing:border-box}
+    textarea{min-height:4rem}
+    button,.btn{display:inline-block;margin-top:.7rem;margin-right:.4rem;padding:.6rem 1rem;border-radius:8px;border:0;background:var(--teal);color:#fff;font:600 .95rem system-ui,sans-serif;cursor:pointer;text-decoration:none}
+    .secondary{background:transparent;color:var(--teal);border:1px solid var(--teal)}
+    pre{white-space:pre-wrap;background:#fff;border:1px solid var(--line);padding:.8rem;border-radius:8px;font-size:.88rem}
+    .note{font-size:.9rem;color:#5a6570}
+  </style>
+</head>
+<body>
+<main>
+  <p class="tag">Signal Shelf · hone invent · Graphic Oregon</p>
+  <h1>Operator one-pagers</h1>
+  <p><strong>Offer (hone):</strong> one paper/map/dataset → a Monday action brief. Demo product to hone Company Soup — not claimed as current Cara cash.</p>
+
+  <div class="offer">
+    <p class="tag">Price (demo)</p>
+    <p class="price">$12 / brief · or free sample below</p>
+    <p>Fill the template. Copy or download the brief. Paid briefs later via email.</p>
+  </div>
+
+  <div class="card">
+    <p class="tag">Sample / fillable</p>
+    <label for="title">Title</label>
+    <input id="title" value="Free-space TF-QKD paper → ops takeaway">
+    <label for="source">Source</label>
+    <input id="source" value="arXiv-class digest on front-end-judgment (example)">
+    <label for="finding">Finding (2–3 sentences)</label>
+    <textarea id="finding">Photon loss and pointing error dominate link budget before fancy coding tricks matter. Stabilization beats another modulation scheme for near-term demos.</textarea>
+    <label for="monday">What to do Monday</label>
+    <textarea id="monday">1) Write the loss budget on one slide. 2) Pick one stabilization metric to instrument. 3) Do not open a new protocol fork this week.</textarea>
+    <button type="button" id="cook">Cook brief</button>
+    <button type="button" class="secondary" id="copy">Copy</button>
+    <pre id="out" hidden></pre>
+  </div>
+
+  <h2>Locked brief</h2>
+  <p>Signal Shelf is a hone invent under Graphic Oregon. Stranger can run the template and leave with a usable one-pager. Not Demeter. Not Cold Contour cash.</p>
+  <p class="note">Parent: <a href="https://graphicoregon.com/">Graphic Oregon</a> · <a href="../../">Company Soup</a></p>
+</main>
+<script>
+function build(){
+  return [
+    'SIGNAL SHELF — operator one-pager',
+    '',
+    'Title: ' + document.getElementById('title').value.trim(),
+    'Source: ' + document.getElementById('source').value.trim(),
+    '',
+    'Finding:',
+    document.getElementById('finding').value.trim(),
+    '',
+    'What to do Monday:',
+    document.getElementById('monday').value.trim(),
+    '',
+    '— hone invent · not a subscription claim yet —'
+  ].join('\n');
+}
+document.getElementById('cook').onclick = function(){
+  var t = build();
+  var el = document.getElementById('out');
+  el.hidden = false; el.textContent = t;
+};
+document.getElementById('copy').onclick = async function(){
+  var t = build();
+  var el = document.getElementById('out');
+  el.hidden = false; el.textContent = t;
+  await navigator.clipboard.writeText(t);
+};
+</script>
+</body>
+</html>
