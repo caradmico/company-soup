@@ -3,75 +3,369 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Coast Desk · correspondence for existing papers</title>
-  <meta name="description" content="Coast Desk files placement-ready notes into papers that already exist. Pioneer stays Pioneer. Not a newspaper we own.">
+  <title>Coast Desk · Hed Wall</title>
+  <meta name="description" content="Graphic Oregon journalism door: verified Cara Mico CV bylines, beat browse, and pull-quotes that open the originals.">
   <style>
-    :root { --ink:#0f1c24; --paper:#f6f1e8; --teal:#1f6f78; --gold:#c4a35a; --line:#d5cbba; --cream:#fffaf2; }
-    * { box-sizing: border-box; }
-    body { margin:0; font:17px/1.55 system-ui,-apple-system,sans-serif; color:var(--ink); background:var(--paper); }
-    main { max-width:42rem; margin:0 auto; padding:1.4rem 1.15rem 3rem; }
-    .tag { color:var(--teal); font-size:.78rem; letter-spacing:.06em; text-transform:uppercase; font-weight:700; }
-    h1 { margin:.25rem 0 .35rem; font-size:1.7rem; }
-    h2 { font-size:1.05rem; border-left:4px solid var(--gold); padding-left:.5rem; margin:1.4rem 0 .5rem; }
-    a { color:var(--teal); }
-    .offer { background:var(--cream); border:1px solid var(--line); border-radius:12px; padding:1.1rem 1.15rem; margin:1rem 0; }
-    .price { font-size:1.35rem; font-weight:700; color:var(--teal); margin:.35rem 0; }
-    .actions { display:flex; flex-wrap:wrap; gap:.6rem; margin-top:.9rem; }
-    .actions a {
-      display:inline-block; text-decoration:none; padding:.65rem 1.05rem; border-radius:8px;
-      font:600 .95rem system-ui,sans-serif;
+    :root {
+      --ink: #0f1c24;
+      --paper: #f6f1e8;
+      --teal: #1f6f78;
+      --gold: #c4a35a;
+      --line: #d5cbba;
+      --cream: #fffaf2;
+      --rule: #1a1a1a;
+      --muted: #5a6570;
     }
-    .buy { background:var(--teal); color:#fff !important; }
-    .secondary { background:transparent; color:var(--teal) !important; border:1px solid var(--teal); }
-    .note { font-size:.9rem; color:#5a6570; }
-    footer { margin-top:2rem; font-size:.85rem; color:#5a6570; border-top:1px solid var(--line); padding-top:1rem; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(15,28,36,.015) 2px, rgba(15,28,36,.015) 3px),
+        var(--paper);
+      font: 16px/1.5 Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+    }
+    .wrap { max-width: 72rem; margin: 0 auto; padding: 1.1rem 1.15rem 3rem; }
+    .kicker {
+      color: var(--teal);
+      font: 700 .72rem/1.2 system-ui, -apple-system, sans-serif;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    header.mast {
+      border-top: 4px solid var(--ink);
+      border-bottom: 2px solid var(--ink);
+      padding: .7rem 0 .85rem;
+      margin-bottom: 1rem;
+    }
+    header.mast h1 {
+      margin: .1rem 0 .15rem;
+      font-size: clamp(2.1rem, 6vw, 3.4rem);
+      letter-spacing: -.03em;
+      line-height: .95;
+      text-align: center;
+    }
+    header.mast .flag {
+      text-align: center;
+      font: 600 .82rem/1.4 system-ui, sans-serif;
+      color: var(--muted);
+    }
+    .counts {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: .35rem .7rem;
+      margin-top: .55rem;
+      font: 600 .78rem/1.3 system-ui, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+    .counts span { border: 1px solid var(--line); background: var(--cream); padding: .2rem .45rem; }
+    .lede {
+      max-width: 44rem;
+      margin: .85rem auto 0;
+      text-align: center;
+      font-size: 1.02rem;
+    }
+    a { color: var(--teal); }
+    .browse {
+      background: var(--cream);
+      border: 1px solid var(--line);
+      padding: .85rem .95rem 1rem;
+      margin: 1rem 0 1.1rem;
+    }
+    .filters { display: flex; flex-wrap: wrap; gap: .4rem; margin: .4rem 0 .55rem; }
+    .chip {
+      appearance: none;
+      border: 1px solid var(--teal);
+      background: transparent;
+      color: var(--teal);
+      font: 650 .78rem/1 system-ui, sans-serif;
+      letter-spacing: .03em;
+      text-transform: uppercase;
+      padding: .38rem .65rem;
+      border-radius: 999px;
+      cursor: pointer;
+    }
+    .chip[aria-pressed="true"] { background: var(--teal); color: #fff; }
+    .chip.gold[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); }
+    .filter-label {
+      width: 100%;
+      margin: .45rem 0 .15rem;
+      font: 700 .7rem/1 system-ui, sans-serif;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .quotes { display: grid; gap: .7rem; margin-top: .75rem; }
+    @media (min-width: 800px) { .quotes.many { grid-template-columns: 1fr 1fr; } }
+    blockquote.pull {
+      margin: 0;
+      padding: .7rem .85rem .75rem 1rem;
+      border-left: 4px solid var(--gold);
+      background: #fff;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    blockquote.pull .beat {
+      font: 700 .68rem/1 system-ui, sans-serif;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--teal);
+    }
+    blockquote.pull a {
+      color: var(--ink);
+      text-decoration: none;
+      display: block;
+      margin-top: .25rem;
+      font-size: 1.05rem;
+      line-height: 1.35;
+    }
+    blockquote.pull a:hover { color: var(--teal); }
+    blockquote.pull .src {
+      margin-top: .4rem;
+      font: 600 .75rem/1.3 system-ui, sans-serif;
+      color: var(--muted);
+    }
+    .status {
+      font: 600 .8rem/1.3 system-ui, sans-serif;
+      color: var(--muted);
+      margin: .2rem 0 0.8rem;
+    }
+    .wall {
+      column-count: 1;
+      column-gap: 1.35rem;
+      border-top: 3px double var(--ink);
+      padding-top: .4rem;
+    }
+    @media (min-width: 640px) { .wall { column-count: 2; } }
+    @media (min-width: 980px) { .wall { column-count: 3; } }
+    .hed {
+      break-inside: avoid;
+      border-bottom: 1px solid var(--ink);
+      padding: .7rem 0 .75rem;
+    }
+    .hed a.t {
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 750;
+      font-size: 1.18rem;
+      line-height: 1.18;
+      display: block;
+    }
+    .hed.lead a.t { font-size: 1.48rem; letter-spacing: -.02em; }
+    .hed a.t:hover { color: var(--teal); }
+    .hed .dek { margin: .25rem 0 0; font-size: .95rem; color: #334; }
+    .hed .meta {
+      margin-top: .35rem;
+      font: 650 .72rem/1.3 system-ui, sans-serif;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .hed .meta .dot { margin: 0 .28rem; color: var(--gold); }
+    .empty { padding: 1.2rem 0; color: var(--muted); }
+    footer {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 2px solid var(--ink);
+      font: .85rem/1.5 system-ui, sans-serif;
+      color: var(--muted);
+    }
+    footer p { margin: .35rem 0; }
   </style>
 </head>
 <body>
-<main>
-  <p class="tag">Journalism · Graphic Oregon child</p>
-  <h1>Coast Desk</h1>
-  <p>Coastal correspondence for papers that already exist. One subject, one note, one editor. <strong>Pioneer stays Pioneer. This is not a newspaper we own, not a CMS, not a staff job.</strong></p>
-
-  <div class="offer" id="offer">
-    <p class="tag">What you can open</p>
-    <h2 style="border:0;padding:0;margin:.2rem 0">Placement Note 001</h2>
-    <p class="price">Sample · free to open</p>
-    <p>A filing pattern: watershed packets become news only in a paper that already prints. Open the sample. Pioneer author path is placement proof — not property.</p>
-    <div class="actions">
-      <a class="buy" href="placement-note-001.html">Open Note 001</a>
-      <a class="secondary" href="placement-note-001.md" download>Download .md</a>
-      <a class="secondary" href="https://www.tillamookcountypioneer.net/author/assistant-editor/" target="_blank" rel="noopener">Pioneer author path</a>
+<div class="wrap">
+  <p class="kicker">Coast Desk · Graphic Oregon child · journalism</p>
+  <header class="mast">
+    <h1>Hed Wall</h1>
+    <p class="flag">Graphic Oregon journalism door</p>
+    <div class="counts" id="counts">
+      <span>49 verified CV URLs</span>
+      <span>5 outlets</span>
+      <span>2012–2025</span>
+      <span>Pioneer desk 2022–Present · role</span>
     </div>
-  </div>
+    <p class="lede">This page is proof of real desk journalism volume — Cara Mico bylines, filed at papers that already exist.</p>
+    <p class="lede">The wall is verified CV bylines. Chip by beat, outlet, or year. Each beat has one short pull-quote that opens the original. No full articles here.</p>
+  </header>
 
-  <div class="offer">
-    <p class="tag">Named note</p>
-    <h2 style="border:0;padding:0;margin:.2rem 0">One existing paper</h2>
-    <p class="price">$85 USD</p>
-    <p>One subject → one placement-ready note for one paper that already exists (Pioneer, Hipfish, Gazette, Signal, or another live desk). Email the desk. Not employment. Not a masthead invent.</p>
-    <div class="actions">
-      <a class="buy" href="mailto:hello@graphicoregon.com?subject=Coast%20Desk%20placement%20note&amp;body=Coast%20Desk%20%E2%80%94%20placement%20note%20request%0A%0ASubject%3A%20%0AExisting%20paper%3A%20%0AName%3A%20%0AEmail%3A%20%0A">Request a placement note</a>
-    </div>
-    <p class="note" style="margin-top:.85rem">Stranger path: open the sample → read the Pioneer path → send a named-note mail. No login. No invented paper.</p>
-  </div>
+  <section class="browse" aria-label="Browse layer">
+    <p class="kicker">Browse</p>
+    <div class="filter-label">Beat</div>
+    <div class="filters" id="beats"></div>
+    <div class="filter-label">Outlet</div>
+    <div class="filters" id="outlets"></div>
+    <div class="filter-label">Year</div>
+    <div class="filters" id="years"></div>
+    <div class="quotes" id="quotes"></div>
+  </section>
 
-  <h2>Locked brief</h2>
-  <p>Lock Coast Desk as the Graphic Oregon journalism child. Placement into existing papers. Pioneer stays Pioneer. Do not invent a newspaper. Do not build a CMS.</p>
-  <h2>Done-when</h2>
-  <p>Stranger opens this page, reads Note 001, and can reach the Pioneer author path without thinking Coast Desk owns Pioneer.</p>
-  <h2>Do-not</h2>
-  <ul>
-    <li>Rename Graphic Oregon</li>
-    <li>Brand this as Pioneer / invent a masthead</li>
-    <li>CONTINUE Three.js · new bot · Printify-as-hero · client websites as cash factory</li>
-  </ul>
+  <p class="status" id="status">Loading the wall…</p>
+  <div class="wall" id="wall"></div>
 
   <footer>
-    Parent: <a href="https://graphicoregon.com/">Graphic Oregon</a> ·
-    Cooker: <a href="../../">Company Soup</a> ·
-    <a href="pack.md">pack.md</a>
+    <p>Coast Desk is not a newspaper. Pioneer stays Pioneer. The assistant-editor archive mixes other writers; this wall lists only the five Pioneer pieces on the CV.</p>
+    <p>Parent: <a href="https://graphicoregon.com/">Graphic Oregon</a> ·
+      Cooker: <a href="../../">Company Soup</a> ·
+      <a href="pack.md">pack.md</a> ·
+      <a href="placement-note-001.html">Placement Note 001</a> ·
+      <a href="https://www.tillamookcountypioneer.net/author/assistant-editor/" target="_blank" rel="noopener">Pioneer author path</a> (volume, mixed bylines)</p>
   </footer>
-</main>
+</div>
+<script>
+(function () {
+  var BEATS = [
+    { id: "science", label: "Science" },
+    { id: "civic", label: "Civic" },
+    { id: "arts", label: "Arts" },
+    { id: "outdoors", label: "Outdoors" },
+    { id: "community", label: "Community" }
+  ];
+  var state = { beat: "all", outlet: "all", year: "all" };
+  var data = { clips: [], quotes: [], meta: {} };
+
+  function el(tag, attrs, html) {
+    var n = document.createElement(tag);
+    if (attrs) Object.keys(attrs).forEach(function (k) {
+      if (k === "text") n.textContent = attrs[k];
+      else n.setAttribute(k, attrs[k]);
+    });
+    if (html) n.innerHTML = html;
+    return n;
+  }
+
+  function chip(label, pressed, group) {
+    var b = el("button", { class: "chip" + (group === "beat" ? " gold" : ""), type: "button" });
+    b.textContent = label;
+    b.setAttribute("aria-pressed", pressed ? "true" : "false");
+    return b;
+  }
+
+  function unique(key) {
+    var seen = {};
+    data.clips.forEach(function (c) { seen[c[key]] = true; });
+    return Object.keys(seen).sort(function (a, b) {
+      if (key === "year") return Number(b) - Number(a);
+      return String(a).localeCompare(String(b));
+    });
+  }
+
+  function filtered() {
+    return data.clips.filter(function (c) {
+      if (state.beat !== "all" && c.beat !== state.beat) return false;
+      if (state.outlet !== "all" && c.outlet !== state.outlet) return false;
+      if (state.year !== "all" && String(c.year) !== String(state.year)) return false;
+      return true;
+    }).sort(function (a, b) {
+      return (b.date || "").localeCompare(a.date || "");
+    });
+  }
+
+  function renderChips() {
+    var beats = document.getElementById("beats");
+    beats.innerHTML = "";
+    var all = chip("All beats", state.beat === "all", "beat");
+    all.onclick = function () { state.beat = "all"; draw(); };
+    beats.appendChild(all);
+    BEATS.forEach(function (b) {
+      var n = data.clips.filter(function (c) { return c.beat === b.id; }).length;
+      var btn = chip(b.label + " · " + n, state.beat === b.id, "beat");
+      btn.onclick = function () { state.beat = state.beat === b.id ? "all" : b.id; draw(); };
+      beats.appendChild(btn);
+    });
+
+    var outlets = document.getElementById("outlets");
+    outlets.innerHTML = "";
+    var oAll = chip("All outlets", state.outlet === "all");
+    oAll.onclick = function () { state.outlet = "all"; draw(); };
+    outlets.appendChild(oAll);
+    unique("outlet").forEach(function (o) {
+      var btn = chip(o, state.outlet === o);
+      btn.onclick = function () { state.outlet = state.outlet === o ? "all" : o; draw(); };
+      outlets.appendChild(btn);
+    });
+
+    var years = document.getElementById("years");
+    years.innerHTML = "";
+    var yAll = chip("All years", state.year === "all");
+    yAll.onclick = function () { state.year = "all"; draw(); };
+    years.appendChild(yAll);
+    unique("year").forEach(function (y) {
+      var btn = chip(String(y), String(state.year) === String(y));
+      btn.onclick = function () { state.year = String(state.year) === String(y) ? "all" : y; draw(); };
+      years.appendChild(btn);
+    });
+  }
+
+  function quoteCard(q) {
+    var bq = el("blockquote", { class: "pull" });
+    var beat = BEATS.filter(function (x) { return x.id === q.beat; })[0];
+    bq.appendChild(el("div", { class: "beat", text: (beat ? beat.label : q.beat) + " · pull-quote" }));
+    var a = el("a", { href: q.url, target: "_blank", rel: "noopener" });
+    a.appendChild(document.createTextNode("“" + q.text + "”"));
+    bq.appendChild(a);
+    bq.appendChild(el("div", { class: "src", text: q.hed + " · open original" }));
+    return bq;
+  }
+
+  function renderQuotes() {
+    var box = document.getElementById("quotes");
+    box.innerHTML = "";
+    var qs = data.quotes || [];
+    if (state.beat === "all") {
+      box.className = "quotes many";
+      qs.forEach(function (q) { box.appendChild(quoteCard(q)); });
+    } else {
+      box.className = "quotes";
+      var hit = qs.filter(function (q) { return q.beat === state.beat; })[0];
+      if (hit) box.appendChild(quoteCard(hit));
+    }
+  }
+
+  function renderWall() {
+    var wall = document.getElementById("wall");
+    var rows = filtered();
+    var total = data.clips.length;
+    document.getElementById("status").textContent =
+      "Showing " + rows.length + " of " + total + " verified CV heds · no article bodies on this page";
+    wall.innerHTML = "";
+    if (!rows.length) {
+      wall.appendChild(el("p", { class: "empty", text: "No heds match those chips." }));
+      return;
+    }
+    rows.forEach(function (c) {
+      var art = el("article", { class: "hed" + (c.lead ? " lead" : "") });
+      var a = el("a", { class: "t", href: c.url, target: "_blank", rel: "noopener" });
+      a.textContent = c.hed;
+      art.appendChild(a);
+      if (c.dek) art.appendChild(el("p", { class: "dek", text: c.dek }));
+      var beat = BEATS.filter(function (x) { return x.id === c.beat; })[0];
+      art.appendChild(el("p", { class: "meta", text:
+        c.outlet + " · " + c.year + " · " + (beat ? beat.label : c.beat)
+      }));
+      wall.appendChild(art);
+    });
+  }
+
+  function draw() {
+    renderChips();
+    renderQuotes();
+    renderWall();
+  }
+
+  fetch("clips.json").then(function (r) { return r.json(); }).then(function (j) {
+    data = j;
+    var m = j.meta || {};
+    document.getElementById("counts").innerHTML =
+      "<span>" + (m.verifiedCount || j.clips.length) + " verified CV URLs</span>" +
+      "<span>" + (m.outlets || 5) + " outlets</span>" +
+      "<span>" + (m.years || "") + "</span>" +
+      "<span>Pioneer desk 2022–Present · role</span>";
+    draw();
+  }).catch(function () {
+    document.getElementById("status").textContent = "Could not load clips.json.";
+  });
+})();
+</script>
 </body>
 </html>
