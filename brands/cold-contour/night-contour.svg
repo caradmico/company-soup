@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3000" height="3000" viewBox="0 0 3000 3000">
+  <rect width="3000" height="3000" fill="#080c1c"/>
+  <!-- GIS grid -->
+  <g stroke="#283c5a" stroke-width="1" opacity="0.25">
+    <line x1="0" y1="0" x2="0" y2="3000"/><line x1="120" y1="0" x2="120" y2="3000"/><line x1="240" y1="0" x2="240" y2="3000"/><line x1="360" y1="0" x2="360" y2="3000"/><line x1="480" y1="0" x2="480" y2="3000"/><line x1="600" y1="0" x2="600" y2="3000"/><line x1="720" y1="0" x2="720" y2="3000"/><line x1="840" y1="0" x2="840" y2="3000"/><line x1="960" y1="0" x2="960" y2="3000"/><line x1="1080" y1="0" x2="1080" y2="3000"/><line x1="1200" y1="0" x2="1200" y2="3000"/><line x1="1320" y1="0" x2="1320" y2="3000"/><line x1="1440" y1="0" x2="1440" y2="3000"/><line x1="1560" y1="0" x2="1560" y2="3000"/><line x1="1680" y1="0" x2="1680" y2="3000"/><line x1="1800" y1="0" x2="1800" y2="3000"/><line x1="1920" y1="0" x2="1920" y2="3000"/><line x1="2040" y1="0" x2="2040" y2="3000"/><line x1="2160" y1="0" x2="2160" y2="3000"/><line x1="2280" y1="0" x2="2280" y2="3000"/><line x1="2400" y1="0" x2="2400" y2="3000"/><line x1="2520" y1="0" x2="2520" y2="3000"/><line x1="2640" y1="0" x2="2640" y2="3000"/><line x1="2760" y1="0" x2="2760" y2="3000"/><line x1="2880" y1="0" x2="2880" y2="3000"/>
+    <line x1="0" y1="0" x2="3000" y2="0"/><line x1="0" y1="120" x2="3000" y2="120"/><line x1="0" y1="240" x2="3000" y2="240"/><line x1="0" y1="360" x2="3000" y2="360"/><line x1="0" y1="480" x2="3000" y2="480"/><line x1="0" y1="600" x2="3000" y2="600"/><line x1="0" y1="720" x2="3000" y2="720"/><line x1="0" y1="840" x2="3000" y2="840"/><line x1="0" y1="960" x2="3000" y2="960"/><line x1="0" y1="1080" x2="3000" y2="1080"/><line x1="0" y1="1200" x2="3000" y2="1200"/><line x1="0" y1="1320" x2="3000" y2="1320"/><line x1="0" y1="1440" x2="3000" y2="1440"/><line x1="0" y1="1560" x2="3000" y2="1560"/><line x1="0" y1="1680" x2="3000" y2="1680"/><line x1="0" y1="1800" x2="3000" y2="1800"/><line x1="0" y1="1920" x2="3000" y2="1920"/><line x1="0" y1="2040" x2="3000" y2="2040"/><line x1="0" y1="2160" x2="3000" y2="2160"/><line x1="0" y1="2280" x2="3000" y2="2280"/><line x1="0" y1="2400" x2="3000" y2="2400"/><line x1="0" y1="2520" x2="3000" y2="2520"/><line x1="0" y1="2640" x2="3000" y2="2640"/><line x1="0" y1="2760" x2="3000" y2="2760"/><line x1="0" y1="2880" x2="3000" y2="2880"/>
+  </g>
+  <!-- Contours: layered irregular ellipses approximating GIS + subtle serpent undulation -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- outer to inner, copper tones -->
+    <path d="M1500,1600 m-1280,0 a1280,1088 0 1,0 2560,0 a1280,1088 0 1,0 -2560,0" stroke="#b47a3c" stroke-width="2" opacity="0.35"/>
+    <path d="M1500,1600 m-1185,0 a1185,1007 0 1,0 2370,0 a1185,1007 0 1,0 -2370,0" stroke="#c48a48" stroke-width="2.5" opacity="0.4"/>
+    <path d="M1500,1600 m-1090,0 a1090,927 0 1,0 2180,0 a1090,927 0 1,0 -2180,0" stroke="#c89050" stroke-width="2" opacity="0.45"/>
+    <path d="M1500,1600 m-995,0 a995,846 0 1,0 1990,0 a995,846 0 1,0 -1990,0" stroke="#d09a58" stroke-width="3" opacity="0.5"/>
+    <path d="M1500,1600 m-900,0 a900,765 0 1,0 1800,0 a900,765 0 1,0 -1800,0" stroke="#d8a460" stroke-width="2" opacity="0.55"/>
+    <path d="M1500,1600 m-805,0 a805,684 0 1,0 1610,0 a805,684 0 1,0 -1610,0" stroke="#e0ae68" stroke-width="2.5" opacity="0.6"/>
+    <path d="M1500,1600 m-710,0 a710,604 0 1,0 1420,0 a710,604 0 1,0 -1420,0" stroke="#e8b870" stroke-width="2" opacity="0.65"/>
+    <path d="M1500,1600 m-615,0 a615,523 0 1,0 1230,0 a615,523 0 1,0 -1230,0" stroke="#f0c278" stroke-width="3" opacity="0.7"/>
+    <path d="M1500,1600 m-520,0 a520,442 0 1,0 1040,0 a520,442 0 1,0 -1040,0" stroke="#f4c880" stroke-width="2" opacity="0.75"/>
+    <path d="M1500,1600 m-425,0 a425,361 0 1,0 850,0 a425,361 0 1,0 -850,0" stroke="#f8d088" stroke-width="2.5" opacity="0.8"/>
+    <path d="M1500,1600 m-330,0 a330,281 0 1,0 660,0 a330,281 0 1,0 -660,0" stroke="#fcd890" stroke-width="2" opacity="0.85"/>
+    <path d="M1500,1600 m-235,0 a235,200 0 1,0 470,0 a235,200 0 1,0 -470,0" stroke="#ffe098" stroke-width="3" opacity="0.9"/>
+  </g>
+  <!-- Precision cross + center -->
+  <g stroke="#dca050" stroke-width="2.5" opacity="0.9">
+    <line x1="1420" y1="1600" x2="1580" y2="1600"/>
+    <line x1="1500" y1="1520" x2="1500" y2="1680"/>
+  </g>
+  <circle cx="1500" cy="1600" r="18" fill="none" stroke="#dca050" stroke-width="2.5" opacity="0.9"/>
+  <!-- Signal beacons -->
+  <g fill="#ffc864" opacity="0.75">
+    <circle cx="2100" cy="1100" r="7"/><circle cx="900" cy="1200" r="6"/><circle cx="1800" cy="2000" r="7"/><circle cx="1200" cy="900" r="5"/><circle cx="2200" cy="1700" r="6"/><circle cx="800" cy="1800" r="7"/><circle cx="1600" cy="1100" r="5"/><circle cx="1000" cy="2100" r="6"/><circle cx="2000" cy="1400" r="5"/><circle cx="700" cy="1500" r="6"/><circle cx="1900" cy="1900" r="5"/><circle cx="1300" cy="2200" r="6"/><circle cx="2300" cy="1300" r="5"/><circle cx="1100" cy="1600" r="6"/><circle cx="1700" cy="800" r="5"/><circle cx="1400" cy="1900" r="6"/><circle cx="900" cy="1000" r="5"/><circle cx="2100" cy="2100" r="6"/>
+  </g>
+  <!-- faint outer orbit -->
+  <ellipse cx="1500" cy="1600" rx="1350" ry="1150" fill="none" stroke="#648cb4" stroke-width="2" opacity="0.2"/>
+</svg>
