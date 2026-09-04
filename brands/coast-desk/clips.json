@@ -391,5 +391,47 @@
       "url": "https://www.tillamookcountypioneer.net/manzanita-citizens-express-concern-for-incomplete-luba-response-for-the-lofts-development/",
       "beat": "civic"
     }
+  ],
+  "quotes": [
+    {
+      "beat": "science",
+      "clipId": "pioneer-space-view",
+      "text": "Space. We’re all in it. But what exactly is going on up there (around there? Down there?) Quite a bit actually!",
+      "hed": "A New View: Space",
+      "url": "https://www.tillamookcountypioneer.net/a-new-view-space/",
+      "title": "A New View: Space"
+    },
+    {
+      "beat": "civic",
+      "clipId": "mercury-armistice",
+      "text": "After decades of acrimony between residents and businesses, he had brokered a “truce” in the neighborhood’s vaunted “parking wars.”",
+      "hed": "A Temporary Armistice",
+      "url": "https://www.portlandmercury.com/news/2012/12/05/7826150/a-temporary-armistice",
+      "title": "A Temporary Armistice"
+    },
+    {
+      "beat": "arts",
+      "clipId": "signal-hum",
+      "text": "I just wanted to create a story about a girl who does her own thing and doesn’t want to be bothered.",
+      "hed": "Hum and Swish",
+      "url": "https://www.seasidesignal.com/2019/09/21/hum-and-swish/",
+      "title": "Hum and Swish"
+    },
+    {
+      "beat": "outdoors",
+      "clipId": "pioneer-otters",
+      "text": "This historic event marks the first confirmed presence of sea otters in the area for over a century, signaling a potential resurgence of a species once extirpated from the Oregon coast.",
+      "hed": "The Return of Sea Otters to Haystack Rock",
+      "url": "https://www.tillamookcountypioneer.net/the-return-of-sea-otters-to-haystack-rock/",
+      "title": "The Return of Sea Otters to Haystack Rock"
+    },
+    {
+      "beat": "community",
+      "clipId": "signal-market",
+      "text": "About half of the market visitors are locals coming for fresh-picked vegetables and farm goods, while the other half are tourists who tend to visit the craft stands more frequently, said market manager Angi Wildt.",
+      "hed": "Fresh picked farmers market in Seaside",
+      "url": "https://www.seasidesignal.com/2019/07/25/fresh-picked-farmers-market-in-seaside/",
+      "title": "Fresh picked farmers market in Seaside"
+    }
   ]
 }
