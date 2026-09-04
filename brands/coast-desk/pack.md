@@ -1,22 +1,20 @@
 # Coast Desk
 
-Lane: Journalism / Pioneer · queued stub
+Lane: Journalism · Graphic Oregon child
 
 ## One-liner
-Coastal correspondence desk that can place work — Pioneer, Hipfish, Gazette, Signal — without owning those papers.
+North-coast beat packs (story + asset kit) for papers and newsrooms.
 
-## Brief
-Lock **Coast Desk** as the Graphic Oregon journalism stub. Marketer name. Pioneer stays Pioneer. Not a newsroom we invent.
+## Offer
+One beat pack: reported story shell + photo/video asset list + publish checklist. Pioneer is employer — this brand is not Pioneer.
+
+## Path
+- Brand door: company-soup `brands/coast-desk/`
+- Proof: Tillamook County Pioneer clips as craft samples, not the product name
+- Domain later: coastdesk.news
 
 ## Done-when
-Stranger can open this stub and see the lane is queued, with Pioneer as placement not property.
+Stranger knows they buy a beat pack, not a staff job, and sees one sample pack outline.
 
-## BOM
-- This stub page
-- Pioneer author page (existing)
-- Parent: Graphic Oregon
-
-## Steps
-1. Keep as queued stub
-2. Do not launch a CMS or a fake paper
-3. Next real piece can wear this desk name when extracted
+## Do-not
+Brand as Pioneer · rename GO · personal Cara face · client websites as cash
