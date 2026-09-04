@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NCCWP — Nehalem Watershed Drinking Water Sources</title>
+<meta name="description" content="Public draft map of USGS WBD HUC-8 17100202 Nehalem, Oregon. Home counts pending county taxlot Identity.">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin="">
+<style>
+:root{
+  --ink:#12201c;
+  --fir:#163028;
+  --tide:#1f6f78;
+  --gold:#c4a35a;
+  --mist:#eef2ec;
+  --foam:#f7f8f5;
+  --line:#c8d0c6;
+  --mute:#4e5d56;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{
+  color:var(--ink);
+  font:16px/1.5 system-ui,sans-serif;
+  background:var(--foam);
+}
+.app{
+  display:grid;
+  grid-template-columns:minmax(18rem,22rem) 1fr;
+  height:100%;
+}
+.panel{
+  background:var(--foam);
+  border-right:1px solid var(--line);
+  padding:1.15rem 1.15rem 1.4rem;
+  overflow:auto;
+}
+.badge{
+  display:inline-block;
+  background:var(--fir);
+  color:#f3f7f1;
+  font-size:.68rem;
+  font-weight:700;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  padding:.28rem .5rem;
+  border-radius:3px;
+}
+h1{font-size:1.28rem;line-height:1.2;margin:.55rem 0 .5rem}
+.lede{margin:0 0 1rem;color:var(--mute);font-size:.95rem}
+dl{margin:0 0 1rem;display:grid;grid-template-columns:7.2rem 1fr;gap:.35rem .55rem;font-size:.92rem}
+dt{color:var(--mute);font-weight:650}
+dd{margin:0}
+.note,.method{
+  background:var(--mist);
+  border:1px solid var(--line);
+  border-left:4px solid var(--gold);
+  padding:.7rem .75rem;
+  margin:0 0 .85rem;
+  font-size:.88rem;
+  color:var(--mute);
+}
+.method{border-left-color:var(--tide)}
+.method strong{color:var(--ink)}
+#map{min-height:16rem}
+.leaflet-container{background:#dce6df;font:12px/1.4 system-ui,sans-serif}
+footer{margin-top:1rem;font-size:.78rem;color:var(--mute)}
+footer a{color:var(--tide)}
+@media(max-width:800px){
+  .app{grid-template-columns:1fr;grid-template-rows:auto 1fr}
+  .panel{border-right:0;border-bottom:1px solid var(--line);max-height:46vh}
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="panel">
+    <p class="badge">NCCWP · public draft</p>
+    <h1>NCCWP — Nehalem Watershed Drinking Water Sources</h1>
+    <p class="lede">North Coast Communities for Watershed Protection. Frame only — USGS HUC-8 Nehalem, Oregon.</p>
+    <dl>
+      <dt>Status</dt><dd>Public draft</dd>
+      <dt>HUC-8</dt><dd>17100202 · Nehalem</dd>
+      <dt>Area</dt><dd id="area">Loading USGS WBD…</dd>
+      <dt>Homes</dt><dd>PENDING county taxlot Identity (Clatsop GDB + Tillamook taxlots). No counts until that join is done.</dd>
+    </dl>
+    <p class="method"><strong>Method.</strong> HUC-8 → residential outside forestry / ag / city water → OWRD / OWRIS → simple home counts. Counts are not on this map yet.</p>
+    <p class="note">Boundary is USGS Watershed Boundary Dataset HUC-8 <strong>17100202</strong>, fetched from The National Map. Geometry is not invented.</p>
+    <footer>
+      Leaflet 1.9.4 · © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> ·
+      <a href="https://www.usgs.gov/national-hydrography/watershed-boundary-dataset">USGS WBD</a> ·
+      <a href="../">Company Soup</a>
+    </footer>
+  </aside>
+  <div id="map" role="region" aria-label="Nehalem HUC-8 map"></div>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+<script>
+(function () {
+  var map = L.map("map", { zoomControl: true }).setView([45.86, -123.49], 9);
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 18,
+    attribution: "&copy; OpenStreetMap"
+  }).addTo(map);
+
+  function fmtNum(n) {
+    return Number(n).toLocaleString("en-US", { maximumFractionDigits: 2 });
+  }
+
+  fetch("data/nehalem_huc8.geojson")
+    .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+    .then(function (geo) {
+      var layer = L.geoJSON(geo, {
+        style: {
+          color: "#1f6f78",
+          weight: 2,
+          fillColor: "#1f6f78",
+          fillOpacity: 0.18
+        }
+      }).addTo(map);
+      var bounds = layer.getBounds();
+      if (bounds.isValid()) map.fitBounds(bounds, { padding: [24, 24] });
+      var p = geo.features && geo.features[0] && geo.features[0].properties || {};
+      var parts = [];
+      if (p.areasqkm != null) parts.push(fmtNum(p.areasqkm) + " km²");
+      if (p.areaacres != null) parts.push(fmtNum(p.areaacres) + " acres");
+      document.getElementById("area").textContent = parts.length
+        ? parts.join(" · ") + " (USGS WBD)"
+        : "See USGS WBD attributes";
+    })
+    .catch(function () {
+      document.getElementById("area").textContent = "USGS layer failed to load";
+    });
+})();
+</script>
+</body>
+</html>
