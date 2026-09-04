@@ -1,18 +1,20 @@
-# Company Soup v0.1 (reconcile)
+# Company Soup
 
 **Graphic Oregon** = parent company-maker (not renamed).
 
 Live: https://caradmico.github.io/company-soup/
 
-## Children (stranger door)
-- [Demeter Design](brands/demeter-design/) — env (real contracts; [demeterdesign.net](https://demeterdesign.net/))
-- [Cold Contour](brands/cold-contour/) — art (prefer this Marketer name; Estuary Ink is a redirect only)
-- [Signal Shelf](brands/signal-shelf/) — hone invent ([sample-monday.md](brands/signal-shelf/sample-monday.md); Quiet Cut is a redirect only)
-- [Asterism Lab](brands/asterism-lab/) — space ([Orion sample PDF](brands/asterism-lab/sample-orion-card.pdf))
-- [Far Field Media](brands/far-field-media/) — videography (sample clip + $450 / 60–90s)
-- [Coast Desk](brands/coast-desk/) — journalism ([Placement Note 001](brands/coast-desk/placement-note-001.html); Pioneer stays Pioneer)
-- [Lane Sites](brands/lane-sites/) — web lane bread ([keep-list](brands/lane-sites/keep-list.html); no client-site cash)
+Printify-for-making-things: idea → locked brief → done-when → BOM from existing catalogs → order or quote a prototype.
 
-Netarts Systems / Estuary Ink / Quiet Cut stay demoted redirects.
+Worked demo on the cooker: coffee cup with an exterior thermometer.
 
-Engine: idea → locked brief → done-when → BOM/path → ship steps. No Three.js CONTINUE.
+## Founder splits (real GO money-makers)
+- [Watershed field assessment](extracts/watershed-cluster/) — quote-only (~$30k class fieldwork). No cheap sticker.
+- [Art → Sassme prints](extracts/art-wall/) — prints live on [sassmeharder.com](https://sassmeharder.com/)
+- [Sassmeharder shop](extracts/sass-shop/) — existing apparel/print store
+- [Space intros](extracts/sky-brief/) — consulting residue. IAU / Age-of-Aquarius remap is **not for sale**.
+- [Nanoactuator research](extracts/nano-bench/) — open hardware desk, not SKU theater
+- [Coast correspondence](extracts/coast-note/) — existing papers only
+- [Habitat / arts mapping](extracts/gis-desk/) — quote-only map packages
+
+No Three.js CONTINUE. No new bot. Factory stays open.

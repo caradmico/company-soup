@@ -1,19 +1,19 @@
-# Asterism Map Brief — Edition 001 (sample)
+# Sky-mapping history note (archive)
 
 **Brand:** Asterism Lab · Graphic Oregon child  
-**Price:** $49 digital  
-**Status:** sample on Company Soup (hone the offer)
+**Price:** none — not for sale  
+**Status:** research residue / competence proof
 
 ## Finding
-Ancient sky cultures used asterisms for season, story, and time — not only modern constellation lines. A usable education pack needs both the cultural map and a one-page “what to do with it.”
+Ancient sky cultures used asterisms for season, story, and time — not only modern constellation lines. That history is on the public Graphic Oregon IAU proposal post.
 
-## So what (Monday)
-1. Pick one asterism tradition (e.g. a single cultural plate).  
-2. Pair it with a modern sky chart for the same region.  
-3. Ship a one-page teacher brief: season cue, story hook, classroom ask.
+## So what
+This is anthropological research history. It is not a remap product. Do not pitch or sell Steve’s Age-of-Aquarius / IAU remap.
+
+Space work that actually made money: connecting a client to people who could build camera equipment in America, plus writing a competent IAU-facing abstract. Quote only. See the [space intros extract](../../extracts/sky-brief/).
 
 ## Source / proof
 Public Graphic Oregon research post: [Astronomical Mapping – an IAU Proposal](https://graphicoregon.com/astronomical-mapping-an-iau-proposal/).
 
 ## Not
-NASA contracting. StarIS rebuild. Personal CV.
+A priced map brief. NASA contracting. StarIS rebuild. A sellable sky product.

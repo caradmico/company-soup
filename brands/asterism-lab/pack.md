@@ -1,24 +1,23 @@
 # Asterism Lab
 
-Lane: Space research · Graphic Oregon child
+Lane: Space research archive · Graphic Oregon child
 
 ## One-liner
-Constellation / sky-culture map packs + one-page research briefs for educators and labs — not a NASA contractor.
+Anthropological sky-mapping research history. Not a NASA contractor. **Not a map for sale.**
 
-## Offer (clear)
-**Asterism Map Brief — Edition 001**  
-One map plate concept + one-page brief derived from the public IAU astronomical mapping work on Graphic Oregon. Digital PDF. $49.
+## Offer
+None. The IAU / Age-of-Aquarius remap is forbidden as a product.
 
-What you get: the sample brief on this brand page + Orion sample card (PDF/PNG) + proof link to the full IAU proposal on GO. Not employment. Not StarIS rebuild.
+What you can open: sample Orion plate + history note + IAU proposal as competence proof. Cash that existed in this lane was Silicon Valley camera-network intros / abstract writing (~$40k once) — quote only on the [sky-brief extract](../../extracts/sky-brief/).
 
 ## Path
-- Brand door: https://caradmico.github.io/company-soup/brands/asterism-lab/
+- Archive door: https://caradmico.github.io/company-soup/brands/asterism-lab/
 - Sample: `sample-orion-card.pdf` / `sample-brief.md`
 - Proof: https://graphicoregon.com/astronomical-mapping-an-iau-proposal/
-- Domain later: asterismlab.com
+- Honest cash path: extracts/sky-brief/ (consulting quote, not a remap)
 
 ## Done-when
-Stranger knows the offer ($49 map brief), opens the sample artifact, and can reach the IAU proof without asking Cara.
+Stranger can open the history artifacts and cannot find a sell CTA for the remap.
 
 ## Do-not
-Invent NASA/SETI jobs · CONTINUE Three.js · rename GO · personal Cara face · Printify-as-hero
+Sell the IAU / Age-of-Aquarius remap · invent NASA/SETI jobs · CONTINUE Three.js · rename GO

@@ -20,27 +20,34 @@ label{display:block;font-size:.85rem;font-weight:600;margin:.4rem 0 .25rem}
 textarea,input{width:100%;padding:.6rem .7rem;border:1px solid var(--line);border-radius:8px;font:inherit}
 button{background:var(--teal);color:#fff;border:0;padding:.6rem 1rem;border-radius:8px;font:600 .95rem system-ui;cursor:pointer;margin:.3rem .3rem 0 0}
 button.secondary{background:transparent;color:var(--teal);border:1px solid var(--teal)}
+.picks{display:flex;flex-wrap:wrap;gap:.45rem;margin:.5rem 0}
+.picks button{background:var(--cream);color:var(--ink);border:1px solid var(--line);font-weight:600;font-size:.85rem}
+.picks button.active,.picks button:hover{border-color:var(--teal);background:#e7f2f3}
 #out{display:none;background:#fff;border:1px solid var(--line);border-radius:10px;padding:1rem;margin-top:1rem}
 #out.visible{display:block}
 #out pre{white-space:pre-wrap;background:var(--cream);border:1px solid var(--line);padding:.7rem;border-radius:8px;font-size:.86rem}
+#out h3{margin:.9rem 0 .3rem;font-size:1rem;color:var(--teal)}
+#out h3:first-child{margin-top:0}
 .note{font-size:.9rem;color:#5a6570}
 .lane{font-size:.78rem;color:var(--gold);font-weight:700;text-transform:uppercase}
 </style></head><body>
 <header>
 <p class="tag">Company Soup · Graphic Oregon parent</p>
 <h1>Printify for making things</h1>
-<p>Paste an idea. Get a brief, a BOM from existing catalogs, and a path to order or quote a prototype. Also: split real GO money-makers into standalone founder businesses.</p>
+<p>Paste an idea. Get a locked brief, a BOM from existing catalogs, and a path to order or quote a prototype. Also: split real GO money-makers into standalone founder businesses.</p>
 </header>
 <main>
 <section>
 <h2>Cooker</h2>
+<p class="tag">Samples</p>
+<div class="picks" id="picks"></div>
 <label for="idea">Idea</label>
 <textarea id="idea" rows="4">Coffee cup with a thermometer on the outside so you always know how hot the coffee is.</textarea>
 <div>
 <button type="button" id="cook">Cook idea → prototype path</button>
 <button type="button" class="secondary" id="demo">Load thermometer-cup demo</button>
 </div>
-<div id="out"></div>
+<div id="out" aria-live="polite"></div>
 </section>
 
 <section>
@@ -48,17 +55,20 @@ button.secondary{background:transparent;color:var(--teal);border:1px solid var(-
 <div class="card">
 <p class="lane">Physical product</p>
 <p><strong>Brief:</strong> Reusable mug/tumbler with an exterior temperature readout so you know drink heat without tasting. Not a smart app. Not medical device claims.</p>
+<p><strong>Who for:</strong> People who burn their mouth or let coffee die because they cannot see heat from the outside.</p>
+<p><strong>Not in scope:</strong> Vacuum double-wall (the outer wall will not track the drink). Medical claims. A connected app. Inventing a warehouse.</p>
 <p><strong>Done-when:</strong> You can order parts today and assemble or commission one prototype mug with a readable exterior temp.</p>
 <p><strong>BOM (existing catalogs):</strong></p>
 <ul>
-<li>Blank stainless tumbler / mug — Amazon / restaurant supply (pick one SKU you like)</li>
-<li>External stick-on LCD thermometer strip (brew/aquarium strip) OR small digital probe panel — Amazon search “LCD thermometer strip cup” / “mini digital thermometer panel”</li>
-<li>Food-safe adhesive / mounting band — McMaster or Amazon</li>
+<li>Blank stainless tumbler / mug — Amazon / restaurant supply (pick one SKU you like). Prefer single-wall or ceramic so the exterior can track heat.</li>
+<li>External stick-on LCD thermometer strip in a coffee range (about 60–90°C / 140–194°F) — Amazon search “barista temperature sticker” / “LCD thermometer strip cup”</li>
+<li>Food-safe adhesive / mounting band — <a href="https://www.mcmaster.com/products/adhesives/">McMaster adhesives</a></li>
+<li>Calibration probe — <a href="https://www.thermoworks.com/products/thermopop-2">ThermoWorks ThermoPop 2</a> (or kitchen equivalent)</li>
 <li>Optional: sleeve / silicone grip to hold the readout</li>
 </ul>
-<p><strong>Build path:</strong> (1) Buy blank tumbler. (2) Buy exterior-readout strip or panel. (3) Mount below lip, away from lips. (4) Calibrate with hot water + kitchen thermometer. (5) If strip isn’t good enough, swap to a discrete digital panel module.</p>
+<p><strong>Build path:</strong> (1) Buy blank tumbler. (2) Buy exterior-readout strip or panel. (3) Mount below lip, away from lips. (4) Calibrate with hot water + kitchen thermometer. (5) If strip isn’t good enough, swap to a discrete digital panel module (AliExpress “mini digital thermometer panel”).</p>
 <p><strong>Prototype order step:</strong> Add blank tumbler + exterior LCD strip to cart on Amazon now; assemble tonight. For a “real product” next: Alibaba mug factory + custom print of scale, or a local laser shop for a clip-on housing.</p>
-<p><a href="https://www.amazon.com/s?k=lcd+thermometer+strip">Amazon: LCD thermometer strip</a> · <a href="https://www.amazon.com/s?k=stainless+steel+tumbler">Amazon: stainless tumbler</a> · <a href="https://www.mcmaster.com/products/adhesives/">McMaster adhesives</a></p>
+<p><a href="https://www.amazon.com/s?k=lcd+thermometer+strip">Amazon: LCD thermometer strip</a> · <a href="https://www.amazon.com/s?k=stainless+steel+tumbler">Amazon: stainless tumbler</a> · <a href="https://www.mcmaster.com/products/adhesives/">McMaster adhesives</a> · <a href="https://www.thermoworks.com/products/thermopop-2">ThermoPop 2</a></p>
 </div>
 </section>
 
@@ -66,26 +76,97 @@ button.secondary{background:transparent;color:var(--teal);border:1px solid var(-
 <h2>GO money-makers as founder sims</h2>
 <div class="cards">
 <div class="card"><p class="lane">Field</p><h3><a href="extracts/watershed-cluster/">Watershed field assessment</a></h3><p>Quote-only. Real reports. No cheap sticker.</p></div>
-<div class="card"><p class="lane">Art</p><h3><a href="extracts/art-wall/">Art → Sassme prints</a></h3><p>Not a competing extract shop.</p></div>
+<div class="card"><p class="lane">Art</p><h3><a href="extracts/art-wall/">Art → Sassme prints</a></h3><p>Not a competing extract shop. <a href="https://sassmeharder.com/">sassmeharder.com</a></p></div>
+<div class="card"><p class="lane">Store</p><h3><a href="extracts/sass-shop/">Sassmeharder shop</a></h3><p>Existing apparel/print business. Already live.</p></div>
 <div class="card"><p class="lane">Space</p><h3><a href="extracts/sky-brief/">Space intros (consulting)</a></h3><p>Remap map not for sale.</p></div>
-<div class="card"><p class="lane">Hardware</p><h3><a href="extracts/nano-bench/">Nanoactuator research</a></h3><p>Open hardware desk.</p></div>
+<div class="card"><p class="lane">Hardware</p><h3><a href="extracts/nano-bench/">Nanoactuator research</a></h3><p>Open hardware desk. No fake consulting SKU.</p></div>
+<div class="card"><p class="lane">Journalism</p><h3><a href="extracts/coast-note/">Coast correspondence</a></h3><p>Existing papers only. Pioneer stays Pioneer.</p></div>
+<div class="card"><p class="lane">Mapping</p><h3><a href="extracts/gis-desk/">Habitat / arts mapping</a></h3><p>Quote-only map packages from real GO studies.</p></div>
 </div>
-<p class="note">More founder splits next. Parent stays Graphic Oregon.</p>
+<p class="note">Factory stays open — paste any idea. Parent stays Graphic Oregon. <a href="extracts/">All founder splits</a>.</p>
 </section>
 </main>
 <footer class="note">No Three.js CONTINUE. No Steve IAU remap sell. Field work is quote-only.</footer>
 <script>
 const DEMO = `Coffee cup with a thermometer on the outside so you always know how hot the coffee is.`;
+const SAMPLES = [
+  {label:"Thermometer cup (demo)", idea:DEMO},
+  {label:"Watershed field assessment", idea:"Watershed / habitat field assessment business: water sampling, stream paths, veg monitoring. Custom quote only."},
+  {label:"Art → Sassme prints", idea:"Put Graphic Oregon portfolio art up as buyable prints on Sassmeharder."},
+  {label:"Space intros (not the remap)", idea:"Space camera-network intros and IAU abstract writing. Do not sell the Age-of-Aquarius remap."}
+];
 const recipes = [
+  {
+    match: /iau|age-of-aquarius|age of aquarius|remap|asterism|staris|constellation map|sky map/i,
+    title: "Space intros — remap not for sale",
+    brief: "Space money that existed was Silicon Valley camera-network intros plus writing a competent IAU-facing abstract (~$40k once). Founder time. Not a scalable map SKU.",
+    who: "Odd patrons / hardware people who need an intro or a competent abstract — not buyers of a sky remap.",
+    not: "Steve’s IAU / Age-of-Aquarius remap. A $map product. NASA employment invent.",
+    done: "Stranger reads the archive note and can request a consulting quote — with no remap checkout.",
+    bom: [
+      "Competence proof: graphicoregon.com/astronomical-mapping-an-iau-proposal/ (archive only)",
+      "StarIS demo (not a rebuild this week)",
+      "Quote path: extracts/sky-brief/"
+    ],
+    steps: [
+      "Open the sky-brief extract",
+      "Do not list or sell the remap",
+      "If they still want work: quote intros / abstract writing only"
+    ],
+    order: "https://caradmico.github.io/company-soup/extracts/sky-brief/ — request quote. Do not buy a map."
+  },
+  {
+    match: /watershed|habitat|sediment|nestucca|netarts|necanicum|field assessment|stream path|veg monitor/i,
+    title: "Watershed / habitat field assessment",
+    brief: "Quote-based field campaign for councils and agencies: water sampling, stream-path measurement, vegetative monitoring, habitat/sediment/limiting-factor report. That class of job ran ~$30k because of fieldwork — custom scope, not a product price.",
+    who: "Watershed councils, county, BLM/ODEQ-class buyers who need a scoped field campaign + report.",
+    not: "A cheap desk-memo sticker. “Hire Cara.” Client websites as cash. A fake warehouse.",
+    done: "Stranger can request a custom field-assessment quote and open a real GO proof report.",
+    bom: [
+      "Existing GO report pattern (Netarts, Nestucca, Tillamook River, Necanicum, NHMP)",
+      "Water sampling / WQ kit — Forestry Suppliers water-quality catalog",
+      "YSI-class field meter if the scope needs it (example: ProDSS listing)",
+      "Stream-path / GIS workflow already used on those studies",
+      "Veg monitoring plots / quadrats from the same field catalogs"
+    ],
+    steps: [
+      "Open extracts/watershed-cluster/ and one real GO report",
+      "Scope subbasin, access, and field days — do not invent a public price",
+      "Request quote"
+    ],
+    order: "mailto:hello@graphicoregon.com?subject=Watershed%20field%20assessment%20-%20request%20quote — plus https://www.forestry-suppliers.com/c/water-quality-management/18 for gear the crew already uses. No public cart for the assessment itself."
+  },
+  {
+    match: /print|sassme|art wall|gouache|fine art|portfolio art/i,
+    title: "Art prints → Sassmeharder",
+    brief: "Fine art from Graphic Oregon does not get a competing extract print shop. Prints and apparel belong on the live Sassmeharder store.",
+    who: "People who already buy Sassme graphics, plus anyone who wants GO portfolio art as a print.",
+    not: "A second print brand. Cold-contour-as-a-new-shop. Inventing a warehouse.",
+    done: "Stranger can open sassmeharder.com and buy, or ask to drop a GO piece there.",
+    bom: [
+      "Live store: https://sassmeharder.com/",
+      "Existing SKUs (Copper Horizon Boxy / tee, Glow Bell)",
+      "GO portfolio: graphicoregon.com/sample-page/"
+    ],
+    steps: [
+      "Open the live store",
+      "If the art is not listed yet, mail the Sassme print drop",
+      "Do not stand up a soup cart"
+    ],
+    order: "https://sassmeharder.com/ — shop now. Art extract: extracts/art-wall/"
+  },
   {
     match: /thermo|temperature|hot coffee|mug|cup|tumbler/i,
     title: "Exterior-readout drink vessel",
     brief: "Know drink temperature from the outside. Not a connected app. Not medical claims.",
+    who: "People who burn their mouth or let coffee die because they cannot see heat from the outside.",
+    not: "Vacuum double-wall tumblers (outer wall will not track the drink). Medical claims. A smart app. A fake warehouse.",
     done: "Parts ordered + one assembled prototype with readable exterior temp.",
     bom: [
-      "Stainless tumbler/mug blank (Amazon / restaurant supply)",
-      "Exterior LCD thermometer strip OR mini digital panel (Amazon)",
+      "Stainless tumbler/mug blank (Amazon / restaurant supply) — single-wall or ceramic",
+      "Exterior LCD thermometer strip in coffee range OR mini digital panel (Amazon / AliExpress)",
       "Food-safe adhesive / band (McMaster or Amazon)",
+      "Calibration probe (ThermoPop 2 or kitchen equivalent)",
       "Optional silicone sleeve"
     ],
     steps: [
@@ -94,34 +175,94 @@ const recipes = [
       "Calibrate vs kitchen thermometer",
       "Iterate mount; then quote a factory mug with printed scale if volume"
     ],
-    order: "Order tumbler + LCD strip on Amazon today; assemble. Next: Alibaba blank + custom scale art."
+    order: "Order tumbler + LCD strip on Amazon today; assemble. Next: Alibaba blank + custom scale art. Links: amazon.com/s?k=lcd+thermometer+strip · amazon.com/s?k=stainless+steel+tumbler · mcmaster.com/products/adhesives/"
+  },
+  {
+    match: /nano|interferometer|hdd|hard disk|piezo/i,
+    title: "Open-source nanoactuator research desk",
+    brief: "HDD-parts nanoactuator + Michelson measurement already published on Graphic Oregon. Research digest / replication notes — not a pretend consulting factory SKU.",
+    who: "Lab clubs, makers, curriculum people who want the method, not a hardware SKU this week.",
+    not: "A fake consulting price tag. Inventing a productized actuator shop.",
+    done: "Stranger can open the GO post/PDF and request a scoped digest quote if they need more than the public artifact.",
+    bom: [
+      "GO post + measurement PDF",
+      "Extract door: extracts/nano-bench/"
+    ],
+    steps: [
+      "Read the public method",
+      "If they need a cleaned digest, quote the ask",
+      "Do not invent a SKU theater"
+    ],
+    order: "https://caradmico.github.io/company-soup/extracts/nano-bench/"
+  },
+  {
+    match: /pioneer|journalis|correspond|coast desk|hipfish|gazette/i,
+    title: "Coast correspondence",
+    brief: "Placement-ready notes for papers that already exist. Pioneer stays Pioneer.",
+    who: "Existing editors / desks — not a newspaper we own.",
+    not: "Invented masthead. CMS. Staff-job theater.",
+    done: "Stranger can open Note 001, reach the Pioneer author path, and request a quote for one subject.",
+    bom: [
+      "Pioneer author path",
+      "Placement Note 001",
+      "Extract: extracts/coast-note/"
+    ],
+    steps: [
+      "Open the sample note",
+      "Name one existing paper",
+      "Request quote"
+    ],
+    order: "https://caradmico.github.io/company-soup/extracts/coast-note/"
   }
 ];
+function pick(text){
+  const t = text.trim() || DEMO;
+  return recipes.find(x => x.match.test(t)) || {
+    title: "Generic physical product path",
+    brief: "Turn the idea into a holdable thing via existing catalogs first.",
+    who: "Whoever needs the thing in hand.",
+    not: "A fake warehouse. A new bot. Three.js CONTINUE. Field sticker prices. Steve IAU remap sell.",
+    done: "BOM listed + at least one supplier cart / quote link for a prototype.",
+    bom: ["Find closest existing product on Amazon/McMaster/Alibaba","List missing custom part","Name assembly steps","Pick one prototype supplier"],
+    steps: ["Search catalogs for nearest existing thing","List gaps","Order nearest + hack","Only then custom tooling"],
+    order: "Start with Amazon/McMaster search for the nearest existing object; paste links into the brief."
+  };
+}
 function cook(text){
   const t = text.trim() || DEMO;
-  let r = recipes.find(x => x.match.test(t));
-  if(!r){
-    r = {
-      title: "Generic physical product path",
-      brief: "Turn the idea into a holdable thing via existing catalogs first.",
-      done: "BOM listed + at least one supplier cart / quote link for a prototype.",
-      bom: ["Find closest existing product on Amazon/McMaster/Alibaba","List missing custom part","Name assembly steps","Pick one prototype supplier"],
-      steps: ["Search catalogs for nearest existing thing","List gaps","Order nearest + hack","Only then custom tooling"],
-      order: "Start with Amazon/McMaster search for the nearest existing object; paste links into the brief."
-    };
-  }
+  const r = pick(t);
   const lines = [];
   lines.push("BRIEF\n" + r.brief + "\nIdea: " + t);
+  lines.push("\nWHO FOR\n" + r.who);
+  lines.push("\nNOT IN SCOPE\n" + r.not);
   lines.push("\nDONE-WHEN\n" + r.done);
-  lines.push("\nBOM\n- " + r.bom.join("\n- "));
-  lines.push("\nBUILD PATH\n- " + r.steps.join("\n- "));
-  lines.push("\nPROTOTYPE ORDER\n" + r.order);
-  lines.push("\nNOT\nField watershed sticker prices. Steve IAU remap sell. Inventing a warehouse.");
+  lines.push("\nBOM (existing catalogs — no fake warehouse)\n- " + r.bom.join("\n- "));
+  lines.push("\nBUILD / MANUFACTURING PATH\n- " + r.steps.join("\n- "));
+  lines.push("\nPROTOTYPE ORDER / QUOTE\n" + r.order);
   const out = document.getElementById('out');
   out.innerHTML = "<h3>"+r.title+"</h3><pre>"+lines.join("\n")+"</pre>";
   out.classList.add('visible');
 }
+const picks = document.getElementById('picks');
+SAMPLES.forEach(s => {
+  const b = document.createElement('button');
+  b.type = 'button';
+  b.textContent = s.label;
+  b.onclick = () => {
+    [...picks.children].forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    document.getElementById('idea').value = s.idea;
+    cook(s.idea);
+  };
+  picks.appendChild(b);
+});
 document.getElementById('cook').onclick = () => cook(document.getElementById('idea').value);
-document.getElementById('demo').onclick = () => { document.getElementById('idea').value = DEMO; cook(DEMO); };
+document.getElementById('demo').onclick = () => {
+  document.getElementById('idea').value = DEMO;
+  [...picks.children].forEach((x,i) => x.classList.toggle('active', i===0));
+  cook(DEMO);
+};
+cook(DEMO);
+picks.children[0] && picks.children[0].classList.add('active');
 </script>
 </body></html>
