@@ -5,33 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lane Sites · web lane (bread only)</title>
   <meta name="description" content="Lane Sites brands the Graphic Oregon web lane. Keep-list of live surfaces. No invented client website cash.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
-    :root { --ink:#0f1c24; --paper:#f6f1e8; --teal:#1f6f78; --gold:#c4a35a; --line:#d5cbba; --cream:#fffaf2; }
-    * { box-sizing: border-box; }
-    body { margin:0; font:17px/1.55 system-ui,-apple-system,sans-serif; color:var(--ink); background:var(--paper); }
-    main { max-width:42rem; margin:0 auto; padding:1.4rem 1.15rem 3rem; }
-    .tag { color:var(--teal); font-size:.78rem; letter-spacing:.06em; text-transform:uppercase; font-weight:700; }
-    h1 { margin:.25rem 0 .35rem; font-size:1.7rem; }
-    h2 { font-size:1.05rem; border-left:4px solid var(--gold); padding-left:.5rem; margin:1.4rem 0 .5rem; }
-    a { color:var(--teal); }
-    .offer { background:var(--cream); border:1px solid var(--line); border-radius:12px; padding:1.1rem 1.15rem; margin:1rem 0; }
-    .price { font-size:1.35rem; font-weight:700; color:var(--teal); margin:.35rem 0; }
-    .actions { display:flex; flex-wrap:wrap; gap:.6rem; margin-top:.9rem; }
-    .actions a {
-      display:inline-block; text-decoration:none; padding:.65rem 1.05rem; border-radius:8px;
-      font:600 .95rem system-ui,sans-serif;
+    :root{
+      --ink:#1a2330; --paper:#eef1f4; --mark:#2f5d50; --warn:#8a4b2e;
+      --mute:#5a6570; --card:#ffffff; --line:#cfd6dc;
     }
-    .buy { background:var(--teal); color:#fff !important; }
-    .secondary { background:transparent; color:var(--teal) !important; border:1px solid var(--teal); }
-    .note { font-size:.9rem; color:#5a6570; }
-    footer { margin-top:2rem; font-size:.85rem; color:#5a6570; border-top:1px solid var(--line); padding-top:1rem; }
+    *{box-sizing:border-box}
+    body{margin:0;font:400 17px/1.55 Manrope,system-ui,sans-serif;color:var(--ink);background:var(--paper)}
+    main{max-width:42rem;margin:0 auto;padding:1.4rem 1.15rem 3rem}
+    .mark{display:flex;align-items:baseline;gap:.65rem;margin:0 0 .7rem;flex-wrap:wrap}
+    .mark .word{font:700 1.2rem/1 Manrope,system-ui,sans-serif;color:var(--mark);margin:0;border-bottom:3px solid var(--mark);padding-bottom:.2rem}
+    .mark .badge{font:600 .68rem/1 "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--mark);border:1px solid var(--mark);padding:.28rem .45rem;border-radius:4px}
+    .tag{color:var(--mark);font:600 .72rem/1.2 "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase}
+    h1{margin:.25rem 0 .35rem;font-size:1.7rem;font-weight:700;color:var(--ink)}
+    h2{font-size:1.05rem;font-weight:700;border-left:4px solid var(--mark);padding-left:.55rem;margin:1.4rem 0 .5rem}
+    a{color:var(--mark)}
+    .offer{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.1rem 1.15rem;margin:1rem 0}
+    .price{font-size:1.3rem;font-weight:700;color:var(--mark);margin:.35rem 0}
+    .actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:.9rem}
+    .actions a{display:inline-block;text-decoration:none;padding:.65rem 1.05rem;border-radius:8px;font:700 .92rem Manrope,system-ui,sans-serif}
+    .buy{background:var(--mark);color:#fff!important}
+    .secondary{background:transparent;color:var(--mark)!important;border:1px solid var(--mark)}
+    .note{font-size:.9rem;color:var(--mute)}
+    .warn{color:var(--warn);font-weight:650}
+    footer{margin-top:2rem;font-size:.85rem;color:var(--mute);border-top:1px solid var(--line);padding-top:1rem}
   </style>
 </head>
 <body>
 <main>
-  <p class="tag">Website design · bread · Graphic Oregon child</p>
+  <div class="mark"><p class="word">Lane Sites</p><span class="badge">KEEP-LIST</span></div>
+  <p class="tag">web lane bread · Graphic Oregon child</p>
   <h1>Lane Sites</h1>
-  <p>The web lane for Graphic Oregon children. Keep live surfaces reachable. Outfit a child with a stranger door. <strong>Not a client-website cash factory. No invented case studies. No restaurant sites.</strong></p>
+  <p>The web lane for Graphic Oregon children. Keep live surfaces reachable. Outfit a child with a stranger door. <strong class="warn">Not a client-website cash factory. No invented case studies. No restaurant sites.</strong></p>
 
   <div class="offer" id="offer">
     <p class="tag">What you can open</p>
@@ -53,7 +61,7 @@
     <div class="actions">
       <a class="buy" href="mailto:hello@graphicoregon.com?subject=Lane%20Sites%20door%20kit&amp;body=Lane%20Sites%20%E2%80%94%20GO%20child%20door%20kit%0A%0AChild%20name%20(existing)%3A%20%0ALive%20URL%20to%20keep%3A%20%0AName%3A%20%0AEmail%3A%20%0A%0ANot%20a%20client%20website%20ask.">Request a child door kit</a>
     </div>
-    <p class="note" style="margin-top:.85rem">Refusal is part of the offer: Lane Sites will not sell new client websites as factory cash.</p>
+    <p class="note warn" style="margin-top:.85rem">Refusal is part of the offer: Lane Sites will not sell new client websites as factory cash.</p>
   </div>
 
   <h2>Locked brief</h2>

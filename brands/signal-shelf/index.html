@@ -4,28 +4,38 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Signal Shelf · operator one-pagers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;600;650&display=swap" rel="stylesheet">
   <style>
-    :root{--ink:#0f1c24;--paper:#f6f1e8;--teal:#1f6f78;--gold:#c4a35a;--line:#d5cbba;--cream:#fffaf2}
-    body{margin:0;font:17px/1.55 system-ui,sans-serif;color:var(--ink);background:var(--paper)}
+    :root{
+      --bg:#f0f2f4; --ink:#111417; --mute:#5c656d; --op:#c45c26;
+      --panel:#ffffff; --grid:#d5dae0; --codebg:#e6e9ec;
+    }
+    body{margin:0;font:400 17px/1.55 "IBM Plex Sans",system-ui,sans-serif;color:var(--ink);background:var(--bg)}
     main{max-width:42rem;margin:0 auto;padding:1.4rem 1.15rem 3rem}
-    .tag{color:var(--teal);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;font-weight:700}
-    h1{margin:.2rem 0 .4rem}
-    h2{font-size:1.05rem;border-left:4px solid var(--gold);padding-left:.5rem}
-    a{color:var(--teal)}
-    .offer,.card{background:var(--cream);border:1px solid var(--line);border-radius:12px;padding:1.1rem;margin:1rem 0}
-    .price{font-size:1.25rem;font-weight:700;color:var(--teal)}
-    label{display:block;font-size:.85rem;font-weight:600;margin:.65rem 0 .25rem}
-    input,textarea{width:100%;padding:.55rem .65rem;border:1px solid var(--line);border-radius:8px;font:inherit;box-sizing:border-box}
-    textarea{min-height:4rem}
-    button,.btn{display:inline-block;margin-top:.7rem;margin-right:.4rem;padding:.6rem 1rem;border-radius:8px;border:0;background:var(--teal);color:#fff;font:600 .95rem system-ui,sans-serif;cursor:pointer;text-decoration:none}
-    .secondary{background:transparent;color:var(--teal);border:1px solid var(--teal)}
-    pre{white-space:pre-wrap;background:#fff;border:1px solid var(--line);padding:.8rem;border-radius:8px;font-size:.88rem}
-    .note{font-size:.9rem;color:#5a6570}
+    .mark{display:flex;align-items:center;gap:.45rem;margin:0 0 .75rem}
+    .mark .hash{font:650 1.1rem/1 "IBM Plex Mono",monospace;color:var(--op)}
+    .mark .word{font:650 .95rem/1 "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;margin:0}
+    .tag{color:var(--op);font:600 .72rem/1.2 "IBM Plex Mono",monospace;letter-spacing:.1em;text-transform:uppercase}
+    h1{margin:.2rem 0 .4rem;font-weight:650;font-size:1.55rem}
+    h2{font-size:1.02rem;font-weight:650;border-left:4px solid var(--op);padding-left:.55rem;margin:1.3rem 0 .45rem}
+    a{color:var(--op)}
+    .offer,.card{background:var(--panel);border:1px solid var(--grid);border-radius:10px;padding:1.1rem;margin:1rem 0}
+    .price{font:650 1.2rem/1.2 "IBM Plex Sans",system-ui,sans-serif;color:var(--op)}
+    label{display:block;font:600 .78rem/1.2 "IBM Plex Mono",monospace;letter-spacing:.04em;text-transform:uppercase;margin:.65rem 0 .25rem;color:var(--mute)}
+    input,textarea{width:100%;padding:.55rem .65rem;border:1px solid var(--grid);border-radius:8px;font:inherit;box-sizing:border-box;background:#fff}
+    textarea{min-height:4rem;font-family:"IBM Plex Mono",monospace;font-size:.9rem}
+    button,.btn{display:inline-block;margin-top:.7rem;margin-right:.4rem;padding:.6rem 1rem;border-radius:8px;border:0;background:var(--op);color:#fff;font:650 .92rem "IBM Plex Sans",system-ui,sans-serif;cursor:pointer;text-decoration:none}
+    .secondary{background:transparent;color:var(--op);border:1px solid var(--op)}
+    pre{white-space:pre-wrap;background:var(--codebg);border:1px solid var(--grid);padding:.8rem;border-radius:8px;font:500 .86rem/1.45 "IBM Plex Mono",monospace}
+    .note{font-size:.9rem;color:var(--mute)}
   </style>
 </head>
 <body>
 <main>
-  <p class="tag">Signal Shelf · hone invent · Graphic Oregon</p>
+  <div class="mark"><span class="hash" aria-hidden="true">#</span><p class="word">Signal Shelf</p></div>
+  <p class="tag">hone invent · Graphic Oregon · Monday briefs</p>
   <h1>Operator one-pagers</h1>
   <p><strong>Offer (hone):</strong> one paper/map/dataset → a Monday action brief. Demo product to hone Company Soup — not claimed as current Cara cash.</p>
 

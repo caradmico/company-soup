@@ -5,36 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Shore Contour · Cold Contour</title>
   <meta name="description" content="Cold Contour — Shore Contour digital fine-art PDF. Order a print or download the file. Not apparel.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Mono:wght@500;600&family=Outfit:wght@400;500;650&display=swap" rel="stylesheet">
   <style>
-    :root { --ink:#0f1c24; --paper:#f6f1e8; --teal:#1f6f78; --gold:#c4a35a; --navy:#0a1628; --line:#d5cbba; --cream:#fffaf2; }
-    * { box-sizing: border-box; }
-    body { margin:0; font:17px/1.55 system-ui,-apple-system,sans-serif; color:var(--ink); background:var(--paper); }
-    main { max-width:42rem; margin:0 auto; padding:1.4rem 1.15rem 3rem; }
-    .tag { color:var(--teal); font-size:.78rem; letter-spacing:.06em; text-transform:uppercase; font-weight:700; }
-    h1 { margin:.25rem 0 .35rem; font-size:1.7rem; }
-    a { color:var(--teal); }
-    .hero { background:var(--navy); border-radius:12px; padding:1rem; margin:1rem 0 1.25rem; text-align:center; }
-    .hero img { max-width:100%; height:auto; border-radius:8px; }
-    .offer { background:var(--cream); border:1px solid var(--line); border-radius:12px; padding:1.1rem 1.15rem; margin:1rem 0; }
-    .price { font-size:1.35rem; font-weight:700; color:var(--teal); margin:.35rem 0; }
-    .actions { display:flex; flex-wrap:wrap; gap:.6rem; margin-top:.9rem; }
-    .actions a, .actions button {
-      display:inline-block; text-decoration:none; border:0; cursor:pointer;
-      padding:.65rem 1.05rem; border-radius:8px; font:600 .95rem system-ui,sans-serif;
+    :root{
+      --deep:#071018; --foam:#c5d4de; --mute:#7a8b96; --copper:#b87333;
+      --cold:#3d7a8c; --sheet:#0e1820; --line:rgba(197,212,222,.2);
     }
-    .buy { background:var(--teal); color:#fff !important; }
-    .secondary { background:transparent; color:var(--teal) !important; border:1px solid var(--teal) !important; }
-    label { display:block; font-size:.85rem; font-weight:600; margin:.7rem 0 .25rem; }
-    input, select, textarea { width:100%; padding:.55rem .65rem; border:1px solid var(--line); border-radius:8px; font:inherit; background:#fff; }
-    textarea { min-height:3.5rem; }
-    h2 { font-size:1.05rem; border-left:4px solid var(--gold); padding-left:.5rem; margin:1.4rem 0 .5rem; }
-    .note { font-size:.9rem; color:#5a6570; }
-    footer { margin-top:2rem; font-size:.85rem; color:#5a6570; border-top:1px solid var(--line); padding-top:1rem; }
+    *{box-sizing:border-box}
+    body{margin:0;font:400 17px/1.55 Outfit,system-ui,sans-serif;color:var(--foam);background:var(--deep)}
+    main{max-width:42rem;margin:0 auto;padding:1.4rem 1.15rem 3rem}
+    .mark{display:flex;align-items:center;gap:.7rem;margin:0 0 .85rem}
+    .arc{width:2.2rem;height:1.1rem;border:2px solid var(--copper);border-bottom:0;border-radius:2.2rem 2.2rem 0 0;flex:0 0 auto}
+    .mark .word{font:500 .95rem/1 Outfit,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;margin:0;color:var(--foam)}
+    .tag{color:var(--cold);font:600 .72rem/1.2 "IBM Plex Mono",monospace;letter-spacing:.1em;text-transform:uppercase}
+    h1{margin:.25rem 0 .4rem;font:400 2rem/1.1 "DM Serif Display",Georgia,serif;color:var(--foam)}
+    a{color:var(--cold)}
+    .hero{background:var(--sheet);border:1px solid var(--line);border-radius:14px;padding:1rem;margin:1rem 0 1.25rem;text-align:center}
+    .hero img{max-width:100%;height:auto;border-radius:8px}
+    .offer{background:var(--sheet);border:1px solid var(--line);border-radius:14px;padding:1.1rem 1.15rem;margin:1rem 0}
+    .price{font:650 1.3rem/1.2 Outfit,system-ui,sans-serif;color:var(--copper);margin:.35rem 0}
+    .actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:.9rem}
+    .actions a,.actions button{display:inline-block;text-decoration:none;border:0;cursor:pointer;padding:.65rem 1.05rem;border-radius:8px;font:650 .92rem Outfit,system-ui,sans-serif}
+    .buy{background:var(--copper);color:#071018!important}
+    .secondary{background:transparent;color:var(--cold)!important;border:1px solid var(--cold)!important}
+    label{display:block;font-size:.85rem;font-weight:650;margin:.7rem 0 .25rem;color:var(--foam)}
+    input,select,textarea{width:100%;padding:.55rem .65rem;border:1px solid var(--line);border-radius:8px;font:inherit;background:#0a141c;color:var(--foam)}
+    textarea{min-height:3.5rem}
+    h2{font:650 1.02rem/1.3 Outfit,system-ui,sans-serif;border-left:4px solid var(--copper);padding-left:.55rem;margin:1.4rem 0 .5rem}
+    .note{font-size:.9rem;color:var(--mute)}
+    footer{margin-top:2rem;font-size:.85rem;color:var(--mute);border-top:1px solid var(--line);padding-top:1rem}
   </style>
 </head>
 <body>
 <main>
-  <p class="tag">Cold Contour · Graphic Oregon child · art</p>
+  <div class="mark"><span class="arc" aria-hidden="true"></span><p class="word">Cold Contour</p></div>
+  <p class="tag">Graphic Oregon child · art object</p>
   <h1>Shore Contour</h1>
   <p>Coastal bathymetry as a wall object. Copper-to-cold contour layers on deep navy — a living map, not a radar. Sold as fine art (digital PDF / print order). <strong>Not apparel. Not Printify-as-hero.</strong></p>
 
