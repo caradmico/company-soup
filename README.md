@@ -4,6 +4,14 @@
 
 Live: https://caradmico.github.io/company-soup/
 
+## Extract pass (stranger doors)
+Real GO content, one page each: [extract/](extract/)
+- [Coho Maps Co](extract/coho-maps/) — watershed / habitat
+- [Shore Ink Shop](extract/shore-ink/) — fine art
+- [Night Sky Cards](extract/night-sky/) — IAU / StarIS
+- [Desk Drive Lab](extract/desk-drive/) — nanoactuator
+- [Lane Map Desk](extract/lane-map/) — Lane Arts map + program eval
+
 ## Children (stranger door)
 - [Demeter Design](brands/demeter-design/) — env (real contracts; [demeterdesign.net](https://demeterdesign.net/))
 - [Cold Contour](brands/cold-contour/) — art (prefer this Marketer name; Estuary Ink is a redirect only)
