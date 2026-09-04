@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Company Soup · Graphic Oregon</title>
+  <meta name="description" content="Graphic Oregon makes companies. Paste one idea → locked brief, done-when, BOM/path, first ship steps.">
+  <style>
+    :root { --ink:#0f1c24; --paper:#f6f1e8; --teal:#1f6f78; --gold:#c4a35a; --line:#d5cbba; --cream:#fffaf2; }
+    * { box-sizing: border-box; }
+    body { margin:0; font:17px/1.55 system-ui,-apple-system,sans-serif; color:var(--ink); background:var(--paper); }
+    header,main,footer { max-width:46rem; margin:0 auto; padding:1.35rem 1.15rem; }
+    header { border-bottom:3px solid var(--teal); }
+    .tag { color:var(--teal); font-size:.78rem; letter-spacing:.06em; text-transform:uppercase; font-weight:700; }
+    h1 { margin:.2rem 0 .4rem; font-size:1.75rem; }
+    a { color:var(--teal); }
+    .cards { display:grid; gap:.75rem; margin:1rem 0; }
+    @media(min-width:640px){ .cards { grid-template-columns:1fr 1fr; } }
+    .card { background:var(--cream); border:1px solid var(--line); border-radius:10px; padding:.9rem 1rem; }
+    .card h3 { margin:0 0 .35rem; font-size:1.05rem; }
+    .card .lane { font-size:.8rem; color:var(--gold); font-weight:700; letter-spacing:.04em; text-transform:uppercase; }
+    section { margin:1.8rem 0; }
+    h2 { font-size:1.15rem; margin:0 0 .7rem; border-left:4px solid var(--gold); padding-left:.55rem; }
+    .picks { display:flex; flex-wrap:wrap; gap:.45rem; margin:.4rem 0 .9rem; }
+    .picks button { border:1px solid var(--line); background:var(--cream); padding:.4rem .65rem; border-radius:999px; cursor:pointer; font:inherit; font-size:.88rem; }
+    .picks button:hover,.picks button.active { border-color:var(--teal); background:#e7f2f3; }
+    label { display:block; font-size:.85rem; font-weight:600; margin:0 0 .3rem; }
+    textarea { width:100%; min-height:5.2rem; padding:.65rem .75rem; border:1px solid var(--line); border-radius:8px; font:inherit; background:#fff; }
+    .actions { display:flex; flex-wrap:wrap; gap:.55rem; margin-top:.7rem; }
+    .actions button { background:var(--teal); color:#fff; border:0; padding:.6rem 1rem; border-radius:8px; font:600 .95rem system-ui,sans-serif; cursor:pointer; }
+    .actions button.secondary { background:transparent; color:var(--teal); border:1px solid var(--teal); }
+    #out { display:none; margin-top:1.1rem; background:#fff; border:1px solid var(--line); border-radius:10px; padding:1rem; }
+    #out.visible { display:block; }
+    #out h3 { margin:1rem 0 .3rem; font-size:1rem; color:var(--teal); }
+    #out h3:first-child { margin-top:0; }
+    #out pre { white-space:pre-wrap; background:var(--cream); border:1px solid var(--line); padding:.7rem; border-radius:8px; font-size:.85rem; }
+    footer { font-size:.85rem; color:#5a6570; border-top:1px solid var(--line); }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="tag">Company Soup v0.1 · Graphic Oregon</p>
+    <h1>A parent company that makes companies</h1>
+    <p><strong>Graphic Oregon</strong> stays Graphic Oregon — the parent company-maker. Children are turnkey brand packs from real lanes. This page cooks one idea into a ship path. Not a Three.js CONTINUE. Not a new bot.</p>
+  </header>
+  <main>
+    <section>
+      <h2>Parent</h2>
+      <div class="card">
+        <h3>Graphic Oregon</h3>
+        <p>Company that makes companies. Portfolio and practice home: <a href="https://graphicoregon.com/" target="_blank" rel="noopener">graphicoregon.com</a>. Do not rename it into a commercial extract. Do not treat the 3D exam as this factory.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Child turnkey packs</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="lane">Art</div>
+          <h3><a href="brands/estuary-ink/">Estuary Ink</a></h3>
+          <p>Original art → stranger-facing offer + path (Pages sample, optional POD later).</p>
+        </div>
+        <div class="card">
+          <div class="lane">Environmental research</div>
+          <h3><a href="brands/netarts-systems/">Netarts Systems</a></h3>
+          <p>Coastal / systems research → plain-English public brief + path.</p>
+        </div>
+        <div class="card">
+          <div class="lane">Hone invent</div>
+          <h3><a href="brands/quiet-cut/">Quiet Cut</a></h3>
+          <p>No-audience video: record / keep / export. No profiles. No fame.</p>
+        </div>
+        <div class="card">
+          <div class="lane">More lanes</div>
+          <h3>Space · Journalism · Web</h3>
+          <p>Iterate next. Websites brand the lane — do not invent client-site gigs as cash.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Engine · idea → path</h2>
+      <p class="tag">Samples</p>
+      <div class="picks" id="picks"></div>
+      <label for="idea">Or paste one idea</label>
+      <textarea id="idea" placeholder="One sentence. What should exist?"></textarea>
+      <div class="actions">
+        <button type="button" id="cook">Cook the brief</button>
+        <button type="button" class="secondary" id="copy">Copy locked pack</button>
+      </div>
+      <div id="out" aria-live="polite"></div>
+    </section>
+  </main>
+  <footer>
+    <p>Source: <a href="https://github.com/caradmico/company-soup">caradmico/company-soup</a> · Parent: Graphic Oregon</p>
+  </footer>
+  <script>
+    const CATALOGS = {
+      pages: { id:"public-static-pages", name:"Public static Pages",
+        when:["page","kit","tool","template","site","form","checklist","prior","pack","guide","brand","studio"],
+        bom:["Public GitHub repo or Pages folder","Smallest stranger page","README with live URL"],
+        steps:["Write one-job page","Push public","Enable Pages / confirm 200","Claim with public URL"] },
+      digital: { id:"digital-download", name:"Digital download kit",
+        when:["pdf","workbook","course","ebook","download","zip","digest"],
+        bom:["Source md/html","Public sample","Gumroad listing after sample KEEP"],
+        steps:["Ship free public sample","Package full kit after KEEP","List when Marketer staffed"] },
+      pod: { id:"pod-merch", name:"POD merch (optional)",
+        when:["tee","shirt","hoodie","merch","wearable"],
+        bom:["Print-ready art","Existing Printify path","Listing copy"],
+        steps:["Confirm it is a wearable","Art pack in mill","Kevin-gated draft only","Never default the whole company to Printify"] },
+      mill: { id:"mill-judgment", name:"Mill / judgment lock",
+        when:["agent","bot","workflow","factory","seat","ops","automat"],
+        bom:["Locked brief","Judgment prior","Existing seats only"],
+        steps:["Fill kill/cut/keep/expand prior","Staff existing seat — no new bot","Prove with stranger-usable artifact"] },
+      research: { id:"research-plain", name:"Research → plain English",
+        when:["research","paper","science","env","coast","netarts","space","quantum"],
+        bom:["Source paper or field notes","Public plain-English page","Link back to parent GO"],
+        steps:["Pick one finding","Write stranger page","Publish under child brand","Point home to Graphic Oregon"] },
+      video: { id:"quiet-video", name:"Quiet video kit",
+        when:["video","film","edit","record","audience","youtube"],
+        bom:["Capture+export checklist","Local keep folder","No profile required"],
+        steps:["Define keep/export only","Build no-audience page","Ship checklist public","Fame features stay off"] }
+    };
+    const SAMPLES = [
+      "A public brand page for coastal art prints under Estuary Ink",
+      "A plain-English Netarts field brief strangers can open",
+      "A Quiet Cut checklist: record, keep, export — no profiles",
+      "A small ops script that scaffolds a pack folder",
+      "A judgment prior page before any agent runs"
+    ];
+    function pickCatalog(idea){
+      const t=idea.toLowerCase();
+      const scores=Object.values(CATALOGS).map(c=>({c,n:c.when.reduce((a,w)=>a+(t.includes(w)?1:0),0)}));
+      scores.sort((a,b)=>b.n-a.n);
+      return scores[0].n>0?scores[0].c:CATALOGS.pages;
+    }
+    function slugTitle(idea){ const c=idea.replace(/\s+/g," ").trim(); const s=c.length>90?c.slice(0,87)+"…":c; return s.charAt(0).toUpperCase()+s.slice(1); }
+    function cook(idea){
+      const title=slugTitle(idea); const cat=pickCatalog(idea);
+      return {
+        idea:title,
+        brief:`Lock v0.1 of “${title}” under Graphic Oregon as parent. Child brand if it matches a lane; else shortest catalog path. Simplify until one stranger finishes one job. No new bot. Do not CONTINUE Three.js.`,
+        done_when:`Stranger opens the public URL/repo, completes the one job in under 10 minutes, leaves with usable output — no login for the sample.`,
+        catalog:cat, bom:cat.bom, steps:cat.steps,
+        do_not:["Rename Graphic Oregon into a commercial extract","CONTINUE Three.js exam / merge 24/27/29/30","Invent a new bot","Sell new client websites as the factory cash","Essay-only with no stranger door"]
+      };
+    }
+    function formatPack(p){ return `COMPANY SOUP v0.1 — LOCKED PACK (parent: Graphic Oregon)\n\nIdea:\n${p.idea}\n\nLocked brief:\n${p.brief}\n\nDone-when:\n${p.done_when}\n\nCatalog: ${p.catalog.name} (${p.catalog.id})\n\nBOM / path:\n${p.bom.map((x,i)=>`${i+1}. ${x}`).join("\n")}\n\nFirst ship steps:\n${p.steps.map((x,i)=>`${i+1}. ${x}`).join("\n")}\n\nDo-not:\n${p.do_not.map(x=>`- ${x}`).join("\n")}`.trim(); }
+    function esc(s){ return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c])); }
+    function render(pack){
+      const el=document.getElementById("out"); el.className="visible";
+      el.innerHTML=`<h3>Locked brief</h3><p>${esc(pack.brief)}</p><h3>Done-when</h3><p>${esc(pack.done_when)}</p><h3>BOM / path · ${esc(pack.catalog.name)}</h3><ul>${pack.bom.map(x=>`<li>${esc(x)}</li>`).join("")}</ul><h3>First ship steps</h3><ol>${pack.steps.map(x=>`<li>${esc(x)}</li>`).join("")}</ol><h3>Do-not</h3><ul>${pack.do_not.map(x=>`<li>${esc(x)}</li>`).join("")}</ul><h3>Copy pack</h3><pre>${esc(formatPack(pack))}</pre>`;
+      window.__pack=pack;
+    }
+    const picks=document.getElementById("picks"); const ideaEl=document.getElementById("idea");
+    SAMPLES.forEach(s=>{ const b=document.createElement("button"); b.type="button"; b.textContent=s.length>48?s.slice(0,46)+"…":s; b.title=s;
+      b.onclick=()=>{ [...picks.children].forEach(x=>x.classList.remove("active")); b.classList.add("active"); ideaEl.value=s; render(cook(s)); }; picks.appendChild(b); });
+    document.getElementById("cook").onclick=()=>{ const v=ideaEl.value.trim(); if(!v){ideaEl.focus();return;} render(cook(v)); };
+    document.getElementById("copy").onclick=async()=>{ const v=ideaEl.value.trim(); if(!v){ideaEl.focus();return;} const pack=(window.__pack&&window.__pack.idea===slugTitle(v))?window.__pack:cook(v); render(pack); await navigator.clipboard.writeText(formatPack(pack)); const btn=document.getElementById("copy"); btn.textContent="Copied"; setTimeout(()=>btn.textContent="Copy locked pack",1100); };
+  </script>
+</body>
+</html>
