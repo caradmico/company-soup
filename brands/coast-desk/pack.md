@@ -34,3 +34,4 @@ A stranger browses by beat, feels volume on the wall, and can open one pull-quot
 - Claim all Pioneer assistant-editor archive posts as Cara
 - Brand this as Pioneer / invent a paper / build a CMS
 - Touch Demeter / watershed alive-PDF work
+- Turn this door into videography or sell Far Field Media rates / a $450 film offer. Documentary clips only as desk proof if ever relevant — never a video product here.
