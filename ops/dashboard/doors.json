@@ -45,6 +45,18 @@
       "hrefLabel": "Open bylines"
     },
     {
+      "id": "grant-desk",
+      "name": "Grant Desk",
+      "also": "Grant writing",
+      "lane": "Grants",
+      "state": "live",
+      "status": "One-pager KEEP live. Quote-only.",
+      "updated": "2026-09-04",
+      "last": "Grant Desk one-pager shipped on company-soup Pages.",
+      "href": "../../brands/grant-desk/",
+      "hrefLabel": "Open door"
+    },
+    {
       "id": "graphic-oregon",
       "name": "Graphic Oregon",
       "also": "Website design door",
