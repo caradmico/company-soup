@@ -1,62 +1,39 @@
-# Neahkahnie Atelier — Aesthetic Brief v2
-**Firm door:** dark exhibition gallery + commissions (NOT Sassmeharder merch, NOT Demeter watershed)  
-**Parent:** caradmico/company-soup → `businesses/fine-art/` (+ founders card)  
-**Status:** v1 KEEP VOID — Cara FAIL (looked like Demeter: Fraunces / mist / chapter scroll, too few pieces, WordPress-y). This rewrite owns the door.
+# Neahkahnie Atelier — closer
 
-## Why FAIL
-Landed v1 used museum-calm bone paper, Fraunces + Source Sans 3, a short vertical hang of ~10 works. Read as Demeter watershed (fir/mist/Fraunces), not a gallery.
+**Firm door:** original painting / illustration commissions (NOT Sassmeharder merch, NOT Demeter watershed)  
+**Parent:** caradmico/company-soup → `businesses/fine-art/`  
+**Status:** Prior KEEP VOID. Closer owns the door. Build stood down.
 
-## One-liner
-Dark exhibition wall. Real inventory, categorized, glowing frames. Commission / inquire.
+## Why this page
+A stranger needs to see the work first, then understand this is a hire door for originals — not a print shop and not a field-assessment twin.
 
-## Positioning
-- **Sell:** commissions + inquire (original / illustration / book)
-- **Do not sell here:** apparel, Printify drops, Sassme grids
-- **Proof of hireability:** book-illustration lane called out honestly — no fake covers
-- **Tone:** night gallery a stranger would walk; unique from Demeter field-assessment
+## Visual system (dark ≠ Demeter)
+| Token | Value |
+|-------|--------|
+| Wall | `#0c0b0a` |
+| Ink | `#f2ece4` |
+| Mute | `#9a9288` |
+| Gold | `#c9a227` |
+| Display | Cormorant Garamond |
+| UI | DM Sans |
 
-## Visual system (dark gallery ≠ Demeter)
-| Token | Value | Note |
-|-------|--------|------|
-| Wall | `#0c0b0a` | exhibition wall |
-| Panel | `#161412` | shadow-box / form |
-| Ink | `#f2ece4` | warm light text |
-| Mute | `#9a9288` | captions / chips |
-| Accent | `#c9a227` gold | CTA + chip active only |
-| Display | Cormorant Garamond | NOT Fraunces |
-| UI | DM Sans | NOT Source Sans 3 |
-| Hang | salon columns, lightbox frames | not Printify grid, not Demeter scroll chapters |
-| Filter | sticky category chips | data-category on every work |
+Forbidden: Fraunces, Source Sans 3, `--fir` / `--mist`, salon card grids, long vertical hangs of every work.
 
-### Forbidden (Demeter / watershed)
-`--fir`, `--mist`, `--lichen`, `--tide`, `#163028`, `#eef2ec`, Fraunces, Source Sans 3 watershed pattern.
-
-## Page structure
-1. **Dark arrive** — Neahkahnie Atelier · Cara Mico · one line · gold Commission / inquire
-2. **Sticky chips** — All + eight categories; count updates
-3. **Exhibition** — large shadow-box frames; caption title · category; click opens larger view
-4. **Book & editorial** — honest hire note + Cat as illustration proof
+## Page
+1. **Arrive** — one hero only: `img/neahkahnie.jpg`, large. Nothing else above the fold.
+2. **Why** — Neahkahnie Atelier · Cara Mico · originals vs Sassme prints · Commission / inquire
+3. **Style tabs** — horizontal; hover fades inactive, highlights active. Categories from `works.js`.
+4. **Book** — one large work per style; prev/next + arrow keys; dots. Not a scroll of little boxes.
 5. **Inquire** — mailto:hello@graphicoregon.com
-6. **Footer** — Graphic Oregon · Company Soup · prints on Sassmeharder (quiet)
-
-## Categories (every hung work)
-`landscapes-coast` · `abstract-expression` · `botanical-nature` · `animals` · `figure-portrait` · `still-life-study` · `printmaking` · `mixed-media`
+6. **Footer** — Graphic Oregon · Company Soup · prints on Sassmeharder
 
 ## Inventory
-Showcase **everything real** from:
-- A) files already under `businesses/fine-art/img/`
-- B) Graphic Oregon portfolio (`graphicoregon.com/sample-page/` wp-content / i0.wp.com) — unique stems, skip `-1/-2` dup spam
-- C) Drive Art Portfolio named works when present (Neahkahnie, Ocean, Violet Flame, Large Jelly, Ghost, Broken, Bird, Cat, Dog, Tsunami, Thistle, Tree, Nehalem, The Wave, Pollution, War, star, Mini-jelly, Ocean of Flame, As Above So Below, still lifes, portraits, prints, studies)
+`works.js` is the hung inventory. Real Cara Mico works only.
 
-**Skip:** WomenChoir ads, clinicAd, salmon logo, PDFs, PSDs, files &lt;20KB, Cadillac Ranch snapshot, near-identical camera-roll of a named hang.
-
-## Founders
-Keep card `art · commissions` → `../businesses/fine-art/`. Art→Sassme stays prints/merch.
-
-## Done-when
-Stranger feels a real dark gallery, unique from Demeter, many categorized works, clear gold commission CTA.
+## Images
+`img/*` processed for wall-purchase: photo shadow / wrinkle / glare / desk noise removed. Texture kept when it is the art (tree on recycled paper, Broken, bird shadowbox, handmade paper).
 
 ## Do-not
 - Touch `businesses/watershed` or `brands/demeter-design`
 - Invent book covers or merch SKUs
-- Reuse Fraunces / Source Sans 3 / fir-mist tokens
+- Reintroduce a vertical dump of the whole hang
