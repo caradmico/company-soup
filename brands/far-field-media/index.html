@@ -1,30 +1,88 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Far Field Media · Field Film Package</title>
-<style>
-:root{--ink:#0f1c24;--paper:#f6f1e8;--teal:#1f6f78;--gold:#c4a35a;--line:#d5cbba}
-body{margin:0;font:17px/1.55 system-ui,sans-serif;color:var(--ink);background:var(--paper)}
-main{max-width:40rem;margin:0 auto;padding:1.4rem 1.15rem}
-.tag{color:var(--teal);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;font-weight:700}
-h2{font-size:1.05rem;border-left:4px solid var(--gold);padding-left:.5rem}
-a{color:var(--teal)}
-.card{border:1px solid var(--line);border-radius:8px;padding:1rem;margin:1rem 0;background:#fff}
-.price{font-weight:700;font-size:1.15rem}
-video{width:100%;border-radius:6px;background:#000}
-</style></head><body><main>
-<p class="tag">Videography · Graphic Oregon child</p>
-<h1>Far Field Media</h1>
-<p>Short coastal / technical field films + cutdowns. One camera. Clear rates.</p>
-<p>Parent: <a href="https://graphicoregon.com/">Graphic Oregon</a> · Cooker: <a href="../../">Company Soup</a></p>
-<div class="card">
-  <h2>Field Film Package</h2>
-  <p class="price">$450</p>
-  <p>One 60–90s field film + two cutdowns. Single cutdown only: <strong>$150</strong>.</p>
-  <p>Sample clip — Mapping Services (public GO media):</p>
-  <video controls preload="metadata" src="https://graphicoregon.com/wp-content/uploads/2023/12/Untitled-design-1.mp4"></video>
-  <p><a href="https://graphicoregon.com/wp-content/uploads/2023/12/Untitled-design-1.mp4">Open clip file</a></p>
-</div>
-<h2>Do-not</h2>
-<ul><li>Invent client commercials</li><li>Rename Graphic Oregon</li><li>Personal Cara as the product</li></ul>
-</main></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Far Field Media · coastal field films</title>
+  <style>
+    :root{--ink:#0f1c24;--paper:#f6f1e8;--teal:#1f6f78;--gold:#c4a35a;--line:#d5cbba;--cream:#fffaf2;--navy:#0a1620}
+    body{margin:0;font:17px/1.55 system-ui,sans-serif;color:var(--ink);background:var(--paper)}
+    main{max-width:42rem;margin:0 auto;padding:1.4rem 1.15rem 3rem}
+    .tag{color:var(--teal);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;font-weight:700}
+    h1{margin:.2rem 0 .4rem;font-size:1.65rem}
+    h2{font-size:1.05rem;border-left:4px solid var(--gold);padding-left:.5rem}
+    a{color:var(--teal)}
+    .reel{background:var(--navy);border-radius:12px;padding:1rem;margin:1rem 0}
+    video{width:100%;border-radius:8px;background:#000;display:block}
+    .offer{background:var(--cream);border:1px solid var(--line);border-radius:12px;padding:1.1rem;margin:1rem 0}
+    .price{font-size:1.35rem;font-weight:700;color:var(--teal)}
+    .actions{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:.75rem}
+    .actions a,button{display:inline-block;padding:.6rem 1rem;border-radius:8px;text-decoration:none;font:600 .95rem system-ui,sans-serif;border:0;cursor:pointer}
+    .buy{background:var(--teal);color:#fff!important}
+    .secondary{border:1px solid var(--teal);color:var(--teal)!important;background:transparent}
+    label{display:block;font-size:.85rem;font-weight:600;margin:.65rem 0 .25rem}
+    input,textarea,select{width:100%;padding:.55rem .65rem;border:1px solid var(--line);border-radius:8px;font:inherit;box-sizing:border-box}
+    .note{font-size:.9rem;color:#5a6570}
+  </style>
+</head>
+<body>
+<main>
+  <p class="tag">Far Field Media · Graphic Oregon child · video</p>
+  <h1>Coastal field films</h1>
+  <p><strong>Offer:</strong> 60–90 second coastal field films + cutdowns for venues and nonprofits. No fame machine. No new social platform.</p>
+
+  <div class="reel">
+    <video controls playsinline preload="metadata" poster="">
+      <source src="sample-coastal-cut.mp4" type="video/mp4">
+      Your browser can’t play this sample clip.
+    </video>
+    <p class="note" style="color:#9ab;margin:.6rem 0 0">Sample motion cut (abstract dusk) — shows length/feel. Camera reel swaps in when the first shoot exports.</p>
+  </div>
+
+  <div class="offer">
+    <p class="tag">Price</p>
+    <p class="price">$450 · 60–90s field film</p>
+    <p>Includes one location story, color grade, and web-ready export. Cutdowns +$120. Travel outside north coast quoted.</p>
+    <form id="order">
+      <label for="name">Name</label>
+      <input id="name" required autocomplete="name">
+      <label for="email">Email</label>
+      <input id="email" type="email" required autocomplete="email">
+      <label for="venue">Venue / org</label>
+      <input id="venue" placeholder="Optional">
+      <label for="notes">What should the film show?</label>
+      <textarea id="notes" required placeholder="Place, length, deadline…"></textarea>
+      <div class="actions">
+        <button class="buy" type="submit">Order at $450</button>
+        <a class="secondary" href="sample-coastal-cut.mp4" download>Download sample clip</a>
+      </div>
+    </form>
+  </div>
+
+  <h2>Locked brief</h2>
+  <p>Far Field Media sells short coastal films under Graphic Oregon. This door has a playable sample + a hard price + an order path. Not Quiet Cut. Not Printify.</p>
+  <h2>Done-when</h2>
+  <p>Stranger can watch the sample, see $450, and send an order — no login.</p>
+  <p class="note">Parent: <a href="https://graphicoregon.com/">Graphic Oregon</a> · <a href="../../">Company Soup</a></p>
+</main>
+<script>
+document.getElementById('order').addEventListener('submit', function(e){
+  e.preventDefault();
+  var lines = [
+    'Far Field Media order — 60–90s coastal field film ($450)',
+    '',
+    'Name: ' + document.getElementById('name').value.trim(),
+    'Email: ' + document.getElementById('email').value.trim(),
+    'Venue/org: ' + (document.getElementById('venue').value.trim()||'(none)'),
+    'Notes: ' + document.getElementById('notes').value.trim(),
+    '',
+    'Door: https://caradmico.github.io/company-soup/brands/far-field-media/',
+    'Sample: https://caradmico.github.io/company-soup/brands/far-field-media/sample-coastal-cut.mp4'
+  ];
+  location.href = 'mailto:hello@graphicoregon.com?subject=' +
+    encodeURIComponent('Far Field Media order — $450 field film') +
+    '&body=' + encodeURIComponent(lines.join('\n'));
+});
+</script>
+</body>
+</html>
