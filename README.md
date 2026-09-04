@@ -4,6 +4,8 @@
 
 Live: https://caradmico.github.io/company-soup/
 
+Ops (venture status, one page): [Soup Ops](https://caradmico.github.io/company-soup/ops/dashboard/)
+
 Featured founder firm: [Watershed Field Assessment](businesses/watershed/) — Demeter Design, quote-only coastal field assessment.
 
 ## Children (stranger door)
