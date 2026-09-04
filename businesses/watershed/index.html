@@ -78,11 +78,13 @@ h2{font-size:clamp(1.55rem,3vw,2.15rem);margin:.25rem 0 .6rem;line-height:1.15}
 .craft h3{margin:.15rem 0 .4rem;font-size:1.15rem}
 .craft p{margin:0;color:var(--mute);font-size:.98rem}
 .proof-head{max-width:40rem;margin-bottom:1.4rem}
-.rail{display:grid;gap:.8rem;grid-template-columns:1fr 1fr}
-@media(min-width:800px){.rail{grid-template-columns:repeat(4,1fr)}}
-.rail a{display:block;text-decoration:none;color:inherit}
-.rail img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top;background:#d7ddd6}
-.rail span{display:block;margin-top:.4rem;font-size:.82rem;font-weight:650;color:var(--mute)}
+.scenes{display:grid;gap:1.4rem}
+.scene{position:relative;border-radius:6px;overflow:hidden;min-height:min(52vh,28rem);display:grid;align-items:end;color:#f4f7f2;text-decoration:none}
+.scene img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.scene::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,20,18,.05),rgba(10,20,18,.78))}
+.scene .copy{position:relative;z-index:1;padding:1.4rem 1.2rem 1.3rem}
+.scene .copy strong{display:block;font-family:"Fraunces",Georgia,serif;font-size:clamp(1.25rem,2.5vw,1.7rem);line-height:1.15;margin:.15rem 0 .25rem}
+.scene .copy span{font-size:.92rem;opacity:.9}
 .more{margin:1.2rem 0 0;padding:0;list-style:none;display:grid;gap:.4rem}
 .more a{color:var(--tide)}
 .quote{display:grid;gap:1.8rem}
@@ -179,22 +181,30 @@ footer{padding:1.8rem 0 2.2rem;border-top:1px solid var(--line);color:var(--mute
       <h2>Real reports. Public.</h2>
       <p class="prose">Selected Demeter Design / Graphic Oregon studies. Open the pages. Download the PDFs. Then ask for the packet that matches your basin.</p>
     </div>
-    <div class="rail">
-      <a href="https://graphicoregon.com/tillamook-bay-watershed-habitat-restoration-plan/" target="_blank" rel="noopener">
-        <img src="img/hero.jpg" alt="Tillamook Bay Watershed Data Synthesis and CERP tool cover, Demeter Design 2008">
-        <span>Tillamook Bay restoration</span>
+    <div class="scenes">
+      <a class="scene" href="https://graphicoregon.com/netarts-bay-watershed-habitat-assessment/" target="_blank" rel="noopener">
+        <img src="img/netarts-map.jpg" width="1200" height="820" alt="Netarts Bay watershed map from the published assessment">
+        <div class="copy">
+          <p class="kicker" style="color:#d5e0c8">Map</p>
+          <strong>Netarts Bay — the basin on paper</strong>
+          <span>Habitat assessment · open the report</span>
+        </div>
       </a>
-      <a href="https://graphicoregon.com/upper-nestucca-sediment-and-habitat-study/" target="_blank" rel="noopener">
-        <img src="img/nestucca.jpg" alt="Upper Nestucca sediment, shade, and habitat complexity cover for BLM">
-        <span>Upper Nestucca · BLM</span>
+      <a class="scene" href="https://graphicoregon.com/upper-nestucca-sediment-and-habitat-study/" target="_blank" rel="noopener">
+        <img src="img/channel.jpg" width="1920" height="1080" alt="Moss-lined Nestucca channel">
+        <div class="copy">
+          <p class="kicker" style="color:#d5e0c8">Scene</p>
+          <strong>Upper Nestucca — sediment, shade, complexity</strong>
+          <span>BLM study · walk the reach, then write it</span>
+        </div>
       </a>
-      <a href="https://graphicoregon.com/netarts-bay-watershed-habitat-assessment/" target="_blank" rel="noopener">
-        <img src="img/netarts-cover.jpg" alt="Netarts Bay habitat study and limiting factors cover">
-        <span>Netarts Bay</span>
-      </a>
-      <a href="https://graphicoregon.com/research/" target="_blank" rel="noopener">
-        <img src="img/figures.jpg" alt="Report figures page with partners and Demeter Design contact">
-        <span>Research index →</span>
+      <a class="scene" href="https://graphicoregon.com/tillamook-bay-watershed-habitat-restoration-plan/" target="_blank" rel="noopener">
+        <img src="img/estuary.jpg" width="1280" height="851" alt="Estuary aerial used as Tillamook Bay stand-in scene">
+        <div class="copy">
+          <p class="kicker" style="color:#d5e0c8">Basin</p>
+          <strong>Tillamook Bay — restoration planning</strong>
+          <span>Published plan · figures a council can defend</span>
+        </div>
       </a>
     </div>
     <ul class="more">
