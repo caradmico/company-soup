@@ -3,10 +3,10 @@
 Lane: Journalism · Graphic Oregon child
 
 ## One-liner
-Filterable newsprint hed wall of Cara Mico bylines — chips by beat, outlet, and year. Not a newspaper we own.
+Graphic Oregon journalism door: proof of real desk volume — verified CV bylines, beat chips, pull-quotes that open the originals.
 
 ## Brief
-Coast Desk is the Graphic Oregon journalism door. The stranger artifact is a **hed wall**: verified CV headlines only, each linking out to the paper that printed them. Science and technology share one beat. Pioneer stays Pioneer. Do not invent a masthead. Do not reprint full articles.
+This page is why a stranger stops: founder door for journalism, proof of Cara Mico desk work at papers that already exist. The wall is verified CV bylines only. Chip by beat (science groups science & technology), outlet, or year. Each beat has one short pull-quote that opens the live original. No full articles. Pioneer stays Pioneer.
 
 ## Gold browse layer
 1. Chip by beat: science, civic, arts, outdoors, community.
