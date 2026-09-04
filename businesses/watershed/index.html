@@ -52,7 +52,16 @@ a{color:var(--tide)}
 .chapter .stage{position:absolute;inset:0}
 .chapter .stage img{width:100%;height:100%;object-fit:cover;object-position:center;user-select:none;cursor:grab;transform:scale(1.08);transition:transform .8s ease}
 .chapter.is-in .stage img{transform:scale(1)}
-.chapter .veil{position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(10,18,16,.88));pointer-events:none}
+.chapter .veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,20,18,.12) 20%,rgba(10,18,16,.72) 100%);pointer-events:none}
+.chapter .stage{border-radius:0}
+.chapter .stage img{filter:saturate(1.35) contrast(1.12) brightness(1.06)}
+.chapter .mapkey{position:absolute;top:1rem;left:1rem;z-index:3;display:flex;flex-wrap:wrap;gap:.4rem}
+.chapter .mapkey span{font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:.35rem .55rem;border-radius:999px;background:rgba(255,255,255,.92);color:#163028;box-shadow:0 4px 14px rgba(0,0,0,.18)}
+.chapter .mapkey .k-pass{background:#3dd6c6;color:#06221e}
+.chapter .mapkey .k-pri{background:#ffb020;color:#2a1800}
+.chapter .mapkey .k-hab{background:#7be07a;color:#0d2a12}
+.chapter .mapframe{position:absolute;inset:.75rem;border:1.5px solid rgba(255,255,255,.55);border-radius:18px;pointer-events:none;z-index:2;box-shadow:inset 0 0 0 1px rgba(0,0,0,.08)}
+@media (prefers-reduced-motion:reduce){.chapter .stage img{filter:saturate(1.2) contrast(1.08)}}
 .chapter .dock{position:relative;z-index:2;width:min(40rem,calc(100% - 2rem));margin:0 auto;padding:0 0 2.4rem}
 .chapter .dock .panel{background:rgba(22,48,40,.55);backdrop-filter:blur(12px);border:1px solid rgba(213,224,200,.2);border-radius:18px;padding:1.15rem 1.2rem}
 .chapter h2{margin:.2rem 0 .45rem;font-size:clamp(1.45rem,3vw,2rem)}
@@ -150,6 +159,8 @@ body.sticky-on{padding-bottom:4.75rem}
 <section class="chapter" data-chapter id="plan-passage">
   <div class="stage" data-pan>
     <img id="passImg" src="img/real-netarts-passage.jpg" width="1600" height="1200" alt="Netarts Bay passage barriers map" draggable="false">
+    <div class="mapkey" aria-hidden="true"><span class="k-pass">Passage</span></div>
+    <div class="mapframe" aria-hidden="true"></div>
     <div class="hotspots" aria-label="Passage callouts">
       <div class="hot" style="left:42%;top:58%"><button type="button" aria-label="Whiskey diversion"></button><span class="tip">Whiskey diversion priority</span></div>
       <div class="hot" style="left:61%;top:46%"><button type="button" aria-label="O’Hara culvert"></button><span class="tip">First O’Hara culvert</span></div>
@@ -170,7 +181,9 @@ body.sticky-on{padding-bottom:4.75rem}
 
 <section class="chapter" data-chapter id="plan-priority">
   <div class="stage">
-    <img src="img/real-tillamook-priority.jpg" width="1600" height="1200" alt="Tillamook Bay CERP Top-10 Chum IP priority map">
+    <img src="img/real-tillamook-priority.jpg" width="1600" height="1200" alt="Tillamook Bay restoration habitat prioritization map">
+    <div class="mapkey" aria-hidden="true"><span class="k-pri">Prioritization</span><span>Habitat restoration planning</span></div>
+    <div class="mapframe" aria-hidden="true"></div>
   </div>
   <div class="veil" aria-hidden="true"></div>
   <div class="dock">
@@ -178,7 +191,7 @@ body.sticky-on{padding-bottom:4.75rem}
       <p class="kicker" style="color:#cfe3c8">Priority action plan</p>
       <h2 class="serif">One ranked picture to fund</h2>
       <p class="sell">A prioritization plan your council can put in the work plan.</p>
-      <p class="interp">CERP coalesces habitat, biotic, GIS, and written data across ninety-four seventh-field HUCs. Top-10 Average Chum IP priorities against the rest — published Tillamook map.</p>
+      <p class="interp">Habitat restoration planning that ranks where to restore first — habitat, field surveys, GIS, and written sources in one picture. Published Tillamook prioritization map.</p>
       <p class="quiet"><a href="https://graphicoregon.com/tillamook-bay-watershed-habitat-restoration-plan/" target="_blank" rel="noopener">Full study</a> · Demeter Design · Tillamook Bay</p>
     </div>
   </div>
@@ -186,15 +199,17 @@ body.sticky-on{padding-bottom:4.75rem}
 
 <section class="chapter" data-chapter id="plan-habitat">
   <div class="stage">
-    <img src="img/real-netarts-ip.jpg" width="1600" height="1200" alt="Netarts Bay intrinsic potential map">
+    <img src="img/real-netarts-ip.jpg" width="1600" height="1200" alt="Netarts Bay habitat potential map">
+    <div class="mapkey" aria-hidden="true"><span class="k-hab">Habitat</span><span>Restoration screening</span></div>
+    <div class="mapframe" aria-hidden="true"></div>
   </div>
   <div class="veil" aria-hidden="true"></div>
   <div class="dock">
     <div class="panel">
-      <p class="kicker" style="color:#cfe3c8">Habitat potential plan</p>
+      <p class="kicker" style="color:#cfe3c8">Habitat restoration screening</p>
       <h2 class="serif">Screen rearing reaches before the spend</h2>
       <p class="sell">See which reaches carry winter potential — then write the next steps from that.</p>
-      <p class="interp">Intrinsic potential screens overwintering and rearing value before field days are scheduled. Sampling and analysis can sit inside the action plan when needed.</p>
+      <p class="interp">Restoration habitat prioritization screens overwintering and rearing value before field days are scheduled. Sampling and analysis can sit inside the action plan when needed.</p>
       <p class="quiet"><a href="https://graphicoregon.com/netarts-bay-watershed-habitat-assessment/" target="_blank" rel="noopener">Full study</a> · Demeter Design · Netarts Bay</p>
     </div>
   </div>
@@ -210,7 +225,7 @@ body.sticky-on{padding-bottom:4.75rem}
       <button type="button" class="wchip on" data-f="all">All</button>
       <button type="button" class="wchip" data-f="passage">Passage</button>
       <button type="button" class="wchip" data-f="sediment">Sediment / shade</button>
-      <button type="button" class="wchip" data-f="priority">Priority / CERP</button>
+      <button type="button" class="wchip" data-f="priority">Priority / restoration</button>
     </div>
     <div class="packets">
       <div class="packet show" data-tags="passage all">
@@ -222,7 +237,7 @@ body.sticky-on{padding-bottom:4.75rem}
         <a href="https://graphicoregon.com/wp-content/uploads/2023/12/Sediment_Shade_and_Complexity_in_the_Upp.pdf" target="_blank" rel="noopener">Download</a>
       </div>
       <div class="packet show" data-tags="priority all">
-        <div><strong>Tillamook Bay CERP</strong><div class="fine">Computational restoration priorities</div></div>
+        <div><strong>Tillamook Bay habitat restoration planning</strong><div class="fine">Restoration habitat prioritization</div></div>
         <a href="https://graphicoregon.com/wp-content/uploads/2023/12/Computational_Ecological_Restoration_Pri.pdf" target="_blank" rel="noopener">Download</a>
       </div>
     </div>
