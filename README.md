@@ -14,6 +14,7 @@ Featured founder firm: [Watershed Field Assessment](businesses/watershed/) — D
 - [Far Field Media](brands/far-field-media/) — videography (sample clip + $450 / 60–90s)
 - [Coast Desk](brands/coast-desk/) — journalism ([Placement Note 001](brands/coast-desk/placement-note-001.html); Pioneer stays Pioneer)
 - [Lane Sites](brands/lane-sites/) — web lane bread ([keep-list](brands/lane-sites/keep-list.html); no client-site cash)
+- [Grant Desk](brands/grant-desk/) — grant writing (quote only; nonprofits / arts / community)
 
 Netarts Systems / Estuary Ink / Quiet Cut stay demoted redirects.
 
