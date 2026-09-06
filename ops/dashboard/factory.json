@@ -3,19 +3,19 @@
   "rule": {
     "id": "token-lean",
     "title": "Token lean / no empty pulse",
-    "body": "No ack-only pings. No re-reporting the same KEEP. Speak once with artifact/URL/SHA or stay silent. Kevin looks once — empty back-and-forth fails."
+    "body": "No ack-only pings. No re-reporting the same KEEP. Speak once with artifact/URL/SHA or stay silent. Kevin looks once \u2014 empty back-and-forth fails."
   },
   "target": {
-    "id": "soup-seat-efficiency",
-    "name": "Factory seat-efficiency surface",
-    "owner": "Soup Ops",
-    "grade": "KEEP",
-    "note": "KEEP tip ccdfeb8. Factory closed → intake. Parked until next assign."
+    "id": "efficiency-desk",
+    "name": "Objects-bought ledger (efficiency desk)",
+    "owner": "Build Bot",
+    "grade": "grade.pending",
+    "note": "Live tip f33ba6a. Kevin looks once \u2014 objects bought, not parked-seat theater."
   },
   "lastArtifact": {
-    "label": "Soup Ops dashboard",
+    "label": "Objects-bought ledger",
     "url": "https://caradmico.github.io/company-soup/ops/dashboard/",
-    "commit": "ccdfeb8",
+    "commit": "f33ba6a",
     "updated": "2026-09-06"
   },
   "seats": [
@@ -24,28 +24,28 @@
       "name": "Manager Kevin",
       "lane": "Taskmaster",
       "state": "hot",
-      "focus": "Mill grades + KEEP/FAIL once"
+      "focus": "One look: objects-bought ledger KEEP/FAIL"
     },
     {
       "id": "soup-ops",
       "name": "Soup Ops",
       "lane": "Ops / reporting",
       "state": "parked",
-      "focus": "Intake. Parked after KEEP ccdfeb8."
+      "focus": "Intake \u2014 efficiency land by Build"
     },
     {
       "id": "jarvis",
       "name": "Jarvis",
       "lane": "Chief of Staff",
       "state": "parked",
-      "focus": "Executive — not mill grunt"
+      "focus": "Executive \u2014 not mill grunt"
     },
     {
       "id": "build",
       "name": "Build Bot",
       "lane": "Code",
-      "state": "parked",
-      "focus": "Parallel lanes only when Kevin assigns"
+      "state": "hot",
+      "focus": "efficiency-desk tip f33ba6a \u2014 grade.pending for Kevin"
     },
     {
       "id": "grant-desk",
@@ -66,7 +66,7 @@
       "name": "Space Boi",
       "lane": "StarIS / Space Apps",
       "state": "parked",
-      "focus": "StarIS BIN — do not steal"
+      "focus": "StarIS BIN \u2014 do not steal"
     },
     {
       "id": "tsarista",
@@ -74,7 +74,7 @@
       "also": "Softstyle",
       "lane": "Sassmeharder",
       "state": "parked",
-      "focus": "Softstyle closed KEEP — do not wake",
+      "focus": "Softstyle closed KEEP \u2014 do not wake",
       "keep": "closed KEEP"
     },
     {
@@ -97,7 +97,7 @@
       "also": "rbc-plot-beats",
       "lane": "Books",
       "state": "parked",
-      "focus": "rbc-plot-beats closed KEEP — do not reopen",
+      "focus": "rbc-plot-beats closed KEEP \u2014 do not reopen",
       "keep": "closed KEEP"
     },
     {
