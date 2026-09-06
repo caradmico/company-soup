@@ -11,8 +11,8 @@
       "url": "https://caradmico.github.io/graphicoregon/nccwp/",
       "path": "graphicoregon/nccwp/ (sister repo)",
       "cost": "unknown",
-      "buyAgain": "maybe",
-      "reason": "Live creek-watershed desk; Cara parked NCCWP reopen."
+      "buyAgain": "yes",
+      "reason": "Client loved it / DONE — do not reopen."
     },
     {
       "id": "fine-art",
@@ -21,8 +21,8 @@
       "url": "https://caradmico.github.io/company-soup/businesses/fine-art/",
       "path": "businesses/fine-art/",
       "cost": "unknown",
-      "buyAgain": "yes",
-      "reason": "KEEP'd live hang; commissions door, not a print shop."
+      "buyAgain": "no",
+      "reason": "Cara FAIL'd AI/door-speak copy (\"This door is for…\"). Rewrite in flight under Fine Art Gallery. Hang KEEP does not clear copy FAIL."
     },
     {
       "id": "demeter",
