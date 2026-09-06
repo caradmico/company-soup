@@ -21,8 +21,8 @@
       "url": "https://caradmico.github.io/company-soup/businesses/fine-art/",
       "path": "businesses/fine-art/",
       "cost": "unknown",
-      "buyAgain": "no",
-      "reason": "Cara FAIL'd AI/door-speak copy (\"This door is for…\"). Rewrite in flight under Fine Art Gallery. Hang KEEP does not clear copy FAIL."
+      "buyAgain": "yes",
+      "reason": "copy KEEP 22a9f06 — stranger-ready gallery language; door-speak killed."
     },
     {
       "id": "demeter",
