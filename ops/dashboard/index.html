@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Soup Ops · Company Soup</title>
-<meta name="description" content="Watch all Soup ventures in one place. Status and last update — open this instead of scrolling chat.">
+<meta name="description" content="Venture doors and factory seat pulse in one place. Status, last artifact, token-lean rule — Kevin looks once.">
 <link rel="canonical" href="https://caradmico.github.io/company-soup/ops/dashboard/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,6 +20,11 @@
   --live:#0d7a4f;
   --linked:#3d5a80;
   --omit:#8a6a2a;
+  --hot:#0d7a4f;
+  --parked:#6b6570;
+  --keep:#5a4a1f;
+  --flight:#2448c5;
+  --rule:#6a4a12;
 }
 *{box-sizing:border-box}
 html,body{margin:0}
@@ -53,7 +58,7 @@ h1{
 }
 .why{
   margin:0;
-  max-width:36rem;
+  max-width:40rem;
   font-size:1.12rem;
   font-weight:600;
   letter-spacing:-.01em;
@@ -67,6 +72,91 @@ h1{
 }
 .meta strong{color:var(--ink);font-weight:500}
 main{padding:1.4rem 0 3rem}
+
+.section{
+  margin:0 0 1.8rem;
+}
+.section-head{
+  display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;
+  gap:.35rem 1rem;
+  margin:0 0 .7rem;
+}
+.section-head h2{
+  margin:0;
+  font-size:1.05rem;
+  letter-spacing:-.015em;
+}
+.section-head p{
+  margin:0;
+  font:400 .78rem/1.3 IBM Plex Mono,ui-monospace,monospace;
+  color:var(--mute);
+}
+
+.pulse{
+  display:grid;
+  gap:.75rem;
+  margin:0 0 .75rem;
+}
+@media(min-width:820px){
+  .pulse{grid-template-columns:1fr 1fr}
+}
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:1.05rem 1.15rem 1.1rem;
+}
+.card .label{
+  margin:0 0 .45rem;
+  font:500 .7rem/1 IBM Plex Mono,ui-monospace,monospace;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--mute);
+}
+.card h3{
+  margin:0 0 .35rem;
+  font-size:1.2rem;
+  letter-spacing:-.02em;
+}
+.card .who,.card .note{
+  margin:.2rem 0 0;
+  color:var(--mute);
+  font-size:.92rem;
+}
+.card .who strong{color:var(--ink);font-weight:700}
+.artifact-link{font-weight:700;text-decoration:none}
+.artifact-link:hover{text-decoration:underline}
+.sha{
+  display:inline-block;
+  margin-top:.45rem;
+  padding:.2rem .45rem;
+  background:#f4f3ee;
+  border-radius:6px;
+  font:500 .78rem/1.3 IBM Plex Mono,ui-monospace,monospace;
+  color:var(--ink);
+}
+
+.rule{
+  margin:0 0 .85rem;
+  padding:1.05rem 1.15rem 1.15rem;
+  background:#fff6e0;
+  border:1px solid #ead6a4;
+  border-left:5px solid #c4891a;
+  border-radius:14px;
+}
+.rule .label{
+  margin:0 0 .4rem;
+  font:500 .7rem/1 IBM Plex Mono,ui-monospace,monospace;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--rule);
+}
+.rule h3{
+  margin:0 0 .4rem;
+  font-size:1.15rem;
+  letter-spacing:-.02em;
+}
+.rule p{margin:0;max-width:46rem;font-size:1.02rem;font-weight:600;letter-spacing:-.01em}
 
 .board{
   background:var(--card);
@@ -101,6 +191,7 @@ tbody tr:hover{background:#f7f8fc}
   white-space:nowrap;
 }
 .status{max-width:28rem}
+.focus{max-width:32rem}
 .when{
   font:400 .78rem/1.35 IBM Plex Mono,ui-monospace,monospace;
   color:var(--mute);
@@ -118,6 +209,10 @@ tbody tr:hover{background:#f7f8fc}
 }
 .state.live{background:#e6f5ee;color:var(--live)}
 .state.linked{background:#e8eef5;color:var(--linked)}
+.state.hot{background:#e6f5ee;color:var(--hot)}
+.state.parked{background:#eeeef0;color:var(--parked)}
+.state.keep{background:#f3ecd4;color:var(--keep);margin-left:.3rem}
+.state.flight{background:#e4eafc;color:var(--flight);margin:0 0 .45rem}
 .actions{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center}
 .btn{
   display:inline-block;
@@ -181,30 +276,75 @@ footer nav{display:flex;flex-wrap:wrap;gap:.35rem .85rem;margin-bottom:.5rem}
   <div class="wrap">
     <p class="kicker">Company Soup · ops v0</p>
     <h1>Soup Ops</h1>
-    <p class="why">Watch all Soup ventures in one place. <em>Open this instead of scrolling chat.</em></p>
+    <p class="why">Watch venture doors and factory seat pulse in one place. <em>Open this instead of scrolling chat.</em></p>
     <p class="meta" id="meta">Loading board…</p>
   </div>
 </header>
 
 <main class="wrap">
-  <div class="board" id="board">
-    <table>
-      <caption>Active Soup doors</caption>
-      <thead>
-        <tr>
-          <th scope="col">Venture</th>
-          <th scope="col">Lane</th>
-          <th scope="col">Status</th>
-          <th scope="col">Last update</th>
-          <th scope="col">Open</th>
-        </tr>
-      </thead>
-      <tbody id="rows"></tbody>
-    </table>
-  </div>
-  <section class="omit" id="omit" hidden>
-    <h2>Not on this tree</h2>
-    <ul></ul>
+  <section class="section" id="factory" aria-labelledby="factory-title">
+    <div class="section-head">
+      <h2 id="factory-title">Factory pulse</h2>
+      <p>Who is hot. Who is parked. What the mill is pointed at.</p>
+    </div>
+
+    <div class="pulse">
+      <article class="card" id="target-card">
+        <p class="label">Current factory target</p>
+        <p class="note">Loading target…</p>
+      </article>
+      <article class="card" id="artifact-card">
+        <p class="label">Last artifact</p>
+        <p class="note">Loading artifact…</p>
+      </article>
+    </div>
+
+    <aside class="rule" id="rule" aria-labelledby="rule-title">
+      <p class="label">Standing rule</p>
+      <h3 id="rule-title">Token lean / no empty pulse</h3>
+      <p>No ack-only pings. No re-reporting the same KEEP. Speak once with artifact/URL/SHA or stay silent. Kevin looks once — empty back-and-forth fails.</p>
+    </aside>
+
+    <div class="board" id="seats-board">
+      <table>
+        <caption>Factory seats</caption>
+        <thead>
+          <tr>
+            <th scope="col">Seat</th>
+            <th scope="col">Lane</th>
+            <th scope="col">State</th>
+            <th scope="col">Focus</th>
+          </tr>
+        </thead>
+        <tbody id="seat-rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section" id="doors-section" aria-labelledby="doors-title">
+    <div class="section-head">
+      <h2 id="doors-title">Venture doors</h2>
+      <p>Same board as before — names, status, last update.</p>
+    </div>
+    <div class="board" id="board">
+      <table>
+        <caption>Active Soup doors</caption>
+        <thead>
+          <tr>
+            <th scope="col">Venture</th>
+            <th scope="col">Lane</th>
+            <th scope="col">Status</th>
+            <th scope="col">Last update</th>
+            <th scope="col">Open</th>
+          </tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+    <section class="omit" id="omit" hidden>
+      <h2>Not on this tree</h2>
+      <ul></ul>
+    </section>
   </section>
 </main>
 
@@ -220,8 +360,13 @@ footer nav{display:flex;flex-wrap:wrap;gap:.35rem .85rem;margin-bottom:.5rem}
 <script>
 (function(){
   var rows = document.getElementById('rows');
+  var seatRows = document.getElementById('seat-rows');
   var meta = document.getElementById('meta');
   var omit = document.getElementById('omit');
+  var targetCard = document.getElementById('target-card');
+  var artifactCard = document.getElementById('artifact-card');
+  var ruleBox = document.getElementById('rule');
+  var loaded = { factory: null, doors: null };
 
   function el(tag, cls, text){
     var n = document.createElement(tag);
@@ -239,18 +384,103 @@ footer nav{display:flex;flex-wrap:wrap;gap:.35rem .85rem;margin-bottom:.5rem}
     return a;
   }
 
-  function render(data){
-    var doors = data.doors || [];
+  function paintMeta(){
     meta.textContent = '';
-    var c = el('span');
-    c.appendChild(el('strong', null, String(doors.length)));
-    c.appendChild(document.createTextNode(' active doors'));
-    meta.appendChild(c);
-    var g = el('span', null, 'Board date '+data.generated);
-    meta.appendChild(g);
-    var n = el('span', null, data.note);
-    meta.appendChild(n);
+    var factory = loaded.factory;
+    var doors = loaded.doors;
+    if(!factory && !doors){
+      meta.textContent = 'Loading board…';
+      return;
+    }
+    if(factory){
+      var seats = factory.seats || [];
+      var hot = seats.filter(function(s){ return s.state === 'hot'; }).length;
+      var parked = seats.filter(function(s){ return s.state === 'parked'; }).length;
+      var pulse = el('span');
+      pulse.appendChild(el('strong', null, String(hot)));
+      pulse.appendChild(document.createTextNode(' hot · '));
+      pulse.appendChild(el('strong', null, String(parked)));
+      pulse.appendChild(document.createTextNode(' parked'));
+      meta.appendChild(pulse);
+      meta.appendChild(el('span', null, 'Factory '+factory.generated));
+    }
+    if(doors){
+      var list = doors.doors || [];
+      var c = el('span');
+      c.appendChild(el('strong', null, String(list.length)));
+      c.appendChild(document.createTextNode(' doors'));
+      meta.appendChild(c);
+      meta.appendChild(el('span', null, 'Doors '+doors.generated));
+    }
+  }
 
+  function renderFactory(data){
+    loaded.factory = data;
+    paintMeta();
+
+    var target = data.target || {};
+    targetCard.innerHTML = '';
+    targetCard.appendChild(el('p','label','Current factory target'));
+    var grade = String(target.grade || 'IN FLIGHT').toLowerCase();
+    var gradeClass = grade.indexOf('keep') !== -1 ? 'keep' : (grade.indexOf('fail') !== -1 ? 'parked' : 'flight');
+    targetCard.appendChild(el('span','state '+gradeClass, target.grade || 'IN FLIGHT'));
+    targetCard.appendChild(el('h3', null, target.name || 'Untitled target'));
+    var who = el('p','who');
+    who.appendChild(document.createTextNode('Owner '));
+    who.appendChild(el('strong', null, target.owner || '—'));
+    targetCard.appendChild(who);
+    if(target.note) targetCard.appendChild(el('p','note', target.note));
+
+    var art = data.lastArtifact || {};
+    artifactCard.innerHTML = '';
+    artifactCard.appendChild(el('p','label','Last artifact'));
+    if(art.url){
+      artifactCard.appendChild(link(art.url, art.label || art.url, 'artifact-link', /^https?:/.test(art.url)));
+    } else {
+      artifactCard.appendChild(el('h3', null, art.label || 'No artifact yet'));
+    }
+    if(art.commit){
+      var sha = el('code','sha', art.commit);
+      sha.title = 'Commit '+art.commit;
+      artifactCard.appendChild(sha);
+    }
+    if(art.updated) artifactCard.appendChild(el('p','note','Updated '+art.updated));
+
+    var rule = data.rule || {};
+    ruleBox.innerHTML = '';
+    ruleBox.appendChild(el('p','label','Standing rule'));
+    ruleBox.appendChild(el('h3', null, rule.title || 'Token lean / no empty pulse')).id = 'rule-title';
+    ruleBox.appendChild(el('p', null, rule.body || ''));
+
+    seatRows.innerHTML = '';
+    (data.seats || []).forEach(function(s){
+      var tr = document.createElement('tr');
+
+      var tdName = document.createElement('td');
+      tdName.appendChild(el('span','name', s.name));
+      if(s.also) tdName.appendChild(el('span','also', s.also));
+      tr.appendChild(tdName);
+
+      var tdLane = el('td','lane', s.lane);
+      tdLane.setAttribute('data-label', 'Lane');
+      tr.appendChild(tdLane);
+
+      var tdState = document.createElement('td');
+      var state = s.state === 'hot' ? 'hot' : 'parked';
+      tdState.appendChild(el('span','state '+state, state));
+      if(s.keep) tdState.appendChild(el('span','state keep', s.keep));
+      tr.appendChild(tdState);
+
+      tr.appendChild(el('td','focus', s.focus || ''));
+      seatRows.appendChild(tr);
+    });
+  }
+
+  function renderDoors(data){
+    loaded.doors = data;
+    paintMeta();
+
+    var doors = data.doors || [];
     rows.innerHTML = '';
     doors.forEach(function(d){
       var tr = document.createElement('tr');
@@ -301,14 +531,22 @@ footer nav{display:flex;flex-wrap:wrap;gap:.35rem .85rem;margin-bottom:.5rem}
     }
   }
 
+  function fail(which, afterId){
+    var box = el('p','err','Could not load '+which+'. Open this page over GitHub Pages or a local server.');
+    var after = document.getElementById(afterId);
+    after.parentNode.insertBefore(box, after);
+    paintMeta();
+  }
+
+  fetch('factory.json', { cache: 'no-store' })
+    .then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); })
+    .then(renderFactory)
+    .catch(function(){ fail('factory.json', 'factory'); });
+
   fetch('doors.json', { cache: 'no-store' })
     .then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); })
-    .then(render)
-    .catch(function(){
-      meta.textContent = '';
-      var box = el('p','err','Could not load doors.json. Open this page over GitHub Pages or a local server.');
-      document.querySelector('main').insertBefore(box, document.getElementById('board'));
-    });
+    .then(renderDoors)
+    .catch(function(){ fail('doors.json', 'board'); });
 })();
 </script>
 </body>
