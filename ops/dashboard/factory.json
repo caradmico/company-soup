@@ -1,0 +1,111 @@
+{
+  "generated": "2026-09-06",
+  "rule": {
+    "id": "token-lean",
+    "title": "Token lean / no empty pulse",
+    "body": "No ack-only pings. No re-reporting the same KEEP. Speak once with artifact/URL/SHA or stay silent. Kevin looks once — empty back-and-forth fails."
+  },
+  "target": {
+    "id": "soup-seat-efficiency",
+    "name": "Factory seat-efficiency surface",
+    "owner": "Soup Ops",
+    "grade": "IN FLIGHT",
+    "note": "Extend ops/dashboard only. Softstyle + rbc-plot-beats stay closed KEEP."
+  },
+  "lastArtifact": {
+    "label": "Soup Ops dashboard",
+    "url": "https://caradmico.github.io/company-soup/ops/dashboard/",
+    "commit": "pending",
+    "updated": "2026-09-06"
+  },
+  "seats": [
+    {
+      "id": "kevin",
+      "name": "Manager Kevin",
+      "lane": "Taskmaster",
+      "state": "hot",
+      "focus": "Mill grades + KEEP/FAIL once"
+    },
+    {
+      "id": "soup-ops",
+      "name": "Soup Ops",
+      "lane": "Ops / reporting",
+      "state": "hot",
+      "focus": "Seat-efficiency on existing dash"
+    },
+    {
+      "id": "jarvis",
+      "name": "Jarvis",
+      "lane": "Chief of Staff",
+      "state": "parked",
+      "focus": "Executive — not mill grunt"
+    },
+    {
+      "id": "build",
+      "name": "Build Bot",
+      "lane": "Code",
+      "state": "parked",
+      "focus": "Parallel lanes only when Kevin assigns"
+    },
+    {
+      "id": "grant-desk",
+      "name": "Grant Desk",
+      "lane": "Grants",
+      "state": "parked",
+      "focus": "One-pager KEEP live, quote-only"
+    },
+    {
+      "id": "demeter",
+      "name": "Demeter Aesthetic",
+      "lane": "Demeter maps",
+      "state": "parked",
+      "focus": "Do not steal cycles for invent"
+    },
+    {
+      "id": "space-boi",
+      "name": "Space Boi",
+      "lane": "StarIS / Space Apps",
+      "state": "parked",
+      "focus": "StarIS BIN — do not steal"
+    },
+    {
+      "id": "tsarista",
+      "name": "Clothing Tsarista",
+      "also": "Softstyle",
+      "lane": "Sassmeharder",
+      "state": "parked",
+      "focus": "Softstyle closed KEEP — do not wake",
+      "keep": "closed KEEP"
+    },
+    {
+      "id": "finance",
+      "name": "Finance Bro",
+      "lane": "Money",
+      "state": "parked",
+      "focus": "Do not wake for this lane"
+    },
+    {
+      "id": "intern",
+      "name": "Intern",
+      "lane": "Grunt",
+      "state": "parked",
+      "focus": "Do not wake for this lane"
+    },
+    {
+      "id": "publishing",
+      "name": "Publishing / RBC",
+      "also": "rbc-plot-beats",
+      "lane": "Books",
+      "state": "parked",
+      "focus": "rbc-plot-beats closed KEEP — do not reopen",
+      "keep": "closed KEEP"
+    },
+    {
+      "id": "marketer",
+      "name": "Marketer",
+      "lane": "Reach",
+      "state": "parked",
+      "focus": "Organic first; no ad spend nag"
+    }
+  ]
+}
