@@ -1,0 +1,38 @@
+{
+  "schema": "calendar-gate/v1",
+  "timezone": "America/New_York",
+  "purpose": "When MFA, money, brand, or a real decision needs Cara — book one evening calendar event. Do not ping-storm chat.",
+  "window": {
+    "prefer": "weekday evenings America/New_York",
+    "avoid": ["work-block mornings", "chat spam any hour"]
+  },
+  "triggers": [
+    {
+      "id": "mfa",
+      "when": "Login or tool needs Cara MFA / 2FA she alone can complete"
+    },
+    {
+      "id": "money",
+      "when": "Spend, refund, invoice pay, or ad budget above standing HOLD needs her yes"
+    },
+    {
+      "id": "brand",
+      "when": "Public brand / copy / visual that locks a door needs her call"
+    },
+    {
+      "id": "decision",
+      "when": "Irreducible go/no-go only she owns — not mill KEEP theater"
+    }
+  ],
+  "event_template": {
+    "title": "Cara gate · {trigger_id} · {one_line_ask}",
+    "duration_minutes": 15,
+    "body": "What needs her: {ask}\nArtifact/URL: {url}\nPrepared by: {seat}\nShe shows once. No chat ping storm."
+  },
+  "do_not": [
+    "Put OAuth tokens or secrets in git",
+    "Replace calendar with chat nag loops",
+    "Wake her for ack-only or re-KEEP noise"
+  ],
+  "updated": "2026-09-06"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "autonomy-os",
+  "name": "Autonomy OS",
+  "generated": "2026-09-06",
+  "timezone": "America/New_York",
+  "pack": "../autonomy/",
+  "calendar_gate": "../autonomy/calendar-gate.json",
+  "surfaces": [
+    "evening calendar gate (MFA / money / brand / decision)",
+    "START_ANY_AI + maker→looker protocol",
+    "ops dashboard section (objects-bought remains ledger hero)"
+  ],
+  "grade": "grade.pending"
+}
