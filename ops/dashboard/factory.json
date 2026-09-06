@@ -9,13 +9,13 @@
     "id": "soup-seat-efficiency",
     "name": "Factory seat-efficiency surface",
     "owner": "Soup Ops",
-    "grade": "IN FLIGHT",
-    "note": "Extend ops/dashboard only. Softstyle + rbc-plot-beats stay closed KEEP."
+    "grade": "KEEP",
+    "note": "KEEP tip ccdfeb8. Factory closed → intake. Parked until next assign."
   },
   "lastArtifact": {
     "label": "Soup Ops dashboard",
     "url": "https://caradmico.github.io/company-soup/ops/dashboard/",
-    "commit": "63f1e0b",
+    "commit": "ccdfeb8",
     "updated": "2026-09-06"
   },
   "seats": [
@@ -30,8 +30,8 @@
       "id": "soup-ops",
       "name": "Soup Ops",
       "lane": "Ops / reporting",
-      "state": "hot",
-      "focus": "Seat-efficiency on existing dash"
+      "state": "parked",
+      "focus": "Intake. Parked after KEEP ccdfeb8."
     },
     {
       "id": "jarvis",
