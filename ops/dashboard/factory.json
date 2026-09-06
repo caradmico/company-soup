@@ -6,16 +6,16 @@
     "body": "No ack-only pings. No re-reporting the same KEEP. Speak once with artifact/URL/SHA or stay silent. Kevin looks once \u2014 empty back-and-forth fails."
   },
   "target": {
-    "id": "efficiency-desk",
-    "name": "Objects-bought ledger (efficiency desk)",
+    "id": "autonomy-os",
+    "name": "Autonomy OS (calendar gate + pack + dash)",
     "owner": "Build Bot",
     "grade": "grade.pending",
-    "note": "Live tip f33ba6a. Kevin looks once \u2014 objects bought, not parked-seat theater."
+    "note": "Evening Cara calendar gate + START_ANY_AI / maker\u2192looker pack on existing ops dashboard. Objects-bought stays hero."
   },
   "lastArtifact": {
-    "label": "Objects-bought ledger",
+    "label": "Autonomy OS pack + dashboard",
     "url": "https://caradmico.github.io/company-soup/ops/dashboard/",
-    "commit": "f33ba6a",
+    "commit": "PENDING",
     "updated": "2026-09-06"
   },
   "seats": [
@@ -24,14 +24,14 @@
       "name": "Manager Kevin",
       "lane": "Taskmaster",
       "state": "hot",
-      "focus": "One look: objects-bought ledger KEEP/FAIL"
+      "focus": "One look: Autonomy OS KEEP/FAIL (calendar gate + pack + dash)"
     },
     {
       "id": "soup-ops",
       "name": "Soup Ops",
       "lane": "Ops / reporting",
       "state": "parked",
-      "focus": "Intake \u2014 efficiency land by Build"
+      "focus": "Intake \u2014 Autonomy OS land by Build"
     },
     {
       "id": "jarvis",
@@ -45,7 +45,7 @@
       "name": "Build Bot",
       "lane": "Code",
       "state": "hot",
-      "focus": "efficiency-desk tip f33ba6a \u2014 grade.pending for Kevin"
+      "focus": "autonomy-os grade.pending for Kevin"
     },
     {
       "id": "grant-desk",
