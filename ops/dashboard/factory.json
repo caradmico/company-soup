@@ -15,7 +15,7 @@
   "lastArtifact": {
     "label": "Autonomy OS pack + dashboard",
     "url": "https://caradmico.github.io/company-soup/ops/dashboard/",
-    "commit": "PENDING",
+    "commit": "ec11cce",
     "updated": "2026-09-06"
   },
   "seats": [
