@@ -6,16 +6,16 @@
     "body": "No ack-only pings. No re-reporting the same KEEP. Speak once with artifact/URL/SHA or stay silent. Kevin looks once \u2014 empty back-and-forth fails."
   },
   "target": {
-    "id": "go-wp-migrate",
-    "name": "go-wp-migrate Phase 1 stand-in",
+    "id": "intake",
+    "name": "Intake (go-wp-migrate Phase 1 KEEP)",
     "owner": "Build Bot",
-    "grade": "open",
-    "note": "Link shelf KEEP 1384077. Primary: graphicoregon Pages stand-in via bc-43515a48 / PR #38. Creek omit/WIP; Sass managed required."
+    "grade": "KEEP",
+    "note": "Kevin KEEP tip f43cf6e Phase 1 stand-in. Factory closed \u2192 intake. Park migrate until next open."
   },
   "lastArtifact": {
-    "label": "Link shelf refresh KEEP",
-    "url": "https://caradmico.github.io/company-soup/ops/links/",
-    "commit": "1384077",
+    "label": "GO Pages stand-in Phase 1",
+    "url": "https://caradmico.github.io/graphicoregon/",
+    "commit": "f43cf6e",
     "updated": "2026-09-06",
     "grade": "KEEP"
   },
@@ -25,7 +25,7 @@
       "name": "Manager Kevin",
       "lane": "Taskmaster",
       "state": "hot",
-      "focus": "Await Phase 1 stand-in claim (link-shelf KEEP stands)"
+      "focus": "Intake \u2014 no open mill grade"
     },
     {
       "id": "soup-ops",
@@ -45,8 +45,8 @@
       "id": "build",
       "name": "Build Bot",
       "lane": "Code",
-      "state": "hot",
-      "focus": "go-wp-migrate Phase 1 \u2014 claim when stand-in live"
+      "state": "parked",
+      "focus": "Phase 1 KEEP f43cf6e \u2014 park migrate"
     },
     {
       "id": "grant-desk",
