@@ -1,0 +1,36 @@
+{
+  "id": "link-shelf",
+  "generated": "2026-09-06",
+  "curator": "Link Desk",
+  "lander": "Build Bot",
+  "sections": [
+    {
+      "id": "products-money",
+      "title": "PRODUCTS / MONEY",
+      "links": [
+        {"name": "Winged North Softstyle", "url": "https://sassmeharder.com/product/31685244"},
+        {"name": "Autonomy OS pack", "url": "https://caradmico.github.io/company-soup/ops/autonomy/"},
+        {"name": "Ops dashboard", "url": "https://caradmico.github.io/company-soup/ops/dashboard/"},
+        {"name": "Fine Art door", "url": "https://caradmico.github.io/company-soup/businesses/fine-art/"},
+        {"name": "Demeter / watershed", "url": "https://caradmico.github.io/company-soup/businesses/watershed/"}
+      ]
+    },
+    {
+      "id": "sites",
+      "title": "SITES",
+      "links": [
+        {"name": "Graphic Oregon Pages", "url": "https://caradmico.github.io/graphicoregon/"},
+        {"name": "Company Soup root", "url": "https://caradmico.github.io/company-soup/"}
+      ]
+    },
+    {
+      "id": "drive-book",
+      "title": "DRIVE / BOOK",
+      "note": "List only — do not write Book 2",
+      "links": [
+        {"name": "Book 2 API draft folder", "url": "https://drive.google.com/drive/folders/11jCfDKzrJeUZsDyzsS551NYkZGYJdnOm"},
+        {"name": "Book folder parent", "url": "https://drive.google.com/drive/folders/1KaD1SnpXz7abNj7pQ0bVuG_Wvhyp2lWI"}
+      ]
+    }
+  ]
+}
