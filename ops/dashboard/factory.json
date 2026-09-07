@@ -6,18 +6,19 @@
     "body": "No ack-only pings. No re-reporting the same KEEP. Speak once with artifact/URL/SHA or stay silent. Kevin looks once \u2014 empty back-and-forth fails."
   },
   "target": {
-    "id": "grant-desk-free-value",
-    "name": "Grant Desk stranger copy + free sources",
+    "id": "intake",
+    "name": "Intake (grant-desk-free-value KEEP)",
     "owner": "Build Bot",
-    "grade": "grade.pending",
-    "note": "Public door stripped of Do-not invent voice; free grants-by-type $0 sources; scanner sketch only."
+    "grade": "KEEP",
+    "note": "Kevin KEEP tip ac8d4c2. Factory closed \u2192 intake. Build parked."
   },
   "lastArtifact": {
     "label": "Grant Desk free value",
     "url": "https://caradmico.github.io/company-soup/brands/grant-desk/",
+    "resources": "https://caradmico.github.io/company-soup/brands/grant-desk/resources/",
     "commit": "ac8d4c2",
     "updated": "2026-09-06",
-    "build": "35a9a98"
+    "grade": "KEEP"
   },
   "seats": [
     {
@@ -25,7 +26,7 @@
       "name": "Manager Kevin",
       "lane": "Taskmaster",
       "state": "hot",
-      "focus": "One look: grant-desk free value KEEP/FAIL"
+      "focus": "Intake \u2014 no open mill grade"
     },
     {
       "id": "soup-ops",
@@ -45,8 +46,8 @@
       "id": "build",
       "name": "Build Bot",
       "lane": "Code",
-      "state": "hot",
-      "focus": "grant-desk-free-value grade.pending"
+      "state": "parked",
+      "focus": "grant-desk KEEP ac8d4c2 \u2014 intake"
     },
     {
       "id": "grant-desk",
