@@ -6,18 +6,17 @@
     "body": "No ack-only pings. No re-reporting the same KEEP. Speak once with artifact/URL/SHA or stay silent. Kevin looks once \u2014 empty back-and-forth fails."
   },
   "target": {
-    "id": "intake",
-    "name": "Intake (link-shelf-complete KEEP)",
+    "id": "grant-desk-free-value",
+    "name": "Grant Desk stranger copy + free sources",
     "owner": "Build Bot",
-    "grade": "KEEP",
-    "note": "Kevin KEEP tip b0e5aea. Factory closed \u2192 intake. Park until Link Desk shelf changes."
+    "grade": "grade.pending",
+    "note": "Public door stripped of Do-not invent voice; free grants-by-type $0 sources; scanner sketch only."
   },
   "lastArtifact": {
-    "label": "Link shelf complete",
-    "url": "https://caradmico.github.io/company-soup/ops/links/",
-    "commit": "b0e5aea",
-    "updated": "2026-09-06",
-    "grade": "KEEP"
+    "label": "Grant Desk free value",
+    "url": "https://caradmico.github.io/company-soup/brands/grant-desk/",
+    "commit": "PENDING",
+    "updated": "2026-09-06"
   },
   "seats": [
     {
@@ -25,7 +24,7 @@
       "name": "Manager Kevin",
       "lane": "Taskmaster",
       "state": "hot",
-      "focus": "Intake \u2014 no open mill grade"
+      "focus": "One look: grant-desk free value KEEP/FAIL"
     },
     {
       "id": "soup-ops",
@@ -45,8 +44,8 @@
       "id": "build",
       "name": "Build Bot",
       "lane": "Code",
-      "state": "parked",
-      "focus": "link-shelf-complete KEEP b0e5aea \u2014 wait Link Desk changes"
+      "state": "hot",
+      "focus": "grant-desk-free-value grade.pending"
     },
     {
       "id": "grant-desk",
