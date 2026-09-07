@@ -1,22 +1,22 @@
 {
-  "generated": "2026-09-06",
+  "generated": "2026-09-07",
   "rule": {
     "id": "token-lean",
     "title": "Token lean / no empty pulse",
     "body": "No ack-only pings. No re-reporting the same KEEP. Speak once with artifact/URL/SHA or stay silent. Kevin looks once \u2014 empty back-and-forth fails."
   },
   "target": {
-    "id": "demeter-gis-forward",
-    "name": "Demeter GIS-forward watershed door",
+    "id": "intake",
+    "name": "Factory closed \u2192 intake",
     "owner": "Build Bot",
-    "grade": "open",
-    "note": "Land GIS-forward HTML on businesses/watershed/. NCCWP hero. GO redesign KEEP f4c3a7d parked. No GO face. No DNS."
+    "grade": "parked",
+    "note": "GO redesign v2 KEEP 1e87376. Demeter GIS-forward waiting Kevin light. No DNS."
   },
   "lastArtifact": {
-    "label": "GO redesign KEEP",
+    "label": "GO redesign v2 KEEP",
     "url": "https://caradmico.github.io/graphicoregon/",
-    "commit": "f4c3a7d",
-    "updated": "2026-09-06",
+    "commit": "1e87376",
+    "updated": "2026-09-07",
     "grade": "KEEP"
   },
   "seats": [
@@ -24,8 +24,8 @@
       "id": "kevin",
       "name": "Manager Kevin",
       "lane": "Taskmaster",
-      "state": "hot",
-      "focus": "Await Demeter GIS land claim"
+      "state": "parked",
+      "focus": "Intake \u2014 light Demeter when ready"
     },
     {
       "id": "soup-ops",
@@ -45,22 +45,22 @@
       "id": "build",
       "name": "Build Bot",
       "lane": "Code",
-      "state": "hot",
-      "focus": "Demeter GIS-forward sole lander"
+      "state": "parked",
+      "focus": "GO v2 KEEP \u2014 wait Demeter light"
     },
     {
       "id": "grant-desk",
       "name": "Grant Desk",
       "lane": "Grants",
       "state": "parked",
-      "focus": "One-pager KEEP live, quote-only"
+      "focus": "KEEP live, quote-only"
     },
     {
       "id": "demeter",
       "name": "Demeter Aesthetic",
       "lane": "Demeter maps",
-      "state": "hot",
-      "focus": "Taste owner \u2014 GIS-forward brief lit"
+      "state": "parked",
+      "focus": "GIS-forward brief ready \u2014 await Kevin light"
     },
     {
       "id": "space-boi",
