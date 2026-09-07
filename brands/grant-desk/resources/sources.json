@@ -1,0 +1,130 @@
+{
+  "id": "grant-desk-free-sources",
+  "generated": "2026-09-06",
+  "curator": "Grant Desk",
+  "lander": "Build Bot",
+  "price": "$0",
+  "note": "Verified handoff URLs only. Not invented RFPs/wins. FDO is not free.",
+  "by_type": [
+    {
+      "type": "A \u2014 Federal competitive",
+      "why": "One door for federal opportunities across agencies.",
+      "sources": [
+        {
+          "name": "Grants.gov Search",
+          "url": "https://www.grants.gov/search-grants"
+        },
+        {
+          "name": "Grant-making agencies index",
+          "url": "https://www.grants.gov/learn-grants/grant-making-agencies.html"
+        },
+        {
+          "name": "Applicant resources",
+          "url": "https://www.grants.gov/applicants/applicant-resources"
+        }
+      ]
+    },
+    {
+      "type": "B \u2014 Arts & culture (national + Oregon)",
+      "why": "Arts and cultural funders with Oregon doors.",
+      "sources": [
+        {
+          "name": "NEA Grants",
+          "url": "https://www.arts.gov/grants"
+        },
+        {
+          "name": "Oregon Arts Commission grants",
+          "url": "https://www.oregonartscommission.org/grants/"
+        },
+        {
+          "name": "Oregon Cultural Trust grants",
+          "url": "https://culturaltrust.org/grants/"
+        },
+        {
+          "name": "Oregon Heritage grants (OPRD)",
+          "url": "https://www.oregon.gov/oprd/OH/Pages/grants.aspx"
+        }
+      ]
+    },
+    {
+      "type": "C \u2014 Community / private foundations (Oregon doorways)",
+      "why": "Oregon foundation doorways \u2014 start here before paid directories.",
+      "sources": [
+        {
+          "name": "Oregon Community Foundation \u2014 Grants & Scholarships",
+          "url": "https://www.oregoncf.org/grants-scholarships/"
+        },
+        {
+          "name": "OCF grants hub",
+          "url": "https://www.oregoncf.org/grants-scholarships/grants/"
+        },
+        {
+          "name": "Meyer Memorial Trust",
+          "url": "https://www.mmt.org/"
+        }
+      ]
+    },
+    {
+      "type": "D \u2014 Watershed / habitat / coastal field",
+      "why": "Field money for watershed, habitat, and coastal work.",
+      "sources": [
+        {
+          "name": "OWEB grants",
+          "url": "https://www.oregon.gov/oweb/grants"
+        },
+        {
+          "name": "OWEB grant programs",
+          "url": "https://www.oregon.gov/oweb/grants/Pages/grant-programs.aspx"
+        },
+        {
+          "name": "NFWF programs",
+          "url": "https://www.nfwf.org/programs"
+        },
+        {
+          "name": "NFWF apply",
+          "url": "https://www.nfwf.org/apply-grant"
+        },
+        {
+          "name": "EPA Grants",
+          "url": "https://www.epa.gov/grants"
+        },
+        {
+          "name": "EPA Wetland Program Development Grants",
+          "url": "https://www.epa.gov/wetlands/wetland-program-development-grants"
+        },
+        {
+          "name": "NOAA Office for Coastal Management",
+          "url": "https://coast.noaa.gov/"
+        }
+      ]
+    },
+    {
+      "type": "E \u2014 Libraries / museums (national)",
+      "why": "Museum and library federal doors.",
+      "sources": [
+        {
+          "name": "IMLS",
+          "url": "https://www.imls.gov/"
+        },
+        {
+          "name": "NEH Grants",
+          "url": "https://www.neh.gov/grants"
+        }
+      ]
+    },
+    {
+      "type": "F \u2014 Funder research (free entry)",
+      "why": "Free public entry only; FDO not free.",
+      "sources": [
+        {
+          "name": "Candid \u2014 find funding",
+          "url": "https://candid.org/find-funding"
+        },
+        {
+          "name": "Candid home",
+          "url": "https://candid.org/"
+        }
+      ]
+    }
+  ]
+}
