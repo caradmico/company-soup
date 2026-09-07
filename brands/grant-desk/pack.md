@@ -20,11 +20,12 @@ Hard gate: she does not submit applications without Cara's explicit gate. CTA is
 
 ## Path
 - Brand door: https://caradmico.github.io/company-soup/brands/grant-desk/
+- Free resources: https://caradmico.github.io/company-soup/brands/grant-desk/resources/
 - CTA: mailto hello@graphicoregon.com — subject “Grant Desk — scope quote”
 - Parent: Graphic Oregon
 
 ## Done-when
-Stranger can open the door, see who it's for / what she delivers / proof, and request a quote without login.
+Stranger can open the door, see why / who it's for / what she delivers / proof, open free grant resources, and request a quote without login.
 
 ## Do-not
 Invent RFPs, funders, client wins, or dollar amounts beyond ~$1M funded · claim auto-submit · rewrite Demeter / StarIS / watershed / Soup Ops · Three.js / Printify / Intern commodity PDF
