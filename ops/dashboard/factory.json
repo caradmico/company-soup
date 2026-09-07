@@ -10,12 +10,12 @@
     "name": "Factory closed \u2192 intake",
     "owner": "Build Bot",
     "grade": "parked",
-    "note": "GO redesign v2 KEEP 1e87376. Demeter GIS-forward waiting Kevin light. No DNS."
+    "note": "GO 7-tile KEEP fa58e51 on dark v2 face. Demeter GIS still parked. No DNS."
   },
   "lastArtifact": {
-    "label": "GO redesign v2 KEEP",
+    "label": "GO 7-tile Selected work KEEP",
     "url": "https://caradmico.github.io/graphicoregon/",
-    "commit": "1e87376",
+    "commit": "fa58e51",
     "updated": "2026-09-07",
     "grade": "KEEP"
   },
@@ -25,7 +25,7 @@
       "name": "Manager Kevin",
       "lane": "Taskmaster",
       "state": "parked",
-      "focus": "Intake \u2014 light Demeter when ready"
+      "focus": "Intake open"
     },
     {
       "id": "soup-ops",
@@ -46,7 +46,7 @@
       "name": "Build Bot",
       "lane": "Code",
       "state": "parked",
-      "focus": "GO v2 KEEP \u2014 wait Demeter light"
+      "focus": "GO KEEP fa58e51 \u2014 Demeter parked"
     },
     {
       "id": "grant-desk",
@@ -60,7 +60,7 @@
       "name": "Demeter Aesthetic",
       "lane": "Demeter maps",
       "state": "parked",
-      "focus": "GIS-forward brief ready \u2014 await Kevin light"
+      "focus": "GIS-forward brief ready \u2014 await true Kevin light"
     },
     {
       "id": "space-boi",
