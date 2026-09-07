@@ -6,18 +6,18 @@
     "body": "No ack-only pings. No re-reporting the same KEEP. Speak once with artifact/URL/SHA or stay silent. Kevin looks once \u2014 empty back-and-forth fails."
   },
   "target": {
-    "id": "link-shelf-pages",
-    "name": "Link shelf Pages (ops/links/)",
+    "id": "intake",
+    "name": "Intake (link-shelf KEEP)",
     "owner": "Build Bot",
-    "grade": "grade.pending",
-    "note": "Live Pages index mirroring Link Desk shelf. Kevin looks once."
+    "grade": "KEEP",
+    "note": "Kevin KEEP tip aa58425. Factory closed \u2192 intake. Park until Link Desk shelf changes."
   },
   "lastArtifact": {
     "label": "Link shelf",
     "url": "https://caradmico.github.io/company-soup/ops/links/",
     "commit": "aa58425",
     "updated": "2026-09-06",
-    "build": "17b12b7"
+    "grade": "KEEP"
   },
   "seats": [
     {
@@ -25,14 +25,14 @@
       "name": "Manager Kevin",
       "lane": "Taskmaster",
       "state": "hot",
-      "focus": "One look: link shelf KEEP/FAIL"
+      "focus": "Intake \u2014 no open mill grade"
     },
     {
       "id": "soup-ops",
       "name": "Soup Ops",
       "lane": "Ops / reporting",
       "state": "parked",
-      "focus": "Intake \u2014 link shelf land by Build"
+      "focus": "Intake open"
     },
     {
       "id": "jarvis",
@@ -45,8 +45,8 @@
       "id": "build",
       "name": "Build Bot",
       "lane": "Code",
-      "state": "hot",
-      "focus": "link-shelf-pages grade.pending"
+      "state": "parked",
+      "focus": "link-shelf KEEP aa58425 \u2014 wait Link Desk changes"
     },
     {
       "id": "grant-desk",
