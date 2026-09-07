@@ -15,8 +15,9 @@
   "lastArtifact": {
     "label": "Link shelf",
     "url": "https://caradmico.github.io/company-soup/ops/links/",
-    "commit": "PENDING",
-    "updated": "2026-09-06"
+    "commit": "1384077",
+    "updated": "2026-09-06",
+    "build": "487b0ee"
   },
   "seats": [
     {
