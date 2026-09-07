@@ -6,18 +6,18 @@
     "body": "No ack-only pings. No re-reporting the same KEEP. Speak once with artifact/URL/SHA or stay silent. Kevin looks once \u2014 empty back-and-forth fails."
   },
   "target": {
-    "id": "link-shelf-refresh",
-    "name": "Link shelf refresh (42 rows)",
+    "id": "go-wp-migrate",
+    "name": "go-wp-migrate Phase 1 stand-in",
     "owner": "Build Bot",
-    "grade": "grade.pending",
-    "note": "Link Desk locked shelf re-land. Judgment Pack, creek, Grant resources, Sass products, brand doors. Kevin looks once."
+    "grade": "open",
+    "note": "Link shelf KEEP 1384077. Primary: graphicoregon Pages stand-in via bc-43515a48 / PR #38. Creek omit/WIP; Sass managed required."
   },
   "lastArtifact": {
-    "label": "Link shelf",
+    "label": "Link shelf refresh KEEP",
     "url": "https://caradmico.github.io/company-soup/ops/links/",
     "commit": "1384077",
     "updated": "2026-09-06",
-    "build": "487b0ee"
+    "grade": "KEEP"
   },
   "seats": [
     {
@@ -25,7 +25,7 @@
       "name": "Manager Kevin",
       "lane": "Taskmaster",
       "state": "hot",
-      "focus": "One look: link shelf refresh KEEP/FAIL"
+      "focus": "Await Phase 1 stand-in claim (link-shelf KEEP stands)"
     },
     {
       "id": "soup-ops",
@@ -46,7 +46,7 @@
       "name": "Build Bot",
       "lane": "Code",
       "state": "hot",
-      "focus": "link-shelf-refresh + go-wp-migrate Phase 1"
+      "focus": "go-wp-migrate Phase 1 \u2014 claim when stand-in live"
     },
     {
       "id": "grant-desk",
