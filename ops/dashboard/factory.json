@@ -6,18 +6,18 @@
     "body": "No ack-only pings. No re-reporting the same KEEP. Speak once with artifact/URL/SHA or stay silent. Kevin looks once \u2014 empty back-and-forth fails."
   },
   "target": {
-    "id": "go-wp-migrate",
-    "name": "go-wp-migrate redesign (Phase1 VOID)",
+    "id": "demeter-gis-forward",
+    "name": "Demeter GIS-forward watershed door",
     "owner": "Build Bot",
-    "grade": "parked",
-    "note": "Cara FAIL Phase1 tip f43cf6e VOID. HOLD soft STEP2. Wait GO redesign brief + Kevin light. No DNS."
+    "grade": "open",
+    "note": "Land GIS-forward HTML on businesses/watershed/. NCCWP hero. GO redesign KEEP f4c3a7d parked. No GO face. No DNS."
   },
   "lastArtifact": {
-    "label": "GO Pages stand-in Phase 1 VOID",
+    "label": "GO redesign KEEP",
     "url": "https://caradmico.github.io/graphicoregon/",
-    "commit": "f43cf6e",
+    "commit": "f4c3a7d",
     "updated": "2026-09-06",
-    "grade": "VOID"
+    "grade": "KEEP"
   },
   "seats": [
     {
@@ -25,7 +25,7 @@
       "name": "Manager Kevin",
       "lane": "Taskmaster",
       "state": "hot",
-      "focus": "Await GO redesign brief then light Build"
+      "focus": "Await Demeter GIS land claim"
     },
     {
       "id": "soup-ops",
@@ -45,8 +45,8 @@
       "id": "build",
       "name": "Build Bot",
       "lane": "Code",
-      "state": "parked",
-      "focus": "Phase1 VOID \u2014 wait GO redesign brief"
+      "state": "hot",
+      "focus": "Demeter GIS-forward sole lander"
     },
     {
       "id": "grant-desk",
@@ -59,8 +59,8 @@
       "id": "demeter",
       "name": "Demeter Aesthetic",
       "lane": "Demeter maps",
-      "state": "parked",
-      "focus": "Do not steal cycles for invent"
+      "state": "hot",
+      "focus": "Taste owner \u2014 GIS-forward brief lit"
     },
     {
       "id": "space-boi",
