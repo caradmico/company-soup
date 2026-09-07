@@ -6,18 +6,18 @@
     "body": "No ack-only pings. No re-reporting the same KEEP. Speak once with artifact/URL/SHA or stay silent. Kevin looks once \u2014 empty back-and-forth fails."
   },
   "target": {
-    "id": "intake",
-    "name": "Intake (go-wp-migrate Phase 1 KEEP)",
+    "id": "go-wp-migrate",
+    "name": "go-wp-migrate redesign (Phase1 VOID)",
     "owner": "Build Bot",
-    "grade": "KEEP",
-    "note": "Kevin KEEP tip f43cf6e Phase 1 stand-in. Factory closed \u2192 intake. Park migrate until next open."
+    "grade": "parked",
+    "note": "Cara FAIL Phase1 tip f43cf6e VOID. HOLD soft STEP2. Wait GO redesign brief + Kevin light. No DNS."
   },
   "lastArtifact": {
-    "label": "GO Pages stand-in Phase 1",
+    "label": "GO Pages stand-in Phase 1 VOID",
     "url": "https://caradmico.github.io/graphicoregon/",
     "commit": "f43cf6e",
     "updated": "2026-09-06",
-    "grade": "KEEP"
+    "grade": "VOID"
   },
   "seats": [
     {
@@ -25,7 +25,7 @@
       "name": "Manager Kevin",
       "lane": "Taskmaster",
       "state": "hot",
-      "focus": "Intake \u2014 no open mill grade"
+      "focus": "Await GO redesign brief then light Build"
     },
     {
       "id": "soup-ops",
@@ -46,7 +46,7 @@
       "name": "Build Bot",
       "lane": "Code",
       "state": "parked",
-      "focus": "Phase 1 KEEP f43cf6e \u2014 park migrate"
+      "focus": "Phase1 VOID \u2014 wait GO redesign brief"
     },
     {
       "id": "grant-desk",
