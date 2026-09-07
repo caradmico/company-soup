@@ -4,30 +4,38 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Link shelf · Company Soup</title>
-<meta name="description" content="Live link shelf — products, sites, and Drive book folders. Curated by Link Desk. No invent products.">
+<meta name="description" content="Complete link shelf — every seat/project with URL or no live URL yet, plus compute_pct estimates summing to 100.">
 <link rel="canonical" href="https://caradmico.github.io/company-soup/ops/links/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f3f2ed;--ink:#12141a;--mute:#5a5e68;--card:#fff;--line:#e2e0d8;--accent:#2448c5}
+:root{--bg:#f3f2ed;--ink:#12141a;--mute:#5a5e68;--card:#fff;--line:#e2e0d8;--accent:#2448c5;--miss:#8a3a3a}
 *{box-sizing:border-box}html,body{margin:0}
-body{min-height:100vh;color:var(--ink);background:radial-gradient(ellipse 80% 40% at 100% -10%,rgba(36,72,197,.07),transparent 50%),var(--bg);font:16.5px/1.5 Manrope,system-ui,sans-serif}
-a{color:var(--accent)}.wrap{width:min(44rem,calc(100% - 2rem));margin-inline:auto}
-header{padding:2.2rem 0 1.4rem;border-bottom:1px solid var(--line)}
+body{min-height:100vh;color:var(--ink);background:radial-gradient(ellipse 80% 40% at 100% -10%,rgba(36,72,197,.07),transparent 50%),var(--bg);font:16px/1.45 Manrope,system-ui,sans-serif}
+a{color:var(--accent)}.wrap{width:min(56rem,calc(100% - 2rem));margin-inline:auto}
+header{padding:2rem 0 1.25rem;border-bottom:1px solid var(--line)}
 .kicker{margin:0;font:500 .72rem/1 IBM Plex Mono,ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
-h1{margin:.35rem 0 .45rem;font-size:clamp(1.85rem,4vw,2.5rem);font-weight:800;letter-spacing:-.035em;line-height:1.05}
-.why{margin:0;font-size:1.05rem;font-weight:600;max-width:36rem;color:var(--mute)}
-main{padding:1.5rem 0 3rem}
-.section{margin:0 0 1.5rem}
-.section h2{margin:0 0 .65rem;font:500 .72rem/1 IBM Plex Mono,ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
-.note{margin:-.35rem 0 .65rem;font-size:.85rem;color:var(--mute)}
-.board{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
-a.row{display:block;padding:1rem 1.15rem;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)}
-a.row:last-child{border-bottom:0}
-a.row:hover{background:#f7f8fc}
-a.row strong{display:block;font-weight:700;letter-spacing:-.015em}
-a.row span{display:block;margin-top:.25rem;font:400 .75rem/1.35 IBM Plex Mono,ui-monospace,monospace;color:var(--mute);word-break:break-all}
+h1{margin:.35rem 0 .4rem;font-size:clamp(1.75rem,4vw,2.4rem);font-weight:800;letter-spacing:-.035em;line-height:1.05}
+.why{margin:0;font-size:1.02rem;font-weight:600;max-width:40rem;color:var(--mute)}
+.meta{margin:.85rem 0 0;font:400 .78rem/1.35 IBM Plex Mono,ui-monospace,monospace;color:var(--mute)}
+main{padding:1.35rem 0 3rem}
+h2{margin:0 0 .65rem;font:500 .72rem/1 IBM Plex Mono,ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+.note{margin:0 0 .75rem;font-size:.9rem;color:var(--mute)}
+.board{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:0 0 1.5rem}
+table{width:100%;border-collapse:collapse}
+th{text-align:left;font:500 .68rem/1 IBM Plex Mono,ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);padding:.75rem 1rem;border-bottom:1px solid var(--line);background:#fafaf7}
+td{padding:.85rem 1rem;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+tbody tr:hover{background:#f7f8fc}
+.name{font-weight:700;letter-spacing:-.015em}
+.url a{font-weight:600;text-decoration:none;word-break:break-all;font-size:.88rem}
+.url a:hover{text-decoration:underline}
+.url.missing{color:var(--miss);font:500 .88rem/1.35 IBM Plex Mono,ui-monospace,monospace}
+.pct{white-space:nowrap;text-align:right}
+.pct .num{font:700 1rem/1 IBM Plex Mono,ui-monospace,monospace}
+.pct .est{font:400 .68rem/1 IBM Plex Mono,ui-monospace,monospace;color:var(--mute);text-transform:uppercase;letter-spacing:.06em}
+.book{padding:1rem 1.15rem}.book a{font-weight:700;word-break:break-all}
 footer{padding:0 0 2.5rem;font:400 .78rem/1.4 IBM Plex Mono,ui-monospace,monospace;color:var(--mute)}
 footer a{margin-right:1rem}
 </style>
@@ -37,41 +45,70 @@ footer a{margin-right:1rem}
   <div class="wrap">
     <p class="kicker">Company Soup · ops</p>
     <h1>Link shelf</h1>
-    <p class="why">Every live product and door in one place. Link Desk curates. Build lands. No invent products. No secrets.</p>
+    <p class="why">Every seat and project — live URL or “no live URL yet,” plus compute share estimates (sum 100).</p>
+    <p class="meta">33 rows · compute_pct = estimate · curator Link Desk · lander Build</p>
   </div>
 </header>
 <main class="wrap">
-  <section class="section" aria-labelledby="pm">
-    <h2 id="pm">Products / money</h2>
-    <div class="board">
-      <a class="row" href="https://sassmeharder.com/product/31685244" target="_blank" rel="noopener"><strong>Winged North Softstyle</strong><span>https://sassmeharder.com/product/31685244</span></a>
-      <a class="row" href="https://caradmico.github.io/company-soup/ops/autonomy/"><strong>Autonomy OS pack</strong><span>https://caradmico.github.io/company-soup/ops/autonomy/</span></a>
-      <a class="row" href="https://caradmico.github.io/company-soup/ops/dashboard/"><strong>Ops dashboard</strong><span>https://caradmico.github.io/company-soup/ops/dashboard/</span></a>
-      <a class="row" href="https://caradmico.github.io/company-soup/businesses/fine-art/"><strong>Fine Art door</strong><span>https://caradmico.github.io/company-soup/businesses/fine-art/</span></a>
-      <a class="row" href="https://caradmico.github.io/company-soup/businesses/watershed/"><strong>Demeter / watershed</strong><span>https://caradmico.github.io/company-soup/businesses/watershed/</span></a>
-    </div>
-  </section>
-  <section class="section" aria-labelledby="sites">
-    <h2 id="sites">Sites</h2>
-    <div class="board">
-      <a class="row" href="https://caradmico.github.io/graphicoregon/" target="_blank" rel="noopener"><strong>Graphic Oregon Pages</strong><span>https://caradmico.github.io/graphicoregon/</span></a>
-      <a class="row" href="https://caradmico.github.io/company-soup/"><strong>Company Soup root</strong><span>https://caradmico.github.io/company-soup/</span></a>
-    </div>
-  </section>
-  <section class="section" aria-labelledby="drive">
-    <h2 id="drive">Drive / book</h2>
-    <p class="note">List only — do not write Book 2.</p>
-    <div class="board">
-      <a class="row" href="https://drive.google.com/drive/folders/11jCfDKzrJeUZsDyzsS551NYkZGYJdnOm" target="_blank" rel="noopener"><strong>Book 2 API draft folder</strong><span>https://drive.google.com/drive/folders/11jCfDKzrJeUZsDyzsS551NYkZGYJdnOm</span></a>
-      <a class="row" href="https://drive.google.com/drive/folders/1KaD1SnpXz7abNj7pQ0bVuG_Wvhyp2lWI" target="_blank" rel="noopener"><strong>Book folder parent</strong><span>https://drive.google.com/drive/folders/1KaD1SnpXz7abNj7pQ0bVuG_Wvhyp2lWI</span></a>
-    </div>
-  </section>
+  <h2>Seats / projects</h2>
+  <div class="board">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">URL</th>
+          <th scope="col">compute_pct</th>
+        </tr>
+      </thead>
+      <tbody>
+<tr><td class="name">Author RBC Book2</td><td class="url"><a href="https://drive.google.com/drive/folders/11jCfDKzrJeUZsDyzsS551NYkZGYJdnOm" target="_blank" rel="noopener">https://drive.google.com/drive/folders/11jCfDKzrJeUZsDyzsS551NYkZGYJdnOm</a></td><td class="pct"><span class="num">12</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Publishing Bot</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">5</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Book Editor</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">2</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">NCCWP Desk</td><td class="url"><a href="https://caradmico.github.io/graphicoregon/nccwp/">https://caradmico.github.io/graphicoregon/nccwp/</a></td><td class="pct"><span class="num">10</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Orbit</td><td class="url"><a href="https://caradmico.github.io/graphicoregon/">https://caradmico.github.io/graphicoregon/</a></td><td class="pct"><span class="num">8</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">GO Bot</td><td class="url"><a href="https://caradmico.github.io/company-soup/brands/graphic-oregon/">https://caradmico.github.io/company-soup/brands/graphic-oregon/</a></td><td class="pct"><span class="num">4</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Build Bot</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">8</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Soup Ops</td><td class="url"><a href="https://caradmico.github.io/company-soup/ops/dashboard/">https://caradmico.github.io/company-soup/ops/dashboard/</a></td><td class="pct"><span class="num">5</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Autonomy OS</td><td class="url"><a href="https://caradmico.github.io/company-soup/ops/autonomy/">https://caradmico.github.io/company-soup/ops/autonomy/</a></td><td class="pct"><span class="num">3</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Company Soup root</td><td class="url"><a href="https://caradmico.github.io/company-soup/">https://caradmico.github.io/company-soup/</a></td><td class="pct"><span class="num">0</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Demeter Aesthetic</td><td class="url"><a href="https://caradmico.github.io/company-soup/businesses/watershed/">https://caradmico.github.io/company-soup/businesses/watershed/</a></td><td class="pct"><span class="num">4</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Fine Art Gallery</td><td class="url"><a href="https://caradmico.github.io/company-soup/businesses/fine-art/">https://caradmico.github.io/company-soup/businesses/fine-art/</a></td><td class="pct"><span class="num">3</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Clothing Tsarista Softstyle/Sass</td><td class="url"><a href="https://sassmeharder.com/product/31685244" target="_blank" rel="noopener">https://sassmeharder.com/product/31685244</a></td><td class="pct"><span class="num">4</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Press</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">2</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Pond Coder</td><td class="url"><a href="https://caradmico.github.io/fabric-pond/">https://caradmico.github.io/fabric-pond/</a></td><td class="pct"><span class="num">3</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">HouseMe</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Finance Bro</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">3</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Marketer</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">2</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">My X Bot</td><td class="url"><a href="https://x.com/fairinggoddess" target="_blank" rel="noopener">https://x.com/fairinggoddess</a></td><td class="pct"><span class="num">2</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Space Boi</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Pioneer Bot</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">2</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">FTL Physics</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">3</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Arcane</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Grant Desk</td><td class="url"><a href="https://caradmico.github.io/company-soup/brands/grant-desk/">https://caradmico.github.io/company-soup/brands/grant-desk/</a></td><td class="pct"><span class="num">2</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Health Bot</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Admin</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">OPSEC</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">EM Tutor</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Intern</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Jarvis</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">2</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Manager Kevin</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">2</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Link Desk</td><td class="url"><a href="https://caradmico.github.io/company-soup/ops/links/">https://caradmico.github.io/company-soup/ops/links/</a></td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">New Bot</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">0</span> <span class="est">estimate</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <h2>Drive / book</h2>
+  <p class="note">List only — do not write Book 2. Author RBC Book2 row above is the API draft folder.</p>
+  <div class="board book">
+    <strong>Book folder parent</strong><br>
+    <a href="https://drive.google.com/drive/folders/1KaD1SnpXz7abNj7pQ0bVuG_Wvhyp2lWI" target="_blank" rel="noopener">https://drive.google.com/drive/folders/1KaD1SnpXz7abNj7pQ0bVuG_Wvhyp2lWI</a>
+  </div>
 </main>
 <footer class="wrap">
   <a href="../dashboard/">Ops dashboard</a>
   <a href="../autonomy/">Autonomy OS</a>
   <a href="../../">Company Soup</a>
-  <p>Machine shelf: <a href="./links.json">links.json</a>. Curator: Link Desk.</p>
+  <p>Machine shelf: <a href="./links.json">links.json</a>. Autonomy OS KEEP stands.</p>
 </footer>
 </body>
 </html>
