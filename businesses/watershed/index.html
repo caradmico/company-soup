@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Demeter Design · Action plans for watershed decisions</title>
-<meta name="description" content="Complicated watershed data turned into clear action plans — passage, rearing, canopy, priorities. GIS-focused synthesis. Quote-only Oregon.">
+<title>Demeter Design · Watershed GIS and action plans</title>
+<meta name="description" content="Geospatial analysis and maps for Oregon watersheds — drinking-water overlays, passage, habitat prioritization — then the action plan. Quote-only. Graphic Oregon parent.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
@@ -13,6 +13,7 @@
   --fir:#163028; --tide:#3a5558; --lichen:#6d8664; --mist:#eef2ec; --foam:#f7f8f5;
   --kelp:#234238; --ink:#12201c; --mute:#4e5d56; --line:rgba(200,208,198,.55);
   --glass:rgba(247,248,245,.72);
+  --cyan:#2fffd0; --cyan-dim:rgba(90,255,220,.35);
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -33,20 +34,47 @@ a{color:var(--tide)}
 .nav .links{display:flex;gap:.85rem;align-items:center;flex-wrap:wrap}
 .nav .links a:not(.btn){color:var(--mute);text-decoration:none;font-size:.9rem}
 
-.hero{position:relative;min-height:92vh;min-height:92dvh;display:grid;align-items:end;color:#f3f7f1;overflow:hidden}
-.hero .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.06);animation:ken 24s ease-out forwards}
-.hero .mist{position:absolute;inset:0;background:linear-gradient(180deg,rgba(22,48,40,.15),rgba(10,18,16,.88) 75%);pointer-events:none}
-.hero .inner{position:relative;z-index:1;width:min(44rem,calc(100% - 2rem));margin:0 auto;padding:5rem 0 3.2rem}
-.hero h1{margin:.35rem 0 .55rem;font-size:clamp(2rem,5vw,3.2rem);line-height:1.05}
-.hero .why{margin:0 0 1.1rem;max-width:36rem;font-size:clamp(1.05rem,2.1vw,1.18rem);opacity:.96}
+/* —— GIS-forward hero: NCCWP first —— */
+.hero{background:#030a09;color:#eef4ec;padding:0 0 1.2rem}
+.hero-shell{position:relative;margin:.45rem .45rem 0;min-height:64dvh;display:grid;grid-template-rows:auto 1fr auto;border-radius:18px;overflow:hidden;background:#061412;box-shadow:0 0 0 1px rgba(90,255,220,.55),0 0 40px rgba(45,220,180,.28),0 22px 60px rgba(0,0,0,.55)}
+.gis-bar{display:flex;align-items:center;justify-content:space-between;gap:.6rem;padding:.45rem .7rem;background:linear-gradient(180deg,#0c221c,#071814);border-bottom:1px solid var(--cyan-dim);z-index:6}
+.gis-bar .brand{font:800 .68rem/1 system-ui;letter-spacing:.08em;text-transform:uppercase;color:var(--cyan)}
+.gis-bar .tools{display:flex;flex-wrap:wrap;gap:.35rem;align-items:center}
+.gis-bar .chip{font:750 .65rem/1 system-ui;letter-spacing:.04em;text-transform:uppercase;padding:.32rem .55rem;border-radius:999px;border:1px solid var(--cyan-dim);background:rgba(8,24,20,.9);color:#b8ffe8;text-decoration:none}
+.gis-bar .chip.live{background:var(--cyan);color:#04241c;border-color:transparent}
+.gis-bar a.chip:hover{background:var(--cyan);color:#04241c;border-color:transparent}
+.hero-stage{position:relative;min-height:56dvh;overflow:hidden;background:#020807}
+.hero-still{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:left center}
+.hero-stage iframe{position:absolute;inset:0;width:100%;height:100%;border:0;opacity:0;background:#020807}
+.hero.iframe-ready iframe{opacity:1}
+.hero.iframe-slow .open-live{background:var(--cyan);color:#04241c;border-color:transparent}
+.hero-foot{display:flex;justify-content:space-between;gap:.6rem;flex-wrap:wrap;padding:.35rem .7rem;background:rgba(4,14,12,.95);border-top:1px solid rgba(90,255,220,.28);font:650 .62rem/1.2 system-ui;letter-spacing:.04em;text-transform:uppercase;color:#7ed9c0}
+.hero-foot a{color:#9ef7df}
+.hero .dock{width:min(42rem,calc(100% - 1.6rem));margin:1rem auto 0}
+.hero .panel{background:rgba(4,16,14,.86);backdrop-filter:blur(14px);border:1px solid rgba(90,255,220,.32);border-radius:18px;padding:1.15rem 1.2rem;box-shadow:0 14px 44px rgba(0,0,0,.4)}
+.hero h1{margin:.3rem 0 .5rem;font-size:clamp(1.7rem,5.4vw,2.7rem);line-height:1.06;color:#f3f7f1}
+.hero .why{margin:0 0 .95rem;max-width:36rem;font-size:clamp(1.02rem,2.1vw,1.16rem);opacity:.96}
 .actions{display:flex;flex-wrap:wrap;gap:.55rem}
-@keyframes ken{to{transform:scale(1)}}
+.hero .credit{margin:.75rem 0 0;font-size:.82rem;opacity:.82}
+.hero .credit a{color:#9ef7df}
+@media (min-width:900px){
+  .hero{display:grid;grid-template-columns:minmax(22rem,26.5rem) 1fr;gap:.85rem;align-items:stretch;min-height:calc(100dvh - 3.5rem);padding:.55rem .7rem 1.1rem}
+  .hero-shell{order:2;margin:0;min-height:calc(100dvh - 4.4rem)}
+  .hero-stage{min-height:0}
+  .hero .dock{order:1;width:auto;margin:0;align-self:center}
+  .hero .panel{background:transparent;backdrop-filter:none;border:0;box-shadow:none;padding:.4rem .35rem}
+}
 
-.beats{display:flex;gap:.7rem;overflow-x:auto;scroll-snap-type:x mandatory;padding:1.4rem 1.25rem 1.6rem;background:linear-gradient(180deg,var(--mist),var(--foam))}
-.beats::-webkit-scrollbar{height:6px}
-.chipbeat{scroll-snap-align:start;min-width:min(18rem,78vw);background:rgba(255,255,255,.65);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:18px;padding:1.15rem 1.2rem}
-.chipbeat h2{margin:.25rem 0 .4rem;font-size:1.2rem;color:var(--fir)}
-.chipbeat p{margin:0;color:var(--mute);font-size:.95rem}
+.capability{padding:2.4rem 1.25rem 2.2rem;background:linear-gradient(180deg,var(--mist),var(--foam))}
+.capability .inner{width:min(44rem,100%);margin:0 auto}
+.capability h2{margin:.3rem 0 .55rem;font-size:clamp(1.45rem,3vw,2rem);color:var(--fir)}
+.capability p{margin:0;color:var(--mute);max-width:40rem}
+
+.maps-lead{padding:2.2rem 1.25rem .4rem;background:#030a09;color:#d7ebe3}
+.maps-lead .inner{width:min(44rem,100%);margin:0 auto}
+.maps-lead .kicker{color:#7ed9c0}
+.maps-lead h2{margin:.3rem 0 .45rem;font-size:clamp(1.35rem,2.8vw,1.85rem)}
+.maps-lead p{margin:0;opacity:.88;max-width:38rem}
 
 .chapter{position:relative;min-height:100vh;min-height:100dvh;display:grid;align-items:end;color:#eef4ec;overflow:hidden;background:#030a09}
 .chapter .gis-shell{position:absolute;inset:.55rem;display:grid;grid-template-rows:auto 1fr auto;border-radius:18px;overflow:hidden;background:#061412;box-shadow:0 0 0 1px rgba(90,255,220,.55),0 0 40px rgba(45,220,180,.28),0 22px 60px rgba(0,0,0,.55);z-index:1}
@@ -100,6 +128,7 @@ a{color:var(--tide)}
   .chapter .stage img{filter:saturate(1.25) contrast(1.1);animation:none;transition:none;transform:scale(1)!important}
   .hot button,.hot button::after,.chapter .spot-pins i{animation:none}
   .chapter .spotlight{transition:none}
+  .hero-stage iframe{opacity:1}
 }
 
 .warehouse{padding:3rem 1.25rem;background:var(--mist)}
@@ -134,8 +163,8 @@ footer .wrap{width:min(72rem,100%);margin:0 auto;display:flex;flex-wrap:wrap;jus
 .sticky.show{transform:translateY(0)}
 body.sticky-on{padding-bottom:4.75rem}
 @media (prefers-reduced-motion:reduce){
-.hero .bg{animation:none;transition:none;transform:none!important}
 .sticky{transition:none}
+.hero-stage iframe{transition:none}
 }
 </style>
 </head>
@@ -145,8 +174,7 @@ body.sticky-on{padding-bottom:4.75rem}
   <div class="nav-inner">
     <a class="word" href="#top">Demeter Design</a>
     <nav class="links" aria-label="Page">
-      <a href="#path">Path</a>
-      <a href="#plans">Plans</a>
+      <a href="#maps">Maps / GIS work</a>
       <a href="#warehouse">Data</a>
       <a class="btn btn-fir" href="#quote">Request a quote</a>
     </nav>
@@ -154,38 +182,54 @@ body.sticky-on{padding-bottom:4.75rem}
 </header>
 
 <section class="hero" id="top">
-  <img class="bg" src="img/estuary.jpg" width="1280" height="851" alt="Oregon estuary from above — aerial basin view for GIS screening">
-  <div class="mist" aria-hidden="true"></div>
-  <div class="inner">
-    <p class="kicker" style="color:#d5e0c8">Demeter Design · Oregon</p>
-    <h1 class="serif">Action plans for watershed decisions</h1>
-    <p class="why">You’re here to get an action plan for your watershed — what limits fish and habitat, and what to do next (passage, rearing, canopy, priorities).</p>
-    <div class="actions">
-      <a class="btn btn-mist" href="#plans">See the plans</a>
-      <a class="btn btn-ghost" href="#quote">Request a quote</a>
+  <div class="hero-shell" aria-label="North Coast Community Watershed Project live map">
+    <div class="gis-bar">
+      <span class="brand">NCCWP · Live map</span>
+      <div class="tools">
+        <span class="chip live">Interactive map</span>
+        <a class="chip open-live" href="https://caradmico.github.io/graphicoregon/nccwp/" target="_blank" rel="noopener">Open live map</a>
+      </div>
+    </div>
+    <div class="hero-stage">
+      <img class="hero-still" src="img/nccwp-hero-map.png" width="1440" height="900" alt="NCCWP map of Clatsop and Tillamook — houses, well logs, and stream water rights on coastal creeks">
+      <iframe id="nccwpFrame" title="North Coast Community Watershed Project — live map of houses, wells, and stream rights in Clatsop and Tillamook" src="https://caradmico.github.io/graphicoregon/nccwp/" allowfullscreen loading="eager" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="hero-foot">
+      <span>NCCWP / Graphic Oregon</span>
+      <a href="https://caradmico.github.io/graphicoregon/nccwp/" target="_blank" rel="noopener">Open the live map</a>
+    </div>
+  </div>
+  <div class="dock">
+    <div class="panel">
+      <p class="kicker" style="color:#7ed9c0">Demeter Design · Watershed GIS</p>
+      <h1 class="serif">Watershed GIS and action plans</h1>
+      <p class="why">You’re here for geospatial analysis and maps that show who is on wells or streams versus a public water system — and what that means for watershed decisions.</p>
+      <div class="actions">
+        <a class="btn btn-mist" href="#quote">Request a quote</a>
+        <a class="btn btn-ghost" href="https://caradmico.github.io/graphicoregon/nccwp/" target="_blank" rel="noopener">Open live map</a>
+      </div>
+      <p class="credit">Live map: North Coast Community Watershed Project · <a href="https://caradmico.github.io/graphicoregon/nccwp/" target="_blank" rel="noopener">NCCWP / Graphic Oregon</a>. Action plans are the written packet after the map.</p>
     </div>
   </div>
 </section>
 
-<section class="beats" id="path" aria-label="How the work moves">
-  <article class="chipbeat">
-    <p class="kicker">01 · Ask</p>
-    <h2 class="serif">Why aren’t the fish here?</h2>
-    <p>Plans address passage, ocean context, overwintering and summer rearing, canopy and shade — and how many fish the habitat can support.</p>
-  </article>
-  <article class="chipbeat">
-    <p class="kicker">02 · Synthesize</p>
-    <h2 class="serif">GIS-first screening</h2>
-    <p>Remote layers, existing surveys, and prioritization. Work is GIS-led now. Field crews can be sent when the plan requires it.</p>
-  </article>
-  <article class="chipbeat">
-    <p class="kicker">03 · Plan</p>
-    <h2 class="serif">The written plan</h2>
-    <p>A funded action plan for the council or agency — maps and priorities in one place.</p>
-  </article>
+<section class="capability" id="gis">
+  <div class="inner">
+    <p class="kicker">The skill</p>
+    <h2 class="serif">Maps that answer a watershed question</h2>
+    <p>Demeter Design builds and interprets watershed GIS — drinking-water and housing overlays, passage, habitat prioritization — then writes the plan a council can fund. Field work follows the map when the agreed scope needs it.</p>
+  </div>
 </section>
 
-<div id="plans">
+<div id="maps">
+  <div class="maps-lead">
+    <div class="inner">
+      <p class="kicker">More GIS work</p>
+      <h2 class="serif">Published maps from Oregon assessments</h2>
+      <p>Passage, restoration priority, and rearing habitat — GIS products that become the action plan.</p>
+    </div>
+  </div>
+
 <section class="chapter" data-chapter id="plan-passage">
   <div class="gis-shell">
     <div class="gis-bar">
@@ -209,9 +253,9 @@ body.sticky-on{padding-bottom:4.75rem}
   </div>
   <div class="dock">
     <div class="panel">
-      <p class="kicker" style="color:#cfe3c8">Passage action plan</p>
+      <p class="kicker" style="color:#cfe3c8">GIS · Passage</p>
       <h2 class="serif">Culverts and barriers that block fish</h2>
-      <p class="sell">Passage assessment for watershed councils — which crossings block fish, and which to fix first.</p>
+      <p class="sell">A passage map for watershed councils — which crossings block fish, and which to fix first.</p>
       <p class="interp">Drag the map. Tap a hotspot. Undersized and failing culverts limit fish movement even when few absolute barriers exist. From the published Netarts Bay assessment.</p>
       <p class="quiet"><a href="https://graphicoregon.com/netarts-bay-watershed-habitat-assessment/" target="_blank" rel="noopener">Full study</a> · Demeter Design · Netarts Bay</p>
     </div>
@@ -243,9 +287,9 @@ body.sticky-on{padding-bottom:4.75rem}
   </div>
   <div class="dock">
     <div class="panel">
-      <p class="kicker" style="color:#cfe3c8">Priority action plan</p>
+      <p class="kicker" style="color:#cfe3c8">GIS · Restoration priority</p>
       <h2 class="serif">Where to restore first</h2>
-      <p class="sell">Habitat restoration prioritization for the work plan.</p>
+      <p class="sell">A ranked restoration-habitat map for the work plan.</p>
       <p class="interp">Ranks restoration reaches using habitat data, surveys, GIS, and existing reports. From the published Tillamook Bay prioritization map.</p>
       <p class="quiet"><a href="https://graphicoregon.com/tillamook-bay-watershed-habitat-restoration-plan/" target="_blank" rel="noopener">Full study</a> · Restoration habitat prioritization map · Demeter Design / Graphic Oregon</p>
     </div>
@@ -270,10 +314,10 @@ body.sticky-on{padding-bottom:4.75rem}
   </div>
   <div class="dock">
     <div class="panel">
-      <p class="kicker" style="color:#cfe3c8">Habitat restoration screening</p>
+      <p class="kicker" style="color:#cfe3c8">GIS · Habitat / rearing</p>
       <h2 class="serif">Which reaches support rearing</h2>
-      <p class="sell">Screen overwintering and summer rearing potential before scheduling field work.</p>
-      <p class="interp">Shows which reaches matter for rearing habitat so field days follow the plan. Sampling and analysis can be part of the plan when needed.</p>
+      <p class="sell">A habitat map that screens overwintering and summer rearing before field days.</p>
+      <p class="interp">Shows which reaches matter for rearing habitat so field days follow the map. Sampling and analysis can be part of the plan when needed.</p>
       <p class="quiet"><a href="https://graphicoregon.com/netarts-bay-watershed-habitat-assessment/" target="_blank" rel="noopener">Full study</a> · Demeter Design · Netarts Bay</p>
     </div>
   </div>
@@ -313,7 +357,7 @@ body.sticky-on{padding-bottom:4.75rem}
     <div>
       <p class="kicker">Request a quote</p>
       <h2 class="serif">Basin, question, deadline</h2>
-      <p class="prose">Ask for an action plan. We reply with scope and timeline. Fieldwork follows the agreed scope when needed. Mail to Graphic Oregon, parent of Demeter Design.</p>
+      <p class="prose">Ask for watershed GIS. We reply with scope and timeline. The action plan is the written packet after the map. Fieldwork follows the agreed scope when needed. Mail goes to Graphic Oregon, parent of Demeter Design.</p>
     </div>
     <form id="quoteForm">
       <div><label for="name">Name</label><input id="name" required autocomplete="name"></div>
@@ -321,11 +365,12 @@ body.sticky-on{padding-bottom:4.75rem}
       <div><label for="basin">Basin or reach</label><input id="basin" required placeholder="e.g. Upper Nestucca, Kilchis, Necanicum"></div>
       <div><label for="need">The question</label>
         <select id="need">
+          <option>Watershed GIS / maps</option>
+          <option>Drinking-water / housing overlay</option>
+          <option>Passage map</option>
+          <option>Habitat prioritization</option>
           <option>Action plan</option>
-          <option>Passage plan</option>
-          <option>Priority plan</option>
-          <option>Habitat screening plan</option>
-          <option>Other planning scope</option>
+          <option>Other GIS or planning scope</option>
         </select>
       </div>
       <div><label for="notes">Notes</label><textarea id="notes" placeholder="Deadline, partners, what you already have"></textarea></div>
@@ -337,7 +382,7 @@ body.sticky-on{padding-bottom:4.75rem}
 
 <footer>
   <div class="wrap">
-    <span>Demeter Design · action plans for watershed decisions</span>
+    <span>Demeter Design · watershed GIS and action plans</span>
     <span>Parent <a href="https://graphicoregon.com/">Graphic Oregon</a> · <a href="../../">Company Soup</a></span>
   </div>
 </footer>
@@ -366,6 +411,16 @@ body.sticky-on{padding-bottom:4.75rem}
   window.addEventListener('scroll', onScroll, {passive:true});
   onScroll();
 
+  var hero=document.querySelector('.hero');
+  var frame=document.getElementById('nccwpFrame');
+  if(hero && frame){
+    if(reduce) hero.classList.add('iframe-ready');
+    frame.addEventListener('load', function(){ hero.classList.add('iframe-ready'); });
+    setTimeout(function(){
+      if(!hero.classList.contains('iframe-ready')) hero.classList.add('iframe-slow');
+    }, 8000);
+  }
+
   document.querySelectorAll('.hot').forEach(function(h){
     h.querySelector('button').addEventListener('click', function(){
       document.querySelectorAll('.hot').forEach(function(x){x.classList.remove('open')});
@@ -373,7 +428,6 @@ body.sticky-on{padding-bottom:4.75rem}
     });
   });
 
-  // priority spotlight — REQUIRED (was inert)
   var spotBtn=document.getElementById('spotBtn');
   var priChapter=document.getElementById('plan-priority');
   if(spotBtn && priChapter){
@@ -384,7 +438,6 @@ body.sticky-on{padding-bottom:4.75rem}
     });
   }
 
-  // zoom controls on GIS maps
   document.querySelectorAll('.zoom').forEach(function(z){
     var id=z.getAttribute('data-zoom-for');
     var im=document.getElementById(id);
@@ -396,7 +449,6 @@ body.sticky-on{padding-bottom:4.75rem}
     });
   });
 
-  // light pan on passage map
   var pan=document.querySelector('[data-pan]');
   var img=document.getElementById('passImg');
   if(pan && img && !reduce){
@@ -432,10 +484,10 @@ body.sticky-on{padding-bottom:4.75rem}
     var basin=document.getElementById('basin').value.trim();
     var need=document.getElementById('need').value;
     var notes=document.getElementById('notes').value.trim();
-    var body=['Demeter Design — action plan quote request','',
+    var body=['Demeter Design — watershed GIS quote request','',
       'Name: '+name,'Organization: '+org,'Basin/reach: '+basin,'Need: '+need,
       notes?'Notes: '+notes:'','Please reply with scope and timeline.'].filter(Boolean).join('\n');
-    location.href='mailto:hello@graphicoregon.com?subject='+encodeURIComponent('Demeter Design action plan — '+basin)+'&body='+encodeURIComponent(body);
+    location.href='mailto:hello@graphicoregon.com?subject='+encodeURIComponent('Demeter Design watershed GIS — '+basin)+'&body='+encodeURIComponent(body);
   });
 })();
 </script>
