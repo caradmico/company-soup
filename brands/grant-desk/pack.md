@@ -1,44 +1,57 @@
 # Grant Desk
 
-Lane: Professional services · Graphic Oregon child · methods / research / package work
+Lane: Professional services · Graphic Oregon child · consulting / skills
 
 ## One-liner
-Consulting for evaluation methods, grant research, and funder-ready packages — quote only, package prep for the client's team.
+Consulting for 501(c)(3) fit, grant research, writing + consultation, and management education — affordable quote work.
 
 ## Offer
 Quote-only consulting (Cara Mico / Company Soup child under Graphic Oregon).
 
-Sell first: methods, research, evaluation, package work.
+**Land (door):** consulting / skills. Above-fold WHY + early quote hook.
+**Not the land:** free resources, `/portfolio/`.
 
-Deliverables:
-- Funder fit scan + go/no-go
-- Narrative draft
-- Budget narrative / attachments checklist
-- Submission package prep for the client's team
+Sell:
+- 501(c)(3) fit
+- Grants with a file already open, or without
+- Small and large dollar paths (paths — not invented award $)
+- Starter-scale for newcomers
+- Affordable
+- Not legal consulting; can help find a lawyer to incorporate / file 501(c)(3)
 
-Proof (only these): MA in arts administration & nonprofit management; ~$1M in grants funded; Inclusive Art eval + named contexts on the portfolio (roles + work type only).
+Services bands:
+- Research
+- Writing + consultation
+- Management education — can manage grants when a scope calls for it; management is **not** the product
 
-Do not sell: grants-manager staffing · capital-campaign services.
+Do not sell: capital campaigns. Capital-project consulting is experience only (not a campaign product).
+
+Proof (public, only these):
+- Dozens of nonprofits in Oregon and California
+- CBAA + Success Centers — designed, funded, and distributed programs
+- MA in arts administration & nonprofit management
+- ~$1M in grants funded (door KEEP aggregate — do not invent per-org $)
+- Portfolio: Inclusive Art eval + Hosea / COTL / CBAA / Success Centers / watershed councils
 
 Hard gate (mill / internal): she does not submit applications without Cara's explicit gate. CTA is quote/intake only.
 
 ## Path
-- Brand door: https://caradmico.github.io/company-soup/brands/grant-desk/
-- Portfolio / methods: https://caradmico.github.io/company-soup/brands/grant-desk/portfolio/
-- Free lookups (secondary nav only): https://caradmico.github.io/company-soup/brands/grant-desk/resources/
+- Brand door (the land): https://caradmico.github.io/company-soup/brands/grant-desk/
+- Portfolio / methods (proof, not the land): https://caradmico.github.io/company-soup/brands/grant-desk/portfolio/
+- Free lookups (secondary menu only): https://caradmico.github.io/company-soup/brands/grant-desk/resources/
 - CTA: mailto hello@graphicoregon.com — subject “Grant Desk — scope quote”
 - Parent: Graphic Oregon
 
 ## Free value
 - Public resources page: grants by type, Grant Desk–verified $0 URLs only (`resources/sources.json`)
-- Door treats free lookups as secondary nav — not the hero sell
-- Public HTML has no Do-not / invent / AI / Cara-gate voice — ops constraints stay in this pack
+- Door treats free lookups as secondary menu — not the hero sell
+- Public HTML has no Do-not / invent / AI / Cara-gate / “not the land” factory voice — ops constraints stay in this pack
 
 ## Scanner path (not this ship)
 Next — optional scanner over free DBs (Grants.gov + listed public calendars) feeding Finance Bro fit-scan; human curate; Cara gate before any submit. Sketch: `resources/scanner-path.json`.
 
 ## Done-when
-Stranger opens the door, sees consulting/skills and a quote hook above the fold, reaches the portfolio from Proof or secondary nav, and can request a quote. Inclusive Art + named contexts with real public links. Zero invented $. Astoria omitted. Free lookups stay secondary — not the land.
+Stranger opens the door and sees consulting/skills WHY + quote above the fold. Services bands are research / writing+consultation / management education. Proof names dozens of OR+CA nonprofits and CBAA + Success Centers. Portfolio is reachable from menu/Proof, not the land. Inclusive Art + named contexts with real public links. Zero invented award $. Astoria omitted. Free lookups stay secondary. Footer is simple + request-a-quote. Navy/walnut ≠ Coast Desk.
 
 ## Sources (mill)
 Internal source notes for makers. Do **not** copy this section onto public HTML.
@@ -64,13 +77,20 @@ Internal source notes for makers. Do **not** copy this section onto public HTML.
 
 ### Cannon Beach Arts Association
 - Program Director (2017–2019)
+- Designed, funded, and distributed programs (Cara-locked proof)
 - Fundraising / planned giving, gallery programming, marketing
 - May say fundraising. Do not invent a new dollar figure (door KEEP already carries the ~$1M aggregate).
+
+### Success Centers
+- Designed, funded, and distributed programs (Cara-locked proof, with CBAA)
+- California nonprofit context (OR+CA track). Roles + work type only.
+- No invented award $ and no public work URL on this ship.
 
 ### Watershed councils
 - Field + grant-adjacent research
 - Taste: technical assessments / restoration prioritization funders ask for
 - CV also: Watershed Council Coordinator, North Clackamas Urban Watershed Council (2012–2013)
+- Capital-project consulting OK as experience only — not a capital-campaign sell
 - Public GO reports (3–5 max; these four are live):
   - East Fork Nehalem Watershed Assessment — https://graphicoregon.com/east-fork-nehalem-watershed-assessment/
   - Tillamook Bay Watershed Habitat Restoration Plan / CERP — https://graphicoregon.com/tillamook-bay-watershed-habitat-restoration-plan/
@@ -81,4 +101,4 @@ Internal source notes for makers. Do **not** copy this section onto public HTML.
 - Astoria Downtown / ADBA — omit from public. Do not invent ADBA work.
 
 ## Do-not
-Invent RFPs, funders, client wins, or dollar amounts beyond the door’s ~$1M funded · invent per-org award $ · sell grants-manager or capital-campaign services · claim auto-submit / apps without Cara gate · put mill Do-not voice on public HTML · publish Astoria Downtown / ADBA · rewrite Softstyle / autonomy / link-shelf / fine-art · Book lanes · Three.js / Printify / Intern commodity PDF
+Invent RFPs, funders, client wins, or dollar amounts beyond the door’s ~$1M funded · invent per-org award $ · sell capital campaigns · sell grants-manager as the product · sell legal consulting · claim auto-submit / apps without Cara gate · put mill Do-not voice on public HTML · publish Astoria Downtown / ADBA · make free resources or /portfolio/ the door land · rewrite Softstyle / autonomy / link-shelf / fine-art · Book lanes · Three.js / Printify / Intern commodity PDF
