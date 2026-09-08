@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-07",
+  "generated": "2026-09-08",
   "rule": {
     "id": "token-lean",
     "title": "Token lean / no empty pulse",
@@ -10,13 +10,13 @@
     "name": "Factory closed \u2192 intake",
     "owner": "Build Bot",
     "grade": "parked",
-    "note": "GO 7-tile KEEP fa58e51 on dark v2 face. Demeter GIS still parked. No DNS."
+    "note": "demeter-gis-forward KEEP 787878b. GO screenshots-only look still suspended (d82ae05). No DNS."
   },
   "lastArtifact": {
-    "label": "GO 7-tile Selected work KEEP",
-    "url": "https://caradmico.github.io/graphicoregon/",
-    "commit": "fa58e51",
-    "updated": "2026-09-07",
+    "label": "Demeter GIS-forward KEEP",
+    "url": "https://caradmico.github.io/company-soup/businesses/watershed/",
+    "commit": "787878b",
+    "updated": "2026-09-08",
     "grade": "KEEP"
   },
   "seats": [
@@ -46,7 +46,7 @@
       "name": "Build Bot",
       "lane": "Code",
       "state": "parked",
-      "focus": "GO KEEP fa58e51 \u2014 Demeter parked"
+      "focus": "demeter KEEP 787878b \u2014 intake"
     },
     {
       "id": "grant-desk",
@@ -60,7 +60,8 @@
       "name": "Demeter Aesthetic",
       "lane": "Demeter maps",
       "state": "parked",
-      "focus": "GIS-forward brief ready \u2014 await true Kevin light"
+      "focus": "GIS-forward KEEP \u2014 do not reopen",
+      "keep": "closed KEEP"
     },
     {
       "id": "space-boi",
