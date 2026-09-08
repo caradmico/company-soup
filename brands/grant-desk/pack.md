@@ -38,7 +38,7 @@ Hard gate (mill / internal): she does not submit applications without Cara's exp
 Next — optional scanner over free DBs (Grants.gov + listed public calendars) feeding Finance Bro fit-scan; human curate; Cara gate before any submit. Sketch: `resources/scanner-path.json`.
 
 ## Done-when
-Stranger opens the door, sees skills / methods / package work first, reaches the portfolio from Proof or secondary nav, and can request a quote. Inclusive Art + named contexts with real public links. Zero invented $. Astoria omitted. Free lookups stay secondary.
+Stranger opens the door, sees consulting/skills and a quote hook above the fold, reaches the portfolio from Proof or secondary nav, and can request a quote. Inclusive Art + named contexts with real public links. Zero invented $. Astoria omitted. Free lookups stay secondary — not the land.
 
 ## Sources (mill)
 Internal source notes for makers. Do **not** copy this section onto public HTML.
