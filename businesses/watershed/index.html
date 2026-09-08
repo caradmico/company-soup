@@ -140,12 +140,16 @@ a{color:var(--tide)}
 .wchip[data-f="passage"]{background:#c8fff2;color:#04241c}
 .wchip[data-f="sediment"]{background:#ffe3a8;color:#2a1600}
 .wchip[data-f="priority"]{background:#e8ffb0;color:#142800}
+.wchip[data-f="habitat"]{background:#d8f5c8;color:#142800}
+.wchip[data-f="hazard"]{background:#f3e2d4;color:#3a2010}
 .wchip.on,.wchip:hover{outline:2px solid var(--fir);outline-offset:1px;filter:brightness(1.05)}
 .packets{display:grid;gap:.55rem;margin-top:.4rem}
 .packet{display:none;align-items:center;justify-content:space-between;gap:1rem;background:rgba(255,255,255,.7);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:14px;padding:.95rem 1.05rem}
 .packet.show{display:flex;flex-wrap:wrap}
 .packet strong{color:var(--fir)}
+.packet-acts{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center}
 .packet a{font-weight:700;text-decoration:none;background:var(--fir);color:#fff;padding:.5rem .85rem;border-radius:999px;font-size:.86rem}
+.packet a.alt{background:transparent;color:var(--fir);border:1px solid var(--fir)}
 
 #quote{background:var(--foam);padding:3rem 1.25rem 4.5rem}
 #quote .inner{width:min(56rem,100%);margin:0 auto;display:grid;gap:1.5rem}
@@ -327,26 +331,55 @@ body.sticky-on{padding-bottom:4.75rem}
 <section class="warehouse" id="warehouse">
   <div class="inner">
     <p class="kicker">GIS warehouse</p>
-    <h2 class="serif">Oregon watershed data — download the project packets</h2>
-    <p>Filter Graphic Oregon / Demeter Design project PDFs for Netarts, Nestucca, and Tillamook.</p>
+    <h2 class="serif">Oregon watershed papers</h2>
+    <p>Cara’s published watershed papers for Nestucca, Nehalem, Tillamook, Siuslaw, and Netarts. Download the PDF when we have it; otherwise open Academia.</p>
+    <p class="fine">Titles from <a href="https://independent.academia.edu/CaraDianne" target="_blank" rel="noopener">Cara Dianne on Academia</a>.</p>
     <div class="wfilters" id="wfilters">
       <button type="button" class="wchip on" data-f="all">All</button>
       <button type="button" class="wchip" data-f="passage">Passage</button>
       <button type="button" class="wchip" data-f="sediment">Sediment / shade</button>
       <button type="button" class="wchip" data-f="priority">Priority / restoration</button>
+      <button type="button" class="wchip" data-f="habitat">Habitat</button>
+      <button type="button" class="wchip" data-f="hazard">Hazard</button>
     </div>
     <div class="packets">
-      <div class="packet show" data-tags="passage all">
-        <div><strong>Netarts Bay</strong><div class="fine">Limiting factors · passage &amp; habitat</div></div>
-        <a href="https://graphicoregon.com/wp-content/uploads/2023/12/Netarts_Bay_Limiting_Factors_Analysis.pdf" target="_blank" rel="noopener">Download</a>
-      </div>
       <div class="packet show" data-tags="sediment all">
-        <div><strong>Upper Nestucca</strong><div class="fine">Sediment, shade &amp; complexity</div></div>
+        <div><strong>Sediment, Shade, and Complexity in the Upper Nestucca River Watershed</strong><div class="fine">Demeter Design · Upper Nestucca</div></div>
         <a href="https://graphicoregon.com/wp-content/uploads/2023/12/Sediment_Shade_and_Complexity_in_the_Upp.pdf" target="_blank" rel="noopener">Download</a>
       </div>
+      <div class="packet show" data-tags="sediment habitat all">
+        <div><strong>East Fork Nehalem Watershed Assessment</strong><div class="fine">Demeter Design · East Fork Nehalem</div></div>
+        <a href="https://graphicoregon.com/wp-content/uploads/2023/12/East_Fork_Nehalem_Watershed_Assessment.pdf" target="_blank" rel="noopener">Download</a>
+      </div>
+      <div class="packet show" data-tags="passage habitat all">
+        <div><strong>Tillamook River Limiting Factors Assessment</strong><div class="fine">Demeter Design · Tillamook River</div></div>
+        <a href="https://graphicoregon.com/wp-content/uploads/2023/12/Tillamook_River_Limiting_Factors_Assessm.pdf" target="_blank" rel="noopener">Download</a>
+      </div>
+      <div class="packet show" data-tags="habitat sediment all">
+        <div><strong>Tillamook Bay Watershed Physical Habitat Study</strong><div class="fine">Demeter Design · PDF not hosted here yet</div></div>
+        <a class="alt" href="https://independent.academia.edu/CaraDianne" target="_blank" rel="noopener">Open Academia</a>
+      </div>
+      <div class="packet show" data-tags="sediment habitat all">
+        <div><strong>North Fork Siuslaw Sediment and Habitat Assessment</strong><div class="fine">Demeter Design · North Fork Siuslaw</div></div>
+        <div class="packet-acts">
+          <a href="https://graphicoregon.com/wp-content/uploads/2023/12/North_Fork_Siuslaw_Sediment_and_Habitat.pdf" target="_blank" rel="noopener">Download</a>
+          <a class="alt" href="https://www.academia.edu/44645814/North_Fork_Siuslaw_Sediment_and_Habitat_Assessment" target="_blank" rel="noopener">Academia</a>
+        </div>
+      </div>
       <div class="packet show" data-tags="priority all">
-        <div><strong>Tillamook restoration habitat prioritization (PDF)</strong><div class="fine">Graphic Oregon / Demeter Design · Tillamook Bay</div></div>
+        <div><strong>Computational Ecological Restoration Prioritization</strong><div class="fine">Demeter Design · Tillamook Bay</div></div>
         <a href="https://graphicoregon.com/wp-content/uploads/2023/12/Computational_Ecological_Restoration_Pri.pdf" target="_blank" rel="noopener">Download</a>
+      </div>
+      <div class="packet show" data-tags="hazard all">
+        <div><strong>Tillamook County Natural Hazard Study</strong><div class="fine">Tillamook County Natural Hazard Mitigation Plan · Tillamook County / FEMA, 2015</div></div>
+        <div class="packet-acts">
+          <a href="https://graphicoregon.com/wp-content/uploads/2023/12/Tillamook_County_Natural_Hazard_Study.pdf" target="_blank" rel="noopener">Download study</a>
+          <a class="alt" href="https://www.academia.edu/49090771/Tillamook_County_Natural_Hazard_Mitigation_Plan" target="_blank" rel="noopener">Mitigation plan on Academia</a>
+        </div>
+      </div>
+      <div class="packet show" data-tags="passage habitat all">
+        <div><strong>Netarts Bay Limiting Factors Analysis</strong><div class="fine">Demeter Design · passage and habitat</div></div>
+        <a href="https://graphicoregon.com/wp-content/uploads/2023/12/Netarts_Bay_Limiting_Factors_Analysis.pdf" target="_blank" rel="noopener">Download</a>
       </div>
     </div>
   </div>
