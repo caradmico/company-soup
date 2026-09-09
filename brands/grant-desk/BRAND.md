@@ -1,14 +1,14 @@
 # Grant Desk — Brand kit v0
 **Door:** https://caradmico.github.io/company-soup/brands/grant-desk/  
 **Live claim:** https://grants.graphicoregon.com/  
-**Lane:** Paid grant consulting (hire / request a scope)  
-**Status:** Redesign after Coast KEEP 9e53f6a — Cara FAIL bland twin / soft brochure sell.  
-**Must not equal:** Coast Desk newsprint · Demeter fir · Fine Art salon · GO studio · Far Field / Program Eval card stacks
+**Lane:** Paid grants training day (~$250) + 12mo capped access; writing quotes secondary  
+**Status:** SUPERSEDE 2026-09-09 — Cara LOCK. Consulting-primary tip `62b22df` is superseded.  
+**Must not equal:** Coast Desk newsprint · Demeter fir · Fine Art salon · GO studio · Far Field / Program Eval card stacks · free PDF library · consulting-primary hero
 
 ## Positioning
-**Paid grant consulting desk — hire for research, writing, run-support. Not a brochure. Not Coast Desk.**
+**Paid grants training day (~$250) + 12mo capped access; writing quotes secondary.**
 
-A stranger hires Cara (Grant Desk) to research, write, and help run what they win. Foundation hallway, consultant letterhead — not a newsroom, not a free directory, not a Company Soup pamphlet.
+A stranger buys a training day (pay first). After pay: ~10 hours of resource / coach access over 12 months — fit checks, light looks, advice. Not unpaid full grant writing. Scoped writing/research quotes are an upsell, not the land. Foundation hallway, letterhead — not a newsroom, not a free directory, not a Company Soup pamphlet.
 
 ## Color
 | Token | Hex | Use |
@@ -28,10 +28,10 @@ A stranger hires Cara (Grant Desk) to research, write, and help run what they wi
 - No Fraunces (Demeter). No Cormorant (Fine Art). No Libre Baskerville (Coast Desk). No Source Serif newsprint.
 
 ## Voice
-Paid operator. Direct. Warm without fluff. “I’ll tell you if you shouldn’t apply.” Hire-forward. No pamphlet lists, no mill jargon on the face.
+Paid operator. Direct. Warm without fluff. Buy the day class. Price on the face. No pamphlet that hides the buy. No mill jargon on the face.
 
 ## Logo mark
 **Grant Desk** in Source Sans 3 semibold + a single walnut ribbon bar (4px × 3.25rem) under the wordmark. Small square navy seal (empty geometric, no fake crest art). Thin navy top rail for letterhead — not Coast mast letter-spacing.
 
 ## Apply notes (Build)
-Retoken `brands/grant-desk/`. Wider hero air, larger clamp H1, dominant Request-a-consulting-scope CTA. Free lookups + portfolio stay secondary nav only. Do not share GO `--signal` teal. Do not twin Coast Desk.
+Retoken `brands/grant-desk/`. Wider hero air, larger clamp H1, dominant Enroll / Pay for the training day CTA. Writing/research scope is secondary upsell only. Free lookups + portfolio stay secondary nav only. Do not share GO `--signal` teal. Do not twin Coast Desk. Do not let consulting-primary crowd out the day class.
