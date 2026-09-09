@@ -1,32 +1,30 @@
 # Grant Desk
 
-Lane: Professional services · Graphic Oregon child · paid grant consulting
+Lane: Professional services · Graphic Oregon child · paid training day
 
 ## One-liner
-Paid grant consulting — research, writing, and how to run what you win.
+Paid grants training day (~$250, pay first) + ~10 hours of coach / resource access over 12 months. Writing/research quotes secondary.
 
 ## Offer
-Hire Cara (Grant Desk / Company Soup child under Graphic Oregon) for scoped consulting.
+PRIMARY: hire the day class. SECONDARY: scoped writing/research when they want the package done.
 
-**Land (door):** paid-consultant sell. Hire-forward H1 + pull + why-hire + dominant Request-a-consulting-scope CTA above the fold.
-**Not the land:** free resources, `/portfolio/`.
+**Land (door):** training-day sell. H1 + pull + why + offer card (~$250, pay first, 12 mo / ~10 hr) + dominant Enroll / Pay CTA above the fold.
+**Not the land:** free resources, `/portfolio/`, consulting-as-hero, free dumps that replace the class.
 
-Sell:
-- Hire for research, writing, and run-support
-- 501(c)(3) fit / go-no-go before months burn
-- Grants with a 501(c)(3) vs without
-- Small and large dollar paths (paths — not invented award $)
-- Starter-scale to serious packages
-- Affordable scoped quotes
-- “I’ll tell you if you shouldn’t apply.”
+Sell (primary):
+- Paid training day — ~$250 upfront (pay first, before materials / access)
+- After pay: ~10 hours of resource / coach access over 12 months (capped) — fit checks, light looks, advice
+- Oregon + California nonprofit track
+- 501(c)(3) fit / which door to knock on
+- How to research and write a grant you can run
+- Not unpaid full grant writing
 - Not legal consulting; can help find a lawyer to incorporate / file 501(c)(3)
 
-What you hire:
-- Research — funder + 501(c)(3) fit; paths at small and large dollar scales
-- Writing + consultation — narrative, evaluation methods, package your team can submit
-- Run-support / education — how to manage what you win; scoped management only when engaged. Management is **not** the product headline
+Sell (secondary upsell only):
+- Scoped writing / research quotes when they want the package done for them
+- Not the hero. Not unpaid full writing as the default SKU
 
-Do not sell: capital campaigns. Capital-project consulting is experience only (not a campaign product). Do not sell ongoing “be our grants manager” as the default SKU.
+Do not sell: capital campaigns. Capital-project consulting is experience only (not a campaign product). Do not sell ongoing “be our grants manager” as the default SKU. Do not sell free lookups as the product.
 
 Proof (public, only these):
 - Dozens of nonprofits in Oregon and California
@@ -34,27 +32,30 @@ Proof (public, only these):
 - MA in arts administration & nonprofit management
 - ~$1M in grants funded (door KEEP aggregate — do not invent per-org $)
 - Portfolio: Inclusive Art eval + Hosea / COTL / CBAA / Success Centers / watershed councils
+- Class ~$250 allowed on face
 
-Hard gate (mill / internal): she does not submit applications without Cara's explicit gate. CTA is request-a-consulting-scope / intake only.
+Hard gate (mill / internal): she does not submit applications without Cara's explicit gate. Primary CTA is enroll / pay for the training day. Writing/research scope is secondary mailto only.
 
 ## Path
 - Brand door (the land): https://caradmico.github.io/company-soup/brands/grant-desk/
 - Live claim: https://grants.graphicoregon.com/
 - Portfolio / methods (proof, not the land): https://caradmico.github.io/company-soup/brands/grant-desk/portfolio/
 - Free lookups (secondary menu only): https://caradmico.github.io/company-soup/brands/grant-desk/resources/
-- CTA: mailto hello@graphicoregon.com — subject “Grant Desk — consulting scope” (door URL in body may be https://grants.graphicoregon.com/)
+- Primary CTA: mailto hello@graphicoregon.com — subject “Grant Desk — enroll / pay for the training day” (door URL in body may be https://grants.graphicoregon.com/)
+- Secondary CTA: mailto — subject “Grant Desk — writing / research scope”
 - Parent: Graphic Oregon
 
 ## Free value
 - Public resources page: grants by type, Grant Desk–verified $0 URLs only (`resources/sources.json`)
 - Door treats free lookups as secondary menu — not the hero sell
+- Free dumps must not replace the paid day
 - Public HTML has no Do-not / invent / AI / Cara-gate / “not the land” factory voice — ops constraints stay in this pack
 
 ## Scanner path (not this ship)
 Next — optional scanner over free DBs (Grants.gov + listed public calendars) feeding Finance Bro fit-scan; human curate; Cara gate before any submit. Sketch: `resources/scanner-path.json`.
 
 ## Done-when
-Stranger opens the door and feels they hire Cara for research / write / run-support. Hire-forward H1 + hook above the fold. Dominant Request-a-consulting-scope CTA. Portfolio + Free lookups secondary nav only. What you hire = Research · Writing+consultation · Run-support. Proof names dozens of OR+CA nonprofits, CBAA + Success Centers, MA, ~$1M KEEP. Zero invented award $. Astoria omitted. Navy/walnut Source Sans ≠ Coast Desk newsprint. Not a bland soup-door twin.
+Stranger opens the door and sees the ~$250 training day as the clear primary buy (pay first). Understands 12 months / ~10 hr capped resource/coach access is included after pay. Dominant Enroll / Pay for the training day CTA. Writing/research quotes as a secondary “Need writing done?” ask only. Portfolio + Free lookups secondary nav only. Proof names dozens of OR+CA nonprofits, CBAA + Success Centers, MA, ~$1M KEEP. Zero invented award $. Astoria omitted. Navy/walnut Source Sans ≠ Coast Desk newsprint. Consulting-primary tip `62b22df` superseded.
 
 ## Sources (mill)
 Internal source notes for makers. Do **not** copy this section onto public HTML.
@@ -104,4 +105,4 @@ Internal source notes for makers. Do **not** copy this section onto public HTML.
 - Astoria Downtown / ADBA — omit from public. Do not invent ADBA work.
 
 ## Do-not
-Invent RFPs, funders, client wins, or dollar amounts beyond the door’s ~$1M funded · invent per-org award $ · sell capital campaigns · sell grants-manager as the product · sell legal consulting · claim auto-submit / apps without Cara gate · put mill Do-not voice on public HTML · publish Astoria Downtown / ADBA · make free resources or /portfolio/ the door land · rewrite Softstyle / autonomy / link-shelf / fine-art · Book lanes · Three.js / Printify / Intern commodity PDF
+Invent RFPs, funders, client wins, or dollar amounts beyond the door’s ~$1M funded · invent per-org award $ · sell capital campaigns · sell grants-manager as the product · sell legal consulting · sell consulting/writing as the hero (secondary upsell only) · claim auto-submit / apps without Cara gate · put mill Do-not voice on public HTML · publish Astoria Downtown / ADBA · make free resources or /portfolio/ the door land · let free dumps replace the paid day · rewrite Softstyle / autonomy / link-shelf / fine-art · Book lanes · Three.js / Printify / Intern commodity PDF

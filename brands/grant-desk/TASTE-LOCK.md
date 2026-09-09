@@ -1,122 +1,54 @@
-# Grant Desk redesign — taste lock (Cara FAIL bland twin)
+# Grant Desk redesign — taste lock (SUPERSEDE 2026-09-09)
 
-**Factory:** Grant Desk redesign  
+**Factory:** Grant Desk offer re-land (Cara LOCK supersedes consulting-primary tip `62b22df`)  
 **Live:** https://grants.graphicoregon.com/ → `brands/grant-desk/`  
+**Status:** TASTE LOCKED — hand Build now  
 **Owner:** Grant Desk (product/taste) · Build sole lands · Kevin one look  
-**Status:** TASTE LOCKED 2026-09-09 — hand Build now (after Coast KEEP `9e53f6a`).  
-**Hard ban Coast KEEP twin UI:** Baskerville, Source Serif 4, paper `#f3efe6`, mast letter-spacing, bylines/chip UI.  
-**Locks that still stand:** consulting/skills first · free resources = secondary nav only · navy/walnut ≠ Coast Desk · Astoria Downtown HOLD · no invent $ awards · ~$1M KEEP aggregate OK on face · no capital-campaign sell · not legal counsel
 
----
+**Supersedes:** hire-consulting-as-primary sell on tip `62b22df`. Consulting/writing quotes become **secondary upsell** only.
 
-## FAIL (why redesign)
+## Cara LOCK (product)
 
-Cara: bland twin. Current door reads like a Company Soup template pamphlet — same stacked one-pager rhythm (mark → H1 → pull → why → offer card → three bands → proof list → footer). Tokens already ≠ Coast Desk newsprint, but the *sell* is soft: “skills desk / quote only” does not make a stranger feel they will **hire Cara** to research, write, and help manage grants.
+### PRIMARY (must lead the door)
+- **Paid training day — ~$250 upfront (pay first)**
+- After pay: **~10 hours of resource / coach access over 12 months** (capped) — part of what they bought, not a free substitute for the day
+- Stranger must feel: **buy the day class** — not “read free info and DIY”
 
-**Not the problem to “fix”:** Coast Desk serif/newsprint (already banned).  
-**Actual problem:** low-commitment brochure energy; consultant authority missing.
+### SECONDARY (upsell)
+- Scoped **writing / research quotes** (packages Cara writes or researches for them)
+- Not unpaid full writing as the default SKU
+- Not the hero
 
----
+### BAN
+- Free dumps / free lookups as **the product**
+- Free-info replacement for the paid day
+- Soft pamphlet that hides the price and the buy
 
-## Done-when (paid-consultant sell)
+## Done-when
+1. Sees the **~$250 training day** as the clear primary buy (pay first)
+2. Understands **12 months / ~10 hr** capped resource/coach access is included after pay
+3. Path toward **enroll / pay / request the day**
+4. Writing/research quotes as a **secondary** ask only
+5. Free lookups only in secondary nav
+6. navy/walnut Source Sans — ≠ Coast
 
-A stranger opens https://grants.graphicoregon.com/ and feels:
+## Above-the-fold IA
+1. Mark (navy seal + walnut ribbon)
+2. Secondary nav: Portfolio · Free lookups
+3. H1 preferred: “A paid training day for grants — then a year of capped coach access.”
+4. Pull-quote e.g. “Most orgs don’t need more free lists — they need one day that teaches which door to knock on.”
+5. Primary offer card: Day class · **~$250** · pay first · includes ~10 hr / 12 mo resource access
+6. Primary CTA: Enroll / Pay for the training day (dominant)
+7. Short why: Oregon + California nonprofit track
+Then: what’s in the day (short, no invented curriculum) · secondary “Need writing done?” upsell · proof · footer
 
-1. This is a **person they hire** (Cara / Grant Desk), not a free directory and not a newsroom.
-2. Above the fold answers **why hire her** in one breath + one hook.
-3. Primary CTA is **hire / request a scope** (paid), not Free lookups.
-4. Free resources stay findable in secondary nav only.
-5. Look is clean, calm, foundation-hallway — **not** Coast Desk, **not** a twin of Far Field / Program Eval card stacks.
+## Secondary upsell
+**Need the writing done for you?** Scoped research/writing quotes. CTA: Request a writing/research scope.
 
----
+## Proof
+Dozens OR+CA · CBAA+Success Centers · MA · ~$1M KEEP · Portfolio · Astoria HOLD. Class ~$250 allowed on face.
 
-## Product positioning (copy lock)
+## Aesthetic
+Keep #f7f5f1 #1e3a5f #6b4f2a Source Sans 3. Ban Baskerville/Source Serif/#f3efe6/free-as-land/consulting-primary hero crowding out day class.
 
-**One-liner:** Paid grant consulting — research, writing, and how to run what you win.
-
-**You hire her for:**
-- Should we pursue 501(c)(3)? Grants with a 501(c)(3) vs without
-- Funder fit / go-no-go before months burn
-- Grant research (small-dollar and large-dollar paths)
-- Narrative + budget narrative + package prep
-- Grants management **education** (and scoped management when the engagement says so — management is not the product headline)
-
-**You do not hire her for:**
-- Ongoing “be our grants manager” as the default SKU
-- Capital campaigns (explicit no)
-- Legal counsel (she can help find a lawyer for incorporation / 501(c)(3))
-
-**Voice:** Paid operator. Direct. Warm without fluff. “I’ll tell you if you shouldn’t apply.”  
-Avoid: pamphlet lists, mill jargon, invent/Do-not theater on the face.
-
----
-
-## Above-the-fold IA (must feel hireable)
-
-1. **Identity:** Grant Desk mark (navy seal + walnut ribbon) — keep brand tokens.
-2. **Secondary nav only:** Portfolio · Free lookups (never hero).
-3. **H1 (hire-forward)** — pick one energy, Build may tighten:
-   - Preferred: “Hire grant consulting that gets you to a real yes — or a clean no.”
-   - Alt: “Grant research, writing, and run-support — scoped to what you can actually win.”
-4. **Pull-quote hook** (keep early; may refresh line):
-   - Keep current if it still hits, or: “Most orgs don’t need more grants listed — they need one funder who will say yes.”
-5. **Why-hire sentence:** Oregon + California nonprofit track; starter-scale to serious packages; affordable scoped quotes.
-6. **Primary CTA block:** “Request a consulting scope” / mailto — dominant. Not “Start free.”
-
-Then services / proof / footer quote box.
-
----
-
-## Services band (paid language)
-
-Rename energy from soft “Services” pamphlet to **What you hire**:
-
-| Band | Hire line |
-|------|-----------|
-| Research | Funder + 501(c)(3) fit; paths at small and large dollar scales |
-| Writing + consultation | Narrative, evaluation methods, package your team can submit |
-| Run-support / education | How to manage what you win; scoped management only when engaged |
-
-Short note stays: no capital campaigns; not a law practice.
-
----
-
-## Proof (no invent $)
-
-Keep on face:
-- Dozens of nonprofits, Oregon + California
-- CBAA + Success Centers — designed, funded, distributed grant programs
-- MA arts admin / nonprofit management
-- ~$1M in grants funded (KEEP aggregate)
-- Link Portfolio / methods (Inclusive Art + Hosea / COTL / CBAA / watershed councils)
-- Astoria Downtown: still omit
-
----
-
-## Aesthetic lock (kill bland twin without becoming Coast)
-
-**Keep tokens:** paper `#f7f5f1`, navy `#1e3a5f`, walnut `#6b4f2a`, Source Sans 3, IBM Plex Mono sparingly.
-
-**Layout must change** so it no longer reads as soup-door clone:
-- Wider hero air; H1 larger (`clamp`); pull-quote as true accent (not a thin leftover rule)
-- Hire CTA visually primary (full-width or large navy button); secondary text links for Portfolio / Free lookups
-- Service bands as distinct cards with more padding / softer shadow — or a single “engagement” panel with three clear hire lines (not identical Far Field/Program Eval card grid)
-- Optional: thin top “rail” or consultant letterhead feel (navy rule + wordmark) — **not** Coast mast letter-spacing / Baskerville
-- Whitespace > chrome. Clean, not busy.
-
-**Hard bans:** Libre Baskerville, Source Serif 4 / Source Serif newsprint, Coast yellow paper `#f3efe6`, Coast mast letter-spacing, bylines/chip UI, Demeter fir/Fraunces, Fine Art salon, GO signal teal, free-resources-as-land.
-
-Update `BRAND.md` positioning to: **Paid grant consulting desk — hire for research, writing, run-support. Not a brochure. Not Coast Desk.**
-
----
-
-## Build land notes
-
-- Sole lander: Build · commit prefix `grant:`
-- Touch: `brands/grant-desk/index.html`, `BRAND.md`, `pack.md` (mill voice); keep `resources/` + `portfolio/` linked secondary
-- Mailto CTA may use https://grants.graphicoregon.com/ as door URL in body
-- Claim Kevin when Pages / subdomain walkable; Grant Desk re-spot-checks; Kevin one look
-
-## Do-not
-
-Invent RFPs, client wins, or new $ awards · put Astoria Downtown without Cara confirm · capital-campaign SKU · legal advice claims · restyle Coast/Demeter/Fine Art/Softstyle · Intern PDF
+BRAND.md: Paid grants training day (~$250) + 12mo capped access; writing quotes secondary.
