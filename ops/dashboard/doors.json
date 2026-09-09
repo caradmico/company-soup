@@ -70,11 +70,13 @@
       "also": "Restaurant reviews",
       "lane": "Food writing",
       "state": "live",
-      "status": "Cara's food writing desk live \u2014 Top 10 reviews from her Maps notes. AdSense-capable Pages child.",
+      "status": "draft",
       "updated": "2026-09-09",
       "last": "Index + 10 post pages under brands/food-desk/.",
       "href": "../../brands/food-desk/",
-      "hrefLabel": "Open desk"
+      "hrefLabel": "Open desk",
+      "note": "WIP stub \u2014 reviews not public; drafts in mill food-blog/posts/",
+      "open": false
     },
     {
       "id": "graphic-oregon",
