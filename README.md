@@ -17,6 +17,7 @@ Featured founder firm: [Watershed Field Assessment](businesses/watershed/) — D
 - [Coast Desk](brands/coast-desk/) — journalism ([Placement Note 001](brands/coast-desk/placement-note-001.html); Pioneer stays Pioneer)
 - [Lane Sites](brands/lane-sites/) — web lane bread ([keep-list](brands/lane-sites/keep-list.html); no client-site cash)
 - [Grant Desk](brands/grant-desk/) — consulting / skills (quote only; [portfolio](brands/grant-desk/portfolio/) is proof)
+- [Food Desk](brands/food-desk/) — Cara’s food writing / restaurant reviews ([Top 10 posts](brands/food-desk/))
 
 Netarts Systems / Estuary Ink / Quiet Cut stay demoted redirects.
 
