@@ -8,7 +8,7 @@ Consulting for 501(c)(3) fit, grant research, writing + consultation, and manage
 ## Offer
 Quote-only consulting (Cara Mico / Company Soup child under Graphic Oregon).
 
-**Land (door):** consulting / skills. Above-fold WHY + early quote hook.
+**Land (door):** consulting / skills. Above-fold pull-quote + WHY, then quote CTA.
 **Not the land:** free resources, `/portfolio/`.
 
 Sell:
