@@ -1,6 +1,6 @@
 # Grant Desk — Brand kit v0
 **Door:** https://caradmico.github.io/company-soup/brands/grant-desk/  
-**Lane:** Grant writing (quote-only)  
+**Lane:** Consulting / skills (quote-only)  
 **Status:** KEEP — Kevin lit Build to apply 2026-09-04.  
 **Must not equal:** Coast Desk newsprint · Demeter fir · Fine Art salon · GO studio
 
