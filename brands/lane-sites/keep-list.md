@@ -13,7 +13,7 @@ Lane Sites brands the web lane. It keeps live Graphic Oregon surfaces reachable 
 | Graphic Oregon parent | https://graphicoregon.com/ | Company that makes companies |
 | GO field | https://caradmico.github.io/graphicoregon/ | Leave the exam alone |
 | Company Soup | https://caradmico.github.io/company-soup/ | Engine + brand index |
-| Demeter Design | https://caradmico.github.io/company-soup/brands/demeter-design/ | Env child (also demeterdesign.net) |
+| Demeter Design | https://caradmico.github.io/company-soup/brands/demeter-design/ | Env child (door https://demeter.graphicoregon.com/) |
 | Cold Contour | https://caradmico.github.io/company-soup/brands/cold-contour/ | Art child — KEEP’d PDF door |
 | Asterism Lab | https://caradmico.github.io/company-soup/brands/asterism-lab/ | Space child |
 | Coast Desk | https://caradmico.github.io/company-soup/brands/coast-desk/ | Journalism child |
