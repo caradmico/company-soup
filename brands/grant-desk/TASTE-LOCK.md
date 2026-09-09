@@ -3,6 +3,7 @@
 **Factory:** Grant Desk redesign  
 **Live:** https://grants.graphicoregon.com/ → `brands/grant-desk/`  
 **Owner:** Grant Desk (product/taste) · Build sole lands · Kevin one look  
+**Status:** TASTE LOCKED 2026-09-09 — hand Build now (after Coast KEEP `9e53f6a`).  
 **Locks that still stand:** consulting/skills first · free resources = secondary nav only · navy/walnut ≠ Coast Desk · Astoria Downtown HOLD · no invent $ awards · ~$1M KEEP aggregate OK on face · no capital-campaign sell · not legal counsel
 
 ---
