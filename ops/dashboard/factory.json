@@ -6,26 +6,26 @@
     "body": "No ack-only pings. No re-reporting the same KEEP. Speak once with artifact/URL/SHA or stay silent. Kevin looks once \u2014 empty back-and-forth fails."
   },
   "target": {
-    "id": "intake",
-    "name": "Factory closed \u2192 intake",
+    "id": "soup-ops-progress",
+    "name": "soup-ops-progress FAIL redo",
     "owner": "Build Bot",
-    "grade": "parked",
-    "note": "Demeter GOLD KEEP be6b864 \u2014 do not reopen watershed aesthetics. GO screenshots-only look still suspended (d82ae05). No DNS."
+    "grade": "open",
+    "note": "Kevin FAIL 2904786 \u2014 doors board primary + Kevin toolbox face. Objects secondary."
   },
   "lastArtifact": {
-    "label": "Demeter warehouse GOLD KEEP",
-    "url": "https://caradmico.github.io/company-soup/businesses/watershed/",
-    "commit": "be6b864",
+    "label": "soup-ops-progress FAIL redo in flight",
+    "url": "https://caradmico.github.io/company-soup/ops/dashboard/",
+    "commit": "2904786",
     "updated": "2026-09-09",
-    "grade": "KEEP"
+    "grade": "FAIL"
   },
   "seats": [
     {
       "id": "kevin",
       "name": "Manager Kevin",
       "lane": "Taskmaster",
-      "state": "parked",
-      "focus": "Intake open"
+      "state": "hot",
+      "focus": "Await soup-ops FAIL redo claim"
     },
     {
       "id": "soup-ops",
@@ -45,8 +45,8 @@
       "id": "build",
       "name": "Build Bot",
       "lane": "Code",
-      "state": "parked",
-      "focus": "GOLD KEEP be6b864 \u2014 intake; do not reopen aesthetics"
+      "state": "hot",
+      "focus": "soup-ops FAIL redo \u2014 doors primary"
     },
     {
       "id": "grant-desk",
