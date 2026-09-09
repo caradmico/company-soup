@@ -1,0 +1,380 @@
+{
+  "title": "Company Soup stack inventory",
+  "why": "STRUCTURE lens only — ventures, status, doors, host, language. Soup Ops owns this. Not a dashboard redesign.",
+  "generated": "2026-09-09",
+  "curated": "2026-09-09",
+  "owner": "Soup Ops",
+  "pages": {
+    "human": "https://caradmico.github.io/company-soup/ops/stack-inventory.md",
+    "machine": "https://caradmico.github.io/company-soup/ops/stack-inventory.json"
+  },
+  "decap_sveltia_summary": {
+    "yes": [
+      {
+        "id": "food-desk",
+        "reason": "blog posts; strongest candidate"
+      }
+    ],
+    "maybe": [
+      {
+        "id": "coast-desk",
+        "reason": "bylines / clips CMS"
+      },
+      {
+        "id": "grant-desk",
+        "reason": "resources JSON"
+      },
+      {
+        "id": "signal-shelf",
+        "reason": "md sample briefs"
+      },
+      {
+        "id": "fine-art",
+        "reason": "works metadata"
+      },
+      {
+        "id": "ops-links",
+        "reason": "links.json shelf"
+      }
+    ],
+    "no": "shops, Firebase / Three.js apps, pure brand packs, redirects, ops surfaces, WP-gone / external hosts"
+  },
+  "rows": [
+    {
+      "id": "fine-art",
+      "name": "Neahkahnie Atelier",
+      "group": "doors",
+      "live_url": "https://caradmico.github.io/company-soup/businesses/fine-art/",
+      "in_doors_json": true,
+      "host": "GitHub Pages",
+      "language_stack": "HTML/CSS + works.js (static gallery)",
+      "notes": "Fine Art hang. Repo path businesses/fine-art/. Dark exhibition; commissions / inquire. Not a print shop.",
+      "decap_sveltia": {
+        "verdict": "maybe",
+        "reason": "works metadata"
+      }
+    },
+    {
+      "id": "demeter-watershed",
+      "name": "Demeter Design",
+      "group": "doors",
+      "live_url": "https://caradmico.github.io/company-soup/businesses/watershed/",
+      "in_doors_json": true,
+      "host": "GitHub Pages",
+      "language_stack": "static HTML; proof PDFs still on legacy graphicoregon.com /wp-content/",
+      "notes": "GIS-forward firm. Warehouse GOLD KEEP be6b864 — do not reopen aesthetics. demeterdesign.net cert mismatch / not reliable. WP-gone assets still linked from the door.",
+      "decap_sveltia": {
+        "verdict": "no",
+        "reason": "static firm door + legacy WP PDFs; not a CMS candidate"
+      }
+    },
+    {
+      "id": "coast-desk",
+      "name": "Coast Desk",
+      "group": "doors",
+      "live_url": "https://caradmico.github.io/company-soup/brands/coast-desk/",
+      "in_doors_json": true,
+      "host": "GitHub Pages",
+      "language_stack": "static HTML + clips.json",
+      "notes": "Weekly hero slot + originals archive. Clip shelf KEEP — 55 pieces, 2012–2025.",
+      "decap_sveltia": {
+        "verdict": "maybe",
+        "reason": "bylines / clips CMS"
+      }
+    },
+    {
+      "id": "grant-desk",
+      "name": "Grant Desk",
+      "group": "doors",
+      "live_url": "https://caradmico.github.io/company-soup/brands/grant-desk/",
+      "in_doors_json": true,
+      "host": "GitHub Pages",
+      "language_stack": "static HTML + resources JSON",
+      "notes": "Consulting door — 501(c)(3) fit, quote-only. resources/sources.json + scanner-path.json. Portfolio is proof, not the land.",
+      "decap_sveltia": {
+        "verdict": "maybe",
+        "reason": "resources JSON"
+      }
+    },
+    {
+      "id": "food-desk",
+      "name": "Food Desk",
+      "group": "doors",
+      "live_url": "https://caradmico.github.io/company-soup/brands/food-desk/",
+      "in_doors_json": true,
+      "host": "GitHub Pages",
+      "language_stack": "static HTML + posts/*.html",
+      "notes": "Strongest Decap/Sveltia candidate. Public door is a drafts stub (not stranger-published). Post pages still on tree under brands/food-desk/posts/.",
+      "decap_sveltia": {
+        "verdict": "yes",
+        "reason": "blog posts; strongest candidate"
+      }
+    },
+    {
+      "id": "graphic-oregon",
+      "name": "Graphic Oregon",
+      "group": "doors",
+      "live_url": "https://caradmico.github.io/company-soup/brands/graphic-oregon/",
+      "in_doors_json": true,
+      "host": "GitHub Pages",
+      "language_stack": "static HTML pack",
+      "notes": "Soup brand door (website-design / handoff + teach). Not the Cloudflare graphicoregon.com front.",
+      "decap_sveltia": {
+        "verdict": "no",
+        "reason": "pure brand pack"
+      }
+    },
+    {
+      "id": "sassmeharder",
+      "name": "Sassmeharder",
+      "group": "doors",
+      "live_url": "https://sassmeharder.com/",
+      "in_doors_json": true,
+      "host": "Printify (nginx / Printify)",
+      "language_stack": "Printify-hosted Next.js shop",
+      "notes": "Linked merch shop. Not Soup static. Night Owl Softstyle is a buyable drop.",
+      "decap_sveltia": {
+        "verdict": "no",
+        "reason": "external shop — not Soup static"
+      }
+    },
+    {
+      "id": "staris",
+      "name": "StarIS",
+      "group": "doors",
+      "live_url": "https://staris-b01f2.firebaseapp.com/",
+      "in_doors_json": true,
+      "host": "Firebase Hosting",
+      "language_stack": "Three.js web app",
+      "notes": "Live demo linked from Asterism Lab and sky-brief. Not a rebuild this week.",
+      "decap_sveltia": {
+        "verdict": "no",
+        "reason": "Firebase / Three.js app"
+      }
+    },
+    {
+      "id": "cold-contour",
+      "name": "Cold Contour",
+      "group": "doors",
+      "live_url": "https://caradmico.github.io/company-soup/brands/cold-contour/",
+      "in_doors_json": true,
+      "host": "GitHub Pages",
+      "language_stack": "static HTML",
+      "notes": "Shore Contour print/PDF sellable on the door. Not apparel. Estuary Ink redirects here.",
+      "decap_sveltia": {
+        "verdict": "no",
+        "reason": "pure brand pack"
+      }
+    },
+    {
+      "id": "asterism-lab",
+      "name": "Asterism Lab",
+      "group": "doors",
+      "live_url": "https://caradmico.github.io/company-soup/brands/asterism-lab/",
+      "in_doors_json": true,
+      "host": "GitHub Pages",
+      "language_stack": "static HTML (links out to StarIS)",
+      "notes": "Educator sky pack sample ($49). Not a NASA contract. Not a StarIS rebuild.",
+      "decap_sveltia": {
+        "verdict": "no",
+        "reason": "pure brand pack"
+      }
+    },
+    {
+      "id": "far-field-media",
+      "name": "Far Field Media",
+      "group": "doors",
+      "live_url": "https://caradmico.github.io/company-soup/brands/far-field-media/",
+      "in_doors_json": true,
+      "host": "GitHub Pages",
+      "language_stack": "static HTML; sample video on legacy GO /wp-content/",
+      "notes": "Sample clip + $450 / 60–90s field film. Video still hosted at graphicoregon.com/wp-content/uploads/2023/12/Untitled-design-1.mp4.",
+      "decap_sveltia": {
+        "verdict": "no",
+        "reason": "pure brand pack + WP-gone media"
+      }
+    },
+    {
+      "id": "signal-shelf",
+      "name": "Signal Shelf",
+      "group": "doors",
+      "live_url": "https://caradmico.github.io/company-soup/brands/signal-shelf/",
+      "in_doors_json": true,
+      "host": "GitHub Pages",
+      "language_stack": "static HTML + md sample",
+      "notes": "Monday brief sample ($29 demo). Hone invent. Quiet Cut redirects here. sample-monday.md on tree.",
+      "decap_sveltia": {
+        "verdict": "maybe",
+        "reason": "md sample briefs"
+      }
+    },
+    {
+      "id": "lane-sites",
+      "name": "Lane Sites",
+      "group": "doors",
+      "live_url": "https://caradmico.github.io/company-soup/brands/lane-sites/",
+      "in_doors_json": true,
+      "host": "GitHub Pages",
+      "language_stack": "static HTML (explicitly bans Three.js CONTINUE)",
+      "notes": "Keep-list live. Web lane bread — no invented client gigs.",
+      "decap_sveltia": {
+        "verdict": "no",
+        "reason": "pure brand pack"
+      }
+    },
+    {
+      "id": "company-soup-root",
+      "name": "Company Soup root cooker",
+      "group": "ops",
+      "live_url": "https://caradmico.github.io/company-soup/",
+      "in_doors_json": false,
+      "host": "GitHub Pages",
+      "language_stack": "static HTML",
+      "notes": "Repo root index — engine + brand index. Not a venture door.",
+      "decap_sveltia": {
+        "verdict": "no",
+        "reason": "ops / cooker surface"
+      }
+    },
+    {
+      "id": "ops-dashboard",
+      "name": "Soup Ops dashboard",
+      "group": "ops",
+      "live_url": "https://caradmico.github.io/company-soup/ops/dashboard/",
+      "in_doors_json": false,
+      "host": "GitHub Pages",
+      "language_stack": "static HTML + JSON (doors / factory / objects / flight)",
+      "notes": "Multi-venture watch. KEEP look — do not restyle. This inventory is the structure lens beside it.",
+      "decap_sveltia": {
+        "verdict": "no",
+        "reason": "ops surface"
+      }
+    },
+    {
+      "id": "ops-links",
+      "name": "Ops link shelf",
+      "group": "ops",
+      "live_url": "https://caradmico.github.io/company-soup/ops/links/",
+      "in_doors_json": false,
+      "host": "GitHub Pages",
+      "language_stack": "static HTML + links.json",
+      "notes": "Complete seat/project URL shelf + compute_pct estimates.",
+      "decap_sveltia": {
+        "verdict": "maybe",
+        "reason": "links.json shelf"
+      }
+    },
+    {
+      "id": "ops-autonomy",
+      "name": "Autonomy OS",
+      "group": "ops",
+      "live_url": "https://caradmico.github.io/company-soup/ops/autonomy/",
+      "in_doors_json": false,
+      "host": "GitHub Pages",
+      "language_stack": "static HTML + md pack",
+      "notes": "START_ANY_AI / MAKER_LOOKER / CALENDAR_GATE. Evening Cara gate; maker→looker otherwise.",
+      "decap_sveltia": {
+        "verdict": "no",
+        "reason": "ops surface / md pack"
+      }
+    },
+    {
+      "id": "graphicoregon-com",
+      "name": "graphicoregon.com",
+      "group": "related",
+      "live_url": "https://graphicoregon.com/",
+      "in_doors_json": false,
+      "host": "Cloudflare front (WP-gone)",
+      "language_stack": "WP-gone / CF front — legacy /wp-content/ media still used by Soup doors",
+      "notes": "External parent front. Demeter proof PDFs and Far Field sample video still load from /wp-content/. Treat as WP-gone / CF front, not a Soup CMS target.",
+      "decap_sveltia": {
+        "verdict": "no",
+        "reason": "external WP-gone / CF front"
+      }
+    },
+    {
+      "id": "nccwp-map",
+      "name": "NCCWP · Nehalem map",
+      "group": "related",
+      "live_url": "https://caradmico.github.io/graphicoregon/nccwp/",
+      "in_doors_json": false,
+      "host": "GitHub Pages",
+      "language_stack": "HTML + Leaflet + GeoJSON",
+      "notes": "Sister repo graphicoregon/nccwp/. Omitted from Soup doors board. Embedded from Demeter warehouse.",
+      "decap_sveltia": {
+        "verdict": "no",
+        "reason": "map app — omitted from doors board"
+      }
+    },
+    {
+      "id": "orbit-creek",
+      "name": "Orbit creek",
+      "group": "related",
+      "live_url": "https://caradmico.github.io/graphicoregon/creek/",
+      "in_doors_json": false,
+      "host": "GitHub Pages",
+      "language_stack": "HTML + Three.js (vendor/three.min.js)",
+      "notes": "Sister repo graphicoregon/creek/. Not a Soup door. Three.js explore — do not CONTINUE into Soup.",
+      "decap_sveltia": {
+        "verdict": "no",
+        "reason": "Three.js app — sister repo"
+      }
+    },
+    {
+      "id": "houseme-rentme",
+      "name": "HouseMe / RentMe",
+      "group": "related",
+      "live_url": null,
+      "in_doors_json": false,
+      "host": "none",
+      "language_stack": "no public door",
+      "notes": "Listed under doors.json omitted. No public door in this repo. Note only.",
+      "decap_sveltia": {
+        "verdict": "no",
+        "reason": "no public door"
+      }
+    },
+    {
+      "id": "estuary-ink",
+      "name": "Estuary Ink",
+      "group": "redirect",
+      "live_url": "https://caradmico.github.io/company-soup/brands/estuary-ink/",
+      "in_doors_json": false,
+      "host": "GitHub Pages",
+      "language_stack": "HTML meta-refresh redirect",
+      "notes": "redirect / demoted → cold-contour (Marketer names).",
+      "decap_sveltia": {
+        "verdict": "no",
+        "reason": "redirect / demoted"
+      }
+    },
+    {
+      "id": "quiet-cut",
+      "name": "Quiet Cut",
+      "group": "redirect",
+      "live_url": "https://caradmico.github.io/company-soup/brands/quiet-cut/",
+      "in_doors_json": false,
+      "host": "GitHub Pages",
+      "language_stack": "HTML meta-refresh redirect",
+      "notes": "redirect / demoted → signal-shelf (Marketer names).",
+      "decap_sveltia": {
+        "verdict": "no",
+        "reason": "redirect / demoted"
+      }
+    },
+    {
+      "id": "netarts-systems",
+      "name": "Netarts Systems",
+      "group": "redirect",
+      "live_url": "https://caradmico.github.io/company-soup/brands/netarts-systems/",
+      "in_doors_json": false,
+      "host": "GitHub Pages",
+      "language_stack": "HTML meta-refresh redirect",
+      "notes": "redirect / demoted → demeter-design. Env stranger face retired.",
+      "decap_sveltia": {
+        "verdict": "no",
+        "reason": "redirect / demoted"
+      }
+    }
+  ]
+}
