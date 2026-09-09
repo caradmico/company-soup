@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Coast Desk — Cara Mico bylines</title>
-<meta name="description" content="Cara Mico published bylines across Oregon papers. Open the originals.">
+<title>Coast Desk — this week’s piece</title>
+<meta name="description" content="Cara Mico desk writing in the weekly slot. Published Oregon bylines on the clip shelf below.">
 <link rel="canonical" href="https://caradmico.github.io/company-soup/brands/coast-desk/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -89,6 +89,31 @@ a:hover{text-decoration-thickness:2px}
   font:inherit;letter-spacing:inherit;text-transform:inherit;color:inherit;
 }
 .beats-inline button:hover,.beats-inline button.on{color:var(--spot)}
+
+/* Weekly hero — desk writing, not clips */
+.hero-slot{
+  padding:1.05rem 0 1.2rem;
+  border-bottom:3px solid var(--rule);
+}
+.hero-slot .hed{
+  margin:0 0 .35rem;
+  font-family:"Libre Baskerville",Georgia,serif;
+  font-size:clamp(1.7rem,3.8vw,2.65rem);
+  font-weight:700;
+  line-height:1.08;
+  letter-spacing:-.02em;
+}
+.hero-slot .hed a{color:inherit;text-decoration:none}
+.hero-slot .hed a:hover{color:var(--spot)}
+.hero-slot .dek{
+  margin:0 0 .55rem;
+  font-family:"Libre Baskerville",Georgia,serif;
+  font-style:italic;
+  font-size:clamp(1.05rem,1.8vw,1.22rem);
+  line-height:1.35;
+  max-width:42rem;
+}
+.hero-slot .status{margin:0;font-size:.95rem;color:var(--mute);max-width:42rem}
 
 /* Front: featured + rail */
 .front{
@@ -309,9 +334,10 @@ footer{
 <header class="folio">
   <p>Coast Desk · Journalism · Graphic Oregon child</p>
   <nav aria-label="On this page">
-    <a href="#front">Front</a>
-    <a href="#index">Clip index</a>
+    <a href="#hero">This week</a>
     <a href="#desk">From the desk</a>
+    <a href="#front">Clip shelf</a>
+    <a href="#index">Clip index</a>
   </nav>
 </header>
 
@@ -319,12 +345,45 @@ footer{
   <header class="flag">
     <p class="word">Coast Desk</p>
     <span class="spot-tick" aria-hidden="true"></span>
-    <p class="deck">Published Oregon bylines — open the originals.</p>
+    <p class="deck">Desk writing under this masthead. Published Oregon bylines on the shelf below.</p>
   </header>
   <p class="dateline">
     <span><strong>Cara Mico</strong> · <span id="meta-line">clip shelf</span></span>
     <span class="beats-inline" id="beat-inline" aria-label="Beats"></span>
   </p>
+
+  <!-- Book Editor: Coast journalism. Weekly hero is .piece[data-slot=hero]. Edit header + dek. Do not invent bylines. Clip shelf below is clips.json. -->
+  <section class="hero-slot" id="hero" aria-labelledby="hero-hed">
+    <article class="piece" data-desk="coast" data-slot="hero" data-kind="placement-note">
+      <header>
+        <p class="sec">This week’s piece</p>
+        <h2 class="hed" id="hero-hed"><a href="placement-note-001.html">Placement Note 001</a></h2>
+        <p class="byline">Cara Mico · Coast Desk · on file</p>
+      </header>
+      <p class="dek">Watershed packets only become news in a paper that already exists.</p>
+      <p class="status">No new weekly article is filed. This is the correspondence note already on the desk.</p>
+    </article>
+  </section>
+
+  <section class="desk" id="desk" aria-labelledby="desk-hed">
+    <div class="lede-copy">
+      <p class="sec">Originals archive</p>
+      <h2 id="desk-hed">From the desk</h2>
+      <p class="why">Notes and essays already on file under this masthead — not clips that ran in other papers. The weekly piece sits above. The clip shelf below is the published record.</p>
+    </div>
+    <div class="slot">
+      <p class="sec">On file</p>
+      <h3><a href="placement-note-001.html">Placement Note 001</a></h3>
+      <p>Sample correspondence for a paper that already exists. Pioneer stays Pioneer. This desk does not wear another masthead.</p>
+    </div>
+    <div class="slot">
+      <p class="sec">Essays</p>
+      <div class="hold">
+        <h3>None filed</h3>
+        <p>No invented pieces. When Cara files an essay or correspondence of her own, it lands in this box.</p>
+      </div>
+    </div>
+  </section>
 
   <section class="front" id="front" aria-label="Quoted lines from the clips">
     <div class="lede" id="lede"></div>
@@ -350,26 +409,6 @@ footer{
     <p class="load-fail" id="load-fail" hidden></p>
     <ul class="list" id="list"></ul>
     <p class="note" id="pioneer-note">Pioneer pieces listed here carry a Cara Mico byline (or were CV-verified). The Pioneer assistant-editor archive also includes other writers — those are not claimed here.</p>
-  </section>
-
-  <section class="desk" id="desk" aria-labelledby="desk-hed">
-    <div class="lede-copy">
-      <p class="sec">Correspondence</p>
-      <h2 id="desk-hed">From the desk</h2>
-      <p class="why">Essays and notes Cara files under this masthead — not clips that already ran in other papers. The clip index above is the published record. This rail is for her own writing when she files it.</p>
-    </div>
-    <div class="slot">
-      <p class="sec">On file</p>
-      <h3><a href="placement-note-001.html">Placement Note 001</a></h3>
-      <p>Sample correspondence for a paper that already exists. Pioneer stays Pioneer. This desk does not wear another masthead.</p>
-    </div>
-    <div class="slot">
-      <p class="sec">Essays</p>
-      <div class="hold">
-        <h3>None filed</h3>
-        <p>No invented pieces. When Cara files an essay or correspondence of her own, it lands in this box.</p>
-      </div>
-    </div>
   </section>
 
   <footer>
@@ -709,7 +748,7 @@ footer{
     data = json;
     var clips = data.clips || [];
     var outlets = unique(clips, 'outlet');
-    metaEl.textContent = clips.length + ' clips · ' + outlets.length + ' outlets · ' + yearsSpan(clips);
+    metaEl.textContent = 'weekly slot · ' + clips.length + ' clips · ' + outlets.length + ' outlets · ' + yearsSpan(clips);
     if (data.meta && data.meta.pioneerNote){
       pioneerEl.textContent = data.meta.pioneerNote;
     }
