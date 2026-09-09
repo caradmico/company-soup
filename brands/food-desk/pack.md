@@ -22,3 +22,6 @@ Stranger knows in one breath this is Cara’s food writing. Ten posts from the i
 
 ## Do-not
 New .com · invent reviews beyond snippet expansion · rating-only places as Top 10 · restyle Coast / Grant / Demeter · invent an AdSense publisher ID · mill Do-not / AI-disclaimer on public HTML
+
+## Status (2026-09-09)
+**Drafts in flight — not public.** Editable copy in jarvis-operator `ops/plans/drafts/food-blog/posts/`. Live Pages door is a WIP stub only.
