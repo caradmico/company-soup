@@ -1,45 +1,48 @@
 # Grant Desk
 
-Lane: Professional services · Graphic Oregon child · consulting / skills
+Lane: Professional services · Graphic Oregon child · paid grant consulting
 
 ## One-liner
-Consulting for 501(c)(3) fit, grant research, writing + consultation, and management education — affordable quote work.
+Paid grant consulting — research, writing, and how to run what you win.
 
 ## Offer
-Quote-only consulting (Cara Mico / Company Soup child under Graphic Oregon).
+Hire Cara (Grant Desk / Company Soup child under Graphic Oregon) for scoped consulting.
 
-**Land (door):** consulting / skills. Above-fold pull-quote + WHY, then quote CTA.
+**Land (door):** paid-consultant sell. Hire-forward H1 + pull + why-hire + dominant Request-a-consulting-scope CTA above the fold.
 **Not the land:** free resources, `/portfolio/`.
 
 Sell:
-- 501(c)(3) fit
-- Grants with a file already open, or without
+- Hire for research, writing, and run-support
+- 501(c)(3) fit / go-no-go before months burn
+- Grants with a 501(c)(3) vs without
 - Small and large dollar paths (paths — not invented award $)
-- Starter-scale for newcomers
-- Affordable
+- Starter-scale to serious packages
+- Affordable scoped quotes
+- “I’ll tell you if you shouldn’t apply.”
 - Not legal consulting; can help find a lawyer to incorporate / file 501(c)(3)
 
-Services bands:
-- Research
-- Writing + consultation
-- Management education — can manage grants when a scope calls for it; management is **not** the product
+What you hire:
+- Research — funder + 501(c)(3) fit; paths at small and large dollar scales
+- Writing + consultation — narrative, evaluation methods, package your team can submit
+- Run-support / education — how to manage what you win; scoped management only when engaged. Management is **not** the product headline
 
-Do not sell: capital campaigns. Capital-project consulting is experience only (not a campaign product).
+Do not sell: capital campaigns. Capital-project consulting is experience only (not a campaign product). Do not sell ongoing “be our grants manager” as the default SKU.
 
 Proof (public, only these):
 - Dozens of nonprofits in Oregon and California
-- CBAA + Success Centers — designed, funded, and distributed programs
+- CBAA + Success Centers — designed, funded, and distributed grant programs
 - MA in arts administration & nonprofit management
 - ~$1M in grants funded (door KEEP aggregate — do not invent per-org $)
 - Portfolio: Inclusive Art eval + Hosea / COTL / CBAA / Success Centers / watershed councils
 
-Hard gate (mill / internal): she does not submit applications without Cara's explicit gate. CTA is quote/intake only.
+Hard gate (mill / internal): she does not submit applications without Cara's explicit gate. CTA is request-a-consulting-scope / intake only.
 
 ## Path
 - Brand door (the land): https://caradmico.github.io/company-soup/brands/grant-desk/
+- Live claim: https://grants.graphicoregon.com/
 - Portfolio / methods (proof, not the land): https://caradmico.github.io/company-soup/brands/grant-desk/portfolio/
 - Free lookups (secondary menu only): https://caradmico.github.io/company-soup/brands/grant-desk/resources/
-- CTA: mailto hello@graphicoregon.com — subject “Grant Desk — scope quote”
+- CTA: mailto hello@graphicoregon.com — subject “Grant Desk — consulting scope” (door URL in body may be https://grants.graphicoregon.com/)
 - Parent: Graphic Oregon
 
 ## Free value
@@ -51,7 +54,7 @@ Hard gate (mill / internal): she does not submit applications without Cara's exp
 Next — optional scanner over free DBs (Grants.gov + listed public calendars) feeding Finance Bro fit-scan; human curate; Cara gate before any submit. Sketch: `resources/scanner-path.json`.
 
 ## Done-when
-Stranger opens the door and sees consulting/skills WHY + quote above the fold. Services bands are research / writing+consultation / management education. Proof names dozens of OR+CA nonprofits and CBAA + Success Centers. Portfolio is reachable from menu/Proof, not the land. Inclusive Art + named contexts with real public links. Zero invented award $. Astoria omitted. Free lookups stay secondary. Footer is simple + request-a-quote. Navy/walnut ≠ Coast Desk.
+Stranger opens the door and feels they hire Cara for research / write / run-support. Hire-forward H1 + hook above the fold. Dominant Request-a-consulting-scope CTA. Portfolio + Free lookups secondary nav only. What you hire = Research · Writing+consultation · Run-support. Proof names dozens of OR+CA nonprofits, CBAA + Success Centers, MA, ~$1M KEEP. Zero invented award $. Astoria omitted. Navy/walnut Source Sans ≠ Coast Desk newsprint. Not a bland soup-door twin.
 
 ## Sources (mill)
 Internal source notes for makers. Do **not** copy this section onto public HTML.
