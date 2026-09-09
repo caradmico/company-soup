@@ -9,7 +9,7 @@ Ops (venture status, one page): [Soup Ops](https://caradmico.github.io/company-s
 Featured founder firm: [Watershed Field Assessment](businesses/watershed/) — Demeter Design, quote-only coastal field assessment.
 
 ## Children (stranger door)
-- [Demeter Design](brands/demeter-design/) — env (real contracts; [demeterdesign.net](https://demeterdesign.net/))
+- [Demeter Design](brands/demeter-design/) — env (real contracts; [demeter.graphicoregon.com](https://demeter.graphicoregon.com/))
 - [Cold Contour](brands/cold-contour/) — art (prefer this Marketer name; Estuary Ink is a redirect only)
 - [Signal Shelf](brands/signal-shelf/) — hone invent ([sample-monday.md](brands/signal-shelf/sample-monday.md); Quiet Cut is a redirect only)
 - [Asterism Lab](brands/asterism-lab/) — space ([Orion sample PDF](brands/asterism-lab/sample-orion-card.pdf))
