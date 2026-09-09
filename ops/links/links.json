@@ -214,6 +214,13 @@
       "compute_pct_label": "estimate"
     },
     {
+      "name": "Food Desk",
+      "url": "https://caradmico.github.io/company-soup/brands/food-desk/",
+      "live": true,
+      "compute_pct": 0,
+      "compute_pct_label": "estimate"
+    },
+    {
       "name": "Grant Desk free resources",
       "url": "https://caradmico.github.io/company-soup/brands/grant-desk/resources/",
       "live": true,

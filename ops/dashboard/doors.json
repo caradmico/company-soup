@@ -65,6 +65,18 @@
       "hrefLabel": "Open door"
     },
     {
+      "id": "food-desk",
+      "name": "Food Desk",
+      "also": "Restaurant reviews",
+      "lane": "Food writing",
+      "state": "live",
+      "status": "Cara's food writing desk live \u2014 Top 10 reviews from her Maps notes. AdSense-capable Pages child.",
+      "updated": "2026-09-09",
+      "last": "Index + 10 post pages under brands/food-desk/.",
+      "href": "../../brands/food-desk/",
+      "hrefLabel": "Open desk"
+    },
+    {
       "id": "graphic-oregon",
       "name": "Graphic Oregon",
       "also": "Website design door",
