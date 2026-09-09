@@ -31,3 +31,6 @@ Warm, direct, food-forward. Expand her Maps notes; do not invent dishes, prices,
 
 ## Apply notes
 Keep `brands/food-desk/` on this kit. AdSense slot is a marked placeholder — do not invent a publisher ID.
+
+## Status (2026-09-09)
+**Drafts in flight — not public.** Editable copy in jarvis-operator `ops/plans/drafts/food-blog/posts/`. Live Pages door is a WIP stub only.
