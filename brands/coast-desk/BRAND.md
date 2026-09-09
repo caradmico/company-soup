@@ -31,3 +31,7 @@ Wordmark only: **COAST DESK** in Libre Baskerville small-caps / tracked, with a 
 
 ## Apply notes (Build)
 Replace shared paper/teal/gold tokens on `brands/coast-desk/index.html` with this kit. Keep bylines content. Do not restyle Demeter/Fine Art/GO.
+
+## Door slots (KEEP clip shelf 9e53f6a)
+Weekly **hero** is desk writing (`article.piece`). Originals archive sits under it. Clip shelf stays the published record — do not blow out bylines. Book Editor edits Coast journalism via clean `article.piece` markup (header + `.body`). Not Grant navy.
+

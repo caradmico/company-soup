@@ -14,7 +14,7 @@ Featured founder firm: [Watershed Field Assessment](businesses/watershed/) — D
 - [Signal Shelf](brands/signal-shelf/) — hone invent ([sample-monday.md](brands/signal-shelf/sample-monday.md); Quiet Cut is a redirect only)
 - [Asterism Lab](brands/asterism-lab/) — space ([Orion sample PDF](brands/asterism-lab/sample-orion-card.pdf))
 - [Far Field Media](brands/far-field-media/) — videography (sample clip + $450 / 60–90s)
-- [Coast Desk](brands/coast-desk/) — journalism ([Placement Note 001](brands/coast-desk/placement-note-001.html); Pioneer stays Pioneer)
+- [Coast Desk](brands/coast-desk/) — journalism (weekly desk piece + [clip shelf](brands/coast-desk/); Pioneer stays Pioneer)
 - [Lane Sites](brands/lane-sites/) — web lane bread ([keep-list](brands/lane-sites/keep-list.html); no client-site cash)
 - [Grant Desk](brands/grant-desk/) — consulting / skills (quote only; [portfolio](brands/grant-desk/portfolio/) is proof)
 - [Food Desk](brands/food-desk/) — drafts in flight (not public yet)
