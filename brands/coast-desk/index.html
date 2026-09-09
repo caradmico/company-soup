@@ -3,11 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cara Mico — Bylines</title>
+<title>Coast Desk — Cara Mico bylines</title>
 <meta name="description" content="Cara Mico published bylines across Oregon papers. Open the originals.">
+<link rel="canonical" href="https://caradmico.github.io/company-soup/brands/coast-desk/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Libre+Baskerville:wght@400;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
 <style>
 :root{
   --ink:#121212;
@@ -16,107 +17,719 @@
   --spot:#b33a2b;
   --mute:#5c5650;
   --card:#fffcf7;
-  --line:#d4cdc0;
+  --line:#c8c0b0;
 }
 *{box-sizing:border-box}
-body{margin:0;background:var(--paper);color:var(--ink);font:1.05rem/1.55 "Source Serif 4",Georgia,serif}
-.wrap{max-width:48rem;margin:0 auto;padding:1.25rem 1.15rem 3rem}
-.mast{display:flex;align-items:center;gap:.75rem;margin:0 0 .85rem}
-.mast .spot-rule{width:2.5rem;height:2px;background:var(--spot);flex:0 0 auto}
-.mast .word{font-family:"Libre Baskerville",Georgia,serif;font-size:clamp(1.1rem,2.5vw,1.35rem);font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin:0;padding-bottom:.35rem;border-bottom:2px solid var(--rule)}
-.kicker{font:600 .75rem/1.2 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--spot);margin:0 0 .35rem}
-h1{margin:.2rem 0 .45rem;font-family:"Libre Baskerville",Georgia,serif;font-size:clamp(1.75rem,4.2vw,2.25rem);letter-spacing:-.01em;line-height:1.12;font-weight:700}
-.why{margin:0 0 .85rem;color:var(--mute);font-size:1.05rem;max-width:34rem}
-.meta{font:500 .75rem/1.4 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);margin:0 0 1rem}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font:1.05rem/1.5 "Source Serif 4",Georgia,serif;
+  background-image:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(18,18,18,.018) 3px,rgba(18,18,18,.018) 4px);
+}
 a{color:var(--spot)}
-.filters{display:flex;flex-wrap:wrap;gap:.35rem;margin:0 0 1rem}
-.chip{appearance:none;border:1px solid var(--rule);background:transparent;color:var(--ink);font:600 .72rem/1 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.04em;text-transform:uppercase;padding:.4rem .6rem;border-radius:0;cursor:pointer}
-.chip.on,.chip:hover{background:var(--spot);color:#fff;border-color:var(--spot)}
-.list{list-style:none;margin:0;padding:0;border-top:2px solid var(--rule)}
-.list li{border-bottom:1px solid var(--line);padding:.75rem 0}
-.list a{text-decoration:none;color:inherit;display:block}
-.list a:hover .title{color:var(--spot);text-decoration:underline}
-.title{font-size:1.06rem;font-weight:700;margin:0 0 .2rem;font-family:"Libre Baskerville",Georgia,serif}
-.by{font:500 .72rem/1.3 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.04em;text-transform:uppercase;color:var(--mute)}
-.note{font-size:.88rem;color:var(--mute);margin:1.35rem 0 0;max-width:38rem}
-footer{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--mute)}
+a:hover{text-decoration-thickness:2px}
+.folio{
+  display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:.35rem 1.25rem;
+  max-width:78rem;margin:0 auto;padding:.45rem 1.1rem;
+  font:600 .68rem/1.3 "IBM Plex Mono",ui-monospace,monospace;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--mute);
+  border-bottom:1px solid var(--rule);
+}
+.folio a{color:var(--ink);text-decoration:none}
+.folio a:hover{color:var(--spot)}
+.folio nav{display:flex;gap:.85rem}
+.sheet{max-width:78rem;margin:0 auto;padding:0 1.1rem 3rem}
 
-.quotes{display:grid;gap:.7rem;margin:1rem 0 1.35rem}
-@media(min-width:800px){.quotes{grid-template-columns:1fr 1fr}}
-blockquote.pull{margin:0;padding:.85rem 1rem;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--spot)}
-blockquote.pull .beat{font:600 .68rem/1.2 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--spot);margin:0 0 .45rem}
-blockquote.pull a{color:inherit;text-decoration:none;display:block}
-blockquote.pull a:hover{color:var(--spot)}
-blockquote.pull .q{font-size:1.02rem;line-height:1.45;margin:0 0 .5rem}
-blockquote.pull .src{font:500 .72rem/1.3 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.04em;text-transform:uppercase;color:var(--mute)}
+/* Nameplate */
+.flag{
+  margin:0;
+  padding:.85rem 0 .2rem;
+  text-align:center;
+  border-bottom:3px solid var(--rule);
+}
+.flag .word{
+  margin:0 auto;
+  display:inline-block;
+  font-family:"Libre Baskerville",Georgia,serif;
+  font-size:clamp(2.35rem,8.2vw,4.6rem);
+  font-weight:700;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  line-height:.95;
+  padding-bottom:.28rem;
+  border-bottom:2px solid var(--rule);
+}
+.flag .spot-tick{
+  display:block;
+  width:2.5rem;height:2px;
+  background:var(--spot);
+  margin:.4rem auto 0;
+}
+.flag .deck{
+  margin:.45rem 0 .7rem;
+  font-family:"Libre Baskerville",Georgia,serif;
+  font-style:italic;
+  font-size:clamp(.95rem,1.6vw,1.15rem);
+  font-weight:400;
+  letter-spacing:.01em;
+}
+.dateline{
+  display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:.4rem 1rem;
+  padding:.4rem 0 .55rem;
+  border-bottom:1px solid var(--rule);
+  font:600 .68rem/1.35 "IBM Plex Mono",ui-monospace,monospace;
+  letter-spacing:.07em;text-transform:uppercase;color:var(--mute);
+}
+.dateline strong{color:var(--ink);font-weight:600}
+.beats-inline{display:flex;flex-wrap:wrap;gap:.35rem .7rem}
+.beats-inline button{
+  appearance:none;border:0;background:none;padding:0;cursor:pointer;
+  font:inherit;letter-spacing:inherit;text-transform:inherit;color:inherit;
+}
+.beats-inline button:hover,.beats-inline button.on{color:var(--spot)}
+
+/* Front: featured + rail */
+.front{
+  display:grid;
+  gap:0;
+  grid-template-columns:1fr;
+  border-bottom:2px solid var(--rule);
+}
+@media(min-width:900px){
+  .front{grid-template-columns:minmax(0,1.35fr) minmax(0,.95fr) minmax(16rem,0.72fr)}
+}
+.lede,.stack,.rail{
+  padding:.7rem 0 .85rem;
+}
+@media(min-width:900px){
+  .lede{padding-right:1rem}
+  .stack{padding:.7rem 1rem .85rem;border-left:1px solid var(--line);border-right:1px solid var(--line)}
+  .rail{padding-left:1rem}
+}
+.sec{
+  font:600 .68rem/1.2 "IBM Plex Mono",ui-monospace,monospace;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--spot);
+  margin:0 0 .55rem;
+}
+.lede .hed{
+  margin:0 0 .35rem;
+  font-family:"Libre Baskerville",Georgia,serif;
+  font-size:clamp(1.55rem,3.1vw,2.25rem);
+  font-weight:700;
+  line-height:1.08;
+  letter-spacing:-.015em;
+}
+.lede .hed a,.stack .hed a{color:inherit;text-decoration:none}
+.lede .hed a:hover,.stack .hed a:hover{color:var(--spot)}
+.byline{
+  margin:0 0 .7rem;
+  font:500 .72rem/1.35 "IBM Plex Mono",ui-monospace,monospace;
+  letter-spacing:.05em;text-transform:uppercase;color:var(--mute);
+}
+blockquote.pull{
+  margin:0;
+  padding:.15rem 0 0;
+  border:0;
+}
+blockquote.pull p{
+  margin:0;
+  font-family:"Libre Baskerville",Georgia,serif;
+  font-style:italic;
+  font-size:1.12rem;
+  line-height:1.4;
+}
+blockquote.pull p::before{content:"“";color:var(--spot)}
+blockquote.pull p::after{content:"”"}
+.stack article{
+  padding:.75rem 0;
+  border-top:1px solid var(--line);
+}
+.stack article:first-of-type{border-top:0;padding-top:0}
+.stack .hed{
+  margin:0 0 .25rem;
+  font-family:"Libre Baskerville",Georgia,serif;
+  font-size:1.12rem;
+  font-weight:700;
+  line-height:1.2;
+}
+.stack blockquote.pull p{font-size:.98rem}
+.rail ol{list-style:none;margin:0;padding:0}
+.rail li{border-top:1px solid var(--line)}
+.rail li:first-child{border-top:0}
+.rail button.beat-row{
+  appearance:none;width:100%;border:0;background:transparent;
+  display:flex;justify-content:space-between;align-items:baseline;gap:.75rem;
+  padding:.5rem 0;cursor:pointer;text-align:left;color:inherit;
+}
+.rail button.beat-row:hover .bname,.rail button.beat-row.on .bname{color:var(--spot)}
+.rail .bname{
+  font-family:"Libre Baskerville",Georgia,serif;
+  font-weight:700;font-size:1.02rem;
+}
+.rail .bcount{
+  font:600 .68rem/1 "IBM Plex Mono",ui-monospace,monospace;
+  letter-spacing:.06em;text-transform:uppercase;color:var(--mute);
+}
+.rail .latest{
+  margin:-.15rem 0 .55rem;
+  font-size:.88rem;line-height:1.35;color:var(--mute);
+}
+.empty-zone{
+  color:var(--mute);font-size:.95rem;margin:.35rem 0 0;
+}
+.also{margin:.75rem 0 0;padding-top:.55rem;border-top:1px solid var(--rule)}
+.also ol{list-style:none;margin:0;padding:0}
+.also li{padding:.32rem 0;border-top:1px solid var(--line)}
+.also li:first-child{border-top:0;padding-top:0}
+.also a{color:inherit;text-decoration:none;font-family:"Libre Baskerville",Georgia,serif;font-weight:700;font-size:.95rem;line-height:1.2}
+.also a:hover{color:var(--spot)}
+.also .by{margin:.12rem 0 0;font:500 .66rem/1.3 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.04em;text-transform:uppercase;color:var(--mute)}
+.latestrip{
+  display:grid;gap:0 1.1rem;grid-template-columns:1fr;
+  padding:.7rem 0 .75rem;
+  border-bottom:2px solid var(--rule);
+}
+.latestrip > .sec{grid-column:1 / -1;margin:0 0 .15rem}
+@media(min-width:700px){.latestrip{grid-template-columns:1fr 1fr}}
+@media(min-width:1100px){.latestrip{grid-template-columns:1fr 1fr 1fr 1fr}}
+.latestrip article{padding:.45rem 0;border-top:1px solid var(--line)}
+@media(min-width:700px){
+  .latestrip article:nth-of-type(-n+2){border-top:0}
+}
+@media(min-width:1100px){
+  .latestrip article:nth-of-type(-n+4){border-top:0}
+}
+.latestrip h3{margin:0;font-family:"Libre Baskerville",Georgia,serif;font-size:1.02rem;line-height:1.2}
+.latestrip h3 a{color:inherit;text-decoration:none}
+.latestrip h3 a:hover{color:var(--spot)}
+.latestrip .by{margin:.2rem 0 0;font:500 .66rem/1.3 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.04em;text-transform:uppercase;color:var(--mute)}
+
+/* From the desk */
+.desk{
+  display:grid;gap:0;grid-template-columns:1fr;
+  padding:1.15rem 0 1.25rem;
+  border-bottom:2px solid var(--rule);
+}
+.desk > .lede-copy{grid-column:1 / -1}
+@media(min-width:800px){
+  .desk{grid-template-columns:1fr 1fr}
+  .desk .slot + .slot{border-left:1px solid var(--line);padding-left:1.2rem;margin-left:1.2rem}
+}
+.desk h2{
+  margin:0 0 .35rem;
+  font-family:"Libre Baskerville",Georgia,serif;
+  font-size:1.45rem;line-height:1.15;
+}
+.desk .why{margin:0 0 1rem;color:var(--mute);max-width:42rem}
+.slot{padding:.15rem 0}
+.slot h3{
+  margin:0 0 .3rem;
+  font-family:"Libre Baskerville",Georgia,serif;
+  font-size:1.12rem;
+}
+.slot p{margin:0 0 .45rem}
+.slot .hold{
+  background:var(--card);
+  border:1px dashed var(--rule);
+  padding:.75rem .85rem;
+}
+.slot .hold p{margin:0;color:var(--mute)}
+
+/* Index */
+.index-head{
+  display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:.6rem 1rem;
+  padding:1.15rem 0 .55rem;
+}
+.index-head h2{
+  margin:0;
+  font-family:"Libre Baskerville",Georgia,serif;
+  font-size:1.45rem;line-height:1.15;
+}
+.count{
+  font:600 .72rem/1.3 "IBM Plex Mono",ui-monospace,monospace;
+  letter-spacing:.06em;text-transform:uppercase;color:var(--mute);
+}
+.filters{display:flex;flex-wrap:wrap;gap:.3rem;margin:0 0 .45rem}
+.chip{
+  appearance:none;
+  border:1px solid var(--rule);
+  background:transparent;
+  color:var(--ink);
+  font:600 .68rem/1 "IBM Plex Mono",ui-monospace,monospace;
+  letter-spacing:.04em;text-transform:uppercase;
+  padding:.38rem .55rem;
+  cursor:pointer;
+}
+.chip.on,.chip:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.chip.spot.on,.chip.spot:hover{background:var(--spot);color:#fff;border-color:var(--spot)}
+.list{
+  list-style:none;margin:.35rem 0 0;padding:0;
+  border-top:2px solid var(--rule);
+  columns:1;column-gap:1.35rem;
+}
+@media(min-width:720px){.list{columns:2}}
+@media(min-width:1100px){.list{columns:3}}
+.list li{
+  break-inside:avoid;
+  border-bottom:1px solid var(--line);
+  padding:.32rem 0 .3rem;
+}
+.list a{text-decoration:none;color:inherit;display:grid;grid-template-columns:4.2rem 1fr;gap:.55rem;align-items:baseline}
+.list a:hover .title{color:var(--spot);text-decoration:underline}
+.list .beat{
+  font:600 .62rem/1.3 "IBM Plex Mono",ui-monospace,monospace;
+  letter-spacing:.06em;text-transform:uppercase;color:var(--spot);
+}
+.list .title{
+  margin:0;
+  font-family:"Libre Baskerville",Georgia,serif;
+  font-size:.98rem;font-weight:700;line-height:1.25;
+}
+.list .by{
+  grid-column:2;
+  margin:.15rem 0 0;
+  font:500 .68rem/1.3 "IBM Plex Mono",ui-monospace,monospace;
+  letter-spacing:.04em;text-transform:uppercase;color:var(--mute);
+}
+.note{
+  font-size:.88rem;color:var(--mute);
+  margin:1.2rem 0 0;max-width:46rem;
+}
+.load-fail{color:var(--spot);margin:1rem 0}
+footer{
+  margin-top:1.6rem;padding-top:.85rem;
+  border-top:1px solid var(--rule);
+  font-size:.85rem;color:var(--mute);
+}
 </style>
 </head>
 <body>
-<main class="wrap">
-  <div class="mast"><span class="spot-rule" aria-hidden="true"></span><p class="word">Coast Desk</p></div>
-  <p class="kicker">Graphic Oregon · Bylines</p>
-  <h1>Cara Mico — Bylines</h1>
-  <p class="why"><strong>You’re here to read her published work</strong> and open the originals.</p>
-  <p class="meta">55 pieces · 2012–2025 · 5 outlets</p>
-  <div class="quotes" id="quotes" aria-label="Quoted lines from the work"></div>
-  <div class="filters" id="filters" aria-label="Filter by outlet">
-    <button type="button" class="chip on" data-outlet="all">All</button>
-    <button type="button" class="chip" data-outlet="Cannon Beach Gazette">Cannon Beach Gazette</button>
-    <button type="button" class="chip" data-outlet="HipFish Monthly">HipFish Monthly</button>
-    <button type="button" class="chip" data-outlet="Portland Mercury">Portland Mercury</button>
-    <button type="button" class="chip" data-outlet="Seaside Signal">Seaside Signal</button>
-    <button type="button" class="chip" data-outlet="Tillamook County Pioneer">Pioneer</button>
-  </div>
-  <ul class="list" id="list"></ul>
-  <p class="note">Pioneer pieces listed here carry a Cara Mico byline (or were CV-verified). The Pioneer assistant-editor archive also includes other writers — those are not claimed here.</p>
+<header class="folio">
+  <p>Coast Desk · Journalism · Graphic Oregon child</p>
+  <nav aria-label="On this page">
+    <a href="#front">Front</a>
+    <a href="#index">Clip index</a>
+    <a href="#desk">From the desk</a>
+  </nav>
+</header>
+
+<div class="sheet">
+  <header class="flag">
+    <p class="word">Coast Desk</p>
+    <span class="spot-tick" aria-hidden="true"></span>
+    <p class="deck">Published Oregon bylines — open the originals.</p>
+  </header>
+  <p class="dateline">
+    <span><strong>Cara Mico</strong> · <span id="meta-line">clip shelf</span></span>
+    <span class="beats-inline" id="beat-inline" aria-label="Beats"></span>
+  </p>
+
+  <section class="front" id="front" aria-label="Quoted lines from the clips">
+    <div class="lede" id="lede"></div>
+    <div class="stack" id="stack"></div>
+    <aside class="rail" aria-label="Beats">
+      <p class="sec">Beat rail</p>
+      <ol id="beat-rail"></ol>
+    </aside>
+  </section>
+
+  <section class="latestrip" id="latest" aria-label="Latest clips on the shelf"></section>
+
+  <section id="index" aria-labelledby="index-hed">
+    <div class="index-head">
+      <div>
+        <p class="sec">The record</p>
+        <h2 id="index-hed">Clip index</h2>
+      </div>
+      <p class="count" id="count"></p>
+    </div>
+    <div class="filters" id="outlets" aria-label="Filter by outlet"></div>
+    <div class="filters" id="beats" aria-label="Filter by beat"></div>
+    <p class="load-fail" id="load-fail" hidden></p>
+    <ul class="list" id="list"></ul>
+    <p class="note" id="pioneer-note">Pioneer pieces listed here carry a Cara Mico byline (or were CV-verified). The Pioneer assistant-editor archive also includes other writers — those are not claimed here.</p>
+  </section>
+
+  <section class="desk" id="desk" aria-labelledby="desk-hed">
+    <div class="lede-copy">
+      <p class="sec">Correspondence</p>
+      <h2 id="desk-hed">From the desk</h2>
+      <p class="why">Essays and notes Cara files under this masthead — not clips that already ran in other papers. The clip index above is the published record. This rail is for her own writing when she files it.</p>
+    </div>
+    <div class="slot">
+      <p class="sec">On file</p>
+      <h3><a href="placement-note-001.html">Placement Note 001</a></h3>
+      <p>Sample correspondence for a paper that already exists. Pioneer stays Pioneer. This desk does not wear another masthead.</p>
+    </div>
+    <div class="slot">
+      <p class="sec">Essays</p>
+      <div class="hold">
+        <h3>None filed</h3>
+        <p>No invented pieces. When Cara files an essay or correspondence of her own, it lands in this box.</p>
+      </div>
+    </div>
+  </section>
+
   <footer>
     Cara Mico · Coast Desk ·
     <a href="https://graphicoregon.com/">Graphic Oregon</a> ·
     <a href="../../">Company Soup</a>
   </footer>
-</main>
+</div>
+
 <script>
-var CLIPS = [{"outlet": "Portland Mercury", "year": 2013, "title": "And Your Ammo, Too!", "url": "https://www.portlandmercury.com/news/2013/02/20/8531590/and-your-ammo-too"}, {"outlet": "Portland Mercury", "year": 2012, "title": "A Temporary Armistice", "url": "https://www.portlandmercury.com/news/2012/12/05/7826150/a-temporary-armistice"}, {"outlet": "Seaside Signal", "year": 2019, "title": "Hum and Swish", "url": "https://www.seasidesignal.com/2019/09/21/hum-and-swish/"}, {"outlet": "Seaside Signal", "year": 2019, "title": "Cleaning up on the diamond", "url": "https://www.seasidesignal.com/2019/09/18/cleaning-up-on-the-diamond/"}, {"outlet": "Seaside Signal", "year": 2019, "title": "Preparedness forum invites community involvement", "url": "https://www.seasidesignal.com/2019/09/10/preparedness-forum-invites-community-involvement/"}, {"outlet": "Seaside Signal", "year": 2019, "title": "Pickleball headed to Gearhart", "url": "https://www.seasidesignal.com/2019/08/27/pickleball-headed-to-gearhart/"}, {"outlet": "Seaside Signal", "year": 2019, "title": "Jeepers Creepers birding event at Circle Creek", "url": "https://www.seasidesignal.com/2019/08/13/jeepers-creepers-birding-event-at-circle-creek/"}, {"outlet": "Seaside Signal", "year": 2019, "title": "Social justice motivates artist May Wallace", "url": "https://www.seasidesignal.com/2019/08/02/social-justice-motivates-artist-may-wallace/"}, {"outlet": "Seaside Signal", "year": 2019, "title": "NCLC volunteers go deep into the weeds", "url": "https://www.seasidesignal.com/2019/08/01/nclc-volunteers-go-deep-into-the-weeds/"}, {"outlet": "Seaside Signal", "year": 2019, "title": "Fresh picked farmers market in Seaside", "url": "https://www.seasidesignal.com/2019/07/25/fresh-picked-farmers-market-in-seaside/"}, {"outlet": "Seaside Signal", "year": 2019, "title": "Ode to the Tides", "url": "https://www.seasidesignal.com/2019/06/19/ode-to-the-tides/"}, {"outlet": "Seaside Signal", "year": 2019, "title": "Making scents at Beach Books", "url": "https://www.seasidesignal.com/2019/07/09/making-scents-at-beach-books/"}, {"outlet": "Seaside Signal", "year": 2019, "title": "Hypertufa workshop promotes local species", "url": "https://www.seasidesignal.com/2019/07/01/hypertufa-workshop-promotes-local-species/"}, {"outlet": "Seaside Signal", "year": 2019, "title": "Preserving pollinators on the north coast", "url": "https://www.seasidesignal.com/2019/05/29/preserving-pollinators-on-the-north-coast/"}, {"outlet": "Seaside Signal", "year": 2019, "title": "The food all around us", "url": "https://www.seasidesignal.com/2019/05/29/the-food-all-around-us/"}, {"outlet": "Seaside Signal", "year": 2019, "title": "Firehouse committee zeroes in on high point site", "url": "https://www.seasidesignal.com/2019/05/22/firehouse-committee-zeroes-in-on-high-point-site/"}, {"outlet": "Seaside Signal", "year": 2019, "title": "Sparking change, one piece of plastic at a time", "url": "https://www.seasidesignal.com/2019/05/21/sparking-change-one-piece-of-plastic-at-a-time/"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "Preparation is the Watchword", "url": "https://www.cannonbeachgazette.com/news/local-news/preparation-is-watchword/article_470ded96-6441-11e9-be4d-0fd857e90c28.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "Beauty and the Beast at Coaster Theater Spring Camp", "url": "https://www.cannonbeachgazette.com/entertainment/beauty-and-the-beast-at-coaster-theatre-spring-camp/article_1912d514-528a-11e9-bb4e-177472b31e94.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "Site plan for larger tree work required", "url": "https://www.cannonbeachgazette.com/news/local-news/city-council-roundup-site-plan-for-larger-tree-work-required/article_085a6ff4-5f99-11e9-9179-4764da579f91.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "City Council appeal sent back to Planning Commission", "url": "https://www.cannonbeachgazette.com/news/local-news/city-council-appeal-sent-back-to-planning-commission/article_b913b8f6-5f98-11e9-b7d8-275b23d6892c.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "Big changes ahead for rental permits", "url": "https://www.cannonbeachgazette.com/news/local-news/big-changes-could-be-ahead-for-rental-permits/article_b5516794-5279-11e9-9d6a-9f3d5d00f719.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "Food for the Soul", "url": "https://www.cannonbeachgazette.com/news/local-news/food-for-the-soul/article_69383ba0-54a2-11e9-b338-43b9fde4b7a0.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "Bed and breakfast or short term rental?", "url": "https://www.cannonbeachgazette.com/news/local-news/bed-and-breakfast-or-short-term-rental/article_d24d7ad4-5271-11e9-8fd6-33180ae1a89f.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "Design Review Board approves two new marijuana shop plans", "url": "https://www.cannonbeachgazette.com/news/local-news/design-review-board-approves-two-new-marijuana-shop-plans/article_4540d63c-4f82-11e9-b51f-5f58d4abebe9.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "No tents in the park", "url": "https://www.cannonbeachgazette.com/news/local-news/no-tents-in-the-parks/article_e3a2352e-486f-11e9-821f-5b4df1833d81.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "City seeks clarity on tourism funds", "url": "https://www.cannonbeachgazette.com/news/local-news/city-seeks-clarity-on-tourism-funds/article_bd008fac-486e-11e9-96d8-8be7bdc7b78d.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "Warren Way reconfiguration ahead", "url": "https://www.cannonbeachgazette.com/news/local-news/warren-way-reconfiguration-ahead/article_bd683b9c-486f-11e9-b588-db864ff4a874.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "Program seeks to protect puffin population", "url": "https://www.cannonbeachgazette.com/news/local-news/program-seeks-to-protect-puffin-population/article_39794b1e-486f-11e9-8df5-9fd8164430ec.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "Operations levy rejected for new fire truck", "url": "https://www.cannonbeachgazette.com/news/local-news/operations-levy-rejected-for-new-fire-truck/article_28e0ca0a-469b-11e9-9d6e-eb9194653f98.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "What’s in store for the new RV park?", "url": "https://www.cannonbeachgazette.com/news/local-news/what-s-in-store-at-the-rv-park/article_10c1cc54-4424-11e9-adf6-931e62fb16db.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "Funding sought to analyze potential city hall sites", "url": "https://www.cannonbeachgazette.com/news/local-news/funding-sought-to-analyze-potential-city-hall-sites/article_981f6722-4444-11e9-9313-db6f6c18bdbe.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "Love it like a local", "url": "https://www.cannonbeachgazette.com/news/local-news/love-it-like-a-local/article_05918dbe-4425-11e9-93ef-7f3954f702a1.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "Keeping a forest healthy", "url": "https://www.cannonbeachgazette.com/news/local-news/keeping-a-forest-healthy/article_70592f52-3e31-11e9-a0f2-6b25324930ed.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "Savor Cannon Beach", "url": "https://www.cannonbeachgazette.com/entertainment/savor-cannon-beach/article_1ca2a8aa-33a7-11e9-a802-ef46ff77f2a4.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "Is comp plan revision ahead?", "url": "https://www.cannonbeachgazette.com/news/local-news/is-comp-plan-revision-ahead/article_d22213da-3a11-11e9-9320-430e5ede90c2.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "City hall location only one of many concerns", "url": "https://www.cannonbeachgazette.com/news/local-news/city-hall-location-only-one-of-many-council-concerns/article_6effdaa4-34ac-11e9-bab5-072ab5e9c25c.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "City hall location dizzying for council", "url": "https://www.cannonbeachgazette.com/news/local-news/city-hall-options-dizzying-for-council/article_5e500b36-2bcc-11e9-a4d4-0b6fe5dfb8ba.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "Burglaries spike, but overall crime report is ‘average’", "url": "https://www.cannonbeachgazette.com/news/local-news/burglaries-spike-but-overall-crime-report-is-average/article_23bd935c-2b0f-11e9-81fa-cb3ccbd6a65e.html"}, {"outlet": "Cannon Beach Gazette", "year": 2019, "title": "Neal Maine’s art of the migratory bird", "url": "https://www.cannonbeachgazette.com/entertainment/neal-maine-s-art-of-the-migratory-bird/article_443ec004-ec1e-571d-a62a-a224ec9d0c2c.html"}, {"outlet": "HipFish Monthly", "year": 2017, "title": "Riverbend Players stage a first musical: Cole Porter’s You Never Know", "url": "https://www.hipfishmonthly.com/wp-content/uploads/2017/05/517.pdf"}, {"outlet": "HipFish Monthly", "year": 2017, "title": "North Coast Recreation District’s brilliant new theater facility", "url": "https://www.hipfishmonthly.com/wp-content/uploads/2017/01/117.pdf"}, {"outlet": "HipFish Monthly", "year": 2016, "title": "Of Dust and the River: Tim Hurd", "url": "https://www.hipfishmonthly.com/wp-content/uploads/2016/10/1016.pdf"}, {"outlet": "HipFish Monthly", "year": 2016, "title": "When Albums Were Art", "url": "https://www.hipfishmonthly.com/wp-content/uploads/2016/07/716.pdf"}, {"outlet": "Tillamook County Pioneer", "year": 2022, "title": "A New View: Space", "url": "https://www.tillamookcountypioneer.net/a-new-view-space/"}, {"outlet": "Tillamook County Pioneer", "year": 2025, "title": "Space Just Got a Little Closer", "url": "https://www.tillamookcountypioneer.net/space-just-got-a-little-closer/"}, {"outlet": "Tillamook County Pioneer", "year": 2024, "title": "The Return of Sea Otters to Haystack Rock", "url": "https://www.tillamookcountypioneer.net/the-return-of-sea-otters-to-haystack-rock/"}, {"outlet": "Tillamook County Pioneer", "year": 2023, "title": "Understanding AI Language Models: An Introductory Guide", "url": "https://www.tillamookcountypioneer.net/understanding-ai-language-models-an-introductory-guide/"}, {"outlet": "Tillamook County Pioneer", "year": 2022, "title": "Climate Change on the Oregon Coast", "url": "https://www.tillamookcountypioneer.net/climate-change-on-the-oregon-coast-3-part-series/"}, {"outlet": "Tillamook County Pioneer", "year": 2024, "title": "Homelessness in Tillamook County and on the West Coast", "url": "https://www.tillamookcountypioneer.net/homelessness-in-tillamook-county-and-on-the-west-coast/"}, {"outlet": "Tillamook County Pioneer", "year": 2024, "title": "The Data of Immigration", "url": "https://www.tillamookcountypioneer.net/the-data-of-immigration/"}, {"outlet": "Tillamook County Pioneer", "year": 2023, "title": "Spy vs. Spy", "url": "https://www.tillamookcountypioneer.net/spy-vs-spy-balloon-war/"}, {"outlet": "Tillamook County Pioneer", "year": 2024, "title": "On the Future of Artificial Intelligence and How AI Can Help Humanity", "url": "https://www.tillamookcountypioneer.net/on-the-future-of-artificial-intelligence-and-how-it-can-help-humanity/"}, {"outlet": "Tillamook County Pioneer", "year": 2022, "title": "Manzanita City Council Regular Session Highlights 11/9/2022", "url": "https://www.tillamookcountypioneer.net/manzanita-city-council-regular-session-highlights-11-9-2022/"}, {"outlet": "Tillamook County Pioneer", "year": 2024, "title": "Manzanita Citizens Express Concern for Incomplete LUBA Response for the Lofts Development", "url": "https://www.tillamookcountypioneer.net/manzanita-citizens-express-concern-for-incomplete-luba-response-for-the-lofts-development/"}];
-var QUOTES = [{"beat": "science", "text": "Space. We’re all in it. But what exactly is going on up there (around there? Down there?) Quite a bit actually!", "title": "A New View: Space", "url": "https://www.tillamookcountypioneer.net/a-new-view-space/"}, {"beat": "civic", "text": "After decades of acrimony between residents and businesses, he had brokered a “truce” in the neighborhood’s vaunted “parking wars.”", "title": "A Temporary Armistice", "url": "https://www.portlandmercury.com/news/2012/12/05/7826150/a-temporary-armistice"}, {"beat": "arts", "text": "I just wanted to create a story about a girl who does her own thing and doesn’t want to be bothered.", "title": "Hum and Swish", "url": "https://www.seasidesignal.com/2019/09/21/hum-and-swish/"}, {"beat": "outdoors", "text": "This historic event marks the first confirmed presence of sea otters in the area for over a century, signaling a potential resurgence of a species once extirpated from the Oregon coast.", "title": "The Return of Sea Otters to Haystack Rock", "url": "https://www.tillamookcountypioneer.net/the-return-of-sea-otters-to-haystack-rock/"}, {"beat": "community", "text": "About half of the market visitors are locals coming for fresh-picked vegetables and farm goods, while the other half are tourists who tend to visit the craft stands more frequently, said market manager Angi Wildt.", "title": "Fresh picked farmers market in Seaside", "url": "https://www.seasidesignal.com/2019/07/25/fresh-picked-farmers-market-in-seaside/"}];
 (function(){
-  var list=document.getElementById('list');
-  var filters=document.getElementById('filters');
-  var quotesEl=document.getElementById('quotes');
-  var active='all';
-  function renderQuotes(){
-    quotesEl.innerHTML='';
-    QUOTES.forEach(function(q){
-      var bq=document.createElement('blockquote');
-      bq.className='pull';
-      var beat=document.createElement('p'); beat.className='beat'; beat.textContent=q.beat;
-      var a=document.createElement('a'); a.href=q.url; a.target='_blank'; a.rel='noopener';
-      var qt=document.createElement('p'); qt.className='q'; qt.textContent='“'+q.text+'”';
-      var src=document.createElement('p'); src.className='src'; src.textContent=q.title;
-      a.appendChild(qt); a.appendChild(src);
-      bq.appendChild(beat); bq.appendChild(a);
-      quotesEl.appendChild(bq);
+  var data = null;
+  var outlet = 'all';
+  var beat = 'all';
+
+  var ledeEl = document.getElementById('lede');
+  var stackEl = document.getElementById('stack');
+  var railEl = document.getElementById('beat-rail');
+  var inlineEl = document.getElementById('beat-inline');
+  var latestEl = document.getElementById('latest');
+  var listEl = document.getElementById('list');
+  var outletsEl = document.getElementById('outlets');
+  var beatsEl = document.getElementById('beats');
+  var countEl = document.getElementById('count');
+  var metaEl = document.getElementById('meta-line');
+  var failEl = document.getElementById('load-fail');
+  var pioneerEl = document.getElementById('pioneer-note');
+
+  function clipForQuote(q){
+    var url = q.url;
+    var clips = data.clips;
+    for (var i = 0; i < clips.length; i++){
+      if (clips[i].url === url) return clips[i];
+    }
+    return null;
+  }
+
+  function yearsSpan(clips){
+    var min = Infinity, max = -Infinity;
+    clips.forEach(function(c){
+      if (c.year < min) min = c.year;
+      if (c.year > max) max = c.year;
+    });
+    return min + '–' + max;
+  }
+
+  function unique(arr, key){
+    var seen = {};
+    var out = [];
+    arr.forEach(function(item){
+      var v = item[key];
+      if (!seen[v]){ seen[v] = 1; out.push(v); }
+    });
+    return out.sort();
+  }
+
+  function beatCounts(){
+    var map = {};
+    data.clips.forEach(function(c){
+      map[c.beat] = (map[c.beat] || 0) + 1;
+    });
+    return Object.keys(map).sort().map(function(b){
+      var latest = data.clips.filter(function(c){ return c.beat === b; })
+        .sort(function(a,b){ return b.year - a.year; })[0];
+      return { beat: b, count: map[b], latest: latest };
     });
   }
-  function render(){
-    list.innerHTML='';
-    CLIPS.filter(function(c){return active==='all'||c.outlet===active}).forEach(function(c){
-      var li=document.createElement('li');
-      var a=document.createElement('a');
-      a.href=c.url; a.target='_blank'; a.rel='noopener';
-      var t=document.createElement('p'); t.className='title'; t.textContent=c.title;
-      var b=document.createElement('p'); b.className='by';
-      b.textContent='Cara Mico · '+c.outlet+(c.year?(' · '+c.year):'');
-      a.appendChild(t); a.appendChild(b); li.appendChild(a); list.appendChild(li);
+
+  function filteredClips(){
+    return data.clips.filter(function(c){
+      return (outlet === 'all' || c.outlet === outlet) && (beat === 'all' || c.beat === beat);
     });
   }
-  filters.addEventListener('click', function(e){
-    var btn=e.target.closest('.chip'); if(!btn) return;
-    active=btn.getAttribute('data-outlet');
-    filters.querySelectorAll('.chip').forEach(function(x){x.classList.toggle('on', x===btn)});
-    render();
-  });
-  renderQuotes();
-  render();
+
+  function filteredQuotes(){
+    return data.quotes.filter(function(q){
+      var c = clipForQuote(q);
+      if (!c) return outlet === 'all' && beat === 'all';
+      return (outlet === 'all' || c.outlet === outlet) && (beat === 'all' || c.beat === beat);
+    });
+  }
+
+  function hedLink(title, url){
+    var a = document.createElement('a');
+    a.href = url;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    a.textContent = title;
+    return a;
+  }
+
+  function bylineText(c){
+    if (!c) return 'Cara Mico';
+    return 'Cara Mico · ' + c.outlet + (c.year ? (' · ' + c.year) : '');
+  }
+
+  function renderFront(){
+    var quotes = filteredQuotes();
+    ledeEl.innerHTML = '';
+    stackEl.innerHTML = '';
+
+    var k1 = document.createElement('p');
+    k1.className = 'sec';
+    k1.textContent = 'Quoted from the clips';
+    ledeEl.appendChild(k1);
+
+    if (!quotes.length){
+      var empty = document.createElement('p');
+      empty.className = 'empty-zone';
+      empty.textContent = 'No quoted lines for this filter. The index still lists every matching clip.';
+      ledeEl.appendChild(empty);
+      return;
+    }
+
+    var lead = quotes[0];
+    var leadClip = clipForQuote(lead);
+    var h = document.createElement('h2');
+    h.className = 'hed';
+    h.appendChild(hedLink(lead.title || lead.hed, lead.url));
+    var by = document.createElement('p');
+    by.className = 'byline';
+    by.textContent = (lead.beat ? lead.beat + ' · ' : '') + bylineText(leadClip);
+    var bq = document.createElement('blockquote');
+    bq.className = 'pull';
+    var qp = document.createElement('p');
+    qp.textContent = lead.text;
+    bq.appendChild(qp);
+    ledeEl.appendChild(h);
+    ledeEl.appendChild(by);
+    ledeEl.appendChild(bq);
+
+    var quoted = {};
+    quotes.forEach(function(q){ quoted[q.url] = 1; });
+    var also = filteredClips().filter(function(c){ return !quoted[c.url]; })
+      .sort(function(a,b){ return b.year - a.year || a.title.localeCompare(b.title); })
+      .slice(0, 3);
+    if (also.length){
+      var extra = document.createElement('div');
+      extra.className = 'also';
+      var ek = document.createElement('p');
+      ek.className = 'sec';
+      ek.textContent = 'Also on the shelf';
+      extra.appendChild(ek);
+      var ol = document.createElement('ol');
+      also.forEach(function(c){
+        var li = document.createElement('li');
+        var a = hedLink(c.title, c.url);
+        var by3 = document.createElement('p');
+        by3.className = 'by';
+        by3.textContent = (c.beat ? c.beat + ' · ' : '') + bylineText(c);
+        li.appendChild(a);
+        li.appendChild(by3);
+        ol.appendChild(li);
+      });
+      extra.appendChild(ol);
+      ledeEl.appendChild(extra);
+    }
+
+    var k2 = document.createElement('p');
+    k2.className = 'sec';
+    k2.textContent = 'More quoted lines';
+    stackEl.appendChild(k2);
+
+    quotes.slice(1).forEach(function(q){
+      var c = clipForQuote(q);
+      var art = document.createElement('article');
+      var kh = document.createElement('h3');
+      kh.className = 'hed';
+      kh.appendChild(hedLink(q.title || q.hed, q.url));
+      var by2 = document.createElement('p');
+      by2.className = 'byline';
+      by2.textContent = (q.beat ? q.beat + ' · ' : '') + bylineText(c);
+      var bq2 = document.createElement('blockquote');
+      bq2.className = 'pull';
+      var p2 = document.createElement('p');
+      p2.textContent = q.text;
+      bq2.appendChild(p2);
+      art.appendChild(kh);
+      art.appendChild(by2);
+      art.appendChild(bq2);
+      stackEl.appendChild(art);
+    });
+  }
+
+  function setBeat(next){
+    beat = next;
+    document.querySelectorAll('[data-beat]').forEach(function(el){
+      var v = el.getAttribute('data-beat');
+      el.classList.toggle('on', v === beat);
+    });
+    renderFront();
+    renderLatest();
+    renderList();
+  }
+
+  function setOutlet(next){
+    outlet = next;
+    outletsEl.querySelectorAll('.chip').forEach(function(el){
+      el.classList.toggle('on', el.getAttribute('data-outlet') === outlet);
+    });
+    renderFront();
+    renderLatest();
+    renderList();
+  }
+
+  function renderLatest(){
+    latestEl.innerHTML = '';
+    var k = document.createElement('p');
+    k.className = 'sec';
+    k.textContent = 'Latest on the shelf';
+    latestEl.appendChild(k);
+    var rows = filteredClips().slice().sort(function(a,b){
+      return b.year - a.year || a.title.localeCompare(b.title);
+    }).slice(0, 8);
+    if (!rows.length){
+      var empty = document.createElement('p');
+      empty.className = 'empty-zone';
+      empty.textContent = 'No clips for this filter.';
+      latestEl.appendChild(empty);
+      return;
+    }
+    rows.forEach(function(c){
+      var art = document.createElement('article');
+      var h = document.createElement('h3');
+      h.appendChild(hedLink(c.title, c.url));
+      var by = document.createElement('p');
+      by.className = 'by';
+      by.textContent = (c.beat ? c.beat + ' · ' : '') + c.outlet + (c.year ? (' · ' + c.year) : '');
+      art.appendChild(h);
+      art.appendChild(by);
+      latestEl.appendChild(art);
+    });
+  }
+
+  function renderRail(){
+    railEl.innerHTML = '';
+    inlineEl.innerHTML = '';
+    var allBtn = document.createElement('button');
+    allBtn.type = 'button';
+    allBtn.setAttribute('data-beat', 'all');
+    allBtn.className = beat === 'all' ? 'on' : '';
+    allBtn.textContent = 'All beats';
+    allBtn.addEventListener('click', function(){ setBeat('all'); });
+    inlineEl.appendChild(allBtn);
+
+    beatCounts().forEach(function(row){
+      var li = document.createElement('li');
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'beat-row' + (beat === row.beat ? ' on' : '');
+      btn.setAttribute('data-beat', row.beat);
+      var name = document.createElement('span');
+      name.className = 'bname';
+      name.textContent = row.beat;
+      var n = document.createElement('span');
+      n.className = 'bcount';
+      n.textContent = row.count + (row.count === 1 ? ' clip' : ' clips');
+      btn.appendChild(name);
+      btn.appendChild(n);
+      btn.addEventListener('click', function(){ setBeat(row.beat); });
+      var latest = document.createElement('p');
+      latest.className = 'latest';
+      latest.textContent = row.latest ? (row.latest.year + ' · ' + row.latest.title) : '';
+      li.appendChild(btn);
+      if (row.latest) li.appendChild(latest);
+      railEl.appendChild(li);
+
+      var ib = document.createElement('button');
+      ib.type = 'button';
+      ib.setAttribute('data-beat', row.beat);
+      if (beat === row.beat) ib.className = 'on';
+      ib.textContent = row.beat;
+      ib.addEventListener('click', function(){ setBeat(row.beat); });
+      inlineEl.appendChild(ib);
+    });
+  }
+
+  function renderChips(){
+    outletsEl.innerHTML = '';
+    beatsEl.innerHTML = '';
+    var outs = ['all'].concat(unique(data.clips, 'outlet'));
+    outs.forEach(function(o){
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'chip' + (o === outlet ? ' on' : '');
+      b.setAttribute('data-outlet', o);
+      b.textContent = o === 'all' ? 'All outlets' : (o === 'Tillamook County Pioneer' ? 'Pioneer' : o);
+      b.addEventListener('click', function(){ setOutlet(o); });
+      outletsEl.appendChild(b);
+    });
+    var beats = ['all'].concat(unique(data.clips, 'beat'));
+    beats.forEach(function(bt){
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'chip spot' + (bt === beat ? ' on' : '');
+      b.setAttribute('data-beat', bt);
+      b.textContent = bt === 'all' ? 'All beats' : bt;
+      b.addEventListener('click', function(){ setBeat(bt); });
+      beatsEl.appendChild(b);
+    });
+  }
+
+  function renderList(){
+    listEl.innerHTML = '';
+    var rows = filteredClips().slice().sort(function(a,b){
+      if (b.year !== a.year) return b.year - a.year;
+      return a.title.localeCompare(b.title);
+    });
+    var label = [];
+    if (outlet !== 'all') label.push(outlet === 'Tillamook County Pioneer' ? 'Pioneer' : outlet);
+    if (beat !== 'all') label.push(beat);
+    countEl.textContent = rows.length + (rows.length === 1 ? ' clip' : ' clips') + (label.length ? ' · ' + label.join(' · ') : '');
+    rows.forEach(function(c){
+      var li = document.createElement('li');
+      var a = document.createElement('a');
+      a.href = c.url;
+      a.target = '_blank';
+      a.rel = 'noopener';
+      var bk = document.createElement('span');
+      bk.className = 'beat';
+      bk.textContent = c.beat || '';
+      var t = document.createElement('p');
+      t.className = 'title';
+      t.textContent = c.title;
+      var by = document.createElement('p');
+      by.className = 'by';
+      by.textContent = 'Cara Mico · ' + c.outlet + (c.year ? (' · ' + c.year) : '');
+      a.appendChild(bk);
+      a.appendChild(t);
+      a.appendChild(by);
+      li.appendChild(a);
+      listEl.appendChild(li);
+    });
+  }
+
+  function boot(json){
+    data = json;
+    var clips = data.clips || [];
+    var outlets = unique(clips, 'outlet');
+    metaEl.textContent = clips.length + ' clips · ' + outlets.length + ' outlets · ' + yearsSpan(clips);
+    if (data.meta && data.meta.pioneerNote){
+      pioneerEl.textContent = data.meta.pioneerNote;
+    }
+    renderChips();
+    renderRail();
+    renderFront();
+    renderLatest();
+    renderList();
+  }
+
+  fetch('clips.json', { cache: 'no-cache' })
+    .then(function(r){
+      if (!r.ok) throw new Error('missing');
+      return r.json();
+    })
+    .then(boot)
+    .catch(function(){
+      failEl.hidden = false;
+      failEl.textContent = 'clips.json did not load. Open this page from the live desk so the verified clip file can be read. No bylines were invented to fill the gap.';
+    });
 })();
 </script>
 </body>
