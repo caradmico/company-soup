@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-08",
+  "generated": "2026-09-09",
   "rule": {
     "id": "token-lean",
     "title": "Token lean / no empty pulse",
@@ -10,13 +10,13 @@
     "name": "Factory closed \u2192 intake",
     "owner": "Build Bot",
     "grade": "parked",
-    "note": "demeter-gis-forward KEEP 787878b. GO screenshots-only look still suspended (d82ae05). No DNS."
+    "note": "Demeter GOLD KEEP be6b864 \u2014 do not reopen watershed aesthetics. GO screenshots-only look still suspended (d82ae05). No DNS."
   },
   "lastArtifact": {
-    "label": "Demeter GIS-forward KEEP",
+    "label": "Demeter warehouse GOLD KEEP",
     "url": "https://caradmico.github.io/company-soup/businesses/watershed/",
-    "commit": "787878b",
-    "updated": "2026-09-08",
+    "commit": "be6b864",
+    "updated": "2026-09-09",
     "grade": "KEEP"
   },
   "seats": [
@@ -31,8 +31,8 @@
       "id": "soup-ops",
       "name": "Soup Ops",
       "lane": "Ops / reporting",
-      "state": "parked",
-      "focus": "Intake open"
+      "state": "hot",
+      "focus": "Multi-venture watch \u2014 doors board restored"
     },
     {
       "id": "jarvis",
@@ -46,7 +46,7 @@
       "name": "Build Bot",
       "lane": "Code",
       "state": "parked",
-      "focus": "demeter KEEP 787878b \u2014 intake"
+      "focus": "GOLD KEEP be6b864 \u2014 intake; do not reopen aesthetics"
     },
     {
       "id": "grant-desk",
@@ -60,7 +60,7 @@
       "name": "Demeter Aesthetic",
       "lane": "Demeter maps",
       "state": "parked",
-      "focus": "GIS-forward KEEP \u2014 do not reopen",
+      "focus": "GOLD KEEP be6b864 \u2014 do not reopen aesthetics",
       "keep": "closed KEEP"
     },
     {

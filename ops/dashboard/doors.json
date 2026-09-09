@@ -1,7 +1,7 @@
 {
   "title": "Soup Ops",
   "why": "Watch all Soup ventures in one place. Open this instead of scrolling chat.",
-  "generated": "2026-09-04",
+  "generated": "2026-09-09",
   "note": "v0 — static board. Edit this JSON to change a row. Near-real updates later.",
   "doors": [
     {
@@ -22,9 +22,9 @@
       "also": "Watershed Field Assessment",
       "lane": "Field",
       "state": "live",
-      "status": "Quote-only field campaigns live. Real GO reports. demeterdesign.net name is real (host may be parked).",
-      "updated": "2026-09-04",
-      "last": "Tillamook warehouse PDF label, plain language.",
+      "status": "GIS-forward firm live. Warehouse GOLD KEEP be6b864 \u2014 do not reopen aesthetics.",
+      "updated": "2026-09-09",
+      "last": "Academia watershed paper set on the warehouse. GOLD KEEP.",
       "href": "../../businesses/watershed/",
       "hrefLabel": "Open firm",
       "more": [
@@ -50,9 +50,9 @@
       "also": "Grant writing",
       "lane": "Grants",
       "state": "live",
-      "status": "One-pager KEEP live. Quote-only.",
-      "updated": "2026-09-04",
-      "last": "Grant Desk one-pager shipped on company-soup Pages.",
+      "status": "Consulting door live \u2014 501(c)(3) fit, quote-only. Portfolio is proof, not the land.",
+      "updated": "2026-09-09",
+      "last": "Consulting-first door + methods portfolio + above-fold pull-quote.",
       "href": "../../brands/grant-desk/",
       "hrefLabel": "Open door"
     },
