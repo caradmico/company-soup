@@ -46,7 +46,7 @@
       "name": "Build Bot",
       "lane": "Code",
       "state": "parked",
-      "focus": "demeter KEEP 787878b \u2014 intake"
+      "focus": "GOLD KEEP be6b864 \u2014 intake; do not reopen aesthetics"
     },
     {
       "id": "grant-desk",
