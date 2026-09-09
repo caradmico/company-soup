@@ -6,33 +6,33 @@
     "body": "No ack-only pings. No re-reporting the same KEEP. Speak once with artifact/URL/SHA or stay silent. Kevin looks once \u2014 empty back-and-forth fails."
   },
   "target": {
-    "id": "soup-ops-progress",
-    "name": "soup-ops-progress FAIL redo",
+    "id": "intake",
+    "name": "Factory closed \u2192 intake",
     "owner": "Build Bot",
-    "grade": "open",
-    "note": "Kevin FAIL 2904786 \u2014 doors board primary + Kevin toolbox face. Objects secondary."
+    "grade": "parked",
+    "note": "A\u2192B\u2192C KEEP complete (Demeter warehouse be6b864 GOLD; Grant Desk e8bb495; soup-ops dbd7621). Park until next light."
   },
   "lastArtifact": {
-    "label": "soup-ops-progress FAIL redo in flight",
+    "label": "soup-ops-progress KEEP",
     "url": "https://caradmico.github.io/company-soup/ops/dashboard/",
-    "commit": "2904786",
+    "commit": "dbd7621",
     "updated": "2026-09-09",
-    "grade": "FAIL"
+    "grade": "KEEP"
   },
   "seats": [
     {
       "id": "kevin",
       "name": "Manager Kevin",
       "lane": "Taskmaster",
-      "state": "hot",
-      "focus": "Await soup-ops FAIL redo claim"
+      "state": "parked",
+      "focus": "Intake open"
     },
     {
       "id": "soup-ops",
       "name": "Soup Ops",
       "lane": "Ops / reporting",
-      "state": "hot",
-      "focus": "Multi-venture watch \u2014 doors board restored"
+      "state": "parked",
+      "focus": "Dashboard KEEP dbd7621"
     },
     {
       "id": "jarvis",
@@ -45,22 +45,22 @@
       "id": "build",
       "name": "Build Bot",
       "lane": "Code",
-      "state": "hot",
-      "focus": "soup-ops FAIL redo \u2014 doors primary"
+      "state": "parked",
+      "focus": "A\u2192B\u2192C complete \u2014 intake"
     },
     {
       "id": "grant-desk",
       "name": "Grant Desk",
       "lane": "Grants",
       "state": "parked",
-      "focus": "KEEP live, quote-only"
+      "focus": "KEEP e8bb495 consulting-first"
     },
     {
       "id": "demeter",
       "name": "Demeter Aesthetic",
       "lane": "Demeter maps",
       "state": "parked",
-      "focus": "GOLD KEEP be6b864 \u2014 do not reopen aesthetics",
+      "focus": "GOLD KEEP be6b864 \u2014 do not reopen",
       "keep": "closed KEEP"
     },
     {
