@@ -218,7 +218,9 @@
       "url": "https://caradmico.github.io/company-soup/brands/food-desk/",
       "live": true,
       "compute_pct": 0,
-      "compute_pct_label": "estimate"
+      "compute_pct_label": "estimate",
+      "status": "draft",
+      "note": "Drafts in flight \u2014 not public reviews yet"
     },
     {
       "name": "Grant Desk free resources",
