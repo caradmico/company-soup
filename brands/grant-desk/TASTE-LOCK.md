@@ -4,6 +4,7 @@
 **Live:** https://grants.graphicoregon.com/ → `brands/grant-desk/`  
 **Owner:** Grant Desk (product/taste) · Build sole lands · Kevin one look  
 **Status:** TASTE LOCKED 2026-09-09 — hand Build now (after Coast KEEP `9e53f6a`).  
+**Hard ban Coast KEEP twin UI:** Baskerville, Source Serif 4, paper `#f3efe6`, mast letter-spacing, bylines/chip UI.  
 **Locks that still stand:** consulting/skills first · free resources = secondary nav only · navy/walnut ≠ Coast Desk · Astoria Downtown HOLD · no invent $ awards · ~$1M KEEP aggregate OK on face · no capital-campaign sell · not legal counsel
 
 ---
@@ -103,7 +104,7 @@ Keep on face:
 - Optional: thin top “rail” or consultant letterhead feel (navy rule + wordmark) — **not** Coast mast letter-spacing / Baskerville
 - Whitespace > chrome. Clean, not busy.
 
-**Hard bans:** Libre Baskerville, Source Serif newsprint, Coast yellow paper `#f3efe6`, Demeter fir/Fraunces, Fine Art salon, GO signal teal, free-resources-as-land.
+**Hard bans:** Libre Baskerville, Source Serif 4 / Source Serif newsprint, Coast yellow paper `#f3efe6`, Coast mast letter-spacing, bylines/chip UI, Demeter fir/Fraunces, Fine Art salon, GO signal teal, free-resources-as-land.
 
 Update `BRAND.md` positioning to: **Paid grant consulting desk — hire for research, writing, run-support. Not a brochure. Not Coast Desk.**
 
