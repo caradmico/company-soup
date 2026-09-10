@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 400" role="img" aria-labelledby="t2 d2">
+  <title id="t2">Blueprint of a mug with exterior thermometer callouts</title>
+  <desc id="d2">Cool grid drawing: vessel outline, exterior readout location, mount band, and title block.</desc>
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#0891b2" stroke-width=".6" opacity=".28"/>
+    </pattern>
+    <pattern id="grid2" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M100 0H0V100" fill="none" stroke="#0891b2" stroke-width="1" opacity=".45"/>
+    </pattern>
+  </defs>
+  <rect width="560" height="400" fill="#1c1917"/>
+  <rect width="560" height="400" fill="url(#grid)"/>
+  <rect width="560" height="400" fill="url(#grid2)"/>
+  <text x="22" y="28" fill="#0891b2" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" letter-spacing="1.4">REV A  ·  EXT-READOUT VESSEL  ·  SHEET 1/1</text>
+  <path d="M20 36h520" stroke="#0891b2" stroke-width="1" opacity=".55"/>
+
+  <!-- centerline -->
+  <path d="M268 58v268" stroke="#0891b2" stroke-width="1" stroke-dasharray="6 5" opacity=".7"/>
+
+  <!-- vessel construction -->
+  <ellipse cx="268" cy="92" rx="78" ry="18" fill="none" stroke="#0891b2" stroke-width="2"/>
+  <ellipse cx="268" cy="92" rx="62" ry="11" fill="none" stroke="#0891b2" stroke-width="1.2" opacity=".75"/>
+  <path d="M190 92v168c0 18 16 28 78 28s78-10 78-28V92" fill="none" stroke="#0891b2" stroke-width="2.2"/>
+  <path d="M206 108v140c0 12 12 18 62 18s62-6 62-18V108" fill="none" stroke="#0891b2" stroke-width="1.15" opacity=".7"/>
+  <ellipse cx="268" cy="260" rx="78" ry="18" fill="none" stroke="#0891b2" stroke-width="1.6"/>
+  <!-- handle -->
+  <path d="M346 118c46 8 58 36 54 72-4 34-24 56-62 64" fill="none" stroke="#0891b2" stroke-width="2"/>
+  <path d="M350 130c34 8 42 28 38 58-3 24-16 40-46 48" fill="none" stroke="#0891b2" stroke-width="1.1" opacity=".7"/>
+
+  <!-- thermometer module -->
+  <rect x="226" y="128" width="22" height="96" rx="4" fill="none" stroke="#0891b2" stroke-width="2"/>
+  <circle cx="237" cy="232" r="13" fill="none" stroke="#0891b2" stroke-width="2"/>
+  <path d="M237 136v82" stroke="#0891b2" stroke-width="1.6"/>
+  <path d="M230 148h14M230 162h14M230 176h10M230 190h14M230 204h10" stroke="#0891b2" stroke-width="1.2"/>
+
+  <!-- mount band -->
+  <path d="M196 214h144" stroke="#0891b2" stroke-width="3" opacity=".85"/>
+  <path d="M196 208v12M340 208v12" stroke="#0891b2" stroke-width="1.4"/>
+
+  <!-- callout: readout -->
+  <path d="M248 150H430" stroke="#0891b2" stroke-width="1.2"/>
+  <circle cx="248" cy="150" r="2.4" fill="#0891b2"/>
+  <rect x="430" y="136" width="108" height="28" fill="#1c1917" stroke="#0891b2" stroke-width="1.2"/>
+  <text x="438" y="148" fill="#0891b2" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9">A  EXT. READOUT</text>
+  <text x="438" y="159" fill="#0891b2" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9">   LCD STRIP / PANEL</text>
+
+  <!-- callout: mount -->
+  <path d="M340 220H430" stroke="#0891b2" stroke-width="1.2"/>
+  <circle cx="340" cy="220" r="2.4" fill="#0891b2"/>
+  <rect x="430" y="206" width="108" height="28" fill="#1c1917" stroke="#0891b2" stroke-width="1.2"/>
+  <text x="438" y="218" fill="#0891b2" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9">B  MOUNT BAND</text>
+  <text x="438" y="229" fill="#0891b2" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9">   BELOW LIP, OFF-SIP</text>
+
+  <!-- callout: vessel -->
+  <path d="M190 180H86" stroke="#0891b2" stroke-width="1.2"/>
+  <circle cx="190" cy="180" r="2.4" fill="#0891b2"/>
+  <rect x="22" y="166" width="64" height="28" fill="#1c1917" stroke="#0891b2" stroke-width="1.2"/>
+  <text x="28" y="178" fill="#0891b2" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9">C  VESSEL</text>
+  <text x="28" y="189" fill="#0891b2" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9">   Ø ~80</text>
+
+  <!-- height dimension -->
+  <path d="M168 92v168" stroke="#0891b2" stroke-width="1"/>
+  <path d="M162 92h12M162 260h12" stroke="#0891b2" stroke-width="1.2"/>
+  <text x="132" y="180" fill="#0891b2" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10" transform="rotate(-90 132 180)">H 168</text>
+
+  <!-- title block -->
+  <rect x="352" y="318" width="186" height="62" fill="#1c1917" stroke="#0891b2" stroke-width="1.4"/>
+  <path d="M352 338h186" stroke="#0891b2" stroke-width="1"/>
+  <text x="362" y="332" fill="#0891b2" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10">COMPANY SOUP  ·  COOKER</text>
+  <text x="362" y="354" fill="#0891b2" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">THERMOMETER CUP</text>
+  <text x="362" y="370" fill="#0891b2" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9">BOM: VESSEL + STRIP + BAND</text>
+</svg>
