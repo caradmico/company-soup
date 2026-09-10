@@ -1,24 +1,17 @@
-# Company Soup v0.1 (reconcile)
-
-**Graphic Oregon** = parent company-maker (not renamed).
+# Company Soup
 
 Live: https://caradmico.github.io/company-soup/
 
+**Cook an idea → ship a thing.** Paste an idea. Get a brief, a BOM from existing catalogs, and a path to a prototype you can hold.
+
+Face: cooker + three-beat story (sketch → blueprint → in hands). Thermometer cup is the worked example.
+
 Ops (venture status, one page): [Soup Ops](https://caradmico.github.io/company-soup/ops/dashboard/)
 
-Featured founder firm: [Watershed Field Assessment](businesses/watershed/) — Demeter Design, quote-only coastal field assessment.
+Doors live under `brands/`, `businesses/`, and `founders/` — not a vanity grid on the face.
 
-## Children (stranger door)
-- [Demeter Design](brands/demeter-design/) — env (real contracts; [demeter.graphicoregon.com](https://demeter.graphicoregon.com/))
-- [Cold Contour](brands/cold-contour/) — art (prefer this Marketer name; Estuary Ink is a redirect only)
-- [Signal Shelf](brands/signal-shelf/) — hone invent ([sample-monday.md](brands/signal-shelf/sample-monday.md); Quiet Cut is a redirect only)
-- [Asterism Lab](brands/asterism-lab/) — space ([Orion sample PDF](brands/asterism-lab/sample-orion-card.pdf))
-- [Far Field Media](brands/far-field-media/) — videography (sample clip + $450 / 60–90s)
-- [Coast Desk](brands/coast-desk/) — journalism (weekly desk piece + [clip shelf](brands/coast-desk/); Pioneer stays Pioneer)
-- [Lane Sites](brands/lane-sites/) — web lane bread ([keep-list](brands/lane-sites/keep-list.html); no client-site cash)
-- [Grant Desk](brands/grant-desk/) — consulting / skills (quote only; [portfolio](brands/grant-desk/portfolio/) is proof)
-- [Food Desk](brands/food-desk/) — drafts in flight (not public yet)
+Food Desk, if opened: [drafts in flight](brands/food-desk/) only.
 
-Netarts Systems / Estuary Ink / Quiet Cut stay demoted redirects.
+<!-- PARK: idea-tied API; free trained advice bot; fee scale for full conception→realized; future comps-research bot — do not hallucinate competitor lists. -->
 
 Engine: idea → locked brief → done-when → BOM/path → ship steps. No Three.js CONTINUE.

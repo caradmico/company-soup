@@ -1,101 +1,304 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Company Soup · Printify for making things</title>
-<meta name="description" content="Paste an idea → brief, BOM from real catalogs, prototype order path. GO money-makers as founder sims.">
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Company Soup · Cook an idea → ship a thing</title>
+<meta name="description" content="Paste an idea. Get a brief, a catalog BOM, and a path to a prototype you can hold.">
+<link rel="canonical" href="https://caradmico.github.io/company-soup/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#0f1c24;--paper:#f6f1e8;--teal:#1f6f78;--gold:#c4a35a;--line:#d5cbba;--cream:#fffaf2}
+:root{
+  --charcoal:#1c1917;
+  --amber:#f59e0b;
+  --chalk:#fafaf9;
+  --stone:#292524;
+  --mute:#a8a29e;
+  --line:#44403c;
+  /* blueprint cyan #0891b2 is locked to the blueprint beat only — do not use on the page chrome */
+}
 *{box-sizing:border-box}
-body{margin:0;font:17px/1.55 system-ui,sans-serif;color:var(--ink);background:var(--paper)}
-header,main,footer{max-width:46rem;margin:0 auto;padding:1.25rem 1.1rem}
-header{border-bottom:3px solid var(--teal)}
-.tag{color:var(--teal);font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;font-weight:700}
-h1{margin:.2rem 0 .4rem;font-size:1.7rem}
-h2{font-size:1.1rem;border-left:4px solid var(--gold);padding-left:.5rem;margin:1.4rem 0 .6rem}
-a{color:var(--teal)}
-.card{background:var(--cream);border:1px solid var(--line);border-radius:10px;padding:1rem;margin:.8rem 0}
-.cards{display:grid;gap:.7rem}
-@media(min-width:640px){.cards{grid-template-columns:1fr 1fr}}
-label{display:block;font-size:.85rem;font-weight:600;margin:.4rem 0 .25rem}
-textarea,input{width:100%;padding:.6rem .7rem;border:1px solid var(--line);border-radius:8px;font:inherit}
-button{background:var(--teal);color:#fff;border:0;padding:.6rem 1rem;border-radius:8px;font:600 .95rem system-ui;cursor:pointer;margin:.3rem .3rem 0 0}
-button.secondary{background:transparent;color:var(--teal);border:1px solid var(--teal)}
-#out{display:none;background:#fff;border:1px solid var(--line);border-radius:10px;padding:1rem;margin-top:1rem}
+html,body{margin:0}
+body{
+  min-height:100vh;
+  color:var(--chalk);
+  background:
+    radial-gradient(ellipse 70% 50% at 90% -20%,rgba(245,158,11,.16),transparent 52%),
+    radial-gradient(ellipse 50% 40% at 0% 10%,rgba(245,158,11,.06),transparent 46%),
+    var(--charcoal);
+  font:16.5px/1.5 Manrope,system-ui,sans-serif;
+}
+a{color:var(--amber)}
+.wrap{width:min(68rem,calc(100% - 2rem));margin-inline:auto}
+header{
+  display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  padding:1.1rem 0 1rem;
+  border-bottom:1px solid var(--line);
+}
+.brand{
+  margin:0;
+  font:500 .72rem/1 "IBM Plex Mono",ui-monospace,monospace;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--amber);
+}
+nav{display:flex;gap:1rem;align-items:center}
+nav a{
+  color:var(--mute);
+  text-decoration:none;
+  font:500 .72rem/1 "IBM Plex Mono",ui-monospace,monospace;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+nav a:hover{color:var(--chalk)}
+nav a.ops{color:var(--mute)}
+
+.hero{padding:1.35rem 0 1.6rem}
+h1{
+  margin:.15rem 0 .45rem;
+  font-size:clamp(2.05rem,6vw,3.35rem);
+  font-weight:800;
+  letter-spacing:-.04em;
+  line-height:1.02;
+}
+.why{
+  margin:0 0 1.15rem;
+  max-width:38rem;
+  font-size:1.12rem;
+  font-weight:600;
+  color:var(--chalk);
+}
+.why span{color:var(--amber)}
+
+.chips{display:flex;flex-wrap:wrap;gap:.45rem;margin:0 0 1.25rem}
+.chip{
+  display:inline-block;
+  padding:.28rem .55rem;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background:var(--stone);
+  color:var(--mute);
+  font:500 .68rem/1 "IBM Plex Mono",ui-monospace,monospace;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+
+.story{
+  display:grid;
+  gap:.7rem;
+  margin:0 0 1.35rem;
+}
+@media(min-width:800px){.story{grid-template-columns:1fr 1fr 1fr}}
+.beat{
+  margin:0;
+  background:var(--stone);
+  border:1px solid var(--line);
+  border-radius:14px;
+  overflow:hidden;
+}
+.beat img{display:block;width:100%;height:auto;aspect-ratio:7/5;object-fit:cover;background:#292524}
+.beat figcaption{
+  padding:.7rem .8rem .85rem;
+  border-top:1px solid var(--line);
+}
+.beat .n{
+  display:block;
+  margin:0 0 .28rem;
+  font:500 .66rem/1 "IBM Plex Mono",ui-monospace,monospace;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--amber);
+}
+.beat p{margin:0;font-size:.95rem;font-weight:700;letter-spacing:-.02em}
+
+.cooker{
+  background:var(--stone);
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:1.05rem 1.05rem 1.15rem;
+  box-shadow:0 0 0 1px rgba(245,158,11,.08),0 18px 50px rgba(0,0,0,.28);
+}
+.cooker h2{
+  margin:0 0 .55rem;
+  font-size:1.05rem;
+  font-weight:800;
+  letter-spacing:-.02em;
+}
+label{display:block;font-size:.85rem;font-weight:700;margin:0 0 .35rem}
+textarea{
+  width:100%;
+  min-height:7.2rem;
+  padding:.75rem .8rem;
+  border:1px solid var(--line);
+  border-radius:10px;
+  background:#0c0a09;
+  color:var(--chalk);
+  font:inherit;
+  resize:vertical;
+}
+textarea:focus{outline:2px solid var(--amber);outline-offset:2px}
+.actions{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:.75rem;align-items:center}
+button{
+  appearance:none;
+  border:0;
+  cursor:pointer;
+  font:800 1.05rem/1 Manrope,system-ui,sans-serif;
+  letter-spacing:-.02em;
+}
+#cook{
+  background:var(--amber);
+  color:#1c1917;
+  padding:.85rem 1.25rem;
+  border-radius:12px;
+  box-shadow:0 0 0 1px rgba(245,158,11,.35),0 10px 28px rgba(245,158,11,.22);
+}
+#cook:hover{filter:brightness(1.06)}
+#demo{
+  background:transparent;
+  color:var(--chalk);
+  padding:.8rem 1rem;
+  border-radius:12px;
+  border:1px solid var(--line);
+  font-weight:700;
+  font-size:.92rem;
+}
+#out{display:none;margin-top:1rem;padding-top:1rem;border-top:1px solid var(--line)}
 #out.visible{display:block}
-#out pre{white-space:pre-wrap;background:var(--cream);border:1px solid var(--line);padding:.7rem;border-radius:8px;font-size:.86rem}
-.note{font-size:.9rem;color:#5a6570}
-.lane{font-size:.78rem;color:var(--gold);font-weight:700;text-transform:uppercase}
-</style></head><body>
+#out h3{margin:0 0 .55rem;font-size:1.15rem;letter-spacing:-.02em}
+.tool-grid{display:grid;gap:.65rem}
+@media(min-width:700px){.tool-grid{grid-template-columns:1fr 1fr}}
+.tool{
+  background:#0c0a09;
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:.75rem .8rem;
+}
+.tool .k{
+  margin:0 0 .35rem;
+  font:500 .66rem/1 "IBM Plex Mono",ui-monospace,monospace;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--amber);
+}
+.tool p,.tool li{margin:0;font-size:.92rem}
+.tool ul,.tool ol{margin:.2rem 0 0;padding-left:1.1rem}
+.tool.wide{grid-column:1/-1}
+
+.demo{padding:0 0 2.2rem}
+.demo h2{
+  margin:1.4rem 0 .55rem;
+  font-size:1.15rem;
+  letter-spacing:-.02em;
+}
+.demo-card{
+  background:var(--stone);
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:1rem 1.05rem;
+}
+.demo-card p{margin:.35rem 0}
+.demo-card ul{margin:.3rem 0 .5rem;padding-left:1.15rem}
+.lane{
+  margin:0 0 .4rem;
+  font:500 .66rem/1 "IBM Plex Mono",ui-monospace,monospace;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--amber);
+}
+
+footer{
+  padding:1.1rem 0 2rem;
+  border-top:1px solid var(--line);
+  color:var(--mute);
+  font-size:.9rem;
+}
+footer a{color:var(--mute)}
+footer a:hover{color:var(--amber)}
+</style>
+</head>
+<body>
+<!-- PARK: idea-tied API · trained advice bot · fee scale · comps-research bot (do not hallucinate competitor lists) -->
+<div class="wrap">
 <header>
-<p class="tag">Company Soup · Graphic Oregon parent</p>
-<h1>Printify for making things</h1>
-<p>Paste an idea. Get a brief, a BOM from existing catalogs, and a path to order or quote a prototype. Also: split real GO money-makers into standalone founder businesses.</p>
+  <p class="brand">Company Soup</p>
+  <nav>
+    <a href="#cooker">Cooker</a>
+    <a class="ops" href="ops/dashboard/">Soup Ops</a>
+  </nav>
 </header>
-<main>
-<section>
-<h2>Cooker</h2>
-<label for="idea">Idea</label>
-<textarea id="idea" rows="4">Coffee cup with a thermometer on the outside so you always know how hot the coffee is.</textarea>
-<div>
-<button type="button" id="cook">Cook idea → prototype path</button>
-<button type="button" class="secondary" id="demo">Load thermometer-cup demo</button>
-</div>
-<div id="out"></div>
+
+<section class="hero">
+  <h1>Cook an idea → ship a thing.</h1>
+  <p class="why">Paste what you want to make. Soup returns a brief, a bill of materials from catalogs you can buy today, and a path to a prototype <span>in someone’s hands</span>.</p>
+  <p class="chips" aria-label="What the cooker returns">
+    <span class="chip">Brief</span>
+    <span class="chip">BOM</span>
+    <span class="chip">Build path</span>
+    <span class="chip">Prototype order</span>
+  </p>
+
+  <div class="story" aria-label="Idea to object, three beats">
+    <figure class="beat">
+      <img src="assets/soup-story/napkin-sketch.svg" alt="Napkin sketch of a coffee cup with a thermometer on the outside." width="560" height="400">
+      <figcaption>
+        <span class="n">1 · Sketch</span>
+        <p>Napkin: cup + thermometer.</p>
+      </figcaption>
+    </figure>
+    <figure class="beat">
+      <img src="assets/soup-story/blueprint.svg" alt="Blueprint of the mug with exterior readout and mount-band callouts." width="560" height="400">
+      <figcaption>
+        <span class="n">2 · Blueprint</span>
+        <p>Readout, mount, parts.</p>
+      </figcaption>
+    </figure>
+    <figure class="beat">
+      <img src="assets/soup-story/in-hands.svg" alt="Finished thermometer mug handed over a store counter." width="560" height="400">
+      <figcaption>
+        <span class="n">3 · In hands</span>
+        <p>A mug you can sell.</p>
+      </figcaption>
+    </figure>
+  </div>
+
+  <div class="cooker" id="cooker">
+    <h2>Cooker</h2>
+    <label for="idea">Idea</label>
+    <textarea id="idea" rows="4">Coffee cup with a thermometer on the outside so you always know how hot the coffee is.</textarea>
+    <div class="actions">
+      <button type="button" id="cook">Cook an idea</button>
+      <button type="button" id="demo">Load thermometer-cup demo</button>
+    </div>
+    <div id="out"></div>
+  </div>
 </section>
 
-<section>
-<h2>Worked demo — thermometer cup</h2>
-<div class="card">
-<p class="lane">Physical product</p>
-<p><strong>Brief:</strong> Reusable mug/tumbler with an exterior temperature readout so you know drink heat without tasting. Not a smart app. Not medical device claims.</p>
-<p><strong>Done-when:</strong> You can order parts today and assemble or commission one prototype mug with a readable exterior temp.</p>
-<p><strong>BOM (existing catalogs):</strong></p>
-<ul>
-<li>Blank stainless tumbler / mug — Amazon / restaurant supply (pick one SKU you like)</li>
-<li>External stick-on LCD thermometer strip (brew/aquarium strip) OR small digital probe panel — Amazon search “LCD thermometer strip cup” / “mini digital thermometer panel”</li>
-<li>Food-safe adhesive / mounting band — McMaster or Amazon</li>
-<li>Optional: sleeve / silicone grip to hold the readout</li>
-</ul>
-<p><strong>Build path:</strong> (1) Buy blank tumbler. (2) Buy exterior-readout strip or panel. (3) Mount below lip, away from lips. (4) Calibrate with hot water + kitchen thermometer. (5) If strip isn’t good enough, swap to a discrete digital panel module.</p>
-<p><strong>Prototype order step:</strong> Add blank tumbler + exterior LCD strip to cart on Amazon now; assemble tonight. For a “real product” next: Alibaba mug factory + custom print of scale, or a local laser shop for a clip-on housing.</p>
-<p><a href="https://www.amazon.com/s?k=lcd+thermometer+strip">Amazon: LCD thermometer strip</a> · <a href="https://www.amazon.com/s?k=stainless+steel+tumbler">Amazon: stainless tumbler</a> · <a href="https://www.mcmaster.com/products/adhesives/">McMaster adhesives</a></p>
-</div>
+<section class="demo" id="demo-card">
+  <h2>Worked example — thermometer cup</h2>
+  <div class="demo-card">
+    <p class="lane">Physical product · the three beats above</p>
+    <p><strong>Brief:</strong> Reusable mug with an exterior temperature readout so you know drink heat without tasting. Not a smart app. Not medical device claims.</p>
+    <p><strong>Done-when:</strong> Parts ordered and one assembled prototype with a readable exterior temp — or a quote for a factory mug with a printed scale.</p>
+    <p><strong>BOM (existing catalogs):</strong></p>
+    <ul>
+      <li>Blank stainless tumbler / mug — Amazon / restaurant supply</li>
+      <li>External stick-on LCD thermometer strip or mini digital probe panel</li>
+      <li>Food-safe adhesive / mounting band — McMaster or Amazon</li>
+      <li>Optional: sleeve / silicone grip to hold the readout</li>
+    </ul>
+    <p><strong>Build path:</strong> Buy the blank. Buy the exterior readout. Mount below the lip. Calibrate with hot water and a kitchen thermometer. If the strip fails, swap to a discrete digital panel.</p>
+    <p><strong>Prototype order:</strong> Tumbler + LCD strip on Amazon today; assemble tonight. Next: factory blank + printed scale, or a local shop for a clip-on housing.</p>
+    <p><a href="https://www.amazon.com/s?k=lcd+thermometer+strip">Amazon: LCD thermometer strip</a> · <a href="https://www.amazon.com/s?k=stainless+steel+tumbler">Amazon: stainless tumbler</a> · <a href="https://www.mcmaster.com/products/adhesives/">McMaster adhesives</a></p>
+  </div>
 </section>
 
-<section>
-<h2>Featured founder business</h2>
-<div class="card">
-<p class="lane">Professional services · Demeter Design</p>
-<h3><a href="businesses/watershed/">Watershed Field Assessment</a></h3>
-<p>Quote-only field campaigns: sampling, stream paths, restoration monitoring. Real Graphic Oregon / Demeter reports. Not merch.</p>
-<p><a href="businesses/watershed/">Open the firm site →</a></p>
+<footer>
+  <a href="ops/dashboard/">Soup Ops</a> — cooker status and doors, one page.
+  · <a href="brands/food-desk/">Food Desk</a> (drafts in flight)
+</footer>
 </div>
-</section>
-
-<section>
-<h2>GO money-makers as founder sims</h2>
-<div class="cards">
-
-<div class="card"><p class="lane">Web studio</p><h3><a href="brands/graphic-oregon/">Graphic Oregon</a></h3><p>Website design company — handoff + teach. Named screenshot proof.</p></div>
-<div class="card"><p class="lane">Field</p><h3><a href="businesses/watershed/">Watershed Field Assessment</a></h3><p>Quote-only field campaigns. Real GO reports.</p></div>
-<div class="card"><p class="lane">Gallery</p><h3><a href="businesses/fine-art/">Neahkahnie Atelier</a></h3><p>Dark exhibition · commissions. Not Demeter. Not merch.</p></div>
-<div class="card"><p class="lane">Art merch</p><h3><a href="extracts/art-wall/">Art → Sassme prints</a></h3><p>Not a competing extract shop.</p></div>
-<div class="card"><p class="lane">Space</p><h3><a href="extracts/sky-brief/">Space intros (consulting)</a></h3><p>Remap map not for sale.</p></div>
-<div class="card"><p class="lane">Hardware</p><h3><a href="extracts/nano-bench/">Nanoactuator research</a></h3><p>Open hardware desk.</p></div>
-</div>
-<div class="card"><p class="lane">Professional services</p><h3><a href="brands/grant-desk/">Grant Desk</a></h3><p>Quote. Consulting for 501(c)(3) fit, research, writing, and management education.</p></div>
-<div class="card"><p class="lane">Food writing</p><h3><a href="brands/food-desk/">Food Desk</a></h3><p>Cara’s restaurant reviews. Ten posts from her table.</p></div>
-<div class="card"><p class="lane">Eval</p><h3><a href="founders/program-eval/">Program Eval Desk</a></h3><p>Quote. Methods proof on GO.</p></div>
-<div class="card"><p class="lane">Culture GIS</p><h3><a href="founders/arts-asset-map/">Arts Asset Map</a></h3><p>Lane Arts guide · quote projects.</p></div>
-<div class="card"><p class="lane">Web</p><h3><a href="founders/client-sites/">Client Sites</a></h3><p>Clients portfolio lane · quote.</p></div>
-<div class="card"><p class="lane">Planning</p><h3><a href="founders/hazard-plan/">Hazard Plan Desk</a></h3><p>NHMP-class · quote.</p></div>
-<div class="card"><p class="lane">GIS</p><h3><a href="founders/habitat-maps/">Habitat Maps</a></h3><p>Necanicum / limiting factors · quote.</p></div>
-<div class="card"><p class="lane">Video</p><h3><a href="founders/media-cut/">Media Cut</a></h3><p>→ Far Field honest clip+rate.</p></div>
-</div>
-<p class="note"><a href="founders/">All ~10 founder splits</a>. <a href="ops/dashboard/">Soup Ops</a> — all venture status, one page. Parent stays Graphic Oregon. Thermo cooker above stays.</p>
-</section>
-</main>
-<footer class="note">No Three.js CONTINUE. No Steve IAU remap sell. Field work is quote-only. · <a href="ops/dashboard/">Soup Ops</a></footer>
 <script>
 const DEMO = `Coffee cup with a thermometer on the outside so you always know how hot the coffee is.`;
 const recipes = [
@@ -116,7 +319,7 @@ const recipes = [
       "Calibrate vs kitchen thermometer",
       "Iterate mount; then quote a factory mug with printed scale if volume"
     ],
-    order: "Order tumbler + LCD strip on Amazon today; assemble. Next: Alibaba blank + custom scale art."
+    order: "Order tumbler + LCD strip on Amazon today; assemble. Next: factory blank + custom scale art."
   }
 ];
 function cook(text){
@@ -124,7 +327,7 @@ function cook(text){
   let r = recipes.find(x => x.match.test(t));
   if(!r){
     r = {
-      title: "Generic physical product path",
+      title: "Physical product path",
       brief: "Turn the idea into a holdable thing via existing catalogs first.",
       done: "BOM listed + at least one supplier cart / quote link for a prototype.",
       bom: ["Find closest existing product on Amazon/McMaster/Alibaba","List missing custom part","Name assembly steps","Pick one prototype supplier"],
@@ -132,18 +335,21 @@ function cook(text){
       order: "Start with Amazon/McMaster search for the nearest existing object; paste links into the brief."
     };
   }
-  const lines = [];
-  lines.push("BRIEF\n" + r.brief + "\nIdea: " + t);
-  lines.push("\nDONE-WHEN\n" + r.done);
-  lines.push("\nBOM\n- " + r.bom.join("\n- "));
-  lines.push("\nBUILD PATH\n- " + r.steps.join("\n- "));
-  lines.push("\nPROTOTYPE ORDER\n" + r.order);
-  lines.push("\nNOT\nField watershed sticker prices. Steve IAU remap sell. Inventing a warehouse.");
   const out = document.getElementById('out');
-  out.innerHTML = "<h3>"+r.title+"</h3><pre>"+lines.join("\n")+"</pre>";
+  out.innerHTML =
+    "<h3>"+r.title+"</h3>"+
+    "<div class=\"tool-grid\">"+
+      "<div class=\"tool wide\"><p class=\"k\">Brief</p><p>"+r.brief+"</p><p>Idea: "+t.replace(/</g,"&lt;")+"</p></div>"+
+      "<div class=\"tool\"><p class=\"k\">Done-when</p><p>"+r.done+"</p></div>"+
+      "<div class=\"tool\"><p class=\"k\">Prototype order</p><p>"+r.order+"</p></div>"+
+      "<div class=\"tool\"><p class=\"k\">BOM</p><ul>"+r.bom.map(i=>"<li>"+i+"</li>").join("")+"</ul></div>"+
+      "<div class=\"tool\"><p class=\"k\">Build path</p><ol>"+r.steps.map(i=>"<li>"+i+"</li>").join("")+"</ol></div>"+
+    "</div>";
   out.classList.add('visible');
+  out.scrollIntoView({behavior:"smooth",block:"nearest"});
 }
 document.getElementById('cook').onclick = () => cook(document.getElementById('idea').value);
 document.getElementById('demo').onclick = () => { document.getElementById('idea').value = DEMO; cook(DEMO); };
 </script>
-</body></html>
+</body>
+</html>
