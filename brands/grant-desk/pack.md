@@ -8,17 +8,16 @@ Paid grants training day (~$250, pay first) + ~10 hours of coach / resource acce
 ## Offer
 PRIMARY: hire the day class. SECONDARY: scoped writing/research when they want the package done.
 
-**Land (door):** training-day sell. H1 + pull + why + offer card (~$250, pay first, 12 mo / ~10 hr) + dominant Enroll / Pay CTA above the fold.
-**Not the land:** free resources, `/portfolio/`, consulting-as-hero, free dumps that replace the class.
+**Land (door):** sparse one-breath face. Mark → WHY → Who (one line) → Day (~6hr w/ lunch, core ~2hr, ~$250, 12 mo / ~10 hr) → one Enroll / Pay. Writing quotes tiny. Free lookups nav/footer only.
+**Not the land:** free resources, `/portfolio/`, consulting-as-hero, free dumps that replace the class, `a99b3ec` pamphlet (pull-quote + offer card + “what’s in the day”).
 
-Sell (primary):
-- Paid training day — ~$250 upfront (pay first, before materials / access)
-- After pay: ~10 hours of resource / coach access over 12 months (capped) — fit checks, light looks, advice
-- Oregon + California nonprofit track
-- 501(c)(3) fit / which door to knock on
-- How to research and write a grant you can run
-- Not unpaid full grant writing
-- Not legal consulting; can help find a lawyer to incorporate / file 501(c)(3)
+Sell (primary — face pitch):
+- WHY: know which door to knock on
+- ~3 years graduate work + ~20-year nonprofit management / grant-writing career
+- Funded real projects
+- Teach what matters in ~2 hours, packaged as a ~6-hour day with lunch
+- Paid training day — ~$250 upfront (pay first)
+- After pay: ~10 hours of coach access over 12 months (capped)
 
 Sell (secondary upsell only):
 - Scoped writing / research quotes when they want the package done for them
@@ -26,13 +25,10 @@ Sell (secondary upsell only):
 
 Do not sell: capital campaigns. Capital-project consulting is experience only (not a campaign product). Do not sell ongoing “be our grants manager” as the default SKU. Do not sell free lookups as the product.
 
-Proof (public, only these):
-- Dozens of nonprofits in Oregon and California
-- CBAA + Success Centers — designed, funded, and distributed grant programs
-- MA in arts administration & nonprofit management
-- ~$1M in grants funded (door KEEP aggregate — do not invent per-org $)
-- Portfolio: Inclusive Art eval + Hosea / COTL / CBAA / Success Centers / watershed councils
+Proof (public door — one chip max):
+- ~$1M in grants funded (KEEP aggregate — do not invent per-org $)
 - Class ~$250 allowed on face
+- Named org proof stays on `/portfolio/` — not a pamphlet list on the door
 
 Hard gate (mill / internal): she does not submit applications without Cara's explicit gate. Primary CTA is enroll / pay for the training day. Writing/research scope is secondary mailto only.
 
@@ -55,7 +51,7 @@ Hard gate (mill / internal): she does not submit applications without Cara's exp
 Next — optional scanner over free DBs (Grants.gov + listed public calendars) feeding Finance Bro fit-scan; human curate; Cara gate before any submit. Sketch: `resources/scanner-path.json`.
 
 ## Done-when
-Stranger opens the door and sees the ~$250 training day as the clear primary buy (pay first). Understands 12 months / ~10 hr capped resource/coach access is included after pay. Dominant Enroll / Pay for the training day CTA. Writing/research quotes as a secondary “Need writing done?” ask only. Portfolio + Free lookups secondary nav only. Proof names dozens of OR+CA nonprofits, CBAA + Success Centers, MA, ~$1M KEEP. Zero invented award $. Astoria omitted. Navy/walnut Source Sans ≠ Coast Desk newsprint. Consulting-primary tip `62b22df` superseded.
+Stranger gets WHY in one breath — almost no reading. Sees ~$250 pay-first day + 12 mo / ~10 hr coach. Pitch on face: ~3yr grad + ~20yr nonprofit/grants, funded projects, ~2hr teach as ~6hr day with lunch. One Enroll / Pay. Writing quotes tiny. Free lookups nav/footer only. Optional ~$1M chip. Zero invented award $. Astoria omitted. Navy/walnut Source Sans ≠ Coast. Wordy tip `a99b3ec` superseded.
 
 ## Sources (mill)
 Internal source notes for makers. Do **not** copy this section onto public HTML.

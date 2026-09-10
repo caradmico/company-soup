@@ -1,54 +1,64 @@
-# Grant Desk redesign — taste lock (SUPERSEDE 2026-09-09)
+# Grant Desk redesign — taste lock (SUPERSEDE 2026-09-10)
 
-**Factory:** Grant Desk offer re-land (Cara LOCK supersedes consulting-primary tip `62b22df`)  
+**Factory:** Grant Desk HOT FAIL — sparse one-breath class face  
 **Live:** https://grants.graphicoregon.com/ → `brands/grant-desk/`  
-**Status:** TASTE LOCKED — hand Build now  
+**Status:** TASTE LOCKED — apply exactly  
 **Owner:** Grant Desk (product/taste) · Build sole lands · Kevin one look  
 
-**Supersedes:** hire-consulting-as-primary sell on tip `62b22df`. Consulting/writing quotes become **secondary upsell** only.
+**Supersedes:** wordy / stiff / bland training-day pamphlet on tip `a99b3ec` (PR #43). That face hid WHY behind pull-quotes, offer cards, “what’s in the day” essays, disclaimer stacks, and a second Enroll CTA.
 
-## Cara LOCK (product)
+## Cara LOCK (product — KEEP)
 
 ### PRIMARY (must lead the door)
 - **Paid training day — ~$250 upfront (pay first)**
-- After pay: **~10 hours of resource / coach access over 12 months** (capped) — part of what they bought, not a free substitute for the day
-- Stranger must feel: **buy the day class** — not “read free info and DIY”
+- After pay: **~10 hours of resource / coach access over 12 months** (capped)
+- Stranger must feel: **buy the day class**
 
-### SECONDARY (upsell)
-- Scoped **writing / research quotes** (packages Cara writes or researches for them)
+### SECONDARY (upsell — not hero)
+- Scoped **writing / research quotes**
 - Not unpaid full writing as the default SKU
-- Not the hero
 
 ### BAN
-- Free dumps / free lookups as **the product**
-- Free-info replacement for the paid day
-- Soft pamphlet that hides the price and the buy
+- Free dumps / free lookups as **the product** (nav + footer only)
+- Long why paragraphs
+- Repeated CTAs
+- Stiff disclaimer stacks above the fold
+- Pamphlet “what’s in the day” essays
+- Multi-panel hire language crowding the buy
+- Anything that makes a stranger **scroll to learn WHY**
+- Libre Baskerville / Coast newsprint twin
+- Invent $ beyond the ~$1M KEEP chip
+- Capital campaigns · legal counsel claims · Astoria
+
+## Pitch (face — must land, short)
+- ~3 years graduate work
+- ~20-year nonprofit management / grant-writing career
+- Funded real projects
+- She can teach what matters in **~2 hours**, packaged as a **~6-hour day with lunch**
 
 ## Done-when
-1. Sees the **~$250 training day** as the clear primary buy (pay first)
-2. Understands **12 months / ~10 hr** capped resource/coach access is included after pay
-3. Path toward **enroll / pay / request the day**
-4. Writing/research quotes as a **secondary** ask only
-5. Free lookups only in secondary nav
-6. navy/walnut Source Sans — ≠ Coast
+VERY simple. Almost no reading. WHY take the class hits immediately.
 
-## Above-the-fold IA
-1. Mark (navy seal + walnut ribbon)
-2. Secondary nav: Portfolio · Free lookups
-3. H1 preferred: “A paid training day for grants — then a year of capped coach access.”
-4. Pull-quote e.g. “Most orgs don’t need more free lists — they need one day that teaches which door to knock on.”
-5. Primary offer card: Day class · **~$250** · pay first · includes ~10 hr / 12 mo resource access
-6. Primary CTA: Enroll / Pay for the training day (dominant)
-7. Short why: Oregon + California nonprofit track
-Then: what’s in the day (short, no invented curriculum) · secondary “Need writing done?” upsell · proof · footer
+1. WHY in one breath
+2. Who — one line (~3yr grad + ~20yr nonprofit/grants; funded projects)
+3. Day — ~6hr w/ lunch (core ~2hr) · ~$250 · year access
+4. One dominant **Enroll / Pay** CTA
+5. Tiny secondary: writing quotes · Free lookups in nav/footer only
+6. Optional one-line proof chip: **~$1M** · Astoria HOLD
+7. Navy `#1e3a5f` / walnut `#6b4f2a` / Source Sans — ≠ Coast
 
-## Secondary upsell
-**Need the writing done for you?** Scoped research/writing quotes. CTA: Request a writing/research scope.
+## IA (minimal — this order)
+1. Mark
+2. WHY (one breath)
+3. Who — one line
+4. Day — ~6hr w/ lunch (core ~2hr) · ~$250 · year access
+5. Dominant Enroll / Pay CTA
+6. Tiny secondary: writing quotes · Free lookups footer/nav
 
-## Proof
-Dozens OR+CA · CBAA+Success Centers · MA · ~$1M KEEP · Portfolio · Astoria HOLD. Class ~$250 allowed on face.
+## Voice
+Plain. Warm. Zero brochure stiffness. Clear WHY. No invent / AI-disclaimer speak on the public face.
 
 ## Aesthetic
-Keep #f7f5f1 #1e3a5f #6b4f2a Source Sans 3. Ban Baskerville/Source Serif/#f3efe6/free-as-land/consulting-primary hero crowding out day class.
+Sharp and sparse. Big type. Lots of air. One dominant Enroll CTA. No card-stack pamphlet. Keep `#f7f5f1` `#1e3a5f` `#6b4f2a` Source Sans 3.
 
-BRAND.md: Paid grants training day (~$250) + 12mo capped access; writing quotes secondary.
+BRAND.md: Paid grants training day (~$250) + 12mo / ~10hr coach; writing quotes secondary. SUPERSEDE `a99b3ec` wordy face.
