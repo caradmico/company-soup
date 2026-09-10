@@ -6,8 +6,6 @@ Live: https://caradmico.github.io/company-soup/
 
 Face: cooker + three-beat story (sketch → blueprint → in hands). Thermometer cup is the worked example.
 
-Ops (venture status, one page): [Soup Ops](https://caradmico.github.io/company-soup/ops/dashboard/)
-
 Doors live under `brands/`, `businesses/`, and `founders/` — not a vanity grid on the face.
 
 Food Desk, if opened: [drafts in flight](brands/food-desk/) only.
