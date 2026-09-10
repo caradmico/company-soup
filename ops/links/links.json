@@ -9,14 +9,14 @@
       "name": "Author — Red and Black Current (Book 2)",
       "url": "https://drive.google.com/drive/folders/11jCfDKzrJeUZsDyzsS551NYkZGYJdnOm",
       "live": true,
-      "compute_pct": 9,
+      "compute_pct": 7,
       "compute_pct_label": "estimate"
     },
     {
       "name": "Publishing Bot",
       "url": "no live URL yet",
       "live": false,
-      "compute_pct": 4,
+      "compute_pct": 2,
       "compute_pct_label": "estimate"
     },
     {
@@ -30,14 +30,21 @@
       "name": "NCCWP Desk",
       "url": "https://caradmico.github.io/graphicoregon/nccwp/",
       "live": true,
-      "compute_pct": 9,
+      "compute_pct": 8,
       "compute_pct_label": "estimate"
     },
     {
-      "name": "Orbit / Graphic Oregon",
+      "name": "Graphic Oregon (apex)",
       "url": "https://graphicoregon.com/",
       "live": true,
-      "compute_pct": 8,
+      "compute_pct": 6,
+      "compute_pct_label": "estimate"
+    },
+    {
+      "name": "Orbit (github.io)",
+      "url": "https://caradmico.github.io/graphicoregon/",
+      "live": true,
+      "compute_pct": 4,
       "compute_pct_label": "estimate"
     },
     {
@@ -48,24 +55,31 @@
       "compute_pct_label": "estimate"
     },
     {
-      "name": "GO Bot",
-      "url": "https://graphicoregon.com/",
+      "name": "GO Bot brand (github.io)",
+      "url": "https://caradmico.github.io/company-soup/brands/graphic-oregon/",
       "live": true,
-      "compute_pct": 3,
+      "compute_pct": 2,
       "compute_pct_label": "estimate"
     },
     {
       "name": "Build Bot",
       "url": "no live URL yet",
       "live": false,
-      "compute_pct": 7,
+      "compute_pct": 6,
       "compute_pct_label": "estimate"
     },
     {
-      "name": "Soup Ops",
+      "name": "Soup Ops / Ops subdomain (Access WIP)",
       "url": "https://ops.graphicoregon.com/",
       "live": true,
-      "compute_pct": 4,
+      "compute_pct": 3,
+      "compute_pct_label": "estimate"
+    },
+    {
+      "name": "Ops dashboard (github.io)",
+      "url": "https://caradmico.github.io/company-soup/ops/dashboard/",
+      "live": true,
+      "compute_pct": 2,
       "compute_pct_label": "estimate"
     },
     {
@@ -90,17 +104,31 @@
       "compute_pct_label": "estimate"
     },
     {
-      "name": "Demeter Aesthetic",
+      "name": "Demeter (subdomain)",
       "url": "https://demeter.graphicoregon.com/",
       "live": true,
-      "compute_pct": 4,
+      "compute_pct": 3,
       "compute_pct_label": "estimate"
     },
     {
-      "name": "Fine Art Gallery",
+      "name": "Demeter watershed (github.io)",
+      "url": "https://caradmico.github.io/company-soup/businesses/watershed/",
+      "live": true,
+      "compute_pct": 2,
+      "compute_pct_label": "estimate"
+    },
+    {
+      "name": "Fine Art (subdomain)",
       "url": "https://art.graphicoregon.com/",
       "live": true,
-      "compute_pct": 3,
+      "compute_pct": 2,
+      "compute_pct_label": "estimate"
+    },
+    {
+      "name": "Fine Art gallery (github.io)",
+      "url": "https://caradmico.github.io/company-soup/businesses/fine-art/",
+      "live": true,
+      "compute_pct": 2,
       "compute_pct_label": "estimate"
     },
     {
@@ -202,14 +230,21 @@
       "compute_pct_label": "estimate"
     },
     {
-      "name": "Grant Desk",
+      "name": "Grant Desk (subdomain)",
       "url": "https://grants.graphicoregon.com/",
       "live": true,
       "compute_pct": 2,
       "compute_pct_label": "estimate"
     },
     {
-      "name": "Food Desk (draft stub)",
+      "name": "Grant Desk (github.io)",
+      "url": "https://caradmico.github.io/company-soup/brands/grant-desk/",
+      "live": true,
+      "compute_pct": 1,
+      "compute_pct_label": "estimate"
+    },
+    {
+      "name": "Food Desk (WIP stub)",
       "url": "https://caradmico.github.io/company-soup/brands/food-desk/",
       "live": true,
       "compute_pct": 1,
@@ -230,8 +265,15 @@
       "compute_pct_label": "estimate"
     },
     {
-      "name": "Coast Desk",
+      "name": "Coast Desk (subdomain)",
       "url": "https://coast.graphicoregon.com/",
+      "live": true,
+      "compute_pct": 1,
+      "compute_pct_label": "estimate"
+    },
+    {
+      "name": "Coast Desk (github.io)",
+      "url": "https://caradmico.github.io/company-soup/brands/coast-desk/",
       "live": true,
       "compute_pct": 1,
       "compute_pct_label": "estimate"
@@ -305,14 +347,7 @@
       "live": false,
       "compute_pct": 0,
       "compute_pct_label": "estimate"
-    },
-    {
-      "name": "Ops (Access WIP)",
-      "url": "https://ops.graphicoregon.com/",
-      "live": true,
-      "compute_pct": 0,
-      "compute_pct_label": "estimate"
     }
   ],
-  "update_note": "2026-09-10 Link Desk locked table: drop Grant Desk free resources only; keep WIP/missing-URL seats; apex/subdomains as primary; Softstyle 4; sum 100; no demeterdesign.net"
+  "update_note": "2026-09-10 Link Desk corrected lock: apex and github.io as separate rows; Softstyle 4; Author 7; Publishing Bot 2; drop Grant Desk free resources only; sum 100; no demeterdesign.net"
 }
