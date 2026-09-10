@@ -1,54 +1,36 @@
-# Grant Desk redesign — taste lock (SUPERSEDE 2026-09-09)
+# Grant Desk redesign — taste lock (HARD SUPERSEDE 2026-09-10 HOME FAIL v2)
 
-**Factory:** Grant Desk offer re-land (Cara LOCK supersedes consulting-primary tip `62b22df`)  
+**Factory:** Cara HOME FAIL v2 via Jarvis — home only  
 **Live:** https://grants.graphicoregon.com/ → `brands/grant-desk/`  
-**Status:** TASTE LOCKED — hand Build now  
+**Status:** TASTE LOCKED — apply exactly to HOME  
 **Owner:** Grant Desk (product/taste) · Build sole lands · Kevin one look  
 
-**Supersedes:** hire-consulting-as-primary sell on tip `62b22df`. Consulting/writing quotes become **secondary upsell** only.
+**Supersedes:** sparse class-price face on this branch, and wordy pamphlet tip `a99b3ec`. Home is no longer a ~$250 enroll door.
 
-## Cara LOCK (product)
+## HOME ONLY (this lock)
 
-### PRIMARY (must lead the door)
-- **Paid training day — ~$250 upfront (pay first)**
-- After pay: **~10 hours of resource / coach access over 12 months** (capped) — part of what they bought, not a free substitute for the day
-- Stranger must feel: **buy the day class** — not “read free info and DIY”
+1. **Full-bleed hero** — `assets/hero-flowers-sunset.png` + **white block text:** If you can dream it, you can fund it.
+2. **Short ethos quote** under the hero (one breath — not an essay)
+3. **Three blocks**, thin dividers: **$1M+ funded** · **grant writing workshops** · **consulting**
+4. **Footer: email contact button ONLY**
 
-### SECONDARY (upsell)
-- Scoped **writing / research quotes** (packages Cara writes or researches for them)
-- Not unpaid full writing as the default SKU
-- Not the hero
+## Later (not tonight)
+- ~$250 training day is a **later page** — do not put price first on home
+- No second domain tonight
 
-### BAN
-- Free dumps / free lookups as **the product**
-- Free-info replacement for the paid day
-- Soft pamphlet that hides the price and the buy
+## BAN
+- Price first / ~$250 on the home
+- Bland essay
+- Second domain
+- Libre Baskerville / Coast newsprint twin
+- Invent $ beyond the $1M+ KEEP
+- Capital campaigns · legal counsel claims · Astoria
+- Footer link stacks (Portfolio / Free lookups / parent doors)
 
-## Done-when
-1. Sees the **~$250 training day** as the clear primary buy (pay first)
-2. Understands **12 months / ~10 hr** capped resource/coach access is included after pay
-3. Path toward **enroll / pay / request the day**
-4. Writing/research quotes as a **secondary** ask only
-5. Free lookups only in secondary nav
-6. navy/walnut Source Sans — ≠ Coast
-
-## Above-the-fold IA
-1. Mark (navy seal + walnut ribbon)
-2. Secondary nav: Portfolio · Free lookups
-3. H1 preferred: “A paid training day for grants — then a year of capped coach access.”
-4. Pull-quote e.g. “Most orgs don’t need more free lists — they need one day that teaches which door to knock on.”
-5. Primary offer card: Day class · **~$250** · pay first · includes ~10 hr / 12 mo resource access
-6. Primary CTA: Enroll / Pay for the training day (dominant)
-7. Short why: Oregon + California nonprofit track
-Then: what’s in the day (short, no invented curriculum) · secondary “Need writing done?” upsell · proof · footer
-
-## Secondary upsell
-**Need the writing done for you?** Scoped research/writing quotes. CTA: Request a writing/research scope.
-
-## Proof
-Dozens OR+CA · CBAA+Success Centers · MA · ~$1M KEEP · Portfolio · Astoria HOLD. Class ~$250 allowed on face.
+## Voice
+Plain. Warm. Hero line is the WHY. Zero brochure stiffness. No invent / AI-disclaimer speak on the public face.
 
 ## Aesthetic
-Keep #f7f5f1 #1e3a5f #6b4f2a Source Sans 3. Ban Baskerville/Source Serif/#f3efe6/free-as-land/consulting-primary hero crowding out day class.
+Photo leads. White block + navy `#1e3a5f` / walnut `#6b4f2a` / Source Sans under the fold. Sharp, almost no reading. ≠ Coast.
 
-BRAND.md: Paid grants training day (~$250) + 12mo capped access; writing quotes secondary.
+BRAND.md: Home = dream/fund hero + workshops + consulting. Class later.
