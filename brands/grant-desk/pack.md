@@ -1,57 +1,46 @@
 # Grant Desk
 
-Lane: Professional services · Graphic Oregon child · paid training day
+Lane: Professional services · Graphic Oregon child · workshops + consulting
 
 ## One-liner
-Paid grants training day (~$250, pay first) + ~10 hours of coach / resource access over 12 months. Writing/research quotes secondary.
+If you can dream it, you can fund it. $1M+ funded. Grant writing workshops and consulting.
 
 ## Offer
-PRIMARY: hire the day class. SECONDARY: scoped writing/research when they want the package done.
+**Land (HOME):** full-bleed meadow hero + white block “If you can dream it, you can fund it.” Short ethos. Three thin-divider blocks ($1M+ funded · grant writing workshops · consulting). Footer email button only.
+**Later page (not tonight):** ~$250 training day. Do not put price first on home. No second domain tonight.
+**Not the land:** free resources, `/portfolio/`, price-first enroll pamphlet, `a99b3ec` essay door.
 
-**Land (door):** sparse one-breath face. Mark → WHY → Who (one line) → Day (~6hr w/ lunch, core ~2hr, ~$250, 12 mo / ~10 hr) → one Enroll / Pay. Writing quotes tiny. Free lookups nav/footer only.
-**Not the land:** free resources, `/portfolio/`, consulting-as-hero, free dumps that replace the class, `a99b3ec` pamphlet (pull-quote + offer card + “what’s in the day”).
+Home sell:
+- WHY: If you can dream it, you can fund it.
+- $1M+ funded (KEEP aggregate — do not invent per-org $)
+- grant writing workshops
+- consulting
 
-Sell (primary — face pitch):
-- WHY: know which door to knock on
-- ~3 years graduate work + ~20-year nonprofit management / grant-writing career
-- Funded real projects
-- Teach what matters in ~2 hours, packaged as a ~6-hour day with lunch
-- Paid training day — ~$250 upfront (pay first)
-- After pay: ~10 hours of coach access over 12 months (capped)
+Do not sell on home: ~$250 / pay-first class, capital campaigns, legal counsel, free lookups as the product.
 
-Sell (secondary upsell only):
-- Scoped writing / research quotes when they want the package done for them
-- Not the hero. Not unpaid full writing as the default SKU
-
-Do not sell: capital campaigns. Capital-project consulting is experience only (not a campaign product). Do not sell ongoing “be our grants manager” as the default SKU. Do not sell free lookups as the product.
-
-Proof (public door — one chip max):
-- ~$1M in grants funded (KEEP aggregate — do not invent per-org $)
-- Class ~$250 allowed on face
-- Named org proof stays on `/portfolio/` — not a pamphlet list on the door
-
-Hard gate (mill / internal): she does not submit applications without Cara's explicit gate. Primary CTA is enroll / pay for the training day. Writing/research scope is secondary mailto only.
+Hard gate (mill / internal): she does not submit applications without Cara's explicit gate. Home CTA is email only.
 
 ## Path
 - Brand door (the land): https://caradmico.github.io/company-soup/brands/grant-desk/
 - Live claim: https://grants.graphicoregon.com/
 - Portfolio / methods (proof, not the land): https://caradmico.github.io/company-soup/brands/grant-desk/portfolio/
 - Free lookups (secondary menu only): https://caradmico.github.io/company-soup/brands/grant-desk/resources/
-- Primary CTA: mailto hello@graphicoregon.com — subject “Grant Desk — enroll / pay for the training day” (door URL in body may be https://grants.graphicoregon.com/)
-- Secondary CTA: mailto — subject “Grant Desk — writing / research scope”
+- Home CTA: mailto hello@graphicoregon.com — subject “Grant Desk”
+- ~$250 class: later page — not on home tonight
 - Parent: Graphic Oregon
+- No second domain tonight
 
 ## Free value
 - Public resources page: grants by type, Grant Desk–verified $0 URLs only (`resources/sources.json`)
-- Door treats free lookups as secondary menu — not the hero sell
-- Free dumps must not replace the paid day
+- Home footer is email only — free lookups are not on the home
+- Free dumps must not replace workshops / consulting
 - Public HTML has no Do-not / invent / AI / Cara-gate / “not the land” factory voice — ops constraints stay in this pack
 
 ## Scanner path (not this ship)
 Next — optional scanner over free DBs (Grants.gov + listed public calendars) feeding Finance Bro fit-scan; human curate; Cara gate before any submit. Sketch: `resources/scanner-path.json`.
 
 ## Done-when
-Stranger gets WHY in one breath — almost no reading. Sees ~$250 pay-first day + 12 mo / ~10 hr coach. Pitch on face: ~3yr grad + ~20yr nonprofit/grants, funded projects, ~2hr teach as ~6hr day with lunch. One Enroll / Pay. Writing quotes tiny. Free lookups nav/footer only. Optional ~$1M chip. Zero invented award $. Astoria omitted. Navy/walnut Source Sans ≠ Coast. Wordy tip `a99b3ec` superseded.
+HOME: stranger hits the photo + “If you can dream it, you can fund it.” Then a short ethos, three divider blocks, one email button. No price on home. No bland essay. No second domain. $1M+ KEEP only. Astoria omitted. ~$250 class later. Navy/walnut Source Sans ≠ Coast. Class-price faces superseded on home.
 
 ## Sources (mill)
 Internal source notes for makers. Do **not** copy this section onto public HTML.

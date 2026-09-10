@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Grant Desk · Training day</title>
-<meta name="description" content="Know which grant door to knock on. A ~$250 day (~6 hours, lunch in; she teaches what matters in ~2 hours), then a year of coach access. Enroll / pay first.">
+<title>Grant Desk</title>
+<meta name="description" content="If you can dream it, you can fund it. Grant writing workshops and consulting.">
 <link rel="canonical" href="https://caradmico.github.io/company-soup/brands/grant-desk/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,116 +21,99 @@
 *{box-sizing:border-box}
 html,body{margin:0}
 body{
-  min-height:100vh;
   color:var(--ink);
   background:var(--paper);
   font:400 18px/1.45 "Source Sans 3","Segoe UI",system-ui,sans-serif;
 }
-a{color:var(--navy)}
-.rail{height:6px;background:var(--navy)}
-.page{max-width:38rem;margin:0 auto;padding:1.5rem 1.4rem 3.5rem}
-.letterhead{display:flex;align-items:flex-start;justify-content:space-between;gap:1.25rem}
-.mark{display:flex;align-items:center;gap:.65rem}
-.mark .seal{width:1.15rem;height:1.15rem;background:var(--navy);border-radius:2px;flex:0 0 auto}
-.mark .word{margin:0;font:650 1.15rem/1 "Source Sans 3",system-ui,sans-serif;color:var(--navy)}
-.mark .ribbon{display:block;width:3.25rem;height:4px;background:var(--ribbon);margin:.45rem 0 0 1.8rem}
-.menu{padding-top:.2rem;font:600 .78rem/1.3 "Source Sans 3",system-ui,sans-serif}
-.menu a{color:var(--mute);text-decoration:none}
-.menu a:hover{color:var(--navy);border-bottom:1px solid var(--ribbon)}
-.face{padding:12vh 0 0}
-h1{
+.hero{
+  position:relative;
+  min-height:100svh;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  padding:1.35rem 1.25rem 2.4rem;
+  background:
+    linear-gradient(180deg,rgba(28,36,48,.18) 0%,rgba(28,36,48,.05) 28%,rgba(28,36,48,.12) 100%),
+    #3a2a18 url("assets/hero-flowers-sunset.png") center/cover no-repeat;
+}
+.mark{
   margin:0;
-  max-width:11ch;
-  font-size:clamp(2.9rem,11vw,5.1rem);
-  font-weight:700;
-  line-height:.95;
-  letter-spacing:-.038em;
+  color:#fff;
+  font:650 1rem/1 "Source Sans 3",system-ui,sans-serif;
+  letter-spacing:.02em;
+  text-shadow:0 1px 8px rgba(28,36,48,.35);
+}
+.hero h1{
+  margin:0;
+  max-width:14ch;
+  padding:1.05rem 1.15rem 1.15rem;
+  background:#fff;
   color:var(--navy);
+  font-size:clamp(1.85rem,6.4vw,3.15rem);
+  font-weight:700;
+  line-height:1.02;
+  letter-spacing:-.03em;
 }
-.who{
-  margin:1.6rem 0 0;
-  max-width:28rem;
-  color:var(--mute);
-  font-size:1.05rem;
-  line-height:1.4;
+.band{max-width:34rem;margin:0 auto;padding:2.6rem 1.35rem 3.4rem;text-align:center}
+.ethos{
+  margin:0 0 2.4rem;
+  color:var(--navy);
+  font-size:clamp(1.15rem,2.4vw,1.35rem);
+  font-weight:600;
+  line-height:1.35;
 }
-.day{
-  margin:3.1rem 0 0;
-  padding-top:1.35rem;
-  border-top:4px solid var(--ribbon);
+.blocks{margin:0;padding:0;list-style:none}
+.blocks li{
+  margin:0;
+  padding:1.15rem 0;
+  border-top:1px solid var(--navy);
+  color:var(--navy);
+  font-size:clamp(1.2rem,2.6vw,1.45rem);
+  font-weight:650;
+  letter-spacing:-.015em;
 }
-.day p{margin:0 0 .55rem;font-size:clamp(1.2rem,2.4vw,1.42rem);font-weight:600;color:var(--navy);line-height:1.3}
-.day p:last-child{margin:0}
-.price{margin:1.35rem 0 0;font-size:clamp(2.35rem,6vw,3.15rem);font-weight:700;letter-spacing:-.03em;color:var(--ribbon);line-height:1}
-.price span{display:block;margin:.35rem 0 0;font-size:1rem;font-weight:600;letter-spacing:0;color:var(--mute)}
-.year{margin:.7rem 0 0;font-size:1.05rem;color:var(--ink)}
-.buy{
+.blocks li:last-child{border-bottom:1px solid var(--navy)}
+footer{
+  display:flex;
+  justify-content:center;
+  padding:0 1.35rem 3.6rem;
+}
+.mail{
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  margin:2.15rem 0 0;
-  min-height:3.4rem;
-  padding:.85rem 1.6rem;
+  min-height:3.2rem;
+  padding:.8rem 1.5rem;
   background:var(--navy);
   color:#fff!important;
   text-decoration:none;
   font-weight:700;
-  font-size:1.12rem;
-  letter-spacing:-.01em;
+  font-size:1.05rem;
 }
-.buy:hover{filter:brightness(1.08)}
-.ask{display:block;margin:1.7rem 0 0;font-size:.95rem}
-.ask a{color:var(--navy);font-weight:600;text-decoration:none;border-bottom:1px solid var(--ribbon)}
-.ask a:hover{border-bottom-width:2px}
-.chip{margin:1.55rem 0 0;font-size:.92rem;color:var(--mute)}
-footer{margin:4.5rem 0 0;font-size:.86rem;color:var(--mute)}
-footer a{color:var(--mute);text-decoration:none}
-footer a:hover{color:var(--navy);border-bottom:1px solid var(--ribbon)}
+.mail:hover{filter:brightness(1.08)}
 @media(min-width:720px){
-  .page{padding:1.75rem 1.6rem 4.5rem}
-  .face{padding:14vh 0 0}
+  .hero{padding:1.7rem 2.4rem 3.2rem}
+  .band{padding:3.2rem 1.5rem 3.8rem}
 }
 </style>
 </head>
 <body>
-<div class="rail" aria-hidden="true"></div>
-<div class="page">
-  <header class="letterhead">
-    <div class="mark">
-      <span class="seal" aria-hidden="true"></span>
-      <div>
-        <p class="word">Grant Desk</p>
-        <span class="ribbon" aria-hidden="true"></span>
-      </div>
-    </div>
-    <nav class="menu" aria-label="Secondary">
-      <a href="./resources/">Free lookups</a>
-    </nav>
-  </header>
+<section class="hero">
+  <p class="mark">Grant Desk</p>
+  <h1>If you can dream it, you can fund it.</h1>
+</section>
 
-  <main class="face">
-    <h1>Know which door to knock on.</h1>
-    <p class="who">~3 years graduate work. ~20-year nonprofit management and grant-writing career. Funded real projects.</p>
-
-    <div class="day">
-      <p>A ~6-hour day with lunch.</p>
-      <p>She teaches what matters in about 2 hours.</p>
-      <p class="price">~$250 <span>pay first</span></p>
-      <p class="year">Then ~10 hours of coach access over 12 months.</p>
-    </div>
-
-    <a class="buy" href="mailto:hello@graphicoregon.com?subject=Grant%20Desk%20%E2%80%94%20enroll%20/%20pay%20for%20the%20training%20day&amp;body=Grant%20Desk%20%E2%80%94%20enroll%20/%20pay%20for%20the%20training%20day%0A%0AOrg%3A%0AName%3A%0AWhen%20you%20want%20the%20day%3A%0A%0Ahttps%3A//grants.graphicoregon.com/">Enroll / Pay</a>
-
-    <p class="ask"><a href="mailto:hello@graphicoregon.com?subject=Grant%20Desk%20%E2%80%94%20writing%20/%20research%20scope&amp;body=Grant%20Desk%20%E2%80%94%20request%20a%20writing%20/%20research%20scope%0A%0AOrg%3A%0ANeed%3A%0ATimeline%3A%0A%0Ahttps%3A//grants.graphicoregon.com/">Need writing done? Request a quote.</a></p>
-    <p class="chip">~$1M in grants funded.</p>
-  </main>
-
-  <footer>
-    <a href="./resources/">Free lookups</a>
-    · <a href="./portfolio/">Portfolio</a>
-    · <a href="https://graphicoregon.com/">Graphic Oregon</a>
-    · <a href="../../">Company Soup</a>
-  </footer>
+<div class="band">
+  <p class="ethos">Twenty years of nonprofit work. Grants for projects that were real.</p>
+  <ul class="blocks">
+    <li>$1M+ funded</li>
+    <li>grant writing workshops</li>
+    <li>consulting</li>
+  </ul>
 </div>
+
+<footer>
+  <a class="mail" href="mailto:hello@graphicoregon.com?subject=Grant%20Desk">Email Grant Desk</a>
+</footer>
 </body>
 </html>
