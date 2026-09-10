@@ -1,6 +1,7 @@
 /* Neahkahnie Atelier — hung inventory. Real Cara Mico works only. */
 window.ATELIER = [
   { src: "img/neahkahnie.jpg", title: "Neahkahnie", cat: "landscapes-coast", printUrl: "https://sassmeharder.com/product/31825198" },
+  { src: "img/polar-bear-ice-aurora.jpg", title: "Polar bear, ice and aurora", cat: "landscapes-coast" },
   { src: "img/ocean.jpg", title: "Ocean", cat: "landscapes-coast" },
   { src: "img/the-wave.jpg", title: "The Wave", cat: "landscapes-coast" },
   { src: "img/nehalem.jpg", title: "Nehalem", cat: "landscapes-coast" },
