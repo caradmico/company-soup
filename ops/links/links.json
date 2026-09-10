@@ -40,7 +40,7 @@
     },
     {
       "name": "Orbit",
-      "url": "https://caradmico.github.io/graphicoregon/",
+      "url": "https://graphicoregon.com/",
       "live": true,
       "compute_pct": 7,
       "compute_pct_label": "estimate"
@@ -54,7 +54,7 @@
     },
     {
       "name": "GO Bot",
-      "url": "https://caradmico.github.io/company-soup/brands/graphic-oregon/",
+      "url": "https://graphicoregon.com/",
       "live": true,
       "compute_pct": 4,
       "compute_pct_label": "estimate"
@@ -226,13 +226,6 @@
       "note": "draft stub \u2014 not public reviews"
     },
     {
-      "name": "Grant Desk free resources",
-      "url": "https://caradmico.github.io/company-soup/brands/grant-desk/resources/",
-      "live": true,
-      "compute_pct": 0,
-      "compute_pct_label": "estimate"
-    },
-    {
       "name": "Cold Contour",
       "url": "https://caradmico.github.io/company-soup/brands/cold-contour/",
       "live": true,
@@ -335,5 +328,5 @@
       "note": "subdomain to Soup Ops"
     }
   ],
-  "update_note": "2026-09-09 Link Desk delta: Space Boi URL; Food stub+private Drive; GO subdomains; Softstyle 3; Author 9; no demeterdesign.net"
+  "update_note": "2026-09-10 Link Desk lock: cut Grant Desk free resources only; Orbit + GO Bot primary https://graphicoregon.com/; creek/NCCWP github.io kept; WIP and missing-URL seats kept; no demeterdesign.net"
 }
