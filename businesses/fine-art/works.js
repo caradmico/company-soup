@@ -93,7 +93,22 @@ window.ATELIER = [
   { src: "img/20200504-131719.jpg", title: "Figure on the dam", cat: "mixed-media" },
   { src: "img/20200724-204038.jpg", title: "Musician sketch", cat: "mixed-media" },
   { src: "img/img-3207.jpg", title: "Industrial interior", cat: "mixed-media" },
-  { src: "img/20201025-145436.jpg", title: "Ship, waves, jelly", cat: "mixed-media" }
+  { src: "img/20201025-145436.jpg", title: "Ship, waves, jelly", cat: "mixed-media" },
+
+  /* Tsarista album extras — hung 2026-09 */
+  { src: "img/still-life-bust-vessels-charcoal.jpg", title: "Still life with bust and vessels", cat: "still-life-study" },
+  { src: "img/still-life-checkerboard-buddha-charcoal.jpg", title: "Still life with checkerboard and Buddha", cat: "still-life-study" },
+  { src: "img/portrait-curly-hair-blue-eyes.jpg", title: "Portrait, curly hair blue eyes", cat: "figure-portrait" },
+  { src: "img/blonde-portrait-with-latch.jpg", title: "Blonde portrait with latch", cat: "figure-portrait" },
+  { src: "img/nude-yellow-flowers-painting.jpg", title: "Nude with yellow flowers", cat: "figure-portrait" },
+  { src: "img/two-figure-nude-life-drawing.jpg", title: "Two-figure nude life drawing", cat: "figure-portrait" },
+  { src: "img/glowing-ship-night-sea.jpg", title: "Glowing ship, night sea", cat: "landscapes-coast" },
+  { src: "img/storm-light-landscape.jpg", title: "Storm light landscape", cat: "landscapes-coast" },
+  { src: "img/ink-scroll-panels-abstract.jpg", title: "Ink scroll panels", cat: "abstract-expression" },
+  { src: "img/fantasy-scaled-creature-pond.jpg", title: "Scaled creature at pond", cat: "animals" },
+  { src: "img/moth-trumpet-graphic-illustration.jpg", title: "Moth trumpet (gouache study)", cat: "animals" },
+  { src: "img/linocut-crouching-spiky-figure.jpg", title: "Linocut crouching figure", cat: "printmaking" },
+  { src: "img/woman-riding-donkey-illustration.jpg", title: "Woman riding donkey", cat: "animals" }
 ];
 
 window.CAT_LABEL = {
