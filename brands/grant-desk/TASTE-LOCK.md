@@ -11,11 +11,11 @@
 
 1. **Full-bleed hero** — `assets/hero-flowers-sunset.png` + **white block text:** If you can dream it, you can fund it.
 2. **Short ethos quote** under the hero (one breath — not an essay)
-3. **Three blocks**, thin dividers: **$1M+ funded** · **grant writing workshops** · **consulting**
+3. **Three blocks**, thin dividers: **$1M+ funded** · **grant writing workshops** · **consulting** — blocks link out (proof / `course/` / consult email). Do not restyle the band.
 4. **Footer: email contact button ONLY**
 
 ## Later (not tonight)
-- ~$250 training day is a **later page** — do not put price first on home
+- ~$250 training day lives at `course/` — do not put price first on home
 - No second domain tonight
 
 ## BAN
@@ -33,4 +33,4 @@ Plain. Warm. Hero line is the WHY. Zero brochure stiffness. No invent / AI-discl
 ## Aesthetic
 Photo leads. White block + navy `#1e3a5f` / walnut `#6b4f2a` / Source Sans under the fold. Sharp, almost no reading. ≠ Coast.
 
-BRAND.md: Home = dream/fund hero + workshops + consulting. Class later.
+BRAND.md: Home = dream/fund hero + workshops + consulting. Class lives at `course/`.

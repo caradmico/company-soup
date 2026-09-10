@@ -8,7 +8,7 @@
 ## Positioning
 **Home:** If you can dream it, you can fund it. Then: $1M+ funded · grant writing workshops · consulting. Email only.
 
-A stranger feels the dream → fund line first. Workshops and consulting are the work. ~$250 training day is a later page — not the home land. No second domain.
+A stranger feels the dream → fund line first. Workshops and consulting are the work. ~$250 training day lives at `course/` — not the home land. No second domain.
 
 ## Color
 | Token | Hex | Use |
@@ -32,4 +32,4 @@ Plain. Warm. Hero is the WHY. No bland essay. No mill jargon on the face.
 **Grant Desk** light on the photo (no Coast mast). White block carries the line. No letterhead rail crowding the hero.
 
 ## Apply notes (Build)
-HOME ONLY tonight. Full-bleed `assets/hero-flowers-sunset.png` + white block: “If you can dream it, you can fund it.” Short ethos. Three thin-divider blocks. Footer email button only. Do not lead with ~$250. Do not open a second domain. Do not twin Coast.
+HOME: Full-bleed `assets/hero-flowers-sunset.png` + white block: “If you can dream it, you can fund it.” Short ethos. Three thin-divider blocks (link to portfolio / course / consult). Footer email button only. Do not lead with ~$250 on home. Class sells at `course/`. Do not open a second domain. Do not twin Coast.
