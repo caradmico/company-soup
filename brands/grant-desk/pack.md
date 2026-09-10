@@ -7,7 +7,7 @@ If you can dream it, you can fund it. $1M+ funded. Grant writing workshops and c
 
 ## Offer
 **Land (HOME):** full-bleed meadow hero + white block “If you can dream it, you can fund it.” Short ethos. Three thin-divider blocks ($1M+ funded · grant writing workshops · consulting). Footer email button only.
-**Later page (not tonight):** ~$250 training day. Do not put price first on home. No second domain tonight.
+**Course page (`course/`):** ~$250 training day. Pay before materials. ~10 hours resource access over 12 months. Enroll / sign up. Do not put price first on home. No second domain.
 **Not the land:** free resources, `/portfolio/`, price-first enroll pamphlet, `a99b3ec` essay door.
 
 Home sell:
@@ -26,7 +26,8 @@ Hard gate (mill / internal): she does not submit applications without Cara's exp
 - Portfolio / methods (proof, not the land): https://caradmico.github.io/company-soup/brands/grant-desk/portfolio/
 - Free lookups (secondary menu only): https://caradmico.github.io/company-soup/brands/grant-desk/resources/
 - Home CTA: mailto hello@graphicoregon.com — subject “Grant Desk”
-- ~$250 class: later page — not on home tonight
+- Course (paid day): https://grants.graphicoregon.com/course/ — also https://caradmico.github.io/company-soup/brands/grant-desk/course/
+- Home beats: $1M+ → `portfolio/` · workshops → `course/` · consulting → mailto consult
 - Parent: Graphic Oregon
 - No second domain tonight
 
@@ -40,7 +41,7 @@ Hard gate (mill / internal): she does not submit applications without Cara's exp
 Next — optional scanner over free DBs (Grants.gov + listed public calendars) feeding Finance Bro fit-scan; human curate; Cara gate before any submit. Sketch: `resources/scanner-path.json`.
 
 ## Done-when
-HOME: stranger hits the photo + “If you can dream it, you can fund it.” Then a short ethos, three divider blocks, one email button. No price on home. No bland essay. No second domain. $1M+ KEEP only. Astoria omitted. ~$250 class later. Navy/walnut Source Sans ≠ Coast. Class-price faces superseded on home.
+HOME: stranger hits the photo + “If you can dream it, you can fund it.” Then a short ethos, three divider blocks (linked: proof / course / consult), one email button. No price on home. No bland essay. No second domain. $1M+ KEEP only. Astoria omitted. ~$250 class on `course/` only. Navy/walnut Source Sans ≠ Coast. Class-price faces superseded on home.
 
 ## Sources (mill)
 Internal source notes for makers. Do **not** copy this section onto public HTML.
