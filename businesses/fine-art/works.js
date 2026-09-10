@@ -1,6 +1,6 @@
 /* Neahkahnie Atelier — hung inventory. Real Cara Mico works only. */
 window.ATELIER = [
-  { src: "img/neahkahnie.jpg", title: "Neahkahnie", cat: "landscapes-coast" },
+  { src: "img/neahkahnie.jpg", title: "Neahkahnie", cat: "landscapes-coast", printUrl: "https://shirts-with-sass.printify.me/product/31825198" },
   { src: "img/ocean.jpg", title: "Ocean", cat: "landscapes-coast" },
   { src: "img/the-wave.jpg", title: "The Wave", cat: "landscapes-coast" },
   { src: "img/nehalem.jpg", title: "Nehalem", cat: "landscapes-coast" },
