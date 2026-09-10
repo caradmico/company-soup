@@ -24,7 +24,7 @@ OpenAI said that on Sept. 1 it heard rumors that Millennium Prize problems had b
 
 OpenAI says it then threw a large multi-agent effort at the open Millennium problems with a new internal model still in training. The company says agents reached a Navier–Stokes resolution in roughly 88 hours, with additional hours of Lean verification. It also says its researchers did not see Buckmaster and Alpöge’s unpublished work, while conceding it “cannot rule out” that de-identified data from product use helped improve models.
 
-Buckmaster has publicly argued OpenAI fought dirty — that a parallel corporate sprint after hearing rumors, plus the possibility that models trained on researchers’ own Codex sessions, turns academic priority into something closer to a scoop war. Tech reporting this week has covered those allegations alongside OpenAI’s denials of accessing specific user data.
+Buckmaster has publicly argued OpenAI fought dirty — that a parallel corporate sprint after hearing rumors, plus the possibility that models trained on researchers’ own Codex sessions, turns academic priority into something closer to a scoop war. TechCrunch and other outlets covered those allegations this week alongside OpenAI’s denials that it accessed specific user data.
 
 Two truths can sit on the same desk without canceling each other.
 
@@ -36,7 +36,7 @@ OpenAI’s own post emphasizes that its Euler-related claim differs from Buckmas
 
 Coast Desk is not here to crown a winner of Navier–Stokes. Clay’s rules and the mathematics community will do the slow work. The news for a North Coast reader is the pattern: AI is already in the phone and the grant file, and the same stack is now colliding with century-old open problems and the humans who have been grinding on them for years.
 
-If you can dream it, someone will try to fund it — or train on it. The question this week is whether the people who did the hard thinking still get named when the model finishes the sentence.
+The tools will keep finishing sentences. The question this week is whether the people who did the hard thinking still get named when they do.
 
 ## Sources
 - [OpenAI, “On the Navier–Stokes Millennium Prize Problem,” Sept. 8, 2026](https://openai.com/index/navier-stokes-solution/)
