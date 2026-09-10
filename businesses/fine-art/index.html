@@ -112,18 +112,19 @@ a{color:var(--gold)}
 }
 .stage figcaption{
   margin:1rem auto 0;max-width:40rem;
-  display:flex;flex-wrap:wrap;justify-content:center;gap:.35rem 1rem;
-  align-items:baseline;
+  display:grid;
+  grid-template-columns:auto auto;
+  justify-content:center;justify-items:center;
+  align-items:baseline;gap:.35rem 1rem;
 }
 .stage .t{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.35rem}
 .stage .c{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
 .stage .print-ed{
-  flex-basis:100%;margin:.28rem 0 0;text-align:center;
+  grid-column:1 / -1;justify-self:center;width:max-content;
+  margin:.12rem 0 0;text-align:center;
   font-size:.82rem;letter-spacing:.05em;color:var(--ink);
-  text-decoration:underline;
-  text-decoration-color:var(--gold);
-  text-underline-offset:.18em;
-  text-decoration-thickness:1px;
+  text-decoration:none;border-bottom:1px solid var(--gold);
+  padding-bottom:.08rem;
 }
 .stage .print-ed:hover,
 .stage .print-ed:focus-visible{
