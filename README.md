@@ -4,7 +4,7 @@
 
 Live: https://caradmico.github.io/company-soup/
 
-Ops (venture status, one page): [Soup Ops](https://caradmico.github.io/company-soup/ops/dashboard/)
+Ops lives behind Cloudflare Access at [ops.graphicoregon.com](https://ops.graphicoregon.com/) — not on public GitHub Pages.
 
 Featured founder firm: [Watershed Field Assessment](businesses/watershed/) — Demeter Design, quote-only coastal field assessment.
 
