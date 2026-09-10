@@ -5,119 +5,80 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Link shelf · Company Soup</title>
 <meta name="description" content="Complete link shelf — every seat/project with URL or no live URL yet, plus compute_pct estimates summing to 100.">
-<link rel="canonical" href="https://caradmico.github.io/company-soup/ops/links/">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f3f2ed;--ink:#12141a;--mute:#5a5e68;--card:#fff;--line:#e2e0d8;--accent:#2448c5;--miss:#8a3a3a}
-*{box-sizing:border-box}html,body{margin:0}
-body{min-height:100vh;color:var(--ink);background:radial-gradient(ellipse 80% 40% at 100% -10%,rgba(36,72,197,.07),transparent 50%),var(--bg);font:16px/1.45 Manrope,system-ui,sans-serif}
-a{color:var(--accent)}.wrap{width:min(56rem,calc(100% - 2rem));margin-inline:auto}
-header{padding:2rem 0 1.25rem;border-bottom:1px solid var(--line)}
-.kicker{margin:0;font:500 .72rem/1 IBM Plex Mono,ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
-h1{margin:.35rem 0 .4rem;font-size:clamp(1.75rem,4vw,2.4rem);font-weight:800;letter-spacing:-.035em;line-height:1.05}
-.why{margin:0;font-size:1.02rem;font-weight:600;max-width:40rem;color:var(--mute)}
-.meta{margin:.85rem 0 0;font:400 .78rem/1.35 IBM Plex Mono,ui-monospace,monospace;color:var(--mute)}
-main{padding:1.35rem 0 3rem}
-h2{margin:0 0 .65rem;font:500 .72rem/1 IBM Plex Mono,ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
-.note{margin:0 0 .75rem;font-size:.9rem;color:var(--mute)}
-.board{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:0 0 1.5rem}
-table{width:100%;border-collapse:collapse}
-th{text-align:left;font:500 .68rem/1 IBM Plex Mono,ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);padding:.75rem 1rem;border-bottom:1px solid var(--line);background:#fafaf7}
-td{padding:.85rem 1rem;border-bottom:1px solid var(--line);vertical-align:top}
-tr:last-child td{border-bottom:0}
-tbody tr:hover{background:#f7f8fc}
-.name{font-weight:700;letter-spacing:-.015em}
-.url a{font-weight:600;text-decoration:none;word-break:break-all;font-size:.88rem}
-.url a:hover{text-decoration:underline}
-.url.missing{color:var(--miss);font:500 .88rem/1.35 IBM Plex Mono,ui-monospace,monospace}
-.pct{white-space:nowrap;text-align:right}
-.pct .num{font:700 1rem/1 IBM Plex Mono,ui-monospace,monospace}
-.pct .est{font:400 .68rem/1 IBM Plex Mono,ui-monospace,monospace;color:var(--mute);text-transform:uppercase;letter-spacing:.06em}
-.book{padding:1rem 1.15rem}.book a{font-weight:700;word-break:break-all}
-footer{padding:0 0 2.5rem;font:400 .78rem/1.4 IBM Plex Mono,ui-monospace,monospace;color:var(--mute)}
-footer a{margin-right:1rem}
+:root{--ink:#1a1a1a;--paper:#f7f5f1;--line:#d8d2c8;--mute:#5a6570;--accent:#1e3a5f}
+*{box-sizing:border-box}
+body{margin:0;font:15px/1.45 system-ui,sans-serif;color:var(--ink);background:var(--paper)}
+main{max-width:56rem;margin:0 auto;padding:1.25rem 1rem 3rem}
+h1{font-size:1.35rem;margin:0 0 .35rem}
+.meta{color:var(--mute);font-size:.85rem;margin:0 0 1rem}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line)}
+th,td{text-align:left;padding:.45rem .55rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.72rem;letter-spacing:.04em;text-transform:uppercase;color:var(--accent)}
+.name{font-weight:600}
+.url a{color:var(--accent);word-break:break-all}
+.missing{color:var(--mute)}
+.mirror{font-size:.78rem;color:var(--mute)}
+.pct .num{font-weight:700}
+.est{font-size:.72rem;color:var(--mute)}
+footer{margin-top:1.25rem;font-size:.85rem;color:var(--mute)}
 </style>
 </head>
 <body>
-<header>
-  <div class="wrap">
-    <p class="kicker">Company Soup · ops</p>
-    <h1>Link shelf</h1>
-    <p class="why">Every seat and project — live URL or “no live URL yet,” plus compute share estimates (sum 100).</p>
-    <p class="meta">42 rows · compute_pct = estimate · curator Link Desk · lander Build</p>
-  </div>
-</header>
-<main class="wrap">
-  <h2>Seats / projects</h2>
-  <div class="board">
-    <table>
-      <thead>
-        <tr>
-          <th scope="col">Name</th>
-          <th scope="col">URL</th>
-          <th scope="col">compute_pct</th>
-        </tr>
-      </thead>
-      <tbody>
-<tr><td class="name">Author — Red and Black Current (Book 2)</td><td class="url"><a href="https://drive.google.com/drive/folders/11jCfDKzrJeUZsDyzsS551NYkZGYJdnOm" target="_blank" rel="noopener">https://drive.google.com/drive/folders/11jCfDKzrJeUZsDyzsS551NYkZGYJdnOm</a></td><td class="pct"><span class="num">10</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">Publishing Bot</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">4</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">Book Editor</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">2</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">NCCWP Desk</td><td class="url"><a href="https://caradmico.github.io/graphicoregon/nccwp/">https://caradmico.github.io/graphicoregon/nccwp/</a></td><td class="pct"><span class="num">9</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">Orbit</td><td class="url"><a href="https://caradmico.github.io/graphicoregon/">https://caradmico.github.io/graphicoregon/</a></td><td class="pct"><span class="num">7</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">Orbit creek explore</td><td class="url"><a href="https://caradmico.github.io/graphicoregon/creek/">https://caradmico.github.io/graphicoregon/creek/</a></td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">GO Bot</td><td class="url"><a href="https://caradmico.github.io/company-soup/brands/graphic-oregon/">https://caradmico.github.io/company-soup/brands/graphic-oregon/</a></td><td class="pct"><span class="num">4</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">Build Bot</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">7</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">Soup Ops</td><td class="url"><a href="https://caradmico.github.io/company-soup/ops/dashboard/">https://caradmico.github.io/company-soup/ops/dashboard/</a></td><td class="pct"><span class="num">4</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">Autonomy OS (KEEP)</td><td class="url"><a href="https://caradmico.github.io/company-soup/ops/autonomy/">https://caradmico.github.io/company-soup/ops/autonomy/</a></td><td class="pct"><span class="num">3</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">Company Soup root</td><td class="url"><a href="https://caradmico.github.io/company-soup/">https://caradmico.github.io/company-soup/</a></td><td class="pct"><span class="num">0</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">Judgment Pack</td><td class="url"><a href="https://caradmico.github.io/front-end-judgment/">https://caradmico.github.io/front-end-judgment/</a></td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">Demeter Aesthetic</td><td class="url"><a href="https://caradmico.github.io/company-soup/businesses/watershed/">https://caradmico.github.io/company-soup/businesses/watershed/</a></td><td class="pct"><span class="num">4</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">Fine Art Gallery</td><td class="url"><a href="https://caradmico.github.io/company-soup/businesses/fine-art/">https://caradmico.github.io/company-soup/businesses/fine-art/</a></td><td class="pct"><span class="num">3</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">Clothing Tsarista (Winged North Softstyle)</td><td class="url"><a href="https://sassmeharder.com/product/31685244" target="_blank" rel="noopener">https://sassmeharder.com/product/31685244</a></td><td class="pct"><span class="num">4</span> <span class="est">estimate</span></td></tr>
+<main>
+  <h1>Link shelf</h1>
+  <p class="meta">45 rows · compute_pct = estimate · sum 100 · curator Link Desk · lander Build · 2026-09-10</p>
+  <table>
+    <thead><tr><th scope="col">Name</th><th scope="col">URL</th><th scope="col">compute_pct</th></tr></thead>
+    <tbody>
+<tr><td class="name">Author — Red and Black Current (Book 2)</td><td class="url"><a href="https://drive.google.com/drive/folders/11jCfDKzrJeUZsDyzsS551NYkZGYJdnOm" target="_blank" rel="noopener">https://drive.google.com/drive/folders/11jCfDKzrJeUZsDyzsS551NYkZGYJdnOm</a></td><td class="pct"><span class="num">9</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Publishing Bot</td><td class="url"><span class="missing">no live URL yet</span></td><td class="pct"><span class="num">4</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Book Editor</td><td class="url"><span class="missing">no live URL yet</span></td><td class="pct"><span class="num">2</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">NCCWP Desk</td><td class="url"><a href="https://caradmico.github.io/graphicoregon/nccwp/" target="_blank" rel="noopener">https://caradmico.github.io/graphicoregon/nccwp/</a></td><td class="pct"><span class="num">9</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Orbit</td><td class="url"><a href="https://caradmico.github.io/graphicoregon/" target="_blank" rel="noopener">https://caradmico.github.io/graphicoregon/</a></td><td class="pct"><span class="num">7</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Orbit creek explore</td><td class="url"><a href="https://caradmico.github.io/graphicoregon/creek/" target="_blank" rel="noopener">https://caradmico.github.io/graphicoregon/creek/</a></td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">GO Bot</td><td class="url"><a href="https://caradmico.github.io/company-soup/brands/graphic-oregon/" target="_blank" rel="noopener">https://caradmico.github.io/company-soup/brands/graphic-oregon/</a></td><td class="pct"><span class="num">4</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Build Bot</td><td class="url"><span class="missing">no live URL yet</span></td><td class="pct"><span class="num">7</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Soup Ops</td><td class="url"><a href="https://caradmico.github.io/company-soup/ops/dashboard/" target="_blank" rel="noopener">https://caradmico.github.io/company-soup/ops/dashboard/</a></td><td class="pct"><span class="num">4</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Autonomy OS (KEEP)</td><td class="url"><a href="https://caradmico.github.io/company-soup/ops/autonomy/" target="_blank" rel="noopener">https://caradmico.github.io/company-soup/ops/autonomy/</a></td><td class="pct"><span class="num">3</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Company Soup root</td><td class="url"><a href="https://caradmico.github.io/company-soup/" target="_blank" rel="noopener">https://caradmico.github.io/company-soup/</a></td><td class="pct"><span class="num">0</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Judgment Pack</td><td class="url"><a href="https://caradmico.github.io/front-end-judgment/" target="_blank" rel="noopener">https://caradmico.github.io/front-end-judgment/</a></td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Demeter Aesthetic</td><td class="url"><a href="https://demeter.graphicoregon.com/" target="_blank" rel="noopener">https://demeter.graphicoregon.com/</a><br><span class="mirror">mirror: <a href="https://caradmico.github.io/company-soup/businesses/watershed/" target="_blank" rel="noopener">https://caradmico.github.io/company-soup/businesses/watershed/</a></span></td><td class="pct"><span class="num">4</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Fine Art Gallery</td><td class="url"><a href="https://art.graphicoregon.com/" target="_blank" rel="noopener">https://art.graphicoregon.com/</a><br><span class="mirror">mirror: <a href="https://caradmico.github.io/company-soup/businesses/fine-art/" target="_blank" rel="noopener">https://caradmico.github.io/company-soup/businesses/fine-art/</a></span></td><td class="pct"><span class="num">3</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Clothing Tsarista (Winged North Softstyle)</td><td class="url"><a href="https://sassmeharder.com/product/31685244" target="_blank" rel="noopener">https://sassmeharder.com/product/31685244</a></td><td class="pct"><span class="num">3</span> <span class="est">estimate</span></td></tr>
 <tr><td class="name">Sass Night Owl</td><td class="url"><a href="https://sassmeharder.com/product/31458591" target="_blank" rel="noopener">https://sassmeharder.com/product/31458591</a></td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
 <tr><td class="name">Sass Boxy Horizon</td><td class="url"><a href="https://sassmeharder.com/product/31375158" target="_blank" rel="noopener">https://sassmeharder.com/product/31375158</a></td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
 <tr><td class="name">Sassmeharder shop</td><td class="url"><a href="https://sassmeharder.com/" target="_blank" rel="noopener">https://sassmeharder.com/</a></td><td class="pct"><span class="num">0</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">Press</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">2</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">Pond Coder</td><td class="url"><a href="https://caradmico.github.io/fabric-pond/">https://caradmico.github.io/fabric-pond/</a></td><td class="pct"><span class="num">3</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">HouseMe</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">Finance Bro</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">3</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">Marketer</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">2</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Press</td><td class="url"><span class="missing">no live URL yet</span></td><td class="pct"><span class="num">2</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Pond Coder</td><td class="url"><a href="https://caradmico.github.io/fabric-pond/" target="_blank" rel="noopener">https://caradmico.github.io/fabric-pond/</a></td><td class="pct"><span class="num">3</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">HouseMe</td><td class="url"><span class="missing">no live URL yet</span></td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Finance Bro</td><td class="url"><span class="missing">no live URL yet</span></td><td class="pct"><span class="num">3</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Marketer</td><td class="url"><span class="missing">no live URL yet</span></td><td class="pct"><span class="num">2</span> <span class="est">estimate</span></td></tr>
 <tr><td class="name">My X Bot (X alt)</td><td class="url"><a href="https://x.com/fairinggoddess" target="_blank" rel="noopener">https://x.com/fairinggoddess</a></td><td class="pct"><span class="num">2</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">Space Boi (StarIS / Space Apps)</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">Pioneer Bot</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">2</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">FTL Physics</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">3</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">Arcane</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">Grant Desk</td><td class="url"><a href="https://caradmico.github.io/company-soup/brands/grant-desk/">https://caradmico.github.io/company-soup/brands/grant-desk/</a></td><td class="pct"><span class="num">2</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">Grant Desk free resources</td><td class="url"><a href="https://caradmico.github.io/company-soup/brands/grant-desk/resources/">https://caradmico.github.io/company-soup/brands/grant-desk/resources/</a></td><td class="pct"><span class="num">0</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">Cold Contour</td><td class="url"><a href="https://caradmico.github.io/company-soup/brands/cold-contour/">https://caradmico.github.io/company-soup/brands/cold-contour/</a></td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">Coast Desk</td><td class="url"><a href="https://caradmico.github.io/company-soup/brands/coast-desk/">https://caradmico.github.io/company-soup/brands/coast-desk/</a></td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">Signal Shelf</td><td class="url"><a href="https://caradmico.github.io/company-soup/brands/signal-shelf/">https://caradmico.github.io/company-soup/brands/signal-shelf/</a></td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">Health Bot</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">Admin</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">OPSEC</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">EM Tutor</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">Intern</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">Jarvis Chief of Staff</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">2</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">Manager Kevin</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">2</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">Link Desk</td><td class="url"><a href="https://caradmico.github.io/company-soup/ops/links/">https://caradmico.github.io/company-soup/ops/links/</a></td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
-<tr><td class="name">New Bot</td><td class="url missing">no live URL yet</td><td class="pct"><span class="num">0</span> <span class="est">estimate</span></td></tr>
-      </tbody>
-    </table>
-  </div>
-  <h2>Drive / book</h2>
-  <p class="note">List only — do not write Book 2. Author Book 2 row above is the API draft folder.</p>
-  <div class="board book">
-    <strong>Book folder parent</strong><br>
-    <a href="https://drive.google.com/drive/folders/1KaD1SnpXz7abNj7pQ0bVuG_Wvhyp2lWI" target="_blank" rel="noopener">https://drive.google.com/drive/folders/1KaD1SnpXz7abNj7pQ0bVuG_Wvhyp2lWI</a>
-  </div>
+<tr><td class="name">Space Boi (StarIS / Space Apps)</td><td class="url"><a href="https://caradmico.github.io/space-apps-groton/bin-lod/" target="_blank" rel="noopener">https://caradmico.github.io/space-apps-groton/bin-lod/</a></td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Pioneer Bot</td><td class="url"><span class="missing">no live URL yet</span></td><td class="pct"><span class="num">2</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">FTL Physics</td><td class="url"><span class="missing">no live URL yet</span></td><td class="pct"><span class="num">3</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Arcane</td><td class="url"><span class="missing">no live URL yet</span></td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Grant Desk</td><td class="url"><a href="https://grants.graphicoregon.com/" target="_blank" rel="noopener">https://grants.graphicoregon.com/</a><br><span class="mirror">mirror: <a href="https://caradmico.github.io/company-soup/brands/grant-desk/" target="_blank" rel="noopener">https://caradmico.github.io/company-soup/brands/grant-desk/</a></span></td><td class="pct"><span class="num">2</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Food Desk</td><td class="url"><a href="https://caradmico.github.io/company-soup/brands/food-desk/" target="_blank" rel="noopener">https://caradmico.github.io/company-soup/brands/food-desk/</a></td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Grant Desk free resources</td><td class="url"><a href="https://caradmico.github.io/company-soup/brands/grant-desk/resources/" target="_blank" rel="noopener">https://caradmico.github.io/company-soup/brands/grant-desk/resources/</a></td><td class="pct"><span class="num">0</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Cold Contour</td><td class="url"><a href="https://caradmico.github.io/company-soup/brands/cold-contour/" target="_blank" rel="noopener">https://caradmico.github.io/company-soup/brands/cold-contour/</a></td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Coast Desk</td><td class="url"><a href="https://coast.graphicoregon.com/" target="_blank" rel="noopener">https://coast.graphicoregon.com/</a><br><span class="mirror">mirror: <a href="https://caradmico.github.io/company-soup/brands/coast-desk/" target="_blank" rel="noopener">https://caradmico.github.io/company-soup/brands/coast-desk/</a></span></td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Signal Shelf</td><td class="url"><a href="https://caradmico.github.io/company-soup/brands/signal-shelf/" target="_blank" rel="noopener">https://caradmico.github.io/company-soup/brands/signal-shelf/</a></td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Health Bot</td><td class="url"><span class="missing">no live URL yet</span></td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Admin</td><td class="url"><span class="missing">no live URL yet</span></td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">OPSEC</td><td class="url"><span class="missing">no live URL yet</span></td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">EM Tutor</td><td class="url"><span class="missing">no live URL yet</span></td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Intern</td><td class="url"><span class="missing">no live URL yet</span></td><td class="pct"><span class="num">1</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Jarvis Chief of Staff</td><td class="url"><span class="missing">no live URL yet</span></td><td class="pct"><span class="num">2</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Manager Kevin</td><td class="url"><span class="missing">no live URL yet</span></td><td class="pct"><span class="num">2</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Link Desk</td><td class="url"><a href="https://caradmico.github.io/company-soup/ops/links/" target="_blank" rel="noopener">https://caradmico.github.io/company-soup/ops/links/</a></td><td class="pct"><span class="num">2</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">New Bot</td><td class="url"><span class="missing">no live URL yet</span></td><td class="pct"><span class="num">0</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Food private staging</td><td class="url"><a href="https://drive.google.com/drive/folders/1rf1Zdk6XC8ks8aN7xJzY7oIIp-KDWTJE" target="_blank" rel="noopener">https://drive.google.com/drive/folders/1rf1Zdk6XC8ks8aN7xJzY7oIIp-KDWTJE</a></td><td class="pct"><span class="num">0</span> <span class="est">estimate</span></td></tr>
+<tr><td class="name">Ops door</td><td class="url"><a href="https://ops.graphicoregon.com/" target="_blank" rel="noopener">https://ops.graphicoregon.com/</a><br><span class="mirror">mirror: <a href="https://caradmico.github.io/company-soup/ops/dashboard/" target="_blank" rel="noopener">https://caradmico.github.io/company-soup/ops/dashboard/</a></span></td><td class="pct"><span class="num">0</span> <span class="est">estimate</span></td></tr>
+    </tbody>
+  </table>
+  <footer><p>Machine shelf: <a href="./links.json">links.json</a>. No demeterdesign.net.</p></footer>
 </main>
-<footer class="wrap">
-  <a href="../dashboard/">Ops dashboard</a>
-  <a href="../autonomy/">Autonomy OS</a>
-  <a href="../../">Company Soup</a>
-  <p>Machine shelf: <a href="./links.json">links.json</a>.</p>
-</footer>
 </body>
 </html>

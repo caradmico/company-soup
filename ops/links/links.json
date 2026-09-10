@@ -1,6 +1,6 @@
 {
   "id": "link-shelf-complete",
-  "generated": "2026-09-06",
+  "generated": "2026-09-10",
   "curator": "Link Desk",
   "lander": "Build Bot",
   "compute_pct_note": "All compute_pct values are estimates (0\u2013100); estimates sum to 100.",
@@ -14,7 +14,7 @@
       "name": "Author \u2014 Red and Black Current (Book 2)",
       "url": "https://drive.google.com/drive/folders/11jCfDKzrJeUZsDyzsS551NYkZGYJdnOm",
       "live": true,
-      "compute_pct": 10,
+      "compute_pct": 9,
       "compute_pct_label": "estimate"
     },
     {
@@ -96,23 +96,25 @@
     },
     {
       "name": "Demeter Aesthetic",
-      "url": "https://caradmico.github.io/company-soup/businesses/watershed/",
+      "url": "https://demeter.graphicoregon.com/",
       "live": true,
       "compute_pct": 4,
-      "compute_pct_label": "estimate"
+      "compute_pct_label": "estimate",
+      "mirror": "https://caradmico.github.io/company-soup/businesses/watershed/"
     },
     {
       "name": "Fine Art Gallery",
-      "url": "https://caradmico.github.io/company-soup/businesses/fine-art/",
+      "url": "https://art.graphicoregon.com/",
       "live": true,
       "compute_pct": 3,
-      "compute_pct_label": "estimate"
+      "compute_pct_label": "estimate",
+      "mirror": "https://caradmico.github.io/company-soup/businesses/fine-art/"
     },
     {
       "name": "Clothing Tsarista (Winged North Softstyle)",
       "url": "https://sassmeharder.com/product/31685244",
       "live": true,
-      "compute_pct": 4,
+      "compute_pct": 3,
       "compute_pct_label": "estimate"
     },
     {
@@ -180,8 +182,8 @@
     },
     {
       "name": "Space Boi (StarIS / Space Apps)",
-      "url": "no live URL yet",
-      "live": false,
+      "url": "https://caradmico.github.io/space-apps-groton/bin-lod/",
+      "live": true,
       "compute_pct": 1,
       "compute_pct_label": "estimate"
     },
@@ -208,19 +210,20 @@
     },
     {
       "name": "Grant Desk",
-      "url": "https://caradmico.github.io/company-soup/brands/grant-desk/",
+      "url": "https://grants.graphicoregon.com/",
       "live": true,
       "compute_pct": 2,
-      "compute_pct_label": "estimate"
+      "compute_pct_label": "estimate",
+      "mirror": "https://caradmico.github.io/company-soup/brands/grant-desk/"
     },
     {
       "name": "Food Desk",
       "url": "https://caradmico.github.io/company-soup/brands/food-desk/",
       "live": true,
-      "compute_pct": 0,
+      "compute_pct": 1,
       "compute_pct_label": "estimate",
       "status": "draft",
-      "note": "Drafts in flight \u2014 not public reviews yet"
+      "note": "draft stub \u2014 not public reviews"
     },
     {
       "name": "Grant Desk free resources",
@@ -238,10 +241,11 @@
     },
     {
       "name": "Coast Desk",
-      "url": "https://caradmico.github.io/company-soup/brands/coast-desk/",
+      "url": "https://coast.graphicoregon.com/",
       "live": true,
       "compute_pct": 1,
-      "compute_pct_label": "estimate"
+      "compute_pct_label": "estimate",
+      "mirror": "https://caradmico.github.io/company-soup/brands/coast-desk/"
     },
     {
       "name": "Signal Shelf",
@@ -303,7 +307,7 @@
       "name": "Link Desk",
       "url": "https://caradmico.github.io/company-soup/ops/links/",
       "live": true,
-      "compute_pct": 1,
+      "compute_pct": 2,
       "compute_pct_label": "estimate"
     },
     {
@@ -312,6 +316,24 @@
       "live": false,
       "compute_pct": 0,
       "compute_pct_label": "estimate"
+    },
+    {
+      "name": "Food private staging",
+      "url": "https://drive.google.com/drive/folders/1rf1Zdk6XC8ks8aN7xJzY7oIIp-KDWTJE",
+      "live": true,
+      "compute_pct": 0,
+      "compute_pct_label": "estimate",
+      "note": "PRIVATE Drive \u2014 Cara tags; no public Pages"
+    },
+    {
+      "name": "Ops door",
+      "url": "https://ops.graphicoregon.com/",
+      "live": true,
+      "compute_pct": 0,
+      "compute_pct_label": "estimate",
+      "mirror": "https://caradmico.github.io/company-soup/ops/dashboard/",
+      "note": "subdomain to Soup Ops"
     }
-  ]
+  ],
+  "update_note": "2026-09-09 Link Desk delta: Space Boi URL; Food stub+private Drive; GO subdomains; Softstyle 3; Author 9; no demeterdesign.net"
 }
