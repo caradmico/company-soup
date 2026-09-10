@@ -186,7 +186,7 @@ footer{
     </figure>
   </div>
 
-  <!-- Inbox path = jarvis-operator ops/soup-ideas.json via graphicoregon.com/api/soup-idea -->
+  <!-- Inbox path = jarvis-operator ops/soup-ideas.json via https://soup-intake.pages.dev/api/soup-idea -->
   <form class="intake" id="intake" novalidate>
     <label for="idea">Your idea</label>
     <textarea id="idea" name="text" rows="5" maxlength="4000" required placeholder="What do you want to make?"></textarea>
@@ -202,7 +202,7 @@ footer{
 </footer>
 </div>
 <script>
-const INBOX = "https://graphicoregon.com/api/soup-idea";
+const INBOX = "https://soup-intake.pages.dev/api/soup-idea";
 const form = document.getElementById("intake");
 const idea = document.getElementById("idea");
 const send = document.getElementById("send");
