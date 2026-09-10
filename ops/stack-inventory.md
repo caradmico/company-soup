@@ -1,6 +1,6 @@
 # Stack inventory · Company Soup
 
-**Soup Ops · STRUCTURE lens · curated 2026-09-09**
+**Soup Ops · STRUCTURE lens · curated 2026-09-10**
 
 Ventures, hosts, language, and Decap/Sveltia fit. Not a dashboard redesign. Machine copy: [`stack-inventory.json`](./stack-inventory.json). Pages: [ops/stack-inventory.md](https://caradmico.github.io/company-soup/ops/stack-inventory.md).
 
@@ -8,9 +8,9 @@ Ventures, hosts, language, and Decap/Sveltia fit. Not a dashboard redesign. Mach
 
 | Fit | Surfaces |
 |---|---|
-| **yes** | **food-desk** — blog posts; strongest candidate |
-| **maybe** | coast-desk (bylines/clips), grant-desk (resources JSON), signal-shelf (md briefs), fine-art (works metadata), ops/links (`links.json`) |
-| **no** | shops, Firebase / Three.js apps, pure brand packs, redirects, ops surfaces, WP-gone / external hosts |
+| **yes** | _none on Soup static — Coast Desk is the HERO Decap/Sveltia pilot, still maybe until lit_ |
+| **maybe** | **coast-desk** (HERO Decap pilot — bylines/clips), grant-desk (resources JSON), signal-shelf (md briefs), fine-art (works metadata), ops/links (`links.json`) |
+| **no** | **food-desk** (Drive-private / HARD PRIVACY — not the public Decap pilot); shops, Firebase / Three.js apps, pure brand packs, redirects, ops surfaces, WP-gone / external hosts |
 
 ## Doors (in `doors.json`)
 
@@ -18,9 +18,9 @@ Ventures, hosts, language, and Decap/Sveltia fit. Not a dashboard redesign. Mach
 |---|---|---|---|---|---|
 | fine-art | Neahkahnie Atelier | [Pages](https://caradmico.github.io/company-soup/businesses/fine-art/) | GitHub Pages | HTML/CSS + `works.js` (static gallery) | maybe — works metadata |
 | demeter-watershed | Demeter Design | [Pages](https://caradmico.github.io/company-soup/businesses/watershed/) | GitHub Pages | static HTML; proof PDFs still on legacy graphicoregon.com `/wp-content/` | no — firm door + WP-gone PDFs. `demeterdesign.net` cert mismatch / not reliable |
-| coast-desk | Coast Desk | [Pages](https://caradmico.github.io/company-soup/brands/coast-desk/) | GitHub Pages | static HTML + `clips.json` | maybe — bylines/clips CMS |
-| grant-desk | Grant Desk | [Pages](https://caradmico.github.io/company-soup/brands/grant-desk/) | GitHub Pages | static HTML + resources JSON | maybe — resources JSON |
-| food-desk | Food Desk | [Pages](https://caradmico.github.io/company-soup/brands/food-desk/) | GitHub Pages | static HTML + `posts/*.html` | **yes** — blog posts; strongest candidate. Public door is a drafts stub; posts remain on tree |
+| coast-desk | Coast Desk | [Pages](https://caradmico.github.io/company-soup/brands/coast-desk/) | GitHub Pages | static HTML + `clips.json` | maybe — HERO Decap/Sveltia pilot (bylines/clips; still maybe until lit) |
+| grant-desk | Grant Desk | [Pages](https://caradmico.github.io/company-soup/brands/grant-desk/) | GitHub Pages | static HTML + resources JSON | maybe — resources JSON. Public face: training-day ~$250 (not consulting) |
+| food-desk | Food Desk | [Pages](https://caradmico.github.io/company-soup/brands/food-desk/) | GitHub Pages | static HTML + `posts/*.html` | **no** — Drive-private / HARD PRIVACY; not the public Decap pilot |
 | graphic-oregon | Graphic Oregon (Soup brand door) | [Pages](https://caradmico.github.io/company-soup/brands/graphic-oregon/) | GitHub Pages | static HTML pack | no — brand pack |
 | sassmeharder | Sassmeharder | [shop](https://sassmeharder.com/) | Printify (nginx / Printify) | Printify-hosted Next.js — not Soup static | no — shop |
 | staris | StarIS | [Firebase](https://staris-b01f2.firebaseapp.com/) | Firebase Hosting | Three.js web app | no — Firebase / Three.js |

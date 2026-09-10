@@ -2,23 +2,19 @@
   "title": "Company Soup stack inventory",
   "why": "STRUCTURE lens only — ventures, status, doors, host, language. Soup Ops owns this. Not a dashboard redesign.",
   "generated": "2026-09-09",
-  "curated": "2026-09-09",
+  "curated": "2026-09-10",
   "owner": "Soup Ops",
   "pages": {
     "human": "https://caradmico.github.io/company-soup/ops/stack-inventory.md",
     "machine": "https://caradmico.github.io/company-soup/ops/stack-inventory.json"
   },
   "decap_sveltia_summary": {
-    "yes": [
-      {
-        "id": "food-desk",
-        "reason": "blog posts; strongest candidate"
-      }
-    ],
+    "yes": [],
+    "yes_note": "none on Soup static — Coast Desk is the HERO Decap/Sveltia pilot, still maybe until lit",
     "maybe": [
       {
         "id": "coast-desk",
-        "reason": "bylines / clips CMS"
+        "reason": "HERO Decap/Sveltia pilot — bylines / clips CMS (still maybe until lit)"
       },
       {
         "id": "grant-desk",
@@ -37,7 +33,7 @@
         "reason": "links.json shelf"
       }
     ],
-    "no": "shops, Firebase / Three.js apps, pure brand packs, redirects, ops surfaces, WP-gone / external hosts"
+    "no": "food-desk (Drive-private / HARD PRIVACY — not the public Decap pilot); shops, Firebase / Three.js apps, pure brand packs, redirects, ops surfaces, WP-gone / external hosts"
   },
   "rows": [
     {
@@ -79,7 +75,7 @@
       "notes": "Weekly hero slot + originals archive. Clip shelf KEEP — 55 pieces, 2012–2025.",
       "decap_sveltia": {
         "verdict": "maybe",
-        "reason": "bylines / clips CMS"
+        "reason": "HERO Decap/Sveltia pilot — bylines / clips CMS (still maybe until lit)"
       }
     },
     {
@@ -90,7 +86,7 @@
       "in_doors_json": true,
       "host": "GitHub Pages",
       "language_stack": "static HTML + resources JSON",
-      "notes": "Consulting door — 501(c)(3) fit, quote-only. resources/sources.json + scanner-path.json. Portfolio is proof, not the land.",
+      "notes": "Public face is paid training day ~$250 (not consulting-primary). resources/sources.json + scanner-path.json. Portfolio is proof, not the land.",
       "decap_sveltia": {
         "verdict": "maybe",
         "reason": "resources JSON"
@@ -104,10 +100,10 @@
       "in_doors_json": true,
       "host": "GitHub Pages",
       "language_stack": "static HTML + posts/*.html",
-      "notes": "Strongest Decap/Sveltia candidate. Public door is a drafts stub (not stranger-published). Post pages still on tree under brands/food-desk/posts/.",
+      "notes": "Drive-private / HARD PRIVACY — food writing is not the public Decap/Sveltia pilot. Public door is a drafts stub. Coast Desk is the HERO Decap pilot.",
       "decap_sveltia": {
-        "verdict": "yes",
-        "reason": "blog posts; strongest candidate"
+        "verdict": "no",
+        "reason": "Drive-private / HARD PRIVACY — not the public Decap pilot"
       }
     },
     {
