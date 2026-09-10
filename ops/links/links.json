@@ -1,17 +1,12 @@
 {
-  "id": "link-shelf-complete",
+  "id": "link-shelf-locked",
   "generated": "2026-09-10",
   "curator": "Link Desk",
   "lander": "Build Bot",
-  "compute_pct_note": "All compute_pct values are estimates (0\u2013100); estimates sum to 100.",
-  "book_parent_list_only": {
-    "name": "Book folder parent",
-    "url": "https://drive.google.com/drive/folders/1KaD1SnpXz7abNj7pQ0bVuG_Wvhyp2lWI",
-    "note": "List only \u2014 do not write Book 2"
-  },
+  "compute_pct_note": "All compute_pct values are estimates (0–100); estimates sum to 100.",
   "rows": [
     {
-      "name": "Author \u2014 Red and Black Current (Book 2)",
+      "name": "Author — Red and Black Current (Book 2)",
       "url": "https://drive.google.com/drive/folders/11jCfDKzrJeUZsDyzsS551NYkZGYJdnOm",
       "live": true,
       "compute_pct": 9,
@@ -39,10 +34,10 @@
       "compute_pct_label": "estimate"
     },
     {
-      "name": "Orbit",
-      "url": "https://caradmico.github.io/graphicoregon/",
+      "name": "Orbit / Graphic Oregon",
+      "url": "https://graphicoregon.com/",
       "live": true,
-      "compute_pct": 7,
+      "compute_pct": 8,
       "compute_pct_label": "estimate"
     },
     {
@@ -54,9 +49,9 @@
     },
     {
       "name": "GO Bot",
-      "url": "https://caradmico.github.io/company-soup/brands/graphic-oregon/",
+      "url": "https://graphicoregon.com/",
       "live": true,
-      "compute_pct": 4,
+      "compute_pct": 3,
       "compute_pct_label": "estimate"
     },
     {
@@ -68,7 +63,7 @@
     },
     {
       "name": "Soup Ops",
-      "url": "https://caradmico.github.io/company-soup/ops/dashboard/",
+      "url": "https://ops.graphicoregon.com/",
       "live": true,
       "compute_pct": 4,
       "compute_pct_label": "estimate"
@@ -81,7 +76,7 @@
       "compute_pct_label": "estimate"
     },
     {
-      "name": "Company Soup root",
+      "name": "Company Soup root (Soup cooker)",
       "url": "https://caradmico.github.io/company-soup/",
       "live": true,
       "compute_pct": 0,
@@ -99,22 +94,20 @@
       "url": "https://demeter.graphicoregon.com/",
       "live": true,
       "compute_pct": 4,
-      "compute_pct_label": "estimate",
-      "mirror": "https://caradmico.github.io/company-soup/businesses/watershed/"
+      "compute_pct_label": "estimate"
     },
     {
       "name": "Fine Art Gallery",
       "url": "https://art.graphicoregon.com/",
       "live": true,
       "compute_pct": 3,
-      "compute_pct_label": "estimate",
-      "mirror": "https://caradmico.github.io/company-soup/businesses/fine-art/"
+      "compute_pct_label": "estimate"
     },
     {
       "name": "Clothing Tsarista (Winged North Softstyle)",
       "url": "https://sassmeharder.com/product/31685244",
       "live": true,
-      "compute_pct": 3,
+      "compute_pct": 4,
       "compute_pct_label": "estimate"
     },
     {
@@ -181,7 +174,7 @@
       "compute_pct_label": "estimate"
     },
     {
-      "name": "Space Boi (StarIS / Space Apps)",
+      "name": "Space Boi (StarIS)",
       "url": "https://caradmico.github.io/space-apps-groton/bin-lod/",
       "live": true,
       "compute_pct": 1,
@@ -213,21 +206,18 @@
       "url": "https://grants.graphicoregon.com/",
       "live": true,
       "compute_pct": 2,
-      "compute_pct_label": "estimate",
-      "mirror": "https://caradmico.github.io/company-soup/brands/grant-desk/"
+      "compute_pct_label": "estimate"
     },
     {
-      "name": "Food Desk",
+      "name": "Food Desk (draft stub)",
       "url": "https://caradmico.github.io/company-soup/brands/food-desk/",
       "live": true,
       "compute_pct": 1,
-      "compute_pct_label": "estimate",
-      "status": "draft",
-      "note": "draft stub \u2014 not public reviews"
+      "compute_pct_label": "estimate"
     },
     {
-      "name": "Grant Desk free resources",
-      "url": "https://caradmico.github.io/company-soup/brands/grant-desk/resources/",
+      "name": "Food private staging",
+      "url": "https://drive.google.com/drive/folders/1rf1Zdk6XC8ks8aN7xJzY7oIIp-KDWTJE",
       "live": true,
       "compute_pct": 0,
       "compute_pct_label": "estimate"
@@ -244,8 +234,7 @@
       "url": "https://coast.graphicoregon.com/",
       "live": true,
       "compute_pct": 1,
-      "compute_pct_label": "estimate",
-      "mirror": "https://caradmico.github.io/company-soup/brands/coast-desk/"
+      "compute_pct_label": "estimate"
     },
     {
       "name": "Signal Shelf",
@@ -307,7 +296,7 @@
       "name": "Link Desk",
       "url": "https://caradmico.github.io/company-soup/ops/links/",
       "live": true,
-      "compute_pct": 2,
+      "compute_pct": 1,
       "compute_pct_label": "estimate"
     },
     {
@@ -318,22 +307,12 @@
       "compute_pct_label": "estimate"
     },
     {
-      "name": "Food private staging",
-      "url": "https://drive.google.com/drive/folders/1rf1Zdk6XC8ks8aN7xJzY7oIIp-KDWTJE",
-      "live": true,
-      "compute_pct": 0,
-      "compute_pct_label": "estimate",
-      "note": "PRIVATE Drive \u2014 Cara tags; no public Pages"
-    },
-    {
-      "name": "Ops door",
+      "name": "Ops (Access WIP)",
       "url": "https://ops.graphicoregon.com/",
       "live": true,
       "compute_pct": 0,
-      "compute_pct_label": "estimate",
-      "mirror": "https://caradmico.github.io/company-soup/ops/dashboard/",
-      "note": "subdomain to Soup Ops"
+      "compute_pct_label": "estimate"
     }
   ],
-  "update_note": "2026-09-09 Link Desk delta: Space Boi URL; Food stub+private Drive; GO subdomains; Softstyle 3; Author 9; no demeterdesign.net"
+  "update_note": "2026-09-10 Link Desk locked table: drop Grant Desk free resources only; keep WIP/missing-URL seats; apex/subdomains as primary; Softstyle 4; sum 100; no demeterdesign.net"
 }
