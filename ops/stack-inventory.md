@@ -24,7 +24,6 @@ Ventures, hosts, language, and Decap/Sveltia fit. Not a dashboard redesign. Mach
 | graphic-oregon | Graphic Oregon (Soup brand door) | [Pages](https://caradmico.github.io/company-soup/brands/graphic-oregon/) | GitHub Pages | static HTML pack | no — brand pack |
 | sassmeharder | Sassmeharder | [shop](https://sassmeharder.com/) | Printify (nginx / Printify) | Printify-hosted Next.js — not Soup static | no — shop |
 | staris | StarIS | [Firebase](https://staris-b01f2.firebaseapp.com/) | Firebase Hosting | Three.js web app | no — Firebase / Three.js |
-| cold-contour | Cold Contour | [Pages](https://caradmico.github.io/company-soup/brands/cold-contour/) | GitHub Pages | static HTML | no — brand pack |
 | asterism-lab | Asterism Lab | [Pages](https://caradmico.github.io/company-soup/brands/asterism-lab/) | GitHub Pages | static HTML (links out to StarIS) | no — brand pack |
 | far-field-media | Far Field Media | [Pages](https://caradmico.github.io/company-soup/brands/far-field-media/) | GitHub Pages | static HTML; sample video on legacy GO `/wp-content/` | no — brand pack + WP-gone media |
 | signal-shelf | Signal Shelf | [Pages](https://caradmico.github.io/company-soup/brands/signal-shelf/) | GitHub Pages | static HTML + md sample | maybe — md briefs |
@@ -52,7 +51,7 @@ Ventures, hosts, language, and Decap/Sveltia fit. Not a dashboard redesign. Mach
 
 | id | name | live | points to | decap |
 |---|---|---|---|---|
-| estuary-ink | Estuary Ink | [Pages](https://caradmico.github.io/company-soup/brands/estuary-ink/) | cold-contour | no — redirect |
+| estuary-ink | Estuary Ink | [Pages](https://caradmico.github.io/company-soup/brands/estuary-ink/) | Company Soup root | no — redirect |
 | quiet-cut | Quiet Cut | [Pages](https://caradmico.github.io/company-soup/brands/quiet-cut/) | signal-shelf | no — redirect |
 | netarts-systems | Netarts Systems | [Pages](https://caradmico.github.io/company-soup/brands/netarts-systems/) | demeter-design | no — redirect |
 

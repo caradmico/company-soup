@@ -149,20 +149,6 @@
       }
     },
     {
-      "id": "cold-contour",
-      "name": "Cold Contour",
-      "group": "doors",
-      "live_url": "https://caradmico.github.io/company-soup/brands/cold-contour/",
-      "in_doors_json": true,
-      "host": "GitHub Pages",
-      "language_stack": "static HTML",
-      "notes": "Shore Contour print/PDF sellable on the door. Not apparel. Estuary Ink redirects here.",
-      "decap_sveltia": {
-        "verdict": "no",
-        "reason": "pure brand pack"
-      }
-    },
-    {
       "id": "asterism-lab",
       "name": "Asterism Lab",
       "group": "doors",
@@ -338,7 +324,7 @@
       "in_doors_json": false,
       "host": "GitHub Pages",
       "language_stack": "HTML meta-refresh redirect",
-      "notes": "redirect / demoted → cold-contour (Marketer names).",
+      "notes": "redirect / demoted → Company Soup root (former art-lane alias; target brand removed).",
       "decap_sveltia": {
         "verdict": "no",
         "reason": "redirect / demoted"

@@ -2,7 +2,7 @@
 **Door:** https://caradmico.github.io/company-soup/brands/asterism-lab/  
 **Lane:** Educator sky packs  
 **Status:** APPLIED by Build — awaiting Kevin KEEP walk  
-**Must not equal:** Coast Desk newsprint · Grant Desk civic · Demeter fir · Fine Art salon · GO studio signal · Cold Contour navy map  
+**Must not equal:** Coast Desk newsprint · Grant Desk civic · Demeter fir · Fine Art salon · GO studio signal  
 **Do not:** rebuild StarIS · touch StarIS BIN / Drive
 
 ## Positioning
