@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Course · Grant Desk</title>
-<meta name="description" content="A paid grant writing day class (~$250). Pay before materials. About 10 hours of resource access over 12 months.">
+<meta name="description" content="A paid day class on grants — overview of the whole stack. Pay first. Then ~10 hours of access over 12 months.">
 <link rel="canonical" href="https://caradmico.github.io/company-soup/brands/grant-desk/course/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,18 +23,25 @@ html,body{margin:0}
 body{
   color:var(--ink);
   background:var(--paper);
-  font:400 18px/1.45 "Source Sans 3","Segoe UI",system-ui,sans-serif;
+  font:400 18px/1.5 "Source Sans 3","Segoe UI",system-ui,sans-serif;
 }
 .hero{
   position:relative;
-  min-height:min(52svh,28rem);
   display:flex;
   flex-direction:column;
   justify-content:space-between;
+  gap:2.4rem;
   padding:1.35rem 1.25rem 2rem;
   background:
     linear-gradient(180deg,rgba(28,36,48,.18) 0%,rgba(28,36,48,.05) 28%,rgba(28,36,48,.12) 100%),
     #3a2a18 url("../assets/hero-flowers-sunset.png") center/cover no-repeat;
+}
+.top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+  flex-wrap:wrap;
 }
 .mark{margin:0}
 .mark a{
@@ -45,6 +52,22 @@ body{
   text-shadow:0 1px 8px rgba(28,36,48,.35);
 }
 .mark a:hover{text-decoration:underline;text-underline-offset:.16em}
+.nav{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.75rem 1rem;
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.nav a{
+  color:#fff;
+  text-decoration:none;
+  font:650 .85rem/1 "Source Sans 3",system-ui,sans-serif;
+  letter-spacing:.02em;
+  text-shadow:0 1px 8px rgba(28,36,48,.35);
+}
+.nav a:hover{text-decoration:underline;text-underline-offset:.16em}
 .hero h1{
   margin:0;
   max-width:14ch;
@@ -56,31 +79,53 @@ body{
   line-height:1.02;
   letter-spacing:-.03em;
 }
-.band{max-width:34rem;margin:0 auto;padding:2.6rem 1.35rem 2.2rem;text-align:center}
-.ethos{
-  margin:0 0 2.4rem;
+.band{max-width:36rem;margin:0 auto;padding:2.4rem 1.35rem 1.2rem}
+.deck{
+  margin:0 0 2rem;
   color:var(--navy);
   font-size:clamp(1.15rem,2.4vw,1.35rem);
   font-weight:600;
   line-height:1.35;
 }
-.blocks{margin:0;padding:0;list-style:none}
-.blocks li{
-  margin:0;
-  padding:1.15rem 0;
-  border-top:1px solid var(--navy);
+.section{margin:0 0 2.1rem}
+.section h2{
+  margin:0 0 .55rem;
   color:var(--navy);
-  font-size:clamp(1.2rem,2.6vw,1.45rem);
+  font-size:clamp(1.15rem,2.4vw,1.3rem);
+  font-weight:700;
+  letter-spacing:-.015em;
+}
+.section p{margin:0;color:var(--ink)}
+.curriculum{margin:0;padding:0;list-style:none;counter-reset:beat}
+.curriculum li{
+  margin:0;
+  padding:1.05rem 0;
+  border-top:1px solid var(--navy);
+  counter-increment:beat;
+}
+.curriculum h3::before{
+  content:counter(beat) ". ";
+  font-weight:650;
+}
+.curriculum li:last-child{border-bottom:1px solid var(--navy)}
+.curriculum h3{
+  margin:0;
+  color:var(--navy);
+  font-size:clamp(1.15rem,2.4vw,1.3rem);
   font-weight:650;
   letter-spacing:-.015em;
 }
-.blocks li:last-child{border-bottom:1px solid var(--navy)}
-footer{
+.curriculum p{
+  margin:.3rem 0 0;
+  color:var(--ink);
+}
+.pay{
   display:flex;
   flex-direction:column;
-  align-items:center;
-  gap:1.1rem;
-  padding:0 1.35rem 3.6rem;
+  align-items:flex-start;
+  gap:.7rem;
+  margin:0 0 2.1rem;
+  padding-top:.4rem;
 }
 .mail{
   display:inline-flex;
@@ -96,30 +141,116 @@ footer{
 }
 .mail:hover{filter:brightness(1.08)}
 .note{margin:0;color:var(--mute);font-size:.95rem}
+.scope{
+  margin:0 0 2.1rem;
+  padding-top:1.1rem;
+  border-top:1px solid var(--line);
+}
+.scope p{margin:0 0 .65rem;color:var(--mute);font-size:.98rem}
+.scope a{
+  color:var(--navy);
+  font-weight:650;
+  text-decoration:none;
+}
+.scope a:hover{text-decoration:underline;text-underline-offset:.16em}
+.catalog{
+  margin:0 0 2.2rem;
+  color:var(--mute);
+  font-size:.92rem;
+}
+footer{
+  display:flex;
+  justify-content:flex-start;
+  padding:0 0 3.6rem;
+}
 @media(min-width:720px){
-  .hero{padding:1.7rem 2.4rem 2.6rem}
-  .band{padding:3.2rem 1.5rem 2.6rem}
+  .hero{padding:1.7rem 2.4rem 2.4rem}
+  .band{padding:3rem 1.5rem 1.4rem}
 }
 </style>
 </head>
 <body>
 <section class="hero">
-  <p class="mark"><a href="../">Grant Desk</a></p>
+  <div class="top">
+    <p class="mark"><a href="../">Grant Desk</a></p>
+    <nav aria-label="Grant Desk">
+      <ul class="nav">
+        <li><a href="../">Home</a></li>
+        <li><a href="../portfolio/">Portfolio</a></li>
+        <li><a href="../resources/">Free lookups</a></li>
+      </ul>
+    </nav>
+  </div>
   <h1>Know which door to knock on.</h1>
 </section>
 
 <div class="band">
-  <p class="ethos">A paid day class. Then a year of access.</p>
-  <ul class="blocks">
-    <li>~$250</li>
-    <li>pay before materials</li>
-    <li>~10 hours over 12 months</li>
-  </ul>
-</div>
+  <p class="deck">A paid day class on grants — overview of the whole stack. Pay first. Then ~10 hours of access over 12 months.</p>
 
-<footer>
-  <a class="mail" href="https://buy.stripe.com/8x2dRafwFg2G1k79DK28800" target="_blank" rel="noopener">Pay $250 to enroll</a>
-  <p class="note">Pay $250 before materials. Then the day, and about 10 hours of resource access over 12 months.</p>
-</footer>
+  <section class="section">
+    <h2>Who it’s for</h2>
+    <p>Nonprofit and arts leaders who need to stop guessing which funders to chase — and how to show up ready when they do. Not a free DIY dump. Not legal counsel.</p>
+  </section>
+
+  <section class="section">
+    <h2>Curriculum — Overview day</h2>
+    <ol class="curriculum">
+      <li>
+        <h3>Finding grants</h3>
+        <p>Where money actually lives. Fit vs chase. How to stop applying to everything.</p>
+      </li>
+      <li>
+        <h3>Building a case</h3>
+        <p>Need, goals, and outcomes funders will buy. The story that makes an ask land.</p>
+      </li>
+      <li>
+        <h3>Budgeting</h3>
+        <p>Ask size, match, allowable costs. What goes on the form without blowing the room.</p>
+      </li>
+      <li>
+        <h3>Small grants vs capital campaigns</h3>
+        <p>Scale, proof, and when the ask is the wrong size for the org.</p>
+      </li>
+      <li>
+        <h3>Incorporating / readiness</h3>
+        <p>When structure (or the lack of it) blocks money — and what “ready” looks like before you write.</p>
+      </li>
+      <li>
+        <h3>Hiring a grant writer</h3>
+        <p>When to outsource, what a good engagement looks like, and what you still own.</p>
+      </li>
+      <li>
+        <h3>Running a grants program</h3>
+        <p>Calendar, compliance, reporting — how wins don’t die after the check clears.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="section">
+    <h2>What’s included</h2>
+    <p>$250 pay before materials; Day class (overview above); ~10 hours resource/coach access over 12 months (capped).</p>
+  </section>
+
+  <section class="section">
+    <h2>Who teaches</h2>
+    <p>MA in arts administration &amp; nonprofit management. Oregon + California nonprofit track. Designed, funded, and distributed grant programs (CBAA + Success Centers). ~$1M in grants funded. She’ll tell you if you shouldn’t apply.</p>
+  </section>
+
+  <div class="pay">
+    <a class="mail" href="https://buy.stripe.com/8x2dRafwFg2G1k79DK28800" target="_blank" rel="noopener">Pay $250 to enroll</a>
+    <p class="note">Pay before materials. Access starts after enrollment.</p>
+  </div>
+
+  <div class="scope">
+    <p>Need the writing done for you? Scoped research / writing quotes. Not the default path.</p>
+    <a href="mailto:hello@graphicoregon.com?subject=Grant%20Desk%20scope">Request a scope</a>
+  </div>
+
+  <p class="catalog">Deep-dives later: budgeting · building a case · finding grants · incorporating · hiring a grant writer · capital campaigns · small grants · running grants programs. This page sells the overview only.</p>
+
+  <footer>
+    <a class="mail" href="mailto:hello@graphicoregon.com?subject=Grant%20Desk">Email Grant Desk</a>
+  </footer>
+</div>
 </body>
 </html>
