@@ -145,18 +145,6 @@
       ]
     },
     {
-      "id": "cold-contour",
-      "name": "Cold Contour",
-      "also": "Art objects",
-      "lane": "Art",
-      "state": "live",
-      "status": "Shore Contour print/PDF sellable on the door. Not apparel.",
-      "updated": "2026-09-04",
-      "last": "Shore Contour print/PDF on the door.",
-      "href": "../../brands/cold-contour/",
-      "hrefLabel": "Open door"
-    },
-    {
       "id": "asterism-lab",
       "name": "Asterism Lab",
       "also": "Educator sky packs",

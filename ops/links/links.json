@@ -37,7 +37,7 @@
       "name": "Graphic Oregon (apex)",
       "url": "https://graphicoregon.com/",
       "live": true,
-      "compute_pct": 6,
+      "compute_pct": 7,
       "compute_pct_label": "estimate"
     },
     {
@@ -258,13 +258,6 @@
       "compute_pct_label": "estimate"
     },
     {
-      "name": "Cold Contour",
-      "url": "https://caradmico.github.io/company-soup/brands/cold-contour/",
-      "live": true,
-      "compute_pct": 1,
-      "compute_pct_label": "estimate"
-    },
-    {
       "name": "Coast Desk (subdomain)",
       "url": "https://coast.graphicoregon.com/",
       "live": true,
@@ -349,5 +342,5 @@
       "compute_pct_label": "estimate"
     }
   ],
-  "update_note": "2026-09-10 Link Desk corrected lock: apex and github.io as separate rows; Softstyle 4; Author 7; Publishing Bot 2; drop Grant Desk free resources only; sum 100; no demeterdesign.net"
+  "update_note": "2026-09-10 drop banned art-lane brand; +1 Graphic Oregon apex; 48 rows; sum 100; no demeterdesign.net"
 }
