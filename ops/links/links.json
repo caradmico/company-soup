@@ -65,21 +65,7 @@
       "name": "Build Bot",
       "url": "no live URL yet",
       "live": false,
-      "compute_pct": 6,
-      "compute_pct_label": "estimate"
-    },
-    {
-      "name": "Soup Ops / Ops subdomain (Access WIP)",
-      "url": "https://ops.graphicoregon.com/",
-      "live": true,
-      "compute_pct": 3,
-      "compute_pct_label": "estimate"
-    },
-    {
-      "name": "Ops dashboard (github.io)",
-      "url": "https://caradmico.github.io/company-soup/ops/dashboard/",
-      "live": true,
-      "compute_pct": 2,
+      "compute_pct": 11,
       "compute_pct_label": "estimate"
     },
     {
@@ -342,5 +328,5 @@
       "compute_pct_label": "estimate"
     }
   ],
-  "update_note": "2026-09-10 drop banned art-lane brand; +1 Graphic Oregon apex; 48 rows; sum 100; no demeterdesign.net"
+  "update_note": "2026-09-10 unlink Access cockpit (ops.graphicoregon.com + github.io ops/dashboard); fold 5 into Build Bot; 46 rows; sum 100; no demeterdesign.net"
 }
