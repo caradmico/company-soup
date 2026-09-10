@@ -112,17 +112,25 @@ a{color:var(--gold)}
 }
 .stage figcaption{
   margin:1rem auto 0;max-width:40rem;
-  display:flex;flex-wrap:wrap;justify-content:center;gap:.35rem 1rem;
-  align-items:baseline;
+  display:grid;
+  grid-template-columns:auto auto;
+  justify-content:center;justify-items:center;
+  align-items:baseline;gap:.35rem 1rem;
 }
 .stage .t{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.35rem}
 .stage .c{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
 .stage .print-ed{
-  flex-basis:100%;margin:.15rem 0 0;text-align:center;
-  font-size:.78rem;letter-spacing:.04em;color:var(--mute);
-  text-decoration:none;border-bottom:1px solid transparent;
+  grid-column:1 / -1;justify-self:center;width:max-content;
+  margin:.12rem 0 0;text-align:center;
+  font-size:.82rem;letter-spacing:.05em;color:var(--ink);
+  text-decoration:none;border-bottom:1px solid var(--gold);
+  padding-bottom:.08rem;
 }
-.stage .print-ed:hover{color:var(--gold);border-bottom-color:rgba(201,162,39,.45)}
+.stage .print-ed:hover,
+.stage .print-ed:focus-visible{
+  color:var(--gold);
+}
+.stage .print-ed:focus-visible{outline:1px solid var(--gold);outline-offset:4px}
 .stage .print-ed[hidden]{display:none}
 .arrow{
   appearance:none;background:none;border:0;color:var(--mute);cursor:pointer;
@@ -198,7 +206,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.8rem
           <figcaption>
             <span class="t display" id="stitle"></span>
             <span class="c" id="scat"></span>
-            <a class="print-ed" id="sprint" href="#" target="_blank" rel="noopener" hidden>Print edition</a>
+            <a class="print-ed" id="sprint" target="_blank" rel="noopener noreferrer" hidden>Purchase as a print</a>
           </figcaption>
         </figure>
       </div>
@@ -299,10 +307,12 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.8rem
     scat.textContent = labels[w.cat];
     if(w.printUrl){
       sprint.href = w.printUrl;
+      sprint.setAttribute('aria-label', 'Purchase '+w.title+' as a print');
       sprint.hidden = false;
     } else {
-      sprint.removeAttribute('href');
       sprint.hidden = true;
+      sprint.removeAttribute('href');
+      sprint.removeAttribute('aria-label');
     }
     prev.disabled = L.length < 2;
     next.disabled = L.length < 2;
