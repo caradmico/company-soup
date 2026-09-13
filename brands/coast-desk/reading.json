@@ -2,7 +2,129 @@
   "meta": {
     "label": "Reading",
     "dek": "Other writers, other papers — open the link.",
-    "why": "Other writers, other papers — open the link."
+    "why": "Other writers, other papers — open the link. Curated open originals. No paywall, no full-text reprint.",
+    "rss": "reading.xml",
+    "updated": "2026-09-13"
   },
-  "picks": []
+  "feeds": [
+    {
+      "name": "Moon Monday",
+      "outlet": "jatan.space",
+      "url": "https://jatan.space/tag/moon-monday/rss/",
+      "home": "https://jatan.space/tag/moon-monday/"
+    },
+    {
+      "name": "Jatan's Space",
+      "outlet": "jatan.space",
+      "url": "https://jatan.space/rss",
+      "home": "https://jatan.space/"
+    },
+    {
+      "name": "Space Calendar",
+      "outlet": "Space Calendar",
+      "url": "https://www.spacecalendar.com/events/feed/",
+      "home": "https://spacecalendar.com/"
+    },
+    {
+      "name": "Universe Today",
+      "outlet": "Universe Today",
+      "url": "https://www.universetoday.com/feed",
+      "home": "https://www.universetoday.com/"
+    },
+    {
+      "name": "Astrobites",
+      "outlet": "Astrobites",
+      "url": "https://astrobites.org/feed/",
+      "home": "https://astrobites.org/"
+    },
+    {
+      "name": "NASA APOD",
+      "outlet": "NASA APOD",
+      "url": "https://apod.nasa.gov/apod.rss",
+      "home": "https://apod.nasa.gov/apod/"
+    }
+  ],
+  "picks": [
+    {
+      "outlet": "Moon Monday",
+      "hed": "China is building a lunar navigation and communications network",
+      "title": "China is building a lunar navigation and communications network",
+      "url": "https://jatan.space/moon-monday-issue-291/",
+      "preview": "Moon Monday #291 — Jatan Mehta walks each piece China has demonstrated toward a lunar navcom network, including two-way Earth–DRO laser links.",
+      "date": "2026-09-07",
+      "author": "Jatan Mehta"
+    },
+    {
+      "outlet": "Moon Monday",
+      "hed": "The fiery origin of our Moon, tied to Earth",
+      "title": "The fiery origin of our Moon tied to Earth, as unraveled by scientists through Apollo and now modern missions",
+      "url": "https://jatan.space/origin-of-our-moon-and-earth/",
+      "preview": "Moon Monday #290 — Apollo samples, Chang’e, and Chandrayaan on the giant-impact case for how the Moon formed.",
+      "date": "2026-08-31",
+      "author": "Jatan Mehta"
+    },
+    {
+      "outlet": "Moon Monday",
+      "hed": "Rocket equation 101: the Moon as a launchpad",
+      "title": "Rocket equation 101: Revealing our Moon’s value as a launchpad",
+      "url": "https://jatan.space/the-moon-as-a-rocket-platform/",
+      "preview": "Moon Monday #288 — why the physics of leaving a shallow gravity well still argues for Luna as a place to depart from.",
+      "date": "2026-08-17",
+      "author": "Jatan Mehta"
+    },
+    {
+      "outlet": "Space Calendar",
+      "hed": "Vol. 45, Week 37 — this week on the pad",
+      "title": "Space Calendar — Vol 45, Week 37",
+      "url": "https://spacecalendar.com/",
+      "preview": "The first space calendar on the Moon. This week: NASA lunar-surface tech call, Vega-C / FLEX, Zhuque-2E, Falcon 9 O3b mPOWER, and NEO close approaches.",
+      "date": "2026-09-10",
+      "author": "Space Age Publishing"
+    },
+    {
+      "outlet": "Space Calendar",
+      "hed": "Launch Falcon 9 / O3b mPower 11–13",
+      "title": "Launch Falcon 9 / O3b mPower 11-13",
+      "url": "https://spacecalendar.com/event/launch-falcon-9-o3b-mpower-11-13/",
+      "preview": "Cape Canaveral SLC-40. SES O3b mPOWER to medium Earth orbit — window listed for 13 September 2026.",
+      "date": "2026-09-13",
+      "author": "Space Calendar"
+    },
+    {
+      "outlet": "Universe Today",
+      "hed": "Lunar occultations of Jupiter, Venus, and more this September",
+      "title": "Penultimate Lunar Occultations Inbound for Jupiter, Venus and More in September",
+      "url": "https://www.universetoday.com/articles/penultimate-lunar-occultations-inbound-for-jupiter-venus-and-more-in-september",
+      "preview": "David Dickinson on the September 2026 occultation series — Jupiter on the 8th, Regulus on the 9th, Venus on the 14th. Open, no paywall.",
+      "date": "2026-09-03",
+      "author": "David Dickinson"
+    },
+    {
+      "outlet": "The Planetary Society",
+      "hed": "What’s up in the night sky: September 2026",
+      "title": "What’s up in the night sky: September 2026",
+      "url": "https://www.planetary.org/night-sky/night-sky-what-to-see-this-month",
+      "preview": "Bruce Betts: Venus at peak evening brightness, the Moon with Jupiter before dawn, then a crescent with Venus on the 14th. Equinox month.",
+      "date": "2026-09-01",
+      "author": "Bruce Betts"
+    },
+    {
+      "outlet": "Astrobites",
+      "hed": "The dying Sun and the fate of the Earth",
+      "title": "Catch me if you can: The dying Sun and the fate of the Earth",
+      "url": "https://astrobites.org/2026/09/10/sun-earth-race/",
+      "preview": "Graduate-student digest of a paper using MESA plus updated tides: mass loss may widen Earth’s orbit enough that the red-giant Sun does not swallow it.",
+      "date": "2026-09-10",
+      "author": "Astrobites"
+    },
+    {
+      "outlet": "NASA APOD",
+      "hed": "Apollo 11: Catching Some Sun",
+      "title": "Apollo 11: Catching Some Sun",
+      "url": "https://apod.nasa.gov/apod/ap260912.html",
+      "preview": "12 September 2026 picture of the day: Armstrong’s photograph of Eagle and Aldrin deploying the Solar Wind Composition foil. NASA, public domain.",
+      "date": "2026-09-12",
+      "author": "NASA APOD"
+    }
+  ]
 }
