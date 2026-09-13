@@ -116,6 +116,35 @@ footer{
   font-size:.88rem;
 }
 
+/* Photo drop-slot. Replace the inner span with <img> when Cara adds a file. */
+figure.photo-slot{
+  margin:0 0 1.15rem;
+}
+.photo-frame{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:12rem;
+  border:1px dashed var(--paprika);
+  border-radius:12px;
+  background:var(--cream);
+  color:var(--mute);
+  font-size:.92rem;
+  text-align:center;
+  padding:1.25rem;
+}
+.photo-frame img{
+  display:block;
+  width:100%;
+  height:auto;
+  border-radius:10px;
+}
+figure.photo-slot figcaption{
+  margin:.4rem 0 0;
+  color:var(--mute);
+  font-size:.82rem;
+}
+
 /* adsense: reserved layout slot. Empty until a real publisher ID exists. */
 .adsense[data-adsense="placeholder"]{
   min-height:0;
