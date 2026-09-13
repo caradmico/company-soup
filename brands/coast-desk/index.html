@@ -254,7 +254,20 @@ blockquote.pull p::after{content:"”"}
   font-family:"Libre Baskerville",Georgia,serif;
   font-size:1.12rem;
 }
+.slot h3:not(:first-of-type){margin-top:.85rem;padding-top:.7rem;border-top:1px solid var(--line)}
 .slot p{margin:0 0 .45rem}
+.food{
+  padding:1.15rem 0 1.25rem;
+  border-bottom:2px solid var(--rule);
+}
+.food h2{
+  margin:0 0 .35rem;
+  font-family:"Libre Baskerville",Georgia,serif;
+  font-size:1.45rem;line-height:1.15;
+}
+.food .why{margin:0 0 .75rem;color:var(--mute);max-width:42rem}
+.food-list{list-style:none;margin:0;padding:0}
+.food-list:empty{display:none}
 .slot .hold{
   background:var(--card);
   border:1px dashed var(--rule);
@@ -335,7 +348,8 @@ footer{
   <p>Coast Desk · Journalism · Graphic Oregon child</p>
   <nav aria-label="On this page">
     <a href="#hero">This week</a>
-    <a href="#desk">From the desk</a>
+    <a href="#desk">Essays</a>
+    <a href="#food">Food</a>
     <a href="#front">Clip shelf</a>
     <a href="#index">Clip index</a>
   </nav>
@@ -380,7 +394,19 @@ footer{
       <p class="sec">Essays</p>
       <h3><a href="essays-simulated-awareness.html">Simulated Awareness</a></h3>
       <p>Consciousness may not be organic-only — an excerpt on information, non-organic bodies, and what AI can (and cannot) claim.</p>
+      <h3><a href="essays-quantifying-conspiracy.html">Quantifying Conspiracy</a></h3>
+      <p>A scoring model that weights verifiable statements, source expertise, and obscured data — tested on Higgs, climate, and COVID-origin claims.</p>
+      <h3><a href="essays-nanoactuator-michelson.html">Open-Source Nanoactuator</a></h3>
+      <p>Precision displacement with a Michelson interferometer — a cheap nanoactuator from disc-drive parts.</p>
     </div>
+  </section>
+
+  <section class="food" id="food" aria-labelledby="food-hed">
+    <p class="sec">Kitchen</p>
+    <h2 id="food-hed">Food</h2>
+    <p class="why">Photos land later. Prior kitchen notes will sit here once the pictures are in.</p>
+    <ul class="food-list"></ul>
+    <p class="empty-zone">No food posts on file yet.</p>
   </section>
 
   <section class="front" id="front" aria-label="Quoted lines from the clips">
@@ -410,9 +436,7 @@ footer{
   </section>
 
   <footer>
-    Cara Mico · Coast Desk ·
-    <a href="https://graphicoregon.com/">Graphic Oregon</a> ·
-    <a href="../../">Company Soup</a>
+    Cara Mico · Coast Desk
   </footer>
 </div>
 
