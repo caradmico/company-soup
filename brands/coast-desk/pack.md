@@ -10,9 +10,8 @@ https://caradmico.github.io/company-soup/brands/coast-desk/
 
 ## Slots
 - **Hero** — weekly Cara original / desk writing (`#hero`, `article.piece`). Current hero: state-of-ai-2026. Not a dual hero. No invent-speak.
-- **Originals archive** — From the desk under the hero. On file: Understanding Consciousness — For Sierra. Essays: Simulated Awareness. Placement Note 001 remains on disk as archive.
+- **Originals archive** — From the desk under the hero. On file: Understanding Consciousness — For Sierra. Essays: Simulated Awareness; Bias and Censorship; Quantifying Conspiracy; Open-Source Nanoactuator (Michelson). Placement Note 001 remains on disk as archive.
 - **Clip shelf** — KEEP 9e53f6a. Quoted front, latest strip, 55-clip index. Do not delete or hide.
 
 ## Do-not
 Newsroom jargon · invent bylines · claim full Pioneer archive as hers · full-text republish · video sell · Grant navy
-
