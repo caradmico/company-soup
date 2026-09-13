@@ -3,405 +3,153 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Coast Desk — this week’s piece</title>
-<meta name="description" content="Cara Mico desk writing in the weekly slot. Published Oregon bylines on the clip shelf below.">
+<title>Elsewhere — this week’s piece</title>
+<meta name="description" content="A creative paper — her sections, plus a shelf of other people’s writing she points you to. Cara Mico.">
 <link rel="canonical" href="https://caradmico.github.io/company-soup/brands/coast-desk/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
-<style>
-:root{
-  --ink:#121212;
-  --paper:#f3efe6;
-  --rule:#1a1a1a;
-  --spot:#b33a2b;
-  --mute:#5c5650;
-  --card:#fffcf7;
-  --line:#c8c0b0;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  margin:0;
-  background:var(--paper);
-  color:var(--ink);
-  font:1.05rem/1.5 "Source Serif 4",Georgia,serif;
-  background-image:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(18,18,18,.018) 3px,rgba(18,18,18,.018) 4px);
-}
-a{color:var(--spot)}
-a:hover{text-decoration-thickness:2px}
-.folio{
-  display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:.35rem 1.25rem;
-  max-width:78rem;margin:0 auto;padding:.45rem 1.1rem;
-  font:600 .68rem/1.3 "IBM Plex Mono",ui-monospace,monospace;
-  letter-spacing:.08em;text-transform:uppercase;color:var(--mute);
-  border-bottom:1px solid var(--rule);
-}
-.folio a{color:var(--ink);text-decoration:none}
-.folio a:hover{color:var(--spot)}
-.folio nav{display:flex;gap:.85rem}
-.sheet{max-width:78rem;margin:0 auto;padding:0 1.1rem 3rem}
-
-/* Nameplate */
-.flag{
-  margin:0;
-  padding:.85rem 0 .2rem;
-  text-align:center;
-  border-bottom:3px solid var(--rule);
-}
-.flag .word{
-  margin:0 auto;
-  display:inline-block;
-  font-family:"Libre Baskerville",Georgia,serif;
-  font-size:clamp(2.35rem,8.2vw,4.6rem);
-  font-weight:700;
-  letter-spacing:.18em;
-  text-transform:uppercase;
-  line-height:.95;
-  padding-bottom:.28rem;
-  border-bottom:2px solid var(--rule);
-}
-.flag .spot-tick{
-  display:block;
-  width:2.5rem;height:2px;
-  background:var(--spot);
-  margin:.4rem auto 0;
-}
-.flag .deck{
-  margin:.45rem 0 .7rem;
-  font-family:"Libre Baskerville",Georgia,serif;
-  font-style:italic;
-  font-size:clamp(.95rem,1.6vw,1.15rem);
-  font-weight:400;
-  letter-spacing:.01em;
-}
-.dateline{
-  display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:.4rem 1rem;
-  padding:.4rem 0 .55rem;
-  border-bottom:1px solid var(--rule);
-  font:600 .68rem/1.35 "IBM Plex Mono",ui-monospace,monospace;
-  letter-spacing:.07em;text-transform:uppercase;color:var(--mute);
-}
-.dateline strong{color:var(--ink);font-weight:600}
-.beats-inline{display:flex;flex-wrap:wrap;gap:.35rem .7rem}
-.beats-inline button{
-  appearance:none;border:0;background:none;padding:0;cursor:pointer;
-  font:inherit;letter-spacing:inherit;text-transform:inherit;color:inherit;
-}
-.beats-inline button:hover,.beats-inline button.on{color:var(--spot)}
-
-/* Weekly hero — desk writing, not clips */
-.hero-slot{
-  padding:1.05rem 0 1.2rem;
-  border-bottom:3px solid var(--rule);
-}
-.hero-slot .hed{
-  margin:0 0 .35rem;
-  font-family:"Libre Baskerville",Georgia,serif;
-  font-size:clamp(1.7rem,3.8vw,2.65rem);
-  font-weight:700;
-  line-height:1.08;
-  letter-spacing:-.02em;
-}
-.hero-slot .hed a{color:inherit;text-decoration:none}
-.hero-slot .hed a:hover{color:var(--spot)}
-.hero-slot .dek{
-  margin:0 0 .55rem;
-  font-family:"Libre Baskerville",Georgia,serif;
-  font-style:italic;
-  font-size:clamp(1.05rem,1.8vw,1.22rem);
-  line-height:1.35;
-  max-width:42rem;
-}
-.hero-slot .status{margin:0;font-size:.95rem;color:var(--mute);max-width:42rem}
-
-/* Front: featured + rail */
-.front{
-  display:grid;
-  gap:0;
-  grid-template-columns:1fr;
-  border-bottom:2px solid var(--rule);
-}
-@media(min-width:900px){
-  .front{grid-template-columns:minmax(0,1.35fr) minmax(0,.95fr) minmax(16rem,0.72fr)}
-}
-.lede,.stack,.rail{
-  padding:.7rem 0 .85rem;
-}
-@media(min-width:900px){
-  .lede{padding-right:1rem}
-  .stack{padding:.7rem 1rem .85rem;border-left:1px solid var(--line);border-right:1px solid var(--line)}
-  .rail{padding-left:1rem}
-}
-.sec{
-  font:600 .68rem/1.2 "IBM Plex Mono",ui-monospace,monospace;
-  letter-spacing:.12em;text-transform:uppercase;color:var(--spot);
-  margin:0 0 .55rem;
-}
-.lede .hed{
-  margin:0 0 .35rem;
-  font-family:"Libre Baskerville",Georgia,serif;
-  font-size:clamp(1.55rem,3.1vw,2.25rem);
-  font-weight:700;
-  line-height:1.08;
-  letter-spacing:-.015em;
-}
-.lede .hed a,.stack .hed a{color:inherit;text-decoration:none}
-.lede .hed a:hover,.stack .hed a:hover{color:var(--spot)}
-.byline{
-  margin:0 0 .7rem;
-  font:500 .72rem/1.35 "IBM Plex Mono",ui-monospace,monospace;
-  letter-spacing:.05em;text-transform:uppercase;color:var(--mute);
-}
-blockquote.pull{
-  margin:0;
-  padding:.15rem 0 0;
-  border:0;
-}
-blockquote.pull p{
-  margin:0;
-  font-family:"Libre Baskerville",Georgia,serif;
-  font-style:italic;
-  font-size:1.12rem;
-  line-height:1.4;
-}
-blockquote.pull p::before{content:"“";color:var(--spot)}
-blockquote.pull p::after{content:"”"}
-.stack article{
-  padding:.75rem 0;
-  border-top:1px solid var(--line);
-}
-.stack article:first-of-type{border-top:0;padding-top:0}
-.stack .hed{
-  margin:0 0 .25rem;
-  font-family:"Libre Baskerville",Georgia,serif;
-  font-size:1.12rem;
-  font-weight:700;
-  line-height:1.2;
-}
-.stack blockquote.pull p{font-size:.98rem}
-.rail ol{list-style:none;margin:0;padding:0}
-.rail li{border-top:1px solid var(--line)}
-.rail li:first-child{border-top:0}
-.rail button.beat-row{
-  appearance:none;width:100%;border:0;background:transparent;
-  display:flex;justify-content:space-between;align-items:baseline;gap:.75rem;
-  padding:.5rem 0;cursor:pointer;text-align:left;color:inherit;
-}
-.rail button.beat-row:hover .bname,.rail button.beat-row.on .bname{color:var(--spot)}
-.rail .bname{
-  font-family:"Libre Baskerville",Georgia,serif;
-  font-weight:700;font-size:1.02rem;
-}
-.rail .bcount{
-  font:600 .68rem/1 "IBM Plex Mono",ui-monospace,monospace;
-  letter-spacing:.06em;text-transform:uppercase;color:var(--mute);
-}
-.rail .latest{
-  margin:-.15rem 0 .55rem;
-  font-size:.88rem;line-height:1.35;color:var(--mute);
-}
-.empty-zone{
-  color:var(--mute);font-size:.95rem;margin:.35rem 0 0;
-}
-.also{margin:.75rem 0 0;padding-top:.55rem;border-top:1px solid var(--rule)}
-.also ol{list-style:none;margin:0;padding:0}
-.also li{padding:.32rem 0;border-top:1px solid var(--line)}
-.also li:first-child{border-top:0;padding-top:0}
-.also a{color:inherit;text-decoration:none;font-family:"Libre Baskerville",Georgia,serif;font-weight:700;font-size:.95rem;line-height:1.2}
-.also a:hover{color:var(--spot)}
-.also .by{margin:.12rem 0 0;font:500 .66rem/1.3 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.04em;text-transform:uppercase;color:var(--mute)}
-.latestrip{
-  display:grid;gap:0 1.1rem;grid-template-columns:1fr;
-  padding:.7rem 0 .75rem;
-  border-bottom:2px solid var(--rule);
-}
-.latestrip > .sec{grid-column:1 / -1;margin:0 0 .15rem}
-@media(min-width:700px){.latestrip{grid-template-columns:1fr 1fr}}
-@media(min-width:1100px){.latestrip{grid-template-columns:1fr 1fr 1fr 1fr}}
-.latestrip article{padding:.45rem 0;border-top:1px solid var(--line)}
-@media(min-width:700px){
-  .latestrip article:nth-of-type(-n+2){border-top:0}
-}
-@media(min-width:1100px){
-  .latestrip article:nth-of-type(-n+4){border-top:0}
-}
-.latestrip h3{margin:0;font-family:"Libre Baskerville",Georgia,serif;font-size:1.02rem;line-height:1.2}
-.latestrip h3 a{color:inherit;text-decoration:none}
-.latestrip h3 a:hover{color:var(--spot)}
-.latestrip .by{margin:.2rem 0 0;font:500 .66rem/1.3 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.04em;text-transform:uppercase;color:var(--mute)}
-
-/* From the desk */
-.desk{
-  display:grid;gap:0;grid-template-columns:1fr;
-  padding:1.15rem 0 1.25rem;
-  border-bottom:2px solid var(--rule);
-}
-.desk > .lede-copy{grid-column:1 / -1}
-@media(min-width:800px){
-  .desk{grid-template-columns:1fr 1fr}
-  .desk .slot + .slot{border-left:1px solid var(--line);padding-left:1.2rem;margin-left:1.2rem}
-}
-.desk h2{
-  margin:0 0 .35rem;
-  font-family:"Libre Baskerville",Georgia,serif;
-  font-size:1.45rem;line-height:1.15;
-}
-.desk .why{margin:0 0 1rem;color:var(--mute);max-width:42rem}
-.slot{padding:.15rem 0}
-.slot h3{
-  margin:0 0 .3rem;
-  font-family:"Libre Baskerville",Georgia,serif;
-  font-size:1.12rem;
-}
-.slot p{margin:0 0 .45rem}
-.slot .hold{
-  background:var(--card);
-  border:1px dashed var(--rule);
-  padding:.75rem .85rem;
-}
-.slot .hold p{margin:0;color:var(--mute)}
-
-/* Index */
-.index-head{
-  display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:.6rem 1rem;
-  padding:1.15rem 0 .55rem;
-}
-.index-head h2{
-  margin:0;
-  font-family:"Libre Baskerville",Georgia,serif;
-  font-size:1.45rem;line-height:1.15;
-}
-.count{
-  font:600 .72rem/1.3 "IBM Plex Mono",ui-monospace,monospace;
-  letter-spacing:.06em;text-transform:uppercase;color:var(--mute);
-}
-.filters{display:flex;flex-wrap:wrap;gap:.3rem;margin:0 0 .45rem}
-.chip{
-  appearance:none;
-  border:1px solid var(--rule);
-  background:transparent;
-  color:var(--ink);
-  font:600 .68rem/1 "IBM Plex Mono",ui-monospace,monospace;
-  letter-spacing:.04em;text-transform:uppercase;
-  padding:.38rem .55rem;
-  cursor:pointer;
-}
-.chip.on,.chip:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
-.chip.spot.on,.chip.spot:hover{background:var(--spot);color:#fff;border-color:var(--spot)}
-.list{
-  list-style:none;margin:.35rem 0 0;padding:0;
-  border-top:2px solid var(--rule);
-  columns:1;column-gap:1.35rem;
-}
-@media(min-width:720px){.list{columns:2}}
-@media(min-width:1100px){.list{columns:3}}
-.list li{
-  break-inside:avoid;
-  border-bottom:1px solid var(--line);
-  padding:.32rem 0 .3rem;
-}
-.list a{text-decoration:none;color:inherit;display:grid;grid-template-columns:4.2rem 1fr;gap:.55rem;align-items:baseline}
-.list a:hover .title{color:var(--spot);text-decoration:underline}
-.list .beat{
-  font:600 .62rem/1.3 "IBM Plex Mono",ui-monospace,monospace;
-  letter-spacing:.06em;text-transform:uppercase;color:var(--spot);
-}
-.list .title{
-  margin:0;
-  font-family:"Libre Baskerville",Georgia,serif;
-  font-size:.98rem;font-weight:700;line-height:1.25;
-}
-.list .by{
-  grid-column:2;
-  margin:.15rem 0 0;
-  font:500 .68rem/1.3 "IBM Plex Mono",ui-monospace,monospace;
-  letter-spacing:.04em;text-transform:uppercase;color:var(--mute);
-}
-.note{
-  font-size:.88rem;color:var(--mute);
-  margin:1.2rem 0 0;max-width:46rem;
-}
-.load-fail{color:var(--spot);margin:1rem 0}
-footer{
-  margin-top:1.6rem;padding-top:.85rem;
-  border-top:1px solid var(--rule);
-  font-size:.85rem;color:var(--mute);
-}
-</style>
+<link rel="stylesheet" href="paper.css">
 </head>
 <body>
+<!-- AdSense: insert publisher ID (ca-pub-…) when Cara provides it. Do not render a slot before then. -->
 <header class="folio">
-  <p>Coast Desk · Journalism · Graphic Oregon child</p>
-  <nav aria-label="On this page">
+  <p><a href="./">Elsewhere</a></p>
+  <nav aria-label="Paper">
     <a href="#hero">This week</a>
-    <a href="#desk">From the desk</a>
-    <a href="#front">Clip shelf</a>
-    <a href="#index">Clip index</a>
+    <a href="#sections">Sections</a>
+    <a href="#on-file">On file</a>
+    <a href="#essays">Essays</a>
+    <a href="#reading">Reading</a>
+    <a href="#clips">Clips</a>
   </nav>
 </header>
 
 <div class="sheet">
   <header class="flag">
-    <p class="word">Coast Desk</p>
+    <p class="word">Elsewhere</p>
     <span class="spot-tick" aria-hidden="true"></span>
-    <p class="deck">Desk writing under this masthead. Published Oregon bylines on the shelf below.</p>
+    <p class="deck">Travel · food · essay</p>
   </header>
   <p class="dateline">
-    <span><strong>Cara Mico</strong> · <span id="meta-line">clip shelf</span></span>
-    <span class="beats-inline" id="beat-inline" aria-label="Beats"></span>
+    <span><strong>Cara Mico</strong> · a creative paper</span>
+    <span>Her sections, plus a shelf of other people’s writing she points you to.</span>
   </p>
 
-  <!-- Book Editor: Coast journalism. Weekly hero is .piece[data-slot=hero]. Edit header + dek. Do not invent bylines. Clip shelf below is clips.json. -->
+  <!-- Book Editor: weekly hero is article.piece. Hed must stay a working link into the article HTML. -->
   <section class="hero-slot" id="hero" aria-labelledby="hero-hed">
     <article class="piece" data-desk="coast" data-slot="hero" data-kind="article">
       <header>
-        <p class="sec">This week’s piece</p>
+        <p class="sec">This week</p>
         <h2 class="hed" id="hero-hed"><a href="state-of-ai-2026.html">AI is everywhere. Then it went after a million-dollar math problem.</a></h2>
-        <p class="byline">Cara Mico · Coast Desk</p>
+        <p class="byline">Cara Mico · Elsewhere</p>
       </header>
       <p class="dek">On the North Coast the tools are already ordinary. This week they ran into a Millennium Prize fight over credit.</p>
       <p class="status">Filed from Nehalem · Sept. 9, 2026 — AI boom, Navier–Stokes claim, and who still gets named.</p>
+      <a class="read-piece" href="state-of-ai-2026.html">Read this week’s piece →</a>
     </article>
   </section>
 
-  <section class="desk" id="desk" aria-labelledby="desk-hed">
-    <div class="lede-copy">
-      <p class="sec">Originals archive</p>
-      <h2 id="desk-hed">From the desk</h2>
-      <p class="why">Notes and essays already on file under this masthead — not clips that ran in other papers. The weekly piece sits above. The clip shelf below is the published record.</p>
-    </div>
-    <div class="slot">
-      <p class="sec">On file</p>
-      <h3><a href="understanding-consciousness.html">Understanding Consciousness — For Sierra</a></h3>
-      <p>A paper that tries to walk inside Leibniz’s mill — and argue consciousness can be found.</p>
-    </div>
-    <div class="slot">
-      <p class="sec">Essays</p>
-      <h3><a href="essays-simulated-awareness.html">Simulated Awareness</a></h3>
-      <p>Consciousness may not be organic-only — an excerpt on information, non-organic bodies, and what AI can (and cannot) claim.</p>
-    </div>
-  </section>
-
-  <section class="front" id="front" aria-label="Quoted lines from the clips">
-    <div class="lede" id="lede"></div>
-    <div class="stack" id="stack"></div>
-    <aside class="rail" aria-label="Beats">
-      <p class="sec">Beat rail</p>
-      <ol id="beat-rail"></ol>
-    </aside>
-  </section>
-
-  <section class="latestrip" id="latest" aria-label="Latest clips on the shelf"></section>
-
-  <section id="index" aria-labelledby="index-hed">
-    <div class="index-head">
-      <div>
-        <p class="sec">The record</p>
-        <h2 id="index-hed">Clip index</h2>
+  <section class="band" id="sections" aria-labelledby="sections-hed">
+    <p class="sec">Sections</p>
+    <h2 id="sections-hed">The paper</h2>
+    <p class="why">Food is in the paper. Coast, science, civic, arts, and notes hold the rest of the desk. Each piece lives in one place only.</p>
+    <nav class="section-labels" aria-label="Section labels">
+      <a href="#section-food">Food</a>
+      <a href="#section-coast">Coast</a>
+      <a href="#section-science">Science</a>
+      <a href="#section-civic">Civic</a>
+      <a href="#section-arts">Arts</a>
+      <a href="#section-notes">Notes</a>
+    </nav>
+    <div class="section-grid">
+      <div class="section-card" id="section-food">
+        <h3>Food</h3>
+        <p>Prior restaurant drafts — links only. New food work will live on this paper later.</p>
+        <ol>
+          <li><a class="item" href="../food-desk/posts/ella-grill.html">Ella Grill</a></li>
+          <li><a class="item" href="../food-desk/posts/kaizen-and-coffee.html">Kaizen and Coffee</a></li>
+          <li><a class="item" href="../food-desk/posts/ledger-restaurant.html">Ledger Restaurant</a></li>
+          <li><a class="item" href="../food-desk/posts/mala-town-express.html">Mala Town Express</a></li>
+          <li><a class="item" href="../food-desk/posts/mountain-house.html">Mountain House</a></li>
+          <li><a class="item" href="../food-desk/posts/north-40-chophouse.html">North 40 Chophouse</a></li>
+          <li><a class="item" href="../food-desk/posts/patio-coffee-shop.html">Patio Coffee Shop</a></li>
+          <li><a class="item" href="../food-desk/posts/pauls-pasta-shop.html">Paul’s Pasta Shop</a></li>
+          <li><a class="item" href="../food-desk/posts/salty-heifer-diner.html">Salty Heifer Diner</a></li>
+          <li><a class="item" href="../food-desk/posts/shipwrights-daughter.html">Shipwright’s Daughter</a></li>
+        </ol>
       </div>
-      <p class="count" id="count"></p>
+      <div class="section-card" id="section-coast">
+        <h3>Coast</h3>
+        <p class="empty-zone">Nothing filed in this section yet.</p>
+      </div>
+      <div class="section-card" id="section-science">
+        <h3>Science</h3>
+        <p class="empty-zone">This week’s piece sits above. Longer science essays are under Essays.</p>
+      </div>
+      <div class="section-card" id="section-civic">
+        <h3>Civic</h3>
+        <p class="empty-zone">Nothing filed in this section yet.</p>
+      </div>
+      <div class="section-card" id="section-arts">
+        <h3>Arts</h3>
+        <p class="empty-zone">Nothing filed in this section yet.</p>
+      </div>
+      <div class="section-card" id="section-notes">
+        <h3>Notes</h3>
+        <p>Desk correspondence already on file — not a clip.</p>
+        <ol>
+          <li><a class="item" href="placement-note-001.html">Placement Note 001</a></li>
+        </ol>
+      </div>
     </div>
+  </section>
+
+  <section class="band" id="on-file" aria-labelledby="on-file-hed">
+    <p class="sec">On file</p>
+    <h2 id="on-file-hed">Desk originals already filed</h2>
+    <p class="why">Shorter desk pieces already under this masthead. Essays sit next. The weekly piece is above.</p>
+    <ol class="desk-list">
+      <li>
+        <h3><a href="understanding-consciousness.html">Understanding Consciousness — For Sierra</a></h3>
+        <p>A paper that tries to walk inside Leibniz’s mill — and argue consciousness can be found.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="band" id="essays" aria-labelledby="essays-hed">
+    <p class="sec">Essays</p>
+    <h2 id="essays-hed">Longer pieces of hers</h2>
+    <p class="why">Open every essay from here. Each title is the only homepage link into that page.</p>
+    <ol class="desk-list">
+      <li>
+        <h3><a href="essays-simulated-awareness.html">Simulated Awareness</a></h3>
+        <p>Consciousness may not be organic-only — an excerpt on information, non-organic bodies, and what AI can (and cannot) claim.</p>
+      </li>
+      <li>
+        <h3><a href="essays-quantifying-conspiracy.html">Quantifying Conspiracy</a></h3>
+        <p>A scoring model that weights verifiable statements, source expertise, and obscured data — tested on Higgs, climate, and COVID-origin claims.</p>
+      </li>
+      <li>
+        <h3><a href="essays-nanoactuator-michelson.html">Open-Source Nanoactuator Design</a></h3>
+        <p>A cheap nanoactuator from disc-drive parts, measured with a Michelson interferometer on a DIY optical table under $400.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="band" id="reading" aria-labelledby="reading-hed">
+    <p class="sec">Reading</p>
+    <h2 id="reading-hed">Other people’s articles</h2>
+    <p class="why">Other people’s articles she chose this week — preview and link out. Not her byline.</p>
+    <div class="reading-shelf" id="reading-shelf"></div>
+    <p class="empty-zone" id="reading-empty">No picks on the shelf this week. Editor fills this quietly — it is not her writing.</p>
+  </section>
+
+  <section class="band" id="clips" aria-labelledby="clips-hed">
+    <p class="sec">Clips</p>
+    <h2 id="clips-hed">Published bylines elsewhere</h2>
+    <p class="why">Secondary record — Cara Mico bylines that ran in other papers. Beat filters belong here, not on the hero.</p>
+    <p class="count" id="count"></p>
     <div class="filters" id="outlets" aria-label="Filter by outlet"></div>
     <div class="filters" id="beats" aria-label="Filter by beat"></div>
     <p class="load-fail" id="load-fail" hidden></p>
@@ -409,11 +157,7 @@ footer{
     <p class="note" id="pioneer-note">Pioneer pieces listed here carry a Cara Mico byline (or were CV-verified). The Pioneer assistant-editor archive also includes other writers — those are not claimed here.</p>
   </section>
 
-  <footer>
-    Cara Mico · Coast Desk ·
-    <a href="https://graphicoregon.com/">Graphic Oregon</a> ·
-    <a href="../../">Company Soup</a>
-  </footer>
+  <footer class="colophon">Cara Mico · Elsewhere</footer>
 </div>
 
 <script>
@@ -421,37 +165,12 @@ footer{
   var data = null;
   var outlet = 'all';
   var beat = 'all';
-
-  var ledeEl = document.getElementById('lede');
-  var stackEl = document.getElementById('stack');
-  var railEl = document.getElementById('beat-rail');
-  var inlineEl = document.getElementById('beat-inline');
-  var latestEl = document.getElementById('latest');
   var listEl = document.getElementById('list');
   var outletsEl = document.getElementById('outlets');
   var beatsEl = document.getElementById('beats');
   var countEl = document.getElementById('count');
-  var metaEl = document.getElementById('meta-line');
   var failEl = document.getElementById('load-fail');
   var pioneerEl = document.getElementById('pioneer-note');
-
-  function clipForQuote(q){
-    var url = q.url;
-    var clips = data.clips;
-    for (var i = 0; i < clips.length; i++){
-      if (clips[i].url === url) return clips[i];
-    }
-    return null;
-  }
-
-  function yearsSpan(clips){
-    var min = Infinity, max = -Infinity;
-    clips.forEach(function(c){
-      if (c.year < min) min = c.year;
-      if (c.year > max) max = c.year;
-    });
-    return min + '–' + max;
-  }
 
   function unique(arr, key){
     var seen = {};
@@ -463,142 +182,17 @@ footer{
     return out.sort();
   }
 
-  function beatCounts(){
-    var map = {};
-    data.clips.forEach(function(c){
-      map[c.beat] = (map[c.beat] || 0) + 1;
-    });
-    return Object.keys(map).sort().map(function(b){
-      var latest = data.clips.filter(function(c){ return c.beat === b; })
-        .sort(function(a,b){ return b.year - a.year; })[0];
-      return { beat: b, count: map[b], latest: latest };
-    });
-  }
-
   function filteredClips(){
     return data.clips.filter(function(c){
       return (outlet === 'all' || c.outlet === outlet) && (beat === 'all' || c.beat === beat);
     });
   }
 
-  function filteredQuotes(){
-    return data.quotes.filter(function(q){
-      var c = clipForQuote(q);
-      if (!c) return outlet === 'all' && beat === 'all';
-      return (outlet === 'all' || c.outlet === outlet) && (beat === 'all' || c.beat === beat);
-    });
-  }
-
-  function hedLink(title, url){
-    var a = document.createElement('a');
-    a.href = url;
-    a.target = '_blank';
-    a.rel = 'noopener';
-    a.textContent = title;
-    return a;
-  }
-
-  function bylineText(c){
-    if (!c) return 'Cara Mico';
-    return 'Cara Mico · ' + c.outlet + (c.year ? (' · ' + c.year) : '');
-  }
-
-  function renderFront(){
-    var quotes = filteredQuotes();
-    ledeEl.innerHTML = '';
-    stackEl.innerHTML = '';
-
-    var k1 = document.createElement('p');
-    k1.className = 'sec';
-    k1.textContent = 'Quoted from the clips';
-    ledeEl.appendChild(k1);
-
-    if (!quotes.length){
-      var empty = document.createElement('p');
-      empty.className = 'empty-zone';
-      empty.textContent = 'No quoted lines for this filter. The index still lists every matching clip.';
-      ledeEl.appendChild(empty);
-      return;
-    }
-
-    var lead = quotes[0];
-    var leadClip = clipForQuote(lead);
-    var h = document.createElement('h2');
-    h.className = 'hed';
-    h.appendChild(hedLink(lead.title || lead.hed, lead.url));
-    var by = document.createElement('p');
-    by.className = 'byline';
-    by.textContent = (lead.beat ? lead.beat + ' · ' : '') + bylineText(leadClip);
-    var bq = document.createElement('blockquote');
-    bq.className = 'pull';
-    var qp = document.createElement('p');
-    qp.textContent = lead.text;
-    bq.appendChild(qp);
-    ledeEl.appendChild(h);
-    ledeEl.appendChild(by);
-    ledeEl.appendChild(bq);
-
-    var quoted = {};
-    quotes.forEach(function(q){ quoted[q.url] = 1; });
-    var also = filteredClips().filter(function(c){ return !quoted[c.url]; })
-      .sort(function(a,b){ return b.year - a.year || a.title.localeCompare(b.title); })
-      .slice(0, 3);
-    if (also.length){
-      var extra = document.createElement('div');
-      extra.className = 'also';
-      var ek = document.createElement('p');
-      ek.className = 'sec';
-      ek.textContent = 'Also on the shelf';
-      extra.appendChild(ek);
-      var ol = document.createElement('ol');
-      also.forEach(function(c){
-        var li = document.createElement('li');
-        var a = hedLink(c.title, c.url);
-        var by3 = document.createElement('p');
-        by3.className = 'by';
-        by3.textContent = (c.beat ? c.beat + ' · ' : '') + bylineText(c);
-        li.appendChild(a);
-        li.appendChild(by3);
-        ol.appendChild(li);
-      });
-      extra.appendChild(ol);
-      ledeEl.appendChild(extra);
-    }
-
-    var k2 = document.createElement('p');
-    k2.className = 'sec';
-    k2.textContent = 'More quoted lines';
-    stackEl.appendChild(k2);
-
-    quotes.slice(1).forEach(function(q){
-      var c = clipForQuote(q);
-      var art = document.createElement('article');
-      var kh = document.createElement('h3');
-      kh.className = 'hed';
-      kh.appendChild(hedLink(q.title || q.hed, q.url));
-      var by2 = document.createElement('p');
-      by2.className = 'byline';
-      by2.textContent = (q.beat ? q.beat + ' · ' : '') + bylineText(c);
-      var bq2 = document.createElement('blockquote');
-      bq2.className = 'pull';
-      var p2 = document.createElement('p');
-      p2.textContent = q.text;
-      bq2.appendChild(p2);
-      art.appendChild(kh);
-      art.appendChild(by2);
-      art.appendChild(bq2);
-      stackEl.appendChild(art);
-    });
-  }
-
   function setBeat(next){
     beat = next;
-    document.querySelectorAll('[data-beat]').forEach(function(el){
-      var v = el.getAttribute('data-beat');
-      el.classList.toggle('on', v === beat);
+    beatsEl.querySelectorAll('.chip').forEach(function(el){
+      el.classList.toggle('on', el.getAttribute('data-beat') === beat);
     });
-    renderFront();
-    renderLatest();
     renderList();
   }
 
@@ -607,81 +201,7 @@ footer{
     outletsEl.querySelectorAll('.chip').forEach(function(el){
       el.classList.toggle('on', el.getAttribute('data-outlet') === outlet);
     });
-    renderFront();
-    renderLatest();
     renderList();
-  }
-
-  function renderLatest(){
-    latestEl.innerHTML = '';
-    var k = document.createElement('p');
-    k.className = 'sec';
-    k.textContent = 'Latest on the shelf';
-    latestEl.appendChild(k);
-    var rows = filteredClips().slice().sort(function(a,b){
-      return b.year - a.year || a.title.localeCompare(b.title);
-    }).slice(0, 8);
-    if (!rows.length){
-      var empty = document.createElement('p');
-      empty.className = 'empty-zone';
-      empty.textContent = 'No clips for this filter.';
-      latestEl.appendChild(empty);
-      return;
-    }
-    rows.forEach(function(c){
-      var art = document.createElement('article');
-      var h = document.createElement('h3');
-      h.appendChild(hedLink(c.title, c.url));
-      var by = document.createElement('p');
-      by.className = 'by';
-      by.textContent = (c.beat ? c.beat + ' · ' : '') + c.outlet + (c.year ? (' · ' + c.year) : '');
-      art.appendChild(h);
-      art.appendChild(by);
-      latestEl.appendChild(art);
-    });
-  }
-
-  function renderRail(){
-    railEl.innerHTML = '';
-    inlineEl.innerHTML = '';
-    var allBtn = document.createElement('button');
-    allBtn.type = 'button';
-    allBtn.setAttribute('data-beat', 'all');
-    allBtn.className = beat === 'all' ? 'on' : '';
-    allBtn.textContent = 'All beats';
-    allBtn.addEventListener('click', function(){ setBeat('all'); });
-    inlineEl.appendChild(allBtn);
-
-    beatCounts().forEach(function(row){
-      var li = document.createElement('li');
-      var btn = document.createElement('button');
-      btn.type = 'button';
-      btn.className = 'beat-row' + (beat === row.beat ? ' on' : '');
-      btn.setAttribute('data-beat', row.beat);
-      var name = document.createElement('span');
-      name.className = 'bname';
-      name.textContent = row.beat;
-      var n = document.createElement('span');
-      n.className = 'bcount';
-      n.textContent = row.count + (row.count === 1 ? ' clip' : ' clips');
-      btn.appendChild(name);
-      btn.appendChild(n);
-      btn.addEventListener('click', function(){ setBeat(row.beat); });
-      var latest = document.createElement('p');
-      latest.className = 'latest';
-      latest.textContent = row.latest ? (row.latest.year + ' · ' + row.latest.title) : '';
-      li.appendChild(btn);
-      if (row.latest) li.appendChild(latest);
-      railEl.appendChild(li);
-
-      var ib = document.createElement('button');
-      ib.type = 'button';
-      ib.setAttribute('data-beat', row.beat);
-      if (beat === row.beat) ib.className = 'on';
-      ib.textContent = row.beat;
-      ib.addEventListener('click', function(){ setBeat(row.beat); });
-      inlineEl.appendChild(ib);
-    });
   }
 
   function renderChips(){
@@ -742,31 +262,65 @@ footer{
     });
   }
 
-  function boot(json){
-    data = json;
-    var clips = data.clips || [];
-    var outlets = unique(clips, 'outlet');
-    metaEl.textContent = 'weekly slot · ' + clips.length + ' clips · ' + outlets.length + ' outlets · ' + yearsSpan(clips);
-    if (data.meta && data.meta.pioneerNote){
-      pioneerEl.textContent = data.meta.pioneerNote;
-    }
-    renderChips();
-    renderRail();
-    renderFront();
-    renderLatest();
-    renderList();
-  }
-
   fetch('clips.json', { cache: 'no-cache' })
     .then(function(r){
       if (!r.ok) throw new Error('missing');
       return r.json();
     })
-    .then(boot)
+    .then(function(json){
+      data = json;
+      if (data.meta && data.meta.pioneerNote){
+        pioneerEl.textContent = data.meta.pioneerNote;
+      }
+      renderChips();
+      renderList();
+    })
     .catch(function(){
       failEl.hidden = false;
       failEl.textContent = 'clips.json did not load. Open this page from the live desk so the verified clip file can be read. No bylines were invented to fill the gap.';
     });
+
+  var shelf = document.getElementById('reading-shelf');
+  var empty = document.getElementById('reading-empty');
+  fetch('reading.json', { cache: 'no-cache' })
+    .then(function(r){
+      if (!r.ok) throw new Error('missing');
+      return r.json();
+    })
+    .then(function(json){
+      var picks = (json && json.picks) || [];
+      if (!picks.length) return;
+      empty.hidden = true;
+      picks.forEach(function(p){
+        var card = document.createElement('article');
+        card.className = 'reading-card';
+        var out = document.createElement('p');
+        out.className = 'outlet';
+        out.textContent = p.outlet || 'Outlet';
+        var h = document.createElement('h3');
+        var a = document.createElement('a');
+        a.href = p.url;
+        a.target = '_blank';
+        a.rel = 'noopener';
+        a.textContent = p.hed || p.title || '';
+        h.appendChild(a);
+        var prev = document.createElement('p');
+        prev.className = 'preview';
+        prev.textContent = p.preview || '';
+        var go = document.createElement('a');
+        go.className = 'out';
+        go.href = p.url;
+        go.target = '_blank';
+        go.rel = 'noopener';
+        go.textContent = 'Read at ' + (p.outlet || 'the outlet') + ' →';
+        card.appendChild(out);
+        card.appendChild(h);
+        card.appendChild(prev);
+        card.appendChild(go);
+        shelf.appendChild(card);
+      });
+    })
+    .catch(function(){ /* empty shelf stays visible */ });
 })();
 </script>
 </body>
