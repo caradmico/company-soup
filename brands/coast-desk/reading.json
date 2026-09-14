@@ -5,7 +5,7 @@
     "why": "Other writers, other papers — open the link.",
     "feed": "reading.xml",
     "rule": "Open originals only. Preview + outbound. No paywall. No full-text republish.",
-    "updated": "2026-09-13"
+    "updated": "2026-09-14"
   },
   "sources": [
     {
@@ -47,27 +47,19 @@
   "picks": [
     {
       "outlet": "Moon Monday",
-      "hed": "China is building a lunar navigation and communications network",
-      "preview": "Moon Monday #291 — Jatan Mehta walks through each piece China has demonstrated toward a Queqiao-class lunar navcom stack, including Earth–Moon laser links.",
-      "url": "https://jatan.space/moon-monday-issue-291/",
-      "date": "2026-09-07",
+      "hed": "An obsessively linked rundown of recent global lunar exploration",
+      "preview": "Moon Monday #292 — Chang’e 7 slips to next year, Griffin and FLIP still in the 2026 queue, Artemis II heat-shield review, and three more Artemis Accords signatories.",
+      "url": "https://jatan.space/moon-monday-issue-292/",
+      "date": "2026-09-14",
       "author": "Jatan Mehta"
     },
     {
-      "outlet": "Moon Monday",
-      "hed": "The fiery origin of our Moon, tied to Earth",
-      "preview": "Moon Monday #290 — Apollo samples, then Chang’e and Chandrayaan, testing the giant-impact story of how the Moon formed.",
-      "url": "https://jatan.space/origin-of-our-moon-and-earth/",
-      "date": "2026-08-31",
-      "author": "Jatan Mehta"
-    },
-    {
-      "outlet": "Space Calendar",
-      "hed": "Vol 45, Week 37 — this week in space",
-      "preview": "The open weekly ledger: Progress MS-35 to station, UKIRT winding down, JUICE Earth flyby on the 25th, Crew-13 later in the month.",
-      "url": "https://spacecalendar.com/vol-45-week-37/",
-      "date": "2026-09-10",
-      "author": "Space Calendar"
+      "outlet": "NASA APOD",
+      "hed": "Where Your Elements Came From",
+      "preview": "September 14 picture: hydrogen from the Big Bang, carbon and oxygen from stellar fusion — a periodic table of how the atoms in you were made.",
+      "url": "https://apod.nasa.gov/apod/ap260914.html",
+      "date": "2026-09-14",
+      "author": "NASA APOD"
     },
     {
       "outlet": "Universe Today",
@@ -79,19 +71,35 @@
     },
     {
       "outlet": "Universe Today",
-      "hed": "Scientists are still trying to understand how the Moon formed",
-      "preview": "New impact modeling: depending on how hot Earth and Theia were, you either get a debris disk or an intact Moon in hours.",
-      "url": "https://www.universetoday.com/articles/scientists-are-still-trying-to-understand-how-the-moon-formed",
-      "date": "2026-09-08",
-      "author": "Evan Gough"
+      "hed": "Venus moon would have been doomed from the start",
+      "preview": "New paper: a captured or impact-formed satellite around Venus would not have lasted. The planet’s spin and tides do not leave room for a durable moon.",
+      "url": "https://www.universetoday.com/articles/venus-moon-would-have-been-doomed-from-the-start-says-new-paper",
+      "date": "2026-09-12",
+      "author": "Bruce Dorminey"
+    },
+    {
+      "outlet": "Space Calendar",
+      "hed": "Vol 45, Week 37 — this week in space",
+      "preview": "The open weekly ledger: Progress MS-35 to station, UKIRT winding down, JUICE Earth flyby on the 25th, Crew-13 later in the month. Week 38 not posted yet.",
+      "url": "https://spacecalendar.com/vol-45-week-37/",
+      "date": "2026-09-10",
+      "author": "Space Calendar"
     },
     {
       "outlet": "Universe Today",
-      "hed": "China postpones the Chang’e-7 mission",
-      "preview": "The south-pole lander missed its late-August window while already on the pad at Wenchang. Next opening is likely next year.",
-      "url": "https://www.universetoday.com/articles/china-postpones-the-change-7-mission",
-      "date": "2026-09-08",
-      "author": "Andy Tomaswick"
+      "hed": "A new surface atlas of Phobos will help JAXA’s MMX mission collect its samples",
+      "preview": "Planetary science for the sample-return: a map of the potato moon so MMX can pick a safe scoop.",
+      "url": "https://www.universetoday.com/articles/a-new-surface-atlas-of-phobos-will-help-jaxas-mmx-mission-collect-its-samples",
+      "date": "2026-09-10",
+      "author": "Evan Gough"
+    },
+    {
+      "outlet": "Moon Monday",
+      "hed": "China is building a lunar navigation and communications network",
+      "preview": "Moon Monday #291 — Jatan Mehta walks through each piece China has demonstrated toward a Queqiao-class lunar navcom stack, including Earth–Moon laser links.",
+      "url": "https://jatan.space/moon-monday-issue-291/",
+      "date": "2026-09-07",
+      "author": "Jatan Mehta"
     },
     {
       "outlet": "The Planetary Society",
@@ -100,14 +108,6 @@
       "url": "https://www.planetary.org/night-sky/night-sky-what-to-see-this-month",
       "date": "2026-09-01",
       "author": "Bruce Betts"
-    },
-    {
-      "outlet": "NASA APOD",
-      "hed": "Apollo 11 on the lunar surface",
-      "preview": "September 12 picture: sunlight and long shadows on the Moon, photographed July 20, 1969, by Neil Armstrong.",
-      "url": "https://apod.nasa.gov/apod/ap260912.html",
-      "date": "2026-09-12",
-      "author": "NASA APOD"
     }
   ]
 }
